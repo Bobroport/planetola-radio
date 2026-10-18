@@ -1,17 +1,15 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import type { Station } from "@/data/stations";
+import { usePlayer } from "@/providers/player-provider";
 
-type Props = {
-  station: Station;
-  isBuffering: boolean;
-  error: string | null;
-  onStop: () => void;
-};
-
-export function PlayerBar({ station, isBuffering, error, onStop }: Props) {
+export function PlayerBar() {
   const insets = useSafeAreaInsets();
+  const { current, isBuffering, error, stop } = usePlayer();
+
+  if (!current) {
+    return null;
+  }
 
   let statusText = "В эфире";
   if (error) {
@@ -24,7 +22,7 @@ export function PlayerBar({ station, isBuffering, error, onStop }: Props) {
     <View style={[styles.bar, { paddingBottom: Math.max(insets.bottom, 12) }]}>
       <View style={styles.info}>
         <Text style={styles.name} numberOfLines={1}>
-          {station.name}
+          {current.name}
         </Text>
         <Text
           style={[styles.status, error ? styles.statusError : null]}
@@ -34,7 +32,7 @@ export function PlayerBar({ station, isBuffering, error, onStop }: Props) {
         </Text>
       </View>
       <Pressable
-        onPress={onStop}
+        onPress={stop}
         style={({ pressed }) => [styles.stop, pressed && styles.stopPressed]}
         accessibilityRole="button"
         accessibilityLabel="Стоп"

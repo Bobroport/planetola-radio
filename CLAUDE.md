@@ -8,7 +8,8 @@
 - **TypeScript** в строгом режиме (`"strict": true` в `tsconfig.json`). Никаких `any`, `// @ts-ignore` и неявных типов.
 - **Expo Router** — файловая навигация. Экраны лежат только в `src/app/`, `_layout.tsx` описывает навигатор.
 - Остальной код (компоненты, хуки, данные, утилиты) — в `src/` вне `src/app/`. Алиас `@/*` указывает на `./src/*`.
-- Воспроизведение аудио — `expo-audio`.
+- Воспроизведение аудио — `expo-audio`. Состояние плеера живёт в `src/providers/player-provider.tsx`, панель плеера рендерится в корневом `_layout.tsx` под навигатором.
+- Данные станций — статичный `src/data/stations.json`, сгенерированный скриптом `scripts/generate-stations.mjs` из открытой базы Radio Browser (https://api.radio-browser.info). Руками JSON не править: меняй список городов или фильтры в скрипте и перегенерируй командой `npm run generate-stations`.
 
 ## Правила
 
@@ -26,4 +27,5 @@ npx expo start          # dev-сервер, затем открыть в Expo Go
 npx expo lint           # линтер
 npx tsc --noEmit        # проверка типов
 npx expo-doctor         # диагностика зависимостей
+npm run generate-stations  # перегенерировать src/data/stations.json
 ```

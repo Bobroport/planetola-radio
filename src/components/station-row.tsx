@@ -8,7 +8,24 @@ type Props = {
   onPress: (station: Station) => void;
 };
 
+function describe(station: Station): string {
+  const parts: string[] = [];
+  if (station.codec) {
+    parts.push(
+      station.bitrate > 0
+        ? `${station.codec} ${station.bitrate} kbps`
+        : station.codec,
+    );
+  }
+  if (station.tags.length > 0) {
+    parts.push(station.tags.slice(0, 3).join(", "));
+  }
+  return parts.join(" · ");
+}
+
 export function StationRow({ station, isActive, onPress }: Props) {
+  const details = describe(station);
+
   return (
     <Pressable
       onPress={() => onPress(station)}
@@ -24,7 +41,11 @@ export function StationRow({ station, isActive, onPress }: Props) {
         <Text style={[styles.name, isActive && styles.nameActive]}>
           {station.name}
         </Text>
-        <Text style={styles.city}>{station.city}</Text>
+        {details ? (
+          <Text style={styles.details} numberOfLines={1}>
+            {details}
+          </Text>
+        ) : null}
         <Text style={styles.url} numberOfLines={1}>
           {station.streamUrl}
         </Text>
@@ -60,7 +81,7 @@ const styles = StyleSheet.create({
   nameActive: {
     color: "#1d6fd8",
   },
-  city: {
+  details: {
     fontSize: 14,
     color: "#555",
   },

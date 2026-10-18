@@ -1,70 +1,34 @@
-import {
-  setAudioModeAsync,
-  useAudioPlayer,
-  useAudioPlayerStatus,
-} from "expo-audio";
-import { useCallback, useEffect, useState } from "react";
+import { router } from "expo-router";
 import { FlatList, StyleSheet, View } from "react-native";
 
-import { PlayerBar } from "@/components/player-bar";
-import { StationRow } from "@/components/station-row";
-import { STATIONS, type Station } from "@/data/stations";
+import { CityRow } from "@/components/city-row";
+import { CITIES, type City } from "@/data/stations";
+import { usePlayer } from "@/providers/player-provider";
 
 export default function Index() {
-  const player = useAudioPlayer(null);
-  const status = useAudioPlayerStatus(player);
-  const [current, setCurrent] = useState<Station | null>(null);
+  const { current } = usePlayer();
 
-  useEffect(() => {
-    setAudioModeAsync({
-      playsInSilentMode: true,
-      shouldPlayInBackground: true,
-      interruptionMode: "doNotMix",
-    }).catch((e: unknown) => {
-      console.warn("setAudioModeAsync failed", e);
-    });
-  }, []);
-
-  const handleSelect = useCallback(
-    (station: Station) => {
-      if (current?.id === station.id) {
-        return;
-      }
-      setCurrent(station);
-      player.replace(station.streamUrl);
-      player.play();
-    },
-    [current, player],
-  );
-
-  const handleStop = useCallback(() => {
-    player.pause();
-    setCurrent(null);
-  }, [player]);
+  const openCity = (city: City) => {
+    router.push({ pathname: "/city/[id]", params: { id: city.id } });
+  };
 
   return (
     <View style={styles.container}>
       <FlatList
-        data={STATIONS}
+        data={CITIES}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <StationRow
-            station={item}
-            isActive={current?.id === item.id}
-            onPress={handleSelect}
+          <CityRow
+            city={item}
+            isPlayingHere={
+              current !== null && item.stations.some((s) => s.id === current.id)
+            }
+            onPress={openCity}
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
         contentContainerStyle={styles.list}
       />
-      {current ? (
-        <PlayerBar
-          station={current}
-          isBuffering={status.isBuffering || !status.isLoaded}
-          error={status.error}
-          onStop={handleStop}
-        />
-      ) : null}
     </View>
   );
 }
