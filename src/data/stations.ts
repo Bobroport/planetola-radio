@@ -38,3 +38,20 @@ export const CITIES: City[] = data.cities;
 export function getCity(id: string | undefined): City | undefined {
   return CITIES.find((city) => city.id === id);
 }
+
+/** Город, в списке которого лежит станция. */
+export function getCityOfStation(stationId: string): City | undefined {
+  return CITIES.find((city) => city.stations.some((s) => s.id === stationId));
+}
+
+export function getStation(
+  stationId: string,
+): { station: Station; city: City } | undefined {
+  for (const city of CITIES) {
+    const station = city.stations.find((s) => s.id === stationId);
+    if (station) {
+      return { station, city };
+    }
+  }
+  return undefined;
+}
