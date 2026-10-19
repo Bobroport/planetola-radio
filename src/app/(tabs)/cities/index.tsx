@@ -1,9 +1,9 @@
 import { router } from "expo-router";
 import { useEffect } from "react";
-import { FlatList, StyleSheet, View } from "react-native";
+import { SectionList, StyleSheet, Text, View } from "react-native";
 
 import { CityRow } from "@/components/city-row";
-import { CITIES, getCity, type City } from "@/data/stations";
+import { CITY_SECTIONS, getCity, type City } from "@/data/stations";
 import { usePlayer } from "@/providers/player-provider";
 import { useSettings } from "@/providers/settings-provider";
 
@@ -30,8 +30,8 @@ export default function CitiesScreen() {
 
   return (
     <View style={styles.container}>
-      <FlatList
-        data={CITIES}
+      <SectionList
+        sections={CITY_SECTIONS}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <CityRow
@@ -42,7 +42,11 @@ export default function CitiesScreen() {
             onPress={openCity}
           />
         )}
+        renderSectionHeader={({ section }) => (
+          <Text style={styles.sectionHeader}>{section.title}</Text>
+        )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
+        stickySectionHeadersEnabled
         contentContainerStyle={styles.list}
       />
     </View>
@@ -55,7 +59,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   list: {
-    paddingVertical: 4,
+    paddingBottom: 8,
+  },
+  sectionHeader: {
+    paddingHorizontal: 16,
+    paddingVertical: 6,
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#666",
+    textTransform: "uppercase",
+    backgroundColor: "#f2f2f4",
   },
   separator: {
     height: StyleSheet.hairlineWidth,

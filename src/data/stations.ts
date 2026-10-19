@@ -5,21 +5,15 @@ export type Station = {
   name: string;
   streamUrl: string;
   homepage: string;
-  favicon: string;
   codec: string;
   bitrate: number;
   tags: string[];
   languages: string[];
-  languageCodes: string[];
-  country: string;
-  countryCode: string;
+  /** Город или регион, как его указал владелец станции в Radio Browser. */
   state: string;
   geo: { lat: number; long: number } | null;
   votes: number;
   clickCount: number;
-  clickTrend: number;
-  lastChangeTime: string;
-  lastCheckTime: string;
 };
 
 export type City = {
@@ -27,6 +21,8 @@ export type City = {
   name: string;
   country: string;
   countryCode: string;
+  /** Часть света для группировки списка, например «Европа». */
+  region: string;
   lat: number;
   long: number;
   stations: Station[];
@@ -34,6 +30,22 @@ export type City = {
 
 export const GENERATED_AT: string = data.generatedAt;
 export const CITIES: City[] = data.cities;
+
+export type CitySection = { title: string; data: City[] };
+
+/** Города, сгруппированные по частям света в порядке появления в данных. */
+export const CITY_SECTIONS: CitySection[] = CITIES.reduce<CitySection[]>(
+  (sections, city) => {
+    const last = sections[sections.length - 1];
+    if (last && last.title === city.region) {
+      last.data.push(city);
+    } else {
+      sections.push({ title: city.region, data: [city] });
+    }
+    return sections;
+  },
+  [],
+);
 
 export function getCity(id: string | undefined): City | undefined {
   return CITIES.find((city) => city.id === id);

@@ -44,3 +44,6 @@ example
 
 # Claude desktop app preview config
 .claude/launch.json
+
+# Кэш выгрузки станций
+scripts/.cache/

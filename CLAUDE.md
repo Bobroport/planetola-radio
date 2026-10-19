@@ -12,7 +12,7 @@
 - Персонаж приложения — бобёр с магнитофоном (`src/components/beaver.tsx`): нарисован на `react-native-svg`, анимирован `react-native-reanimated`. Громкость и тембр для танца считаются в `src/hooks/use-dance-energy.ts` из PCM-сэмплов `useAudioSampleListener`; без сэмплов бобёр танцует под свой ритм.
 - Заставка при запуске (`src/components/launch-overlay.tsx`): вращающийся глобус `src/components/globe.tsx` — ортографическая проекция на `react-native-svg`, вращение и подписи через `useAnimatedProps` Reanimated, точки городов из `stations.json`.
 - Воспроизведение аудио — `expo-audio`. Состояние плеера живёт в `src/providers/player-provider.tsx`, панель плеера рендерится в корневом `_layout.tsx` под навигатором.
-- Данные станций — статичный `src/data/stations.json`, сгенерированный скриптом `scripts/generate-stations.mjs` из открытой базы Radio Browser (https://api.radio-browser.info). Руками JSON не править: меняй список городов или фильтры в скрипте и перегенерируй командой `npm run generate-stations`.
+- Данные станций — статичный `src/data/stations.json` (около 200 городов, до 40 станций на город, ~2 МБ), сгенерированный скриптом `scripts/generate-stations.mjs` из открытой базы Radio Browser (https://api.radio-browser.info). Список городов с координатами и регионами — `scripts/cities.mjs`. Руками JSON не править: меняй города или фильтры и перегенерируй командой `npm run generate-stations` (20 минут; результаты по городам кэшируются в `scripts/.cache/`, флаг `--fresh` качает заново). Вся база Radio Browser (~62 тыс. станций) в бандл не влезает; для неё нужен онлайн-запрос к API.
 
 ## Правила
 

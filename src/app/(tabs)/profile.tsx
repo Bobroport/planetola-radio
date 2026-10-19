@@ -1,4 +1,5 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { useState } from "react";
 import {
   Pressable,
   ScrollView,
@@ -13,6 +14,8 @@ import { CITIES, GENERATED_AT } from "@/data/stations";
 import { flagEmoji, formatDateTime } from "@/lib/format";
 import { useFavorites } from "@/providers/favorites-provider";
 import { useSettings, type StartPage } from "@/providers/settings-provider";
+
+const MAX_CITY_OPTIONS = 8;
 
 const START_OPTIONS: { value: StartPage; label: string; hint: string }[] = [
   { value: "cities", label: "Список городов", hint: "Как сейчас: выбираете город вручную" },
@@ -55,9 +58,25 @@ export default function ProfileScreen() {
   const settings = useSettings();
   const { favorites, stationIds } = useFavorites();
 
+  const [cityQuery, setCityQuery] = useState("");
+
   const greeting = settings.name.trim()
     ? `Привет, ${settings.name.trim()}!`
     : "Привет!";
+
+  // Выбранный город всегда наверху, остальные по фильтру, не больше MAX_CITY_OPTIONS.
+  const query = cityQuery.trim().toLowerCase();
+  const selectedCity = CITIES.find((c) => c.id === settings.startCityId);
+  const cityOptions = [
+    ...(selectedCity ? [selectedCity] : []),
+    ...CITIES.filter(
+      (c) =>
+        c.id !== settings.startCityId &&
+        (query.length === 0 ||
+          c.name.toLowerCase().includes(query) ||
+          c.country.toLowerCase().includes(query)),
+    ).slice(0, MAX_CITY_OPTIONS),
+  ];
 
   return (
     <ScrollView
@@ -104,17 +123,30 @@ export default function ProfileScreen() {
       {settings.startPage === "city" ? (
         <>
           <Text style={styles.sectionTitle}>Какой город открывать</Text>
+          <TextInput
+            value={cityQuery}
+            onChangeText={setCityQuery}
+            placeholder="Начните вводить название города"
+            placeholderTextColor="#999"
+            autoCorrect={false}
+            clearButtonMode="while-editing"
+            style={styles.input}
+          />
           <View style={styles.card}>
-            {CITIES.map((city, index) => (
+            {cityOptions.map((city, index) => (
               <View key={city.id}>
                 {index > 0 ? <View style={styles.separator} /> : null}
                 <OptionRow
                   label={`${flagEmoji(city.countryCode)} ${city.name}`}
+                  hint={city.country}
                   selected={settings.startCityId === city.id}
                   onPress={() => settings.setStartCityId(city.id)}
                 />
               </View>
             ))}
+            {cityOptions.length === 0 ? (
+              <Text style={styles.emptyHint}>Ничего не найдено</Text>
+            ) : null}
           </View>
         </>
       ) : null}
@@ -201,6 +233,11 @@ const styles = StyleSheet.create({
     height: StyleSheet.hairlineWidth,
     backgroundColor: "#ddd",
     marginLeft: 48,
+  },
+  emptyHint: {
+    padding: 14,
+    color: "#777",
+    textAlign: "center",
   },
   footer: {
     marginTop: 16,

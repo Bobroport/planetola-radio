@@ -23,9 +23,19 @@ export const EMPTY_FILTERS: SearchFilters = {
 export const BITRATE_OPTIONS = [64, 128, 192, 320] as const;
 export const CODEC_OPTIONS: Codec[] = ["MP3", "AAC"];
 
-export const ALL_STATIONS: StationWithCity[] = CITIES.flatMap((city) =>
-  city.stations.map((station) => ({ station, city })),
-);
+/** Все станции без дублей: станция из двух соседних городов учитывается один раз. */
+export const ALL_STATIONS: StationWithCity[] = (() => {
+  const seen = new Set<string>();
+  const list: StationWithCity[] = [];
+  for (const city of CITIES) {
+    for (const station of city.stations) {
+      if (seen.has(station.id)) continue;
+      seen.add(station.id);
+      list.push({ station, city });
+    }
+  }
+  return list;
+})();
 
 type Counted = { value: string; count: number };
 
@@ -88,7 +98,6 @@ export function searchStations(f: SearchFilters): StationWithCity[] {
     const haystack = [
       station.name,
       station.state,
-      station.country,
       city.name,
       city.country,
       ...station.tags,
