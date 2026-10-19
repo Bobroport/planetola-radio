@@ -6,7 +6,8 @@
 
 - **Expo SDK 57** (`expo` ~57), React Native 0.86, React 19.
 - **TypeScript** в строгом режиме (`"strict": true` в `tsconfig.json`). Никаких `any`, `// @ts-ignore` и неявных типов.
-- **Expo Router** — файловая навигация. Экраны лежат только в `src/app/`, `_layout.tsx` описывает навигатор.
+- **Expo Router** — файловая навигация. Экраны лежат только в `src/app/`, `_layout.tsx` описывает навигатор. Структура: корневой Stack → группа `(tabs)` с вкладками Города (`cities/` — свой Stack: список и `[id]`), Поиск, Избранное, Профиль. Панель вкладок своя (`(tabs)/_layout.tsx`), плеер `PlayerBar` рендерится внутри неё над кнопками. Пакет `@react-navigation/bottom-tabs` не ставить: expo-router 57 несёт свою копию, вторая ломает типы и контексты.
+- Настройки пользователя (имя, стартовая страница) — `src/providers/settings-provider.tsx`, избранные треки и плейлист станций — `src/providers/favorites-provider.tsx`; оба хранят JSON в `expo-sqlite/kv-store`.
 - Остальной код (компоненты, хуки, данные, утилиты) — в `src/` вне `src/app/`. Алиас `@/*` указывает на `./src/*`.
 - Персонаж приложения — бобёр с магнитофоном (`src/components/beaver.tsx`): нарисован на `react-native-svg`, анимирован `react-native-reanimated`. Громкость и тембр для танца считаются в `src/hooks/use-dance-energy.ts` из PCM-сэмплов `useAudioSampleListener`; без сэмплов бобёр танцует под свой ритм.
 - Воспроизведение аудио — `expo-audio`. Состояние плеера живёт в `src/providers/player-provider.tsx`, панель плеера рендерится в корневом `_layout.tsx` под навигатором.

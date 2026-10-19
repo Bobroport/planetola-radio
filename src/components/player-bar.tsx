@@ -1,5 +1,5 @@
+import Ionicons from "@expo/vector-icons/Ionicons";
 import { Pressable, StyleSheet, Text, View } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { Beaver } from "@/components/beaver";
 import { getCityOfStation } from "@/data/stations";
@@ -7,7 +7,6 @@ import { useFavorites } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
 
 export function PlayerBar() {
-  const insets = useSafeAreaInsets();
   const { player, current, nowPlaying, isPlaying, isBuffering, error, stop } =
     usePlayer();
   const { isSaved, toggle } = useFavorites();
@@ -30,9 +29,10 @@ export function PlayerBar() {
     : null;
   const saved = nowPlaying ? isSaved(nowPlaying, current) : false;
   const city = getCityOfStation(current.id);
+  const canSave = nowPlaying !== null && city !== undefined;
 
   return (
-    <View style={[styles.bar, { paddingBottom: Math.max(insets.bottom, 12) }]}>
+    <View style={styles.bar}>
       <View style={styles.beaver}>
         <Beaver size={64} player={player} dancing={isPlaying} />
       </View>
@@ -56,27 +56,31 @@ export function PlayerBar() {
         onPress={() => {
           if (nowPlaying && city) toggle(nowPlaying, current, city);
         }}
-        disabled={!nowPlaying || !city}
+        disabled={!canSave}
+        hitSlop={8}
         style={({ pressed }) => [
-          styles.heart,
-          (!nowPlaying || !city) && styles.heartDisabled,
+          styles.iconButton,
+          !canSave && styles.disabled,
           pressed && styles.pressed,
         ]}
         accessibilityRole="button"
-        accessibilityLabel={saved ? "Убрать из избранного" : "В избранное"}
+        accessibilityLabel={saved ? "Убрать трек из избранного" : "Трек в избранное"}
         accessibilityState={{ selected: saved }}
       >
-        <Text style={[styles.heartText, saved && styles.heartSaved]}>
-          {saved ? "♥" : "♡"}
-        </Text>
+        <Ionicons
+          name={saved ? "heart" : "heart-outline"}
+          size={26}
+          color={saved ? "#ff375f" : "#fff"}
+        />
       </Pressable>
       <Pressable
         onPress={stop}
+        hitSlop={8}
         style={({ pressed }) => [styles.stop, pressed && styles.pressed]}
         accessibilityRole="button"
         accessibilityLabel="Стоп"
       >
-        <Text style={styles.stopText}>Стоп</Text>
+        <Ionicons name="stop" size={22} color="#fff" />
       </Pressable>
     </View>
   );
@@ -86,13 +90,12 @@ const styles = StyleSheet.create({
   bar: {
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: 16,
-    paddingTop: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
     backgroundColor: "#1d1d1f",
   },
   beaver: {
-    marginRight: 10,
-    marginTop: -6,
+    marginRight: 8,
   },
   info: {
     flex: 1,
@@ -114,34 +117,23 @@ const styles = StyleSheet.create({
   statusError: {
     color: "#ff6b6b",
   },
-  heart: {
-    marginLeft: 12,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
+  iconButton: {
+    marginLeft: 8,
+    padding: 6,
   },
-  heartDisabled: {
+  disabled: {
     opacity: 0.3,
-  },
-  heartText: {
-    color: "#fff",
-    fontSize: 26,
-  },
-  heartSaved: {
-    color: "#ff375f",
   },
   pressed: {
     opacity: 0.7,
   },
   stop: {
-    marginLeft: 8,
-    paddingHorizontal: 18,
-    paddingVertical: 10,
-    borderRadius: 8,
+    marginLeft: 4,
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor: "#ff3b30",
-  },
-  stopText: {
-    color: "#fff",
-    fontSize: 15,
-    fontWeight: "600",
   },
 });

@@ -1,29 +1,27 @@
+import Ionicons from "@expo/vector-icons/Ionicons";
 import { router } from "expo-router";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { Chip } from "@/components/chip";
 import type { City, Station } from "@/data/stations";
+import { stationMeta, streamHost } from "@/lib/format";
+import { useFavorites } from "@/providers/favorites-provider";
 
 type Props = {
   station: Station;
   isActive: boolean;
   onPress: (station: Station) => void;
-  /** Показать город и страну под названием (для результатов поиска). */
+  /** Показать город и страну под названием (для поиска и плейлиста). */
   city?: City;
 };
 
 const MAX_TAGS = 4;
-const MAX_LANGUAGES = 2;
-
-function formatCodec(station: Station): string {
-  return station.bitrate > 0
-    ? `${station.codec} ${station.bitrate} kbps`
-    : station.codec;
-}
 
 export function StationRow({ station, isActive, onPress, city }: Props) {
+  const { isStationSaved, toggleStation } = useFavorites();
+  const saved = isStationSaved(station.id);
+  const meta = stationMeta(station);
   const tags = station.tags.slice(0, MAX_TAGS);
-  const languages = station.languages.slice(0, MAX_LANGUAGES);
 
   return (
     <Pressable
@@ -38,57 +36,58 @@ export function StationRow({ station, isActive, onPress, city }: Props) {
     >
       <View style={styles.text}>
         <View style={styles.titleLine}>
-          <Text style={[styles.name, isActive && styles.nameActive]}>
+          {isActive ? (
+            <Ionicons name="volume-high" size={16} color="#1d6fd8" style={styles.playingIcon} />
+          ) : null}
+          <Text style={[styles.name, isActive && styles.nameActive]} numberOfLines={2}>
             {station.name}
           </Text>
-          {isActive ? <Text style={styles.badge}>▶</Text> : null}
         </View>
         {city ? (
           <Text style={styles.place}>
             {city.name} · {city.country}
           </Text>
         ) : null}
-        <View style={styles.chips}>
-          {station.codec ? (
-            <Chip
-              label={formatCodec(station)}
-              onPress={() =>
-                router.push({
-                  pathname: "/search",
-                  params: { codec: station.codec.startsWith("AAC") ? "AAC" : "MP3" },
-                })
-              }
-            />
-          ) : null}
-          {languages.map((lang) => (
-            <Chip
-              key={`lang-${lang}`}
-              label={lang}
-              onPress={() =>
-                router.push({ pathname: "/search", params: { language: lang } })
-              }
-            />
-          ))}
-          {tags.map((tag) => (
-            <Chip
-              key={`tag-${tag}`}
-              label={`#${tag}`}
-              onPress={() =>
-                router.push({ pathname: "/search", params: { tag } })
-              }
-            />
-          ))}
-        </View>
-        <Text style={styles.url} numberOfLines={1}>
-          {station.streamUrl}
+        {meta ? <Text style={styles.meta}>{meta}</Text> : null}
+        {tags.length > 0 ? (
+          <View style={styles.chips}>
+            {tags.map((tag) => (
+              <Chip
+                key={tag}
+                label={`#${tag}`}
+                onPress={() =>
+                  router.push({ pathname: "/search", params: { tag } })
+                }
+              />
+            ))}
+          </View>
+        ) : null}
+        <Text style={styles.host} numberOfLines={1}>
+          {streamHost(station.streamUrl)}
         </Text>
       </View>
+      <Pressable
+        onPress={() => toggleStation(station.id)}
+        hitSlop={10}
+        style={({ pressed }) => [styles.star, pressed && styles.rowPressed]}
+        accessibilityRole="button"
+        accessibilityLabel={saved ? "Убрать из плейлиста" : "В плейлист"}
+        accessibilityState={{ selected: saved }}
+      >
+        <Ionicons
+          name={saved ? "star" : "star-outline"}
+          size={24}
+          color={saved ? "#f5a524" : "#b0b0b4"}
+        />
+      </Pressable>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   row: {
+    flexDirection: "row",
+    alignItems: "center",
     paddingHorizontal: 16,
     paddingVertical: 12,
     backgroundColor: "#fff",
@@ -100,11 +99,15 @@ const styles = StyleSheet.create({
     opacity: 0.7,
   },
   text: {
+    flex: 1,
     gap: 4,
   },
   titleLine: {
     flexDirection: "row",
     alignItems: "center",
+  },
+  playingIcon: {
+    marginRight: 6,
   },
   name: {
     flex: 1,
@@ -119,19 +122,22 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: "#555",
   },
+  meta: {
+    fontSize: 14,
+    color: "#333",
+  },
   chips: {
     flexDirection: "row",
     flexWrap: "wrap",
     gap: 6,
     marginTop: 2,
   },
-  url: {
-    fontSize: 12,
-    color: "#999",
+  host: {
+    fontSize: 11,
+    color: "#aaa",
   },
-  badge: {
-    fontSize: 18,
-    color: "#1d6fd8",
+  star: {
     marginLeft: 12,
+    padding: 6,
   },
 });

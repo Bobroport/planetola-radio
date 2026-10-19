@@ -26,35 +26,38 @@ export type FavoriteTrack = {
 };
 
 type FavoritesContextValue = {
+  /** Сохранённые треки, новые сверху. */
   favorites: FavoriteTrack[];
   isSaved: (track: NowPlaying, station: Station) => boolean;
-  save: (track: NowPlaying, station: Station, city: City) => void;
-  remove: (id: string) => void;
   toggle: (track: NowPlaying, station: Station, city: City) => void;
+  remove: (id: string) => void;
+  /** Плейлист: id избранных станций в порядке добавления. */
+  stationIds: string[];
+  isStationSaved: (stationId: string) => boolean;
+  toggleStation: (stationId: string) => void;
 };
 
-const STORAGE_KEY = "favorites.v1";
+const TRACKS_KEY = "favorites.v1";
+const STATIONS_KEY = "favorite-stations.v1";
 
 const FavoritesContext = createContext<FavoritesContextValue | null>(null);
 
-async function load(): Promise<FavoriteTrack[]> {
+async function loadJson<T>(key: string, fallback: T): Promise<T> {
   try {
-    const json = await Storage.getItemAsync(STORAGE_KEY);
-    if (!json) return [];
+    const json = await Storage.getItemAsync(key);
+    if (!json) return fallback;
     const parsed: unknown = JSON.parse(json);
-    return Array.isArray(parsed) ? (parsed as FavoriteTrack[]) : [];
+    return Array.isArray(parsed) ? (parsed as T) : fallback;
   } catch (e) {
-    console.warn("Не удалось прочитать избранное", e);
-    return [];
+    console.warn(`Не удалось прочитать ${key}`, e);
+    return fallback;
   }
 }
 
-function persist(list: FavoriteTrack[]): void {
-  Storage.setItemAsync(STORAGE_KEY, JSON.stringify(list)).catch(
-    (e: unknown) => {
-      console.warn("Не удалось сохранить избранное", e);
-    },
-  );
+function persistJson(key: string, value: unknown): void {
+  Storage.setItemAsync(key, JSON.stringify(value)).catch((e: unknown) => {
+    console.warn(`Не удалось сохранить ${key}`, e);
+  });
 }
 
 function makeId(): string {
@@ -63,13 +66,21 @@ function makeId(): string {
 
 export function FavoritesProvider({ children }: { children: ReactNode }) {
   const [favorites, setFavorites] = useState<FavoriteTrack[]>([]);
+  const [stationIds, setStationIds] = useState<string[]>([]);
 
   // Читаем сохранённое после монтирования, чтобы не ходить в SQLite во время рендера.
   useEffect(() => {
     let cancelled = false;
-    load().then((list) => {
-      if (!cancelled && list.length > 0) {
-        setFavorites((prev) => (prev.length === 0 ? list : prev));
+    Promise.all([
+      loadJson<FavoriteTrack[]>(TRACKS_KEY, []),
+      loadJson<string[]>(STATIONS_KEY, []),
+    ]).then(([tracks, stations]) => {
+      if (cancelled) return;
+      if (tracks.length > 0) {
+        setFavorites((prev) => (prev.length === 0 ? tracks : prev));
+      }
+      if (stations.length > 0) {
+        setStationIds((prev) => (prev.length === 0 ? stations : prev));
       }
     });
     return () => {
@@ -77,11 +88,11 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
     };
   }, []);
 
-  const update = useCallback(
+  const updateTracks = useCallback(
     (fn: (prev: FavoriteTrack[]) => FavoriteTrack[]) => {
       setFavorites((prev) => {
         const next = fn(prev);
-        persist(next);
+        persistJson(TRACKS_KEY, next);
         return next;
       });
     },
@@ -102,37 +113,9 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
     [favorites, findIndex],
   );
 
-  const save = useCallback(
-    (track: NowPlaying, station: Station, city: City) => {
-      update((prev) => {
-        if (findIndex(prev, track, station) !== -1) return prev;
-        const entry: FavoriteTrack = {
-          id: makeId(),
-          title: track.title,
-          artist: track.artist,
-          raw: track.raw,
-          stationId: station.id,
-          stationName: station.name,
-          cityId: city.id,
-          cityName: city.name,
-          savedAt: new Date().toISOString(),
-        };
-        return [entry, ...prev];
-      });
-    },
-    [findIndex, update],
-  );
-
-  const remove = useCallback(
-    (id: string) => {
-      update((prev) => prev.filter((f) => f.id !== id));
-    },
-    [update],
-  );
-
   const toggle = useCallback(
     (track: NowPlaying, station: Station, city: City) => {
-      update((prev) => {
+      updateTracks((prev) => {
         const index = findIndex(prev, track, station);
         if (index !== -1) {
           return prev.filter((_, i) => i !== index);
@@ -151,12 +134,42 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
         return [entry, ...prev];
       });
     },
-    [findIndex, update],
+    [findIndex, updateTracks],
   );
 
+  const remove = useCallback(
+    (id: string) => {
+      updateTracks((prev) => prev.filter((f) => f.id !== id));
+    },
+    [updateTracks],
+  );
+
+  const isStationSaved = useCallback(
+    (stationId: string) => stationIds.includes(stationId),
+    [stationIds],
+  );
+
+  const toggleStation = useCallback((stationId: string) => {
+    setStationIds((prev) => {
+      const next = prev.includes(stationId)
+        ? prev.filter((id) => id !== stationId)
+        : [...prev, stationId];
+      persistJson(STATIONS_KEY, next);
+      return next;
+    });
+  }, []);
+
   const value = useMemo<FavoritesContextValue>(
-    () => ({ favorites, isSaved, save, remove, toggle }),
-    [favorites, isSaved, save, remove, toggle],
+    () => ({
+      favorites,
+      isSaved,
+      toggle,
+      remove,
+      stationIds,
+      isStationSaved,
+      toggleStation,
+    }),
+    [favorites, isSaved, toggle, remove, stationIds, isStationSaved, toggleStation],
   );
 
   return (

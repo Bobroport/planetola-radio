@@ -3,6 +3,7 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 
 import { StationRow } from "@/components/station-row";
 import { getCity } from "@/data/stations";
+import { flagEmoji } from "@/lib/format";
 import { usePlayer } from "@/providers/player-provider";
 
 export default function CityScreen() {
@@ -21,7 +22,9 @@ export default function CityScreen() {
 
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ title: city.name }} />
+      <Stack.Screen
+        options={{ title: `${flagEmoji(city.countryCode)} ${city.name}` }}
+      />
       <FlatList
         data={city.stations}
         keyExtractor={(item) => item.id}
