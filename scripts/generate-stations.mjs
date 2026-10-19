@@ -124,12 +124,17 @@ function isPlayable(s) {
   return ALLOWED_CODECS.some((c) => codec.startsWith(c));
 }
 
-function toStation(s) {
-  const tags = String(s.tags || "")
+/** "#english, Español,english" -> ["english", "español"] */
+function splitList(value) {
+  const seen = new Set();
+  return String(value || "")
     .split(",")
-    .map((t) => t.trim())
-    .filter(Boolean)
-    .slice(0, 5);
+    .map((t) => t.trim().replace(/^#+/, "").toLowerCase())
+    .filter((t) => t && !seen.has(t) && seen.add(t));
+}
+
+function toStation(s) {
+  const hasGeo = typeof s.geo_lat === "number" && typeof s.geo_long === "number";
   return {
     id: s.stationuuid,
     name: s.name.trim(),
@@ -138,9 +143,18 @@ function toStation(s) {
     favicon: s.favicon || "",
     codec: String(s.codec || "").toUpperCase(),
     bitrate: s.bitrate || 0,
-    tags,
+    tags: splitList(s.tags),
+    languages: splitList(s.language),
+    languageCodes: splitList(s.languagecodes),
+    country: s.country || "",
+    countryCode: s.countrycode || "",
+    state: (s.state || "").trim(),
+    geo: hasGeo ? { lat: s.geo_lat, long: s.geo_long } : null,
     votes: s.votes || 0,
     clickCount: s.clickcount || 0,
+    clickTrend: s.clicktrend || 0,
+    lastChangeTime: s.lastchangetime_iso8601 || "",
+    lastCheckTime: s.lastcheckoktime_iso8601 || "",
   };
 }
 

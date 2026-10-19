@@ -9,8 +9,17 @@ export type Station = {
   codec: string;
   bitrate: number;
   tags: string[];
+  languages: string[];
+  languageCodes: string[];
+  country: string;
+  countryCode: string;
+  state: string;
+  geo: { lat: number; long: number } | null;
   votes: number;
   clickCount: number;
+  clickTrend: number;
+  lastChangeTime: string;
+  lastCheckTime: string;
 };
 
 export type City = {

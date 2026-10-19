@@ -1,30 +1,29 @@
+import { router } from "expo-router";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
-import type { Station } from "@/data/stations";
+import { Chip } from "@/components/chip";
+import type { City, Station } from "@/data/stations";
 
 type Props = {
   station: Station;
   isActive: boolean;
   onPress: (station: Station) => void;
+  /** Показать город и страну под названием (для результатов поиска). */
+  city?: City;
 };
 
-function describe(station: Station): string {
-  const parts: string[] = [];
-  if (station.codec) {
-    parts.push(
-      station.bitrate > 0
-        ? `${station.codec} ${station.bitrate} kbps`
-        : station.codec,
-    );
-  }
-  if (station.tags.length > 0) {
-    parts.push(station.tags.slice(0, 3).join(", "));
-  }
-  return parts.join(" · ");
+const MAX_TAGS = 4;
+const MAX_LANGUAGES = 2;
+
+function formatCodec(station: Station): string {
+  return station.bitrate > 0
+    ? `${station.codec} ${station.bitrate} kbps`
+    : station.codec;
 }
 
-export function StationRow({ station, isActive, onPress }: Props) {
-  const details = describe(station);
+export function StationRow({ station, isActive, onPress, city }: Props) {
+  const tags = station.tags.slice(0, MAX_TAGS);
+  const languages = station.languages.slice(0, MAX_LANGUAGES);
 
   return (
     <Pressable
@@ -38,27 +37,58 @@ export function StationRow({ station, isActive, onPress }: Props) {
       accessibilityState={{ selected: isActive }}
     >
       <View style={styles.text}>
-        <Text style={[styles.name, isActive && styles.nameActive]}>
-          {station.name}
-        </Text>
-        {details ? (
-          <Text style={styles.details} numberOfLines={1}>
-            {details}
+        <View style={styles.titleLine}>
+          <Text style={[styles.name, isActive && styles.nameActive]}>
+            {station.name}
+          </Text>
+          {isActive ? <Text style={styles.badge}>▶</Text> : null}
+        </View>
+        {city ? (
+          <Text style={styles.place}>
+            {city.name} · {city.country}
           </Text>
         ) : null}
+        <View style={styles.chips}>
+          {station.codec ? (
+            <Chip
+              label={formatCodec(station)}
+              onPress={() =>
+                router.push({
+                  pathname: "/search",
+                  params: { codec: station.codec.startsWith("AAC") ? "AAC" : "MP3" },
+                })
+              }
+            />
+          ) : null}
+          {languages.map((lang) => (
+            <Chip
+              key={`lang-${lang}`}
+              label={lang}
+              onPress={() =>
+                router.push({ pathname: "/search", params: { language: lang } })
+              }
+            />
+          ))}
+          {tags.map((tag) => (
+            <Chip
+              key={`tag-${tag}`}
+              label={`#${tag}`}
+              onPress={() =>
+                router.push({ pathname: "/search", params: { tag } })
+              }
+            />
+          ))}
+        </View>
         <Text style={styles.url} numberOfLines={1}>
           {station.streamUrl}
         </Text>
       </View>
-      {isActive ? <Text style={styles.badge}>▶</Text> : null}
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   row: {
-    flexDirection: "row",
-    alignItems: "center",
     paddingHorizontal: 16,
     paddingVertical: 12,
     backgroundColor: "#fff",
@@ -70,10 +100,14 @@ const styles = StyleSheet.create({
     opacity: 0.7,
   },
   text: {
-    flex: 1,
-    gap: 2,
+    gap: 4,
+  },
+  titleLine: {
+    flexDirection: "row",
+    alignItems: "center",
   },
   name: {
+    flex: 1,
     fontSize: 17,
     fontWeight: "600",
     color: "#111",
@@ -81,9 +115,15 @@ const styles = StyleSheet.create({
   nameActive: {
     color: "#1d6fd8",
   },
-  details: {
-    fontSize: 14,
+  place: {
+    fontSize: 13,
     color: "#555",
+  },
+  chips: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 6,
+    marginTop: 2,
   },
   url: {
     fontSize: 12,
