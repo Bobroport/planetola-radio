@@ -8,6 +8,7 @@
 - **TypeScript** в строгом режиме (`"strict": true` в `tsconfig.json`). Никаких `any`, `// @ts-ignore` и неявных типов.
 - **Expo Router** — файловая навигация. Экраны лежат только в `src/app/`, `_layout.tsx` описывает навигатор.
 - Остальной код (компоненты, хуки, данные, утилиты) — в `src/` вне `src/app/`. Алиас `@/*` указывает на `./src/*`.
+- Персонаж приложения — бобёр с магнитофоном (`src/components/beaver.tsx`): нарисован на `react-native-svg`, анимирован `react-native-reanimated`. Громкость и тембр для танца считаются в `src/hooks/use-dance-energy.ts` из PCM-сэмплов `useAudioSampleListener`; без сэмплов бобёр танцует под свой ритм.
 - Воспроизведение аудио — `expo-audio`. Состояние плеера живёт в `src/providers/player-provider.tsx`, панель плеера рендерится в корневом `_layout.tsx` под навигатором.
 - Данные станций — статичный `src/data/stations.json`, сгенерированный скриптом `scripts/generate-stations.mjs` из открытой базы Radio Browser (https://api.radio-browser.info). Руками JSON не править: меняй список городов или фильтры в скрипте и перегенерируй командой `npm run generate-stations`.
 

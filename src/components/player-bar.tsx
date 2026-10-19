@@ -1,13 +1,15 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
+import { Beaver } from "@/components/beaver";
 import { getCityOfStation } from "@/data/stations";
 import { useFavorites } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
 
 export function PlayerBar() {
   const insets = useSafeAreaInsets();
-  const { current, nowPlaying, isBuffering, error, stop } = usePlayer();
+  const { player, current, nowPlaying, isPlaying, isBuffering, error, stop } =
+    usePlayer();
   const { isSaved, toggle } = useFavorites();
 
   if (!current) {
@@ -31,6 +33,9 @@ export function PlayerBar() {
 
   return (
     <View style={[styles.bar, { paddingBottom: Math.max(insets.bottom, 12) }]}>
+      <View style={styles.beaver}>
+        <Beaver size={64} player={player} dancing={isPlaying} />
+      </View>
       <View style={styles.info}>
         <Text style={styles.name} numberOfLines={1}>
           {current.name}
@@ -84,6 +89,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 12,
     backgroundColor: "#1d1d1f",
+  },
+  beaver: {
+    marginRight: 10,
+    marginTop: -6,
   },
   info: {
     flex: 1,

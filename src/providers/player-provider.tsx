@@ -2,6 +2,7 @@ import {
   setAudioModeAsync,
   useAudioPlayer,
   useAudioPlayerStatus,
+  type AudioPlayer,
 } from "expo-audio";
 import {
   createContext,
@@ -22,8 +23,10 @@ const NOW_PLAYING_INTERVAL_MS = 15_000;
 const NOW_PLAYING_TIMEOUT_MS = 10_000;
 
 type PlayerContextValue = {
+  player: AudioPlayer;
   current: Station | null;
   nowPlaying: NowPlaying | null;
+  isPlaying: boolean;
   isBuffering: boolean;
   error: string | null;
   play: (station: Station) => void;
@@ -112,16 +115,20 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<PlayerContextValue>(
     () => ({
+      player,
       current,
       nowPlaying,
+      isPlaying: status.playing && !status.isBuffering,
       isBuffering: status.isBuffering || !status.isLoaded,
       error: status.error,
       play,
       stop,
     }),
     [
+      player,
       current,
       nowPlaying,
+      status.playing,
       status.isBuffering,
       status.isLoaded,
       status.error,

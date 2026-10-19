@@ -1,6 +1,7 @@
 import { Link, Stack } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
+import { LaunchOverlay } from "@/components/launch-overlay";
 import { PlayerBar } from "@/components/player-bar";
 import { FavoritesProvider } from "@/providers/favorites-provider";
 import { PlayerProvider } from "@/providers/player-provider";
@@ -33,6 +34,7 @@ export default function RootLayout() {
             <Stack.Screen name="favorites" options={{ title: "Избранное" }} />
           </Stack>
           <PlayerBar />
+          <LaunchOverlay />
         </View>
       </FavoritesProvider>
     </PlayerProvider>
