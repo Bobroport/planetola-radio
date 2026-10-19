@@ -10,6 +10,7 @@
 - Настройки пользователя (имя, стартовая страница) — `src/providers/settings-provider.tsx`, избранные треки и плейлист станций — `src/providers/favorites-provider.tsx`; оба хранят JSON в `expo-sqlite/kv-store`.
 - Остальной код (компоненты, хуки, данные, утилиты) — в `src/` вне `src/app/`. Алиас `@/*` указывает на `./src/*`.
 - Персонаж приложения — бобёр с магнитофоном (`src/components/beaver.tsx`): нарисован на `react-native-svg`, анимирован `react-native-reanimated`. Громкость и тембр для танца считаются в `src/hooks/use-dance-energy.ts` из PCM-сэмплов `useAudioSampleListener`; без сэмплов бобёр танцует под свой ритм.
+- Заставка при запуске (`src/components/launch-overlay.tsx`): вращающийся глобус `src/components/globe.tsx` — ортографическая проекция на `react-native-svg`, вращение и подписи через `useAnimatedProps` Reanimated, точки городов из `stations.json`.
 - Воспроизведение аудио — `expo-audio`. Состояние плеера живёт в `src/providers/player-provider.tsx`, панель плеера рендерится в корневом `_layout.tsx` под навигатором.
 - Данные станций — статичный `src/data/stations.json`, сгенерированный скриптом `scripts/generate-stations.mjs` из открытой базы Radio Browser (https://api.radio-browser.info). Руками JSON не править: меняй список городов или фильтры в скрипте и перегенерируй командой `npm run generate-stations`.
 

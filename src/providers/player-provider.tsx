@@ -26,6 +26,8 @@ type PlayerContextValue = {
   player: AudioPlayer;
   current: Station | null;
   nowPlaying: NowPlaying | null;
+  /** Первый опрос метаданных завершён: если nowPlaying всё ещё null, станция их не шлёт. */
+  nowPlayingChecked: boolean;
   isPlaying: boolean;
   isBuffering: boolean;
   error: string | null;
@@ -40,6 +42,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const status = useAudioPlayerStatus(player);
   const [current, setCurrent] = useState<Station | null>(null);
   const [nowPlaying, setNowPlaying] = useState<NowPlaying | null>(null);
+  const [nowPlayingChecked, setNowPlayingChecked] = useState(false);
 
   useEffect(() => {
     setAudioModeAsync({
@@ -73,9 +76,16 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
           setNowPlaying((prev) =>
             prev?.raw === result?.raw ? prev : result,
           );
+          setNowPlayingChecked(true);
         }
-      } catch {
+      } catch (e) {
         // Станция не отдаёт метаданные или сеть недоступна — оставляем прошлое значение.
+        if (__DEV__) {
+          console.log("ICY metadata failed", streamUrl, e);
+        }
+        if (!cancelled) {
+          setNowPlayingChecked(true);
+        }
       } finally {
         clearTimeout(timeout);
         if (!cancelled) {
@@ -100,6 +110,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       }
       setCurrent(station);
       setNowPlaying(null);
+      setNowPlayingChecked(false);
       player.replace(station.streamUrl);
       player.play();
       registerClick(station.id);
@@ -111,6 +122,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     player.pause();
     setCurrent(null);
     setNowPlaying(null);
+    setNowPlayingChecked(false);
   }, [player]);
 
   const value = useMemo<PlayerContextValue>(
@@ -118,6 +130,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       player,
       current,
       nowPlaying,
+      nowPlayingChecked,
       isPlaying: status.playing && !status.isBuffering,
       isBuffering: status.isBuffering || !status.isLoaded,
       error: status.error,
@@ -128,6 +141,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       player,
       current,
       nowPlaying,
+      nowPlayingChecked,
       status.playing,
       status.isBuffering,
       status.isLoaded,

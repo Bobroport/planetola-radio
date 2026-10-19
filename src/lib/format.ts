@@ -17,6 +17,7 @@ export function stationMeta(station: Station): string {
   if (station.languages.length > 0) {
     parts.push(station.languages.slice(0, 2).join(", "));
   }
+  if (station.state) parts.push(station.state);
   return parts.join(" · ");
 }
 

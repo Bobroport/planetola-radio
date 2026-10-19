@@ -7,8 +7,16 @@ import { useFavorites } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
 
 export function PlayerBar() {
-  const { player, current, nowPlaying, isPlaying, isBuffering, error, stop } =
-    usePlayer();
+  const {
+    player,
+    current,
+    nowPlaying,
+    nowPlayingChecked,
+    isPlaying,
+    isBuffering,
+    error,
+    stop,
+  } = usePlayer();
   const { isSaved, toggle } = useFavorites();
 
   if (!current) {
@@ -44,7 +52,13 @@ export function PlayerBar() {
           <Text style={styles.track} numberOfLines={1}>
             {trackText}
           </Text>
-        ) : null}
+        ) : (
+          <Text style={styles.trackHint} numberOfLines={1}>
+            {nowPlayingChecked
+              ? "Станция не передаёт название трека"
+              : "Узнаём, что играет…"}
+          </Text>
+        )}
         <Text
           style={[styles.status, error ? styles.statusError : null]}
           numberOfLines={1}
@@ -109,6 +123,11 @@ const styles = StyleSheet.create({
   track: {
     color: "#e6e6e8",
     fontSize: 14,
+  },
+  trackHint: {
+    color: "#8e8e93",
+    fontSize: 13,
+    fontStyle: "italic",
   },
   status: {
     color: "#b5b5b8",
