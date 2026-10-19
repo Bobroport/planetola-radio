@@ -3,6 +3,7 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useState,
   type ReactNode,
@@ -36,9 +37,9 @@ const STORAGE_KEY = "favorites.v1";
 
 const FavoritesContext = createContext<FavoritesContextValue | null>(null);
 
-function load(): FavoriteTrack[] {
+async function load(): Promise<FavoriteTrack[]> {
   try {
-    const json = Storage.getItemSync(STORAGE_KEY);
+    const json = await Storage.getItemAsync(STORAGE_KEY);
     if (!json) return [];
     const parsed: unknown = JSON.parse(json);
     return Array.isArray(parsed) ? (parsed as FavoriteTrack[]) : [];
@@ -49,11 +50,11 @@ function load(): FavoriteTrack[] {
 }
 
 function persist(list: FavoriteTrack[]): void {
-  try {
-    Storage.setItemSync(STORAGE_KEY, JSON.stringify(list));
-  } catch (e) {
-    console.warn("Не удалось сохранить избранное", e);
-  }
+  Storage.setItemAsync(STORAGE_KEY, JSON.stringify(list)).catch(
+    (e: unknown) => {
+      console.warn("Не удалось сохранить избранное", e);
+    },
+  );
 }
 
 function makeId(): string {
@@ -61,7 +62,20 @@ function makeId(): string {
 }
 
 export function FavoritesProvider({ children }: { children: ReactNode }) {
-  const [favorites, setFavorites] = useState<FavoriteTrack[]>(load);
+  const [favorites, setFavorites] = useState<FavoriteTrack[]>([]);
+
+  // Читаем сохранённое после монтирования, чтобы не ходить в SQLite во время рендера.
+  useEffect(() => {
+    let cancelled = false;
+    load().then((list) => {
+      if (!cancelled && list.length > 0) {
+        setFavorites((prev) => (prev.length === 0 ? list : prev));
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const update = useCallback(
     (fn: (prev: FavoriteTrack[]) => FavoriteTrack[]) => {
