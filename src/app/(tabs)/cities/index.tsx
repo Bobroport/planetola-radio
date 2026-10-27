@@ -3,7 +3,7 @@ import { Link, router, Stack } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-native";
 
-import { WorldGlobe } from "@/components/world-globe";
+import { EarthGL } from "@/components/earth-gl";
 import { CITIES, getCity, type City } from "@/data/stations";
 import { flagEmoji } from "@/lib/format";
 import { usePlayer } from "@/providers/player-provider";
@@ -64,7 +64,7 @@ export default function GlobeScreen() {
           if (w > 0 && h > 0) setSize({ width: w, height: h });
         }}
       >
-        <WorldGlobe
+        <EarthGL
           width={size.width}
           height={size.height}
           onFocusChange={setFocused}
