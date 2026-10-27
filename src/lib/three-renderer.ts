@@ -111,8 +111,9 @@ export async function loadTextureFromAsset(
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
   gl.generateMipmap(gl.TEXTURE_2D);
   gl.bindTexture(gl.TEXTURE_2D, null);
-  // Мы трогали GL в обход three — сбрасываем его кэш состояния.
-  renderer.resetState();
+  // renderer.resetState() здесь не вызывать: он делает GL-вызовы, которые expo-gl не принимает,
+  // и падает. Кэш three не расходится с реальностью: до загрузки карты ни одна текстура
+  // не была привязана, а после мы оставляем слот пустым.
 
   const texture = new THREE.Texture();
   texture.colorSpace = THREE.SRGBColorSpace;

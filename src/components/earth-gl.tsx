@@ -31,6 +31,8 @@ type Scene = {
   markers: THREE.InstancedMesh;
   focusMarker: THREE.Mesh;
   raycaster: THREE.Raycaster;
+  /** Пикселей буфера на одну точку layout (плотность экрана). */
+  pixelScale: number;
   dirty: boolean;
   frame: number | null;
 };
@@ -274,6 +276,8 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
         markers,
         focusMarker,
         raycaster: new THREE.Raycaster(),
+        // width здесь — размер layout на момент создания контекста (замыкание useCallback).
+        pixelScale: gl.drawingBufferWidth / Math.max(1, width),
         dirty: true,
         frame: null,
       };
@@ -283,12 +287,15 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
 
       loadTextureFromAsset(gl, renderer, EARTH_TEXTURE)
         .then((texture) => {
+          // Контекст мог быть пересоздан, пока текстура качалась.
+          if (sceneRef.current !== state) return;
           material.map = texture;
           material.needsUpdate = true;
           state.dirty = true;
           setReady(true);
         })
         .catch((e: unknown) => {
+          if (sceneRef.current !== state) return;
           const message = e instanceof Error ? `${e.message}\n${e.stack ?? ""}` : String(e);
           console.warn(`Не удалось загрузить текстуру Земли: ${message}`);
           // Шар остаётся однотонным, но приложение работает.
@@ -304,7 +311,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
       };
       loop();
     },
-    [applyView, updateFocus],
+    [applyView, updateFocus, width],
   );
 
   useEffect(
@@ -318,14 +325,24 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
     [],
   );
 
+  // Экран меняет размер несколько раз при старте (шапка и панель вкладок укладываются).
+  // Контекст не пересоздаём, а подгоняем размер кадра и пропорции камеры.
+  useEffect(() => {
+    const scene = sceneRef.current;
+    if (!scene) return;
+    const scale = scene.pixelScale;
+    const w = Math.round(width * scale);
+    const h = Math.round(height * scale);
+    scene.renderer.setSize(w, h, false);
+    scene.camera.aspect = w / h;
+    scene.camera.updateProjectionMatrix();
+    scene.dirty = true;
+  }, [width, height]);
+
   return (
     <GestureDetector gesture={gesture}>
       <View style={{ width, height }} collapsable={false}>
-        <GLView
-          key={`${width}x${height}`}
-          style={{ width, height }}
-          onContextCreate={onContextCreate}
-        />
+        <GLView style={{ width, height }} onContextCreate={onContextCreate} />
         {error ? (
           <View style={styles.loading} pointerEvents="none">
             <Text style={styles.errorText}>{error}</Text>
