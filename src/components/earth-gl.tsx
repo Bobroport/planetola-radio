@@ -34,8 +34,18 @@ type Scene = {
   /** Пикселей буфера на одну точку layout (плотность экрана). */
   pixelScale: number;
   dirty: boolean;
+  /** До этого момента (Date.now()) рисуем каждый кадр: буфер мог быть пересоздан нативно. */
+  renderUntil: number;
   frame: number | null;
 };
+
+/** Сколько рисовать непрерывно после события, которое могло пересоздать буфер кадра. */
+const SETTLE_MS = 700;
+
+function keepRendering(scene: Scene, ms: number = SETTLE_MS) {
+  scene.renderUntil = Math.max(scene.renderUntil, Date.now() + ms);
+  scene.dirty = true;
+}
 
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 3.5;
@@ -279,11 +289,14 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
         // width здесь — размер layout на момент создания контекста (замыкание useCallback).
         pixelScale: gl.drawingBufferWidth / Math.max(1, width),
         dirty: true,
+        renderUntil: 0,
         frame: null,
       };
       sceneRef.current = state;
       applyView(state, viewRef.current);
       updateFocus(viewRef.current);
+      // Экран ещё укладывается, буфер кадра может смениться — рисуем первые секунды без пропусков.
+      keepRendering(state, 2000);
 
       loadTextureFromAsset(gl, renderer, EARTH_TEXTURE)
         .then((texture) => {
@@ -291,7 +304,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
           if (sceneRef.current !== state) return;
           material.map = texture;
           material.needsUpdate = true;
-          state.dirty = true;
+          keepRendering(state);
           setReady(true);
         })
         .catch((e: unknown) => {
@@ -304,7 +317,8 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
 
       const loop = () => {
         state.frame = requestAnimationFrame(loop);
-        if (!state.dirty) return;
+        const settling = Date.now() < state.renderUntil;
+        if (!state.dirty && !settling) return;
         state.dirty = false;
         renderer.render(scene, camera);
         gl.endFrameEXP();
@@ -336,7 +350,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
     scene.renderer.setSize(w, h, false);
     scene.camera.aspect = w / h;
     scene.camera.updateProjectionMatrix();
-    scene.dirty = true;
+    keepRendering(scene);
   }, [width, height]);
 
   return (
