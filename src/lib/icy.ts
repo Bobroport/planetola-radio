@@ -61,9 +61,7 @@ export async function fetchNowPlaying(
         }
         if (received >= metaint + 1 + length) {
           const bytes = buffer.subarray(metaint + 1, metaint + 1 + length);
-          const text = new TextDecoder("utf-8")
-            .decode(bytes)
-            .replace(/\0+$/, "");
+          const text = decodeMetadata(bytes).replace(/\0+$/, "");
           const streamTitle = extractStreamTitle(text);
           return streamTitle ? parseStreamTitle(streamTitle) : null;
         }
@@ -75,6 +73,22 @@ export async function fetchNowPlaying(
       // Соединение уже закрыто — не важно.
     });
   }
+}
+
+/**
+ * Метаданные обычно в UTF-8, но часть станций шлёт Latin-1 («Noticiário» приходит как
+ * «Notici\xE1rio»). Если UTF-8 даёт символы замены, перекодируем побайтно как Latin-1.
+ */
+function decodeMetadata(bytes: Uint8Array): string {
+  const utf8 = new TextDecoder("utf-8").decode(bytes);
+  if (!utf8.includes("�")) {
+    return utf8;
+  }
+  let latin1 = "";
+  for (let i = 0; i < bytes.length; i++) {
+    latin1 += String.fromCharCode(bytes[i]);
+  }
+  return latin1;
 }
 
 function concat(chunks: Uint8Array[], total: number): Uint8Array {

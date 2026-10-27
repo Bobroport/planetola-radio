@@ -33,6 +33,8 @@ type Scene = {
   raycaster: THREE.Raycaster;
   /** Пикселей буфера на одну точку layout (плотность экрана). */
   pixelScale: number;
+  /** Масштаб, под который сейчас рассчитаны размеры маркеров. */
+  markersZoom: number;
   dirty: boolean;
   /** До этого момента (Date.now()) рисуем каждый кадр: буфер мог быть пересоздан нативно. */
   renderUntil: number;
@@ -73,9 +75,26 @@ function latLongToVector3(lat: number, lon: number, radius: number): THREE.Vecto
 }
 
 const CITY_DIRECTIONS = CITIES.map((c) => latLongToVector3(c.lat, c.long, 1));
+const CITY_POSITIONS = CITIES.map((c) => latLongToVector3(c.lat, c.long, MARKER_ALTITUDE));
+const MARKER_COLOR = 0xff8c42;
 
-function markerScale(city: City): number {
-  return 0.008 + 0.016 * Math.sqrt(city.stations.length / MAX_STATIONS);
+/** Базовый радиус маркера при масштабе 1; при приближении делится на zoom, чтобы на экране не расти. */
+function markerScale(city: City, zoom: number): number {
+  return (0.004 + 0.008 * Math.sqrt(city.stations.length / MAX_STATIONS)) / zoom;
+}
+
+const scratchMatrix = new THREE.Matrix4();
+const scratchQuaternion = new THREE.Quaternion();
+const scratchScale = new THREE.Vector3();
+
+function updateMarkerScales(markers: THREE.InstancedMesh, zoom: number): void {
+  for (let i = 0; i < CITIES.length; i++) {
+    const s = markerScale(CITIES[i], zoom);
+    scratchScale.set(s, s, s);
+    scratchMatrix.compose(CITY_POSITIONS[i], scratchQuaternion, scratchScale);
+    markers.setMatrixAt(i, scratchMatrix);
+  }
+  markers.instanceMatrix.needsUpdate = true;
 }
 
 /** Расстояние камеры от центра шара для данного масштаба. */
@@ -129,6 +148,11 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
     scene.globe.rotation.set(-view.rotation.phi * RAD, view.rotation.lambda * RAD, 0, "XYZ");
     scene.camera.position.set(0, 0, cameraDistance(view.zoom));
     scene.camera.lookAt(0, 0, 0);
+    if (scene.markersZoom !== view.zoom) {
+      scene.markersZoom = view.zoom;
+      updateMarkerScales(scene.markers, view.zoom);
+      scene.focusMarker.scale.setScalar(scene.focusMarker.userData.baseScale / view.zoom);
+    }
     scene.dirty = true;
   }, []);
 
@@ -145,8 +169,9 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
           scene.focusMarker.position.copy(
             latLongToVector3(city.lat, city.long, MARKER_ALTITUDE),
           );
-          const s = markerScale(city) * 1.8;
-          scene.focusMarker.scale.setScalar(s);
+          // Базовый размер при масштабе 1 запоминаем, чтобы applyView делил его на текущий zoom.
+          scene.focusMarker.userData.baseScale = markerScale(city, 1) * 1.8;
+          scene.focusMarker.scale.setScalar(scene.focusMarker.userData.baseScale / view.zoom);
         }
         scene.dirty = true;
       }
@@ -256,20 +281,10 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
 
       const markers = new THREE.InstancedMesh(
         new THREE.SphereGeometry(1, 10, 8),
-        new THREE.MeshBasicMaterial({ color: 0xffd166 }),
+        new THREE.MeshBasicMaterial({ color: MARKER_COLOR }),
         CITIES.length,
       );
-      const matrix = new THREE.Matrix4();
-      CITIES.forEach((city, i) => {
-        const s = markerScale(city);
-        matrix.compose(
-          latLongToVector3(city.lat, city.long, MARKER_ALTITUDE),
-          new THREE.Quaternion(),
-          new THREE.Vector3(s, s, s),
-        );
-        markers.setMatrixAt(i, matrix);
-      });
-      markers.instanceMatrix.needsUpdate = true;
+      updateMarkerScales(markers, viewRef.current.zoom);
       globe.add(markers);
 
       const focusMarker = new THREE.Mesh(
@@ -277,6 +292,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
         new THREE.MeshBasicMaterial({ color: 0xffffff }),
       );
       focusMarker.visible = false;
+      focusMarker.userData.baseScale = markerScale(CITIES[0], 1) * 1.8;
       globe.add(focusMarker);
 
       const state: Scene = {
@@ -291,6 +307,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
         raycaster: new THREE.Raycaster(),
         // width здесь — размер layout на момент создания контекста (замыкание useCallback).
         pixelScale: gl.drawingBufferWidth / Math.max(1, width),
+        markersZoom: viewRef.current.zoom,
         dirty: true,
         renderUntil: 0,
         frame: null,
