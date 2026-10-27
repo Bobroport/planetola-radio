@@ -23,7 +23,30 @@ export function supportsWebGL2(gl: ExpoWebGLRenderingContext): boolean {
  * На время конструктора прячем глобальный класс, чтобы проверка не сработала;
  * сам контекст при этом полноценный WebGL 2.
  */
+/** Методы контекста, от которых three ждёт строку и сразу вызывает у неё `trim`/`indexOf`. */
+const STRING_METHODS = ["getProgramInfoLog", "getShaderInfoLog", "getShaderSource"] as const;
+
+type StringMethod = (typeof STRING_METHODS)[number];
+
+/**
+ * На некоторых устройствах expo-gl возвращает из этих методов `undefined` вместо пустой строки,
+ * и three падает с «Cannot read property 'trim' of undefined» при первом рендере.
+ * Подменяем методы на самом объекте контекста: expo-gl сам так делает для логирования.
+ */
+function ensureStringResults(gl: ExpoWebGLRenderingContext): void {
+  const target = gl as unknown as Record<StringMethod, (...args: unknown[]) => unknown>;
+  for (const name of STRING_METHODS) {
+    const original = target[name];
+    if (typeof original !== "function") continue;
+    target[name] = (...args: unknown[]) => {
+      const result = original.apply(gl, args);
+      return typeof result === "string" ? result : "";
+    };
+  }
+}
+
 export function createRenderer(options: RendererOptions): Renderer {
+  ensureStringResults(options.gl as ExpoWebGLRenderingContext);
   const g = globalThis as unknown as GlobalWithWebGL;
   const saved = g.WebGLRenderingContext;
   g.WebGLRenderingContext = undefined;
