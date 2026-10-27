@@ -1,57 +1,17 @@
 import { fetch } from "expo/fetch";
 
-export type NowPlaying = {
-  /** Строка StreamTitle как есть, после очистки. */
-  raw: string;
-  artist: string | null;
-  title: string;
-};
+import {
+  extractStreamTitle,
+  parseStreamTitle,
+  type NowPlaying,
+} from "@/lib/stream-title";
+
+export type { NowPlaying } from "@/lib/stream-title";
+export { parseStreamTitle } from "@/lib/stream-title";
 
 const USER_AGENT = "radio-app/1.0";
 /** Не читаем больше этого объёма, даже если сервер прислал странный metaint. */
 const MAX_BYTES = 256 * 1024;
-
-function decodeEntities(text: string): string {
-  return text
-    .replace(/&#(\d+);/g, (_, code: string) =>
-      String.fromCodePoint(Number.parseInt(code, 10)),
-    )
-    .replace(/&#x([0-9a-f]+);/gi, (_, code: string) =>
-      String.fromCodePoint(Number.parseInt(code, 16)),
-    )
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">");
-}
-
-/** Разбирает "Artist - Title" или "Now Playing: Artist - Title". */
-export function parseStreamTitle(streamTitle: string): NowPlaying | null {
-  let raw = decodeEntities(streamTitle)
-    .replace(/^now playing:\s*/i, "")
-    .replace(/\s+/g, " ")
-    .trim();
-  // Станции без метаданных часто шлют "-", " - " или "Unknown".
-  if (raw.replace(/[-–—\s]/g, "").length === 0 || /^unknown$/i.test(raw)) {
-    return null;
-  }
-  const separator = raw.indexOf(" - ");
-  if (separator <= 0) {
-    return { raw, artist: null, title: raw };
-  }
-  const artist = raw.slice(0, separator).trim();
-  const title = raw.slice(separator + 3).trim();
-  if (!title) {
-    return { raw, artist: null, title: artist };
-  }
-  return { raw, artist, title };
-}
-
-function extractStreamTitle(metadata: string): string | null {
-  const match = /StreamTitle='((?:[^'\\]|\\.|'(?!;))*)'/.exec(metadata);
-  return match ? match[1] : null;
-}
 
 /**
  * Открывает поток с заголовком Icy-MetaData: 1, читает первый блок
