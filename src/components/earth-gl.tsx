@@ -180,6 +180,11 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
 
   const onContextCreate = useCallback(
     (gl: ExpoWebGLRenderingContext) => {
+      if (__DEV__) {
+        console.log(
+          `EarthGL: GL-контекст создан, буфер ${gl.drawingBufferWidth}×${gl.drawingBufferHeight}`,
+        );
+      }
       if (!supportsWebGL2(gl)) {
         setError("Это устройство не поддерживает WebGL 2, трёхмерный шар недоступен.");
         return;
@@ -284,7 +289,8 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
           setReady(true);
         })
         .catch((e: unknown) => {
-          console.warn("Не удалось загрузить текстуру Земли", e);
+          const message = e instanceof Error ? `${e.message}\n${e.stack ?? ""}` : String(e);
+          console.warn(`Не удалось загрузить текстуру Земли: ${message}`);
           // Шар остаётся однотонным, но приложение работает.
           setReady(true);
         });

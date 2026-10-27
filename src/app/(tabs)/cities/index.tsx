@@ -1,7 +1,7 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Link, router, Stack } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { EarthGL } from "@/components/earth-gl";
 import { CITIES, getCity, type City } from "@/data/stations";
@@ -21,9 +21,10 @@ function openCity(city: City) {
 export default function GlobeScreen() {
   const { current } = usePlayer();
   const { ready, startPage, startCityId } = useSettings();
-  const { width } = useWindowDimensions();
   const [focused, setFocused] = useState<City | null>(null);
-  const [size, setSize] = useState({ width, height: width });
+  // Размер известен только после первого onLayout; до этого шар не монтируем,
+  // иначе GL-контекст создаётся дважды.
+  const [size, setSize] = useState<{ width: number; height: number } | null>(null);
 
   useEffect(() => {
     if (!ready || startPageApplied) return;
@@ -61,15 +62,23 @@ export default function GlobeScreen() {
         style={styles.globeArea}
         onLayout={(e) => {
           const { width: w, height: h } = e.nativeEvent.layout;
-          if (w > 0 && h > 0) setSize({ width: w, height: h });
+          const rw = Math.round(w);
+          const rh = Math.round(h);
+          if (rw > 0 && rh > 0) {
+            setSize((prev) =>
+              prev && prev.width === rw && prev.height === rh ? prev : { width: rw, height: rh },
+            );
+          }
         }}
       >
-        <EarthGL
-          width={size.width}
-          height={size.height}
-          onFocusChange={setFocused}
-          onSelectCity={onSelectCity}
-        />
+        {size ? (
+          <EarthGL
+            width={size.width}
+            height={size.height}
+            onFocusChange={setFocused}
+            onSelectCity={onSelectCity}
+          />
+        ) : null}
       </View>
 
       <View style={styles.card}>

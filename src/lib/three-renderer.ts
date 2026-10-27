@@ -75,9 +75,18 @@ export async function loadTextureFromAsset(
   moduleId: number,
 ): Promise<THREE.Texture> {
   const asset = Asset.fromModule(moduleId);
-  await asset.downloadAsync();
+  try {
+    await asset.downloadAsync();
+  } catch (e) {
+    throw new Error(
+      `downloadAsync не удался (uri=${asset.uri}): ${e instanceof Error ? e.message : String(e)}`,
+    );
+  }
   if (!asset.localUri?.startsWith("file://")) {
-    throw new Error(`Ассет не скачан в файл: ${asset.localUri ?? "нет localUri"}`);
+    throw new Error(`Ассет не скачан в файл: localUri=${asset.localUri ?? "нет"}, uri=${asset.uri}`);
+  }
+  if (__DEV__) {
+    console.log(`EarthGL: текстура скачана ${asset.width}×${asset.height} ${asset.localUri}`);
   }
 
   const glTexture = gl.createTexture();
