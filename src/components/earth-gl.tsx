@@ -1,5 +1,4 @@
 import { GLView, type ExpoWebGLRenderingContext } from "expo-gl";
-import { TextureLoader } from "expo-three";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 import { GestureDetector } from "react-native-gesture-handler";
@@ -7,7 +6,11 @@ import * as THREE from "three";
 
 import { CITIES, type City } from "@/data/stations";
 import { useGlobeGestures, type GlobeView } from "@/hooks/use-globe-gestures";
-import { createRenderer, supportsWebGL2 } from "@/lib/three-renderer";
+import {
+  createRenderer,
+  loadTextureFromAsset,
+  supportsWebGL2,
+} from "@/lib/three-renderer";
 
 type Props = {
   width: number;
@@ -273,13 +276,18 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
       applyView(state, viewRef.current);
       updateFocus(viewRef.current);
 
-      new TextureLoader().load(EARTH_TEXTURE, (texture) => {
-        texture.colorSpace = THREE.SRGBColorSpace;
-        material.map = texture;
-        material.needsUpdate = true;
-        state.dirty = true;
-        setReady(true);
-      });
+      loadTextureFromAsset(gl, renderer, EARTH_TEXTURE)
+        .then((texture) => {
+          material.map = texture;
+          material.needsUpdate = true;
+          state.dirty = true;
+          setReady(true);
+        })
+        .catch((e: unknown) => {
+          console.warn("Не удалось загрузить текстуру Земли", e);
+          // Шар остаётся однотонным, но приложение работает.
+          setReady(true);
+        });
 
       const loop = () => {
         state.frame = requestAnimationFrame(loop);
