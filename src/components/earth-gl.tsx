@@ -1,5 +1,5 @@
 import { GLView, type ExpoWebGLRenderingContext } from "expo-gl";
-import { Renderer, TextureLoader } from "expo-three";
+import { TextureLoader } from "expo-three";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 import { GestureDetector } from "react-native-gesture-handler";
@@ -7,6 +7,7 @@ import * as THREE from "three";
 
 import { CITIES, type City } from "@/data/stations";
 import { useGlobeGestures, type GlobeView } from "@/hooks/use-globe-gestures";
+import { createRenderer, supportsWebGL2 } from "@/lib/three-renderer";
 
 type Props = {
   width: number;
@@ -106,6 +107,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
   const viewRef = useRef<GlobeView>(INITIAL_VIEW);
   const focusedIdRef = useRef<string | null>(null);
   const [ready, setReady] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const applyView = useCallback((scene: Scene, view: GlobeView) => {
     // Rx(lat) · Ry(-lon): сначала поворот вокруг Y выводит нужную долготу вперёд, потом наклон по широте.
@@ -175,13 +177,23 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
 
   const onContextCreate = useCallback(
     (gl: ExpoWebGLRenderingContext) => {
-      const renderer = new Renderer({
-        gl,
-        width: gl.drawingBufferWidth,
-        height: gl.drawingBufferHeight,
-        clearColor: 0x0b1020,
-        antialias: true,
-      });
+      if (!supportsWebGL2(gl)) {
+        setError("Это устройство не поддерживает WebGL 2, трёхмерный шар недоступен.");
+        return;
+      }
+      let renderer: THREE.WebGLRenderer;
+      try {
+        renderer = createRenderer({
+          gl,
+          width: gl.drawingBufferWidth,
+          height: gl.drawingBufferHeight,
+          clearColor: 0x0b1020,
+          antialias: true,
+        });
+      } catch (e) {
+        setError(`Не удалось создать 3D-рендерер: ${e instanceof Error ? e.message : String(e)}`);
+        return;
+      }
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(
         40,
@@ -300,7 +312,11 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
           style={{ width, height }}
           onContextCreate={onContextCreate}
         />
-        {!ready ? (
+        {error ? (
+          <View style={styles.loading} pointerEvents="none">
+            <Text style={styles.errorText}>{error}</Text>
+          </View>
+        ) : !ready ? (
           <View style={styles.loading} pointerEvents="none">
             <ActivityIndicator color="#9cc0ff" />
             <Text style={styles.loadingText}>Загружаем Землю…</Text>
@@ -325,5 +341,11 @@ const styles = StyleSheet.create({
   loadingText: {
     color: "#9cc0ff",
     fontSize: 13,
+  },
+  errorText: {
+    color: "#ff6b6b",
+    fontSize: 14,
+    textAlign: "center",
+    paddingHorizontal: 24,
   },
 });
