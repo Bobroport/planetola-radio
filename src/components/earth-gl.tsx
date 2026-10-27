@@ -236,6 +236,9 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
         shininess: 14,
       });
       const earth = new THREE.Mesh(new THREE.SphereGeometry(EARTH_RADIUS, 96, 64), material);
+      // У SphereGeometry нулевой меридиан текстуры лежит на +X, а latLongToVector3 кладёт его на +Z.
+      // Поворот сферы на -90° вокруг Y совмещает карту с маркерами городов.
+      earth.rotation.y = -Math.PI / 2;
       globe.add(earth);
 
       const atmosphere = new THREE.Mesh(
