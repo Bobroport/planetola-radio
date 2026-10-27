@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T19:48:32.272Z",
+  "generatedAt": "2026-10-27T22:01:02.652Z",
   "source": "https://www.radio-browser.info",
   "cities": [
     {
@@ -20214,6 +20214,28 @@
       "lat": 52.37,
       "long": 4.9,
       "stations": [
+        {
+          "id": "c84d20ef-1b8b-4f8e-a809-e4297f570eb9",
+          "name": "Radio Boven IJ",
+          "streamUrl": "https://server-67.stream-server.nl:8774/rbij.mp3",
+          "homepage": "https://www.radiobovenij.amsterdam/",
+          "codec": "MP3",
+          "bitrate": 192,
+          "tags": [
+            "hits",
+            "local news",
+            "news",
+            "oldies"
+          ],
+          "languages": [],
+          "state": "Noord-Holland",
+          "geo": {
+            "lat": 52.402,
+            "long": 4.911
+          },
+          "votes": 8,
+          "clickCount": 0
+        },
         {
           "id": "f0ab0c5c-7125-476c-97a4-2eabc14f5f05",
           "name": "538 Radio",

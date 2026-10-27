@@ -9,8 +9,8 @@ import {
   type ReactNode,
 } from "react";
 
-/** Что открывать при запуске: список городов, конкретный город или плейлист (избранные станции). */
-export type StartPage = "cities" | "city" | "playlist";
+/** Что открывать при запуске: глобус, список городов, конкретный город или плейлист (избранные станции). */
+export type StartPage = "cities" | "list" | "city" | "playlist";
 
 export type Settings = {
   name: string;
@@ -37,7 +37,12 @@ const DEFAULTS: Settings = {
 const SettingsContext = createContext<SettingsContextValue | null>(null);
 
 function isStartPage(value: unknown): value is StartPage {
-  return value === "cities" || value === "city" || value === "playlist";
+  return (
+    value === "cities" ||
+    value === "list" ||
+    value === "city" ||
+    value === "playlist"
+  );
 }
 
 async function load(): Promise<Settings> {

@@ -8,6 +8,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { CITIES } from "./cities.mjs";
+import { EXTRA_STATIONS } from "./extra-stations.mjs";
 
 const USER_AGENT = "radio-app-generator/1.0";
 const FALLBACK_SERVER = "https://de1.api.radio-browser.info";
@@ -45,6 +46,11 @@ async function search(server, params) {
   for (const [k, v] of Object.entries(params)) {
     url.searchParams.set(k, String(v));
   }
+  return fetchJson(url);
+}
+
+/** GET с повторами; после MAX_ATTEMPTS неудач возвращает пустой список, а не падает. */
+async function fetchJson(url) {
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
       const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
@@ -64,10 +70,11 @@ async function search(server, params) {
   return [];
 }
 
-function isPlayable(s) {
+function isPlayable(s, { allowHttp = false } = {}) {
   if (s.lastcheckok !== 1 || s.hls === 1) return false;
   const url = s.url_resolved || s.url;
-  if (!url || !url.startsWith("https://")) return false;
+  if (!url) return false;
+  if (!url.startsWith("https://") && !(allowHttp && url.startsWith("http://"))) return false;
   const codec = String(s.codec || "").toUpperCase();
   return ALLOWED_CODECS.some((c) => codec.startsWith(c));
 }
@@ -131,6 +138,27 @@ async function fetchCity(server, city) {
     .map(toStation);
 }
 
+/** Закреплённые станции города ставятся в начало списка; кэш на них не влияет. */
+async function withExtras(server, city, stations) {
+  const extras = EXTRA_STATIONS.filter((e) => e.cityId === city.id);
+  if (extras.length === 0) return stations;
+  const pinned = [];
+  for (const extra of extras) {
+    const found = await fetchJson(new URL("/json/stations/byuuid/" + extra.uuid, server));
+    const s = found[0]
+      ? { ...found[0], url_resolved: extra.streamUrl || found[0].url_resolved }
+      : null;
+    if (!s || !isPlayable(s, { allowHttp: extra.allowHttp })) {
+      console.warn("  закреплённая станция пропущена (нет в базе или не играет): " + extra.uuid);
+      continue;
+    }
+    pinned.push(toStation(s));
+    await sleep(REQUEST_DELAY_MS);
+  }
+  const pinnedIds = new Set(pinned.map((s) => s.id));
+  return [...pinned, ...stations.filter((s) => !pinnedIds.has(s.id))];
+}
+
 async function main() {
   const server = await pickServer();
   console.log("Сервер:", server);
@@ -157,6 +185,7 @@ async function main() {
       stations = await fetchCity(server, city);
       await writeFile(cachePath, JSON.stringify(stations), "utf8");
     }
+    stations = await withExtras(server, city, stations);
     console.log(
       city.name.padEnd(18) + String(stations.length).padStart(3) + " станций" + (fromCache ? " (кэш)" : ""),
     );

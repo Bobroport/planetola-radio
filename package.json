@@ -5,6 +5,7 @@
   "dependencies": {
     "@expo/ui": "~57.0.24",
     "@expo/vector-icons": "^15.0.2",
+    "d3-geo": "^3.1.1",
     "expo": "~57.0.29",
     "expo-audio": "~57.0.5",
     "expo-constants": "~57.0.22",
@@ -29,10 +30,15 @@
     "react-native-screens": "~4.26.0",
     "react-native-svg": "15.15.4",
     "react-native-web": "~0.21.0",
-    "react-native-worklets": "0.10.1"
+    "react-native-worklets": "0.10.1",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
   },
   "devDependencies": {
+    "@types/d3-geo": "^3.1.1",
     "@types/react": "~19.2.2",
+    "@types/topojson-client": "^3.1.5",
+    "@types/topojson-specification": "^1.0.5",
     "eslint": "^9.39.5",
     "eslint-config-expo": "~57.0.2",
     "typescript": "~6.0.3"

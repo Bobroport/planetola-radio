@@ -18,7 +18,8 @@ import { useSettings, type StartPage } from "@/providers/settings-provider";
 const MAX_CITY_OPTIONS = 8;
 
 const START_OPTIONS: { value: StartPage; label: string; hint: string }[] = [
-  { value: "cities", label: "Список городов", hint: "Как сейчас: выбираете город вручную" },
+  { value: "cities", label: "Глобус", hint: "Вращайте шар и выбирайте город на карте" },
+  { value: "list", label: "Список городов", hint: "Города по частям света текстовым списком" },
   { value: "city", label: "Конкретный город", hint: "Сразу открывать станции выбранного города" },
   { value: "playlist", label: "Плейлист", hint: "Сразу открывать избранные станции" },
 ];
