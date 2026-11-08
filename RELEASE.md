@@ -56,6 +56,13 @@
    Добавьте себя во внутренние тестировщики (Internal Testing → группа → ваш Apple ID),
    установите приложение TestFlight на iPhone и примите приглашение.
 
+## Идентификаторы
+
+- App Store Connect: https://appstoreconnect.apple.com/apps/6832317886/testflight/ios (ASC App ID `6832317886`)
+- Проект EAS: https://expo.dev/accounts/zokoz/projects/radio-app
+- Команда Apple Developer: `57232A7L38` (Ivan Bartashov, Individual)
+- Первая сборка 0.1.0 (1) загружена 8 ноября 2026
+
 ## Что уже настроено
 
 - `ITSAppUsesNonExemptEncryption: false` — вопрос об экспортном шифровании при загрузке
