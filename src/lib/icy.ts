@@ -22,6 +22,28 @@ export async function fetchNowPlaying(
   streamUrl: string,
   signal: AbortSignal,
 ): Promise<NowPlaying | null> {
+  // Свой контроллер: поток радио бесконечный, и по завершении чтения запрос нужно именно
+  // оборвать. reader.cancel() на iOS соединение не закрывает (expo-fetch лишь перестаёт
+  // передавать данные в JS), и без abort каждое обращение оставляло бы вечную загрузку.
+  const controller = new AbortController();
+  const abort = () => controller.abort();
+  if (signal.aborted) {
+    controller.abort();
+  } else {
+    signal.addEventListener("abort", abort);
+  }
+  try {
+    return await readFirstMetadata(streamUrl, controller.signal);
+  } finally {
+    signal.removeEventListener("abort", abort);
+    controller.abort();
+  }
+}
+
+async function readFirstMetadata(
+  streamUrl: string,
+  signal: AbortSignal,
+): Promise<NowPlaying | null> {
   const response = await fetch(streamUrl, {
     headers: { "Icy-MetaData": "1", "User-Agent": USER_AGENT },
     signal,

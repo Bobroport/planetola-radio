@@ -24,6 +24,14 @@
 6. **Перед завершением задачи** запускай `npx expo lint` и `npx tsc --noEmit`; оба должны проходить без ошибок.
 7. **После добавления нового файла-экрана в `src/app/`** выполни `npx expo customize tsconfig.json`: это перегенерирует типизированные маршруты в `.expo/types/router.d.ts`, иначе `tsc` не узнает новый путь (`expo start` делает то же самое, но запускать dev-сервер ради этого не нужно).
 
+## Фон и ресурсы (важно для iOS)
+
+iOS завершает фоновое приложение, если оно около минуты держит высокую нагрузку. Поэтому:
+
+- Бесконечный HTTP-поток закрывать только через `AbortController.abort()`. `reader.cancel()` в `expo/fetch` на iOS соединение не рвёт, а лишь перестаёт отдавать данные в JS (`src/lib/icy.ts` делает abort в `finally`).
+- Сэмплирование звука (`setAudioSamplingEnabled`) включать только пока оно нужно на экране и выключать в cleanup. Штатный `useAudioSampleListener` его не выключает, вместо него `src/hooks/use-dance-energy.ts`.
+- Всё, что работает ради интерфейса (опрос названия трека, анализ звука), останавливать в фоне через `useAppActive()` из `src/hooks/use-app-active.ts`.
+
 ## Сборка и TestFlight
 
 Публикация идёт через EAS Build и EAS Submit с Windows, пошагово в `RELEASE.md`. Идентификатор `com.zokoz.radioapp` в `app.json` после первой сборки не менять. Перед сборкой `npx expo-doctor` должен проходить полностью; дубликат `react` из `expo-three` подавлен через `overrides` в `package.json`.

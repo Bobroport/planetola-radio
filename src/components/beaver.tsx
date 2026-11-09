@@ -26,7 +26,7 @@ const CAP = "#2d7dd2";
 const CAP_DARK = "#2466b3";
 
 export function Beaver({ size, player = null, dancing }: Props) {
-  const energy = useDanceEnergy(player);
+  const energy = useDanceEnergy(player, dancing);
   const phase = useSharedValue(0);
   const amp = useSharedValue(0.2);
 

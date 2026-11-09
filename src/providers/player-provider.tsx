@@ -15,6 +15,7 @@ import {
 } from "react";
 
 import type { Station } from "@/data/stations";
+import { useAppActive } from "@/hooks/use-app-active";
 import { fetchNowPlaying, type NowPlaying } from "@/lib/icy";
 import { registerClick } from "@/lib/radio-browser";
 
@@ -43,6 +44,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const [current, setCurrent] = useState<Station | null>(null);
   const [nowPlaying, setNowPlaying] = useState<NowPlaying | null>(null);
   const [nowPlayingChecked, setNowPlayingChecked] = useState(false);
+  const appActive = useAppActive();
 
   useEffect(() => {
     setAudioModeAsync({
@@ -54,9 +56,10 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
-  // Опрос ICY-метаданных текущей станции.
+  // Опрос ICY-метаданных текущей станции. В фоне не опрашиваем: название трека там не видно,
+  // а лишняя сеть и процессор в фоне на iOS заканчиваются завершением приложения.
   useEffect(() => {
-    if (!current) {
+    if (!current || !appActive) {
       return;
     }
     const streamUrl = current.streamUrl;
@@ -101,7 +104,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       controller?.abort();
       if (timer) clearTimeout(timer);
     };
-  }, [current]);
+  }, [current, appActive]);
 
   const play = useCallback(
     (station: Station) => {
