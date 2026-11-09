@@ -1,10 +1,11 @@
 import { GLView, type ExpoWebGLRenderingContext } from "expo-gl";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, AppState, StyleSheet, Text, View } from "react-native";
 import { GestureDetector } from "react-native-gesture-handler";
 import * as THREE from "three";
 
 import { CITIES, type City } from "@/data/stations";
+import { useAppActive } from "@/hooks/use-app-active";
 import { useGlobeGestures, type GlobeView } from "@/hooks/use-globe-gestures";
 import {
   createRenderer,
@@ -38,15 +39,46 @@ type Scene = {
   dirty: boolean;
   /** До этого момента (Date.now()) рисуем каждый кадр: буфер мог быть пересоздан нативно. */
   renderUntil: number;
+  /** Идентификатор запрошенного кадра или null, если кадр не запрошен. */
   frame: number | null;
+  /** Приложение на экране. В фоне кадры не запрашиваем вообще. */
+  active: boolean;
 };
 
 /** Сколько рисовать непрерывно после события, которое могло пересоздать буфер кадра. */
 const SETTLE_MS = 700;
 
-function keepRendering(scene: Scene, ms: number = SETTLE_MS) {
-  scene.renderUntil = Math.max(scene.renderUntil, Date.now() + ms);
+/**
+ * Запрашивает один кадр, если он ещё не запрошен.
+ *
+ * Постоянного цикла requestAnimationFrame здесь быть не должно: в React Native это таймер
+ * на 1 мс, и в фоне (экран заблокирован, играет музыка) он срабатывает без привязки к кадрам
+ * дисплея, до тысячи раз в секунду. iOS завершает такое приложение примерно через минуту.
+ */
+function requestFrame(scene: Scene): void {
+  if (scene.frame !== null || !scene.active) return;
+  scene.frame = requestAnimationFrame(() => {
+    scene.frame = null;
+    if (!scene.active) return;
+    const settling = Date.now() < scene.renderUntil;
+    if (scene.dirty || settling) {
+      scene.dirty = false;
+      scene.renderer.render(scene.scene, scene.camera);
+      scene.gl.endFrameEXP();
+    }
+    if (settling) requestFrame(scene);
+  });
+}
+
+/** Сцена изменилась: нужен новый кадр. */
+function markDirty(scene: Scene): void {
   scene.dirty = true;
+  requestFrame(scene);
+}
+
+function keepRendering(scene: Scene, ms: number = SETTLE_MS): void {
+  scene.renderUntil = Math.max(scene.renderUntil, Date.now() + ms);
+  markDirty(scene);
 }
 
 const MIN_ZOOM = 1;
@@ -153,7 +185,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
       updateMarkerScales(scene.markers, view.zoom);
       scene.focusMarker.scale.setScalar(scene.focusMarker.userData.baseScale / view.zoom);
     }
-    scene.dirty = true;
+    markDirty(scene);
   }, []);
 
   const updateFocus = useCallback(
@@ -173,7 +205,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
           scene.focusMarker.userData.baseScale = markerScale(city, 1) * 1.8;
           scene.focusMarker.scale.setScalar(scene.focusMarker.userData.baseScale / view.zoom);
         }
-        scene.dirty = true;
+        markDirty(scene);
       }
       onFocusChange(city);
     },
@@ -311,6 +343,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
         dirty: true,
         renderUntil: 0,
         frame: null,
+        active: AppState.currentState === "active",
       };
       sceneRef.current = state;
       applyView(state, viewRef.current);
@@ -334,19 +367,24 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
           // Шар остаётся однотонным, но приложение работает.
           setReady(true);
         });
-
-      const loop = () => {
-        state.frame = requestAnimationFrame(loop);
-        const settling = Date.now() < state.renderUntil;
-        if (!state.dirty && !settling) return;
-        state.dirty = false;
-        renderer.render(scene, camera);
-        gl.endFrameEXP();
-      };
-      loop();
     },
     [applyView, updateFocus, width],
   );
+
+  // В фоне шар не рисуем и кадры не запрашиваем; при возврате перерисовываем,
+  // потому что система могла выбросить содержимое буфера.
+  const appActive = useAppActive();
+  useEffect(() => {
+    const scene = sceneRef.current;
+    if (!scene) return;
+    scene.active = appActive;
+    if (appActive) {
+      keepRendering(scene);
+    } else if (scene.frame !== null) {
+      cancelAnimationFrame(scene.frame);
+      scene.frame = null;
+    }
+  }, [appActive]);
 
   useEffect(
     () => () => {

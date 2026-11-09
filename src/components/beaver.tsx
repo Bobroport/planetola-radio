@@ -1,4 +1,5 @@
 import type { AudioPlayer } from "expo-audio";
+import { useEffect } from "react";
 import { StyleSheet, View } from "react-native";
 import Animated, {
   useAnimatedStyle,
@@ -8,6 +9,7 @@ import Animated, {
 } from "react-native-reanimated";
 import Svg, { Circle, Ellipse, G, Line, Path, Rect } from "react-native-svg";
 
+import { useAppActive } from "@/hooks/use-app-active";
 import { useDanceEnergy } from "@/hooks/use-dance-energy";
 
 type Props = {
@@ -30,7 +32,7 @@ export function Beaver({ size, player = null, dancing }: Props) {
   const phase = useSharedValue(0);
   const amp = useSharedValue(0.2);
 
-  useFrameCallback((frame) => {
+  const frameCallback = useFrameCallback((frame) => {
     const dt = Math.min((frame.timeSincePreviousFrame ?? 16) / 1000, 0.05);
     const live = energy.hasSamples.value;
     const bpm = dancing ? (live ? 84 + energy.bright.value * 96 : 112) : 48;
@@ -38,6 +40,12 @@ export function Beaver({ size, player = null, dancing }: Props) {
     amp.value += (target - amp.value) * Math.min(1, dt * 6);
     phase.value = (phase.value + dt * (bpm / 60) * Math.PI * 2) % (Math.PI * 2);
   });
+
+  // В фоне бобра не видно: покадровый расчёт танца останавливаем, чтобы не тратить процессор.
+  const appActive = useAppActive();
+  useEffect(() => {
+    frameCallback.setActive(appActive);
+  }, [appActive, frameCallback]);
 
   const bodyStyle = useAnimatedStyle(() => {
     const s = Math.sin(phase.value);
