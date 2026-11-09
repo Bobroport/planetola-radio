@@ -1,4 +1,5 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { router } from "expo-router";
 import { useState } from "react";
 import {
   Pressable,
@@ -10,18 +11,19 @@ import {
 } from "react-native";
 
 import { Beaver } from "@/components/beaver";
-import { CITIES, GENERATED_AT } from "@/data/stations";
+import { CITIES, cityName, countryName, GENERATED_AT } from "@/data/stations";
+import { getLanguage, useI18n, type TranslationKey } from "@/i18n";
 import { flagEmoji, formatDateTime } from "@/lib/format";
 import { useFavorites } from "@/providers/favorites-provider";
 import { useSettings, type StartPage } from "@/providers/settings-provider";
 
 const MAX_CITY_OPTIONS = 8;
 
-const START_OPTIONS: { value: StartPage; label: string; hint: string }[] = [
-  { value: "cities", label: "Глобус", hint: "Вращайте шар и выбирайте город на карте" },
-  { value: "list", label: "Список городов", hint: "Города по частям света текстовым списком" },
-  { value: "city", label: "Конкретный город", hint: "Сразу открывать станции выбранного города" },
-  { value: "playlist", label: "Плейлист", hint: "Сразу открывать избранные станции" },
+const START_OPTIONS: { value: StartPage; label: TranslationKey; hint: TranslationKey }[] = [
+  { value: "cities", label: "profile.start.globe", hint: "profile.start.globeHint" },
+  { value: "list", label: "profile.start.list", hint: "profile.start.listHint" },
+  { value: "city", label: "profile.start.city", hint: "profile.start.cityHint" },
+  { value: "playlist", label: "profile.start.stations", hint: "profile.start.stationsHint" },
 ];
 
 function OptionRow({
@@ -56,16 +58,17 @@ function OptionRow({
 }
 
 export default function ProfileScreen() {
+  const { language, t } = useI18n();
   const settings = useSettings();
   const { favorites, stationIds } = useFavorites();
-
   const [cityQuery, setCityQuery] = useState("");
 
-  const greeting = settings.name.trim()
-    ? `Привет, ${settings.name.trim()}!`
-    : "Привет!";
+  const name = settings.name.trim();
+  const greeting = name ? t("profile.helloName", { name }) : t("profile.hello");
+  const currentLanguage = getLanguage(language);
 
   // Выбранный город всегда наверху, остальные по фильтру, не больше MAX_CITY_OPTIONS.
+  // Ищем по английскому и русскому названию и по названию страны на текущем языке.
   const query = cityQuery.trim().toLowerCase();
   const selectedCity = CITIES.find((c) => c.id === settings.startCityId);
   const cityOptions = [
@@ -74,8 +77,9 @@ export default function ProfileScreen() {
       (c) =>
         c.id !== settings.startCityId &&
         (query.length === 0 ||
-          c.name.toLowerCase().includes(query) ||
-          c.country.toLowerCase().includes(query)),
+          c.name.en.toLowerCase().includes(query) ||
+          c.name.ru.toLowerCase().includes(query) ||
+          countryName(c.countryCode, language).toLowerCase().includes(query)),
     ).slice(0, MAX_CITY_OPTIONS),
   ];
 
@@ -90,30 +94,42 @@ export default function ProfileScreen() {
         <View style={styles.heroText}>
           <Text style={styles.greeting}>{greeting}</Text>
           <Text style={styles.stats}>
-            В плейлисте {stationIds.length} станций, сохранено треков:{" "}
-            {favorites.length}
+            {t("count.stations", { count: stationIds.length })} ·{" "}
+            {t("count.tracks", { count: favorites.length })}
           </Text>
         </View>
       </View>
 
-      <Text style={styles.sectionTitle}>Имя</Text>
+      <Text style={styles.sectionTitle}>{t("profile.name")}</Text>
       <TextInput
         value={settings.name}
         onChangeText={settings.setName}
-        placeholder="Как вас зовут?"
+        placeholder={t("profile.namePlaceholder")}
         placeholderTextColor="#999"
         autoCapitalize="words"
         style={styles.input}
       />
 
-      <Text style={styles.sectionTitle}>Стартовая страница</Text>
+      <Text style={styles.sectionTitle}>{t("profile.language")}</Text>
+      <Pressable
+        onPress={() => router.push("/profile/language")}
+        style={({ pressed }) => [styles.card, styles.linkRow, pressed && styles.pressed]}
+        accessibilityRole="button"
+        accessibilityLabel={`${t("profile.language")}: ${currentLanguage.native}`}
+      >
+        <Ionicons name="language" size={22} color="#1d6fd8" />
+        <Text style={styles.linkLabel}>{currentLanguage.native}</Text>
+        <Ionicons name="chevron-forward" size={20} color="#c4c4c6" />
+      </Pressable>
+
+      <Text style={styles.sectionTitle}>{t("profile.startPage")}</Text>
       <View style={styles.card}>
         {START_OPTIONS.map((option, index) => (
           <View key={option.value}>
             {index > 0 ? <View style={styles.separator} /> : null}
             <OptionRow
-              label={option.label}
-              hint={option.hint}
+              label={t(option.label)}
+              hint={t(option.hint)}
               selected={settings.startPage === option.value}
               onPress={() => settings.setStartPage(option.value)}
             />
@@ -123,11 +139,11 @@ export default function ProfileScreen() {
 
       {settings.startPage === "city" ? (
         <>
-          <Text style={styles.sectionTitle}>Какой город открывать</Text>
+          <Text style={styles.sectionTitle}>{t("profile.whichCity")}</Text>
           <TextInput
             value={cityQuery}
             onChangeText={setCityQuery}
-            placeholder="Начните вводить название города"
+            placeholder={t("profile.cityPlaceholder")}
             placeholderTextColor="#999"
             autoCorrect={false}
             clearButtonMode="while-editing"
@@ -138,22 +154,22 @@ export default function ProfileScreen() {
               <View key={city.id}>
                 {index > 0 ? <View style={styles.separator} /> : null}
                 <OptionRow
-                  label={`${flagEmoji(city.countryCode)} ${city.name}`}
-                  hint={city.country}
+                  label={`${flagEmoji(city.countryCode)} ${cityName(city, language)}`}
+                  hint={countryName(city.countryCode, language)}
                   selected={settings.startCityId === city.id}
                   onPress={() => settings.setStartCityId(city.id)}
                 />
               </View>
             ))}
             {cityOptions.length === 0 ? (
-              <Text style={styles.emptyHint}>Ничего не найдено</Text>
+              <Text style={styles.emptyHint}>{t("search.empty")}</Text>
             ) : null}
           </View>
         </>
       ) : null}
 
       <Text style={styles.footer}>
-        База станций: Radio Browser, обновлена {formatDateTime(GENERATED_AT)}
+        {t("profile.dataSource", { date: formatDateTime(GENERATED_AT, language) })}
       </Text>
     </ScrollView>
   );
@@ -207,6 +223,18 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: "#fff",
     overflow: "hidden",
+  },
+  linkRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    paddingHorizontal: 14,
+    paddingVertical: 14,
+  },
+  linkLabel: {
+    flex: 1,
+    fontSize: 16,
+    color: "#111",
   },
   option: {
     flexDirection: "row",

@@ -1,0 +1,81 @@
+import type { Dictionary } from "./en";
+
+/** Европейский португальский. */
+export const pt: Dictionary = {
+  "tab.cities": "Cidades",
+  "tab.search": "Pesquisar",
+  "tab.stations": "Estações",
+  "tab.tracks": "Faixas",
+  "tab.profile": "Perfil",
+
+  "globe.title": "Globo",
+  "globe.spin": "Rode o globo",
+  "globe.hint": "Leve uma cidade para o centro ou toque num ponto",
+  "globe.loading": "A carregar a Terra…",
+  "globe.noWebGL": "Este dispositivo não suporta WebGL 2, pelo que o globo 3D não está disponível.",
+  "globe.rendererError": "Não foi possível criar o renderizador 3D: {message}",
+
+  "count.cities": "Cidades: {count}",
+  "count.stations": "Estações: {count}",
+  "count.tracks": "Faixas: {count}",
+
+  "city.nowPlaying": "a tocar agora",
+  "city.notFound": "Cidade não encontrada",
+  "cities.title": "Cidades",
+
+  "region.cis": "Rússia e países vizinhos",
+  "region.europe": "Europa",
+  "region.middleEast": "Médio Oriente",
+  "region.asia": "Ásia",
+  "region.africa": "África",
+  "region.northAmerica": "América do Norte",
+  "region.southAmerica": "América do Sul",
+  "region.oceania": "Austrália e Oceânia",
+
+  "player.onAir": "No ar",
+  "player.loading": "A carregar…",
+  "player.error": "Erro: {message}",
+  "player.findingTrack": "A descobrir o que está a tocar…",
+  "player.noTrackInfo": "Esta estação não envia os títulos das faixas",
+  "player.saveTrack": "Gosto desta faixa",
+  "player.unsaveTrack": "Remover das faixas de que gosto",
+  "player.stop": "Parar",
+
+  "station.add": "Adicionar às estações favoritas",
+  "station.remove": "Remover das estações favoritas",
+
+  "search.placeholder": "Nome, cidade, etiqueta, idioma…",
+  "search.codec": "Codec",
+  "search.bitrate": "Taxa de bits",
+  "search.language": "Idioma",
+  "search.tags": "Etiquetas",
+  "search.found": "Encontradas: {count}",
+  "search.all": "Todas as estações: {count}",
+  "search.reset": "Repor",
+  "search.empty": "Nada encontrado",
+
+  "stations.title": "Estações favoritas",
+  "stations.empty": "Ainda não tem estações favoritas. Toque na estrela junto a uma estação para a adicionar aqui.",
+
+  "tracks.title": "Faixas de que gosto",
+  "tracks.empty": "Ainda não há nada aqui. Toque no coração do leitor quando gostar de uma faixa.",
+  "tracks.remove": "Remover das faixas de que gosto",
+
+  "profile.hello": "Olá!",
+  "profile.helloName": "Olá, {name}!",
+  "profile.name": "Nome",
+  "profile.namePlaceholder": "Como se chama?",
+  "profile.language": "Idioma",
+  "profile.startPage": "Página inicial",
+  "profile.start.globe": "Globo",
+  "profile.start.globeHint": "Rode o globo e escolha uma cidade no mapa",
+  "profile.start.list": "Lista de cidades",
+  "profile.start.listHint": "Cidades agrupadas por região numa lista de texto",
+  "profile.start.city": "Uma cidade específica",
+  "profile.start.cityHint": "Abrir de imediato as estações da cidade escolhida",
+  "profile.start.stations": "Estações favoritas",
+  "profile.start.stationsHint": "Abrir de imediato as suas estações favoritas",
+  "profile.whichCity": "Que cidade abrir",
+  "profile.cityPlaceholder": "Comece a escrever o nome de uma cidade",
+  "profile.dataSource": "Dados das estações: Radio Browser, atualizados a {date}",
+};

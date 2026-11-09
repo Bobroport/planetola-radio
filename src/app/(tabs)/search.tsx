@@ -11,6 +11,7 @@ import {
 
 import { Chip } from "@/components/chip";
 import { StationRow } from "@/components/station-row";
+import { useI18n } from "@/i18n";
 import {
   BITRATE_OPTIONS,
   CODEC_OPTIONS,
@@ -33,6 +34,7 @@ function toggle(list: string[], value: string): string[] {
 }
 
 export default function SearchScreen() {
+  const { language, t } = useI18n();
   const params = useLocalSearchParams<Params>();
   const { current, play } = usePlayer();
 
@@ -43,12 +45,12 @@ export default function SearchScreen() {
     codec: isCodec(params.codec) ? params.codec : null,
   }));
 
-  const results = searchStations(filters);
+  const results = searchStations(filters, language);
   const active = hasActiveFilters(filters);
 
   // Выбранные теги/языки, которых нет в топе, показываем первыми, чтобы их можно было снять.
   const tagOptions = [
-    ...filters.tags.filter((t) => !TOP_TAGS.some((x) => x.value === t)),
+    ...filters.tags.filter((tag) => !TOP_TAGS.some((x) => x.value === tag)),
     ...TOP_TAGS.map((x) => x.value),
   ];
   const languageOptions = [
@@ -69,7 +71,7 @@ export default function SearchScreen() {
             <TextInput
               value={filters.query}
               onChangeText={(query) => setFilters({ ...filters, query })}
-              placeholder="Название, город, тег, язык…"
+              placeholder={t("search.placeholder")}
               placeholderTextColor="#999"
               autoCorrect={false}
               autoCapitalize="none"
@@ -78,7 +80,7 @@ export default function SearchScreen() {
               style={styles.input}
             />
 
-            <FilterRow label="Кодек">
+            <FilterRow label={t("search.codec")}>
               {CODEC_OPTIONS.map((codec) => (
                 <Chip
                   key={codec}
@@ -94,7 +96,7 @@ export default function SearchScreen() {
               ))}
             </FilterRow>
 
-            <FilterRow label="Битрейт">
+            <FilterRow label={t("search.bitrate")}>
               {BITRATE_OPTIONS.map((kbps) => (
                 <Chip
                   key={kbps}
@@ -110,7 +112,7 @@ export default function SearchScreen() {
               ))}
             </FilterRow>
 
-            <FilterRow label="Язык">
+            <FilterRow label={t("search.language")}>
               {languageOptions.map((lang) => (
                 <Chip
                   key={lang}
@@ -126,7 +128,7 @@ export default function SearchScreen() {
               ))}
             </FilterRow>
 
-            <FilterRow label="Теги">
+            <FilterRow label={t("search.tags")}>
               {tagOptions.map((tag) => (
                 <Chip
                   key={tag}
@@ -141,10 +143,10 @@ export default function SearchScreen() {
 
             <View style={styles.summary}>
               <Text style={styles.summaryText}>
-                {active ? `Найдено: ${results.length}` : `Все станции: ${results.length}`}
+                {t(active ? "search.found" : "search.all", { count: results.length })}
               </Text>
               {active ? (
-                <Chip label="Сбросить" onPress={() => setFilters(EMPTY_FILTERS)} />
+                <Chip label={t("search.reset")} onPress={() => setFilters(EMPTY_FILTERS)} />
               ) : null}
             </View>
           </View>
@@ -159,7 +161,7 @@ export default function SearchScreen() {
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
         ListEmptyComponent={
-          <Text style={styles.empty}>Ничего не найдено</Text>
+          <Text style={styles.empty}>{t("search.empty")}</Text>
         }
       />
     </View>

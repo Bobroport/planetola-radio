@@ -26,14 +26,21 @@ export function streamHost(streamUrl: string): string {
   return streamUrl.replace(/^https?:\/\//, "").split("/")[0];
 }
 
-export function formatDateTime(iso: string): string {
+/** Дата и время в формате выбранного языка интерфейса (код языка — это и есть локаль). */
+export function formatDateTime(iso: string, language: string): string {
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return "";
-  return date.toLocaleString("ru-RU", {
+  const options: Intl.DateTimeFormatOptions = {
     day: "numeric",
     month: "short",
     year: "numeric",
     hour: "2-digit",
     minute: "2-digit",
-  });
+  };
+  try {
+    return date.toLocaleString(language, options);
+  } catch {
+    // Движок может не знать редкую локаль — тогда показываем по-английски.
+    return date.toLocaleString("en", options);
+  }
 }

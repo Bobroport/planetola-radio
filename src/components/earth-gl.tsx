@@ -6,6 +6,7 @@ import * as THREE from "three";
 
 import { CITIES, type City } from "@/data/stations";
 import { useAppActive } from "@/hooks/use-app-active";
+import { useI18n, type TranslateParams, type TranslationKey } from "@/i18n";
 import { useGlobeGestures, type GlobeView } from "@/hooks/use-globe-gestures";
 import {
   createRenderer,
@@ -173,7 +174,11 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
   const viewRef = useRef<GlobeView>(INITIAL_VIEW);
   const focusedIdRef = useRef<string | null>(null);
   const [ready, setReady] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  // Ошибку храним ключом перевода, а не готовой строкой: язык можно сменить на лету.
+  const [error, setError] = useState<{ key: TranslationKey; params?: TranslateParams } | null>(
+    null,
+  );
+  const { t } = useI18n();
 
   const applyView = useCallback((scene: Scene, view: GlobeView) => {
     // Rx(lat) · Ry(-lon): сначала поворот вокруг Y выводит нужную долготу вперёд, потом наклон по широте.
@@ -255,7 +260,7 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
         );
       }
       if (!supportsWebGL2(gl)) {
-        setError("Это устройство не поддерживает WebGL 2, трёхмерный шар недоступен.");
+        setError({ key: "globe.noWebGL" });
         return;
       }
       let renderer: THREE.WebGLRenderer;
@@ -268,7 +273,10 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
           antialias: true,
         });
       } catch (e) {
-        setError(`Не удалось создать 3D-рендерер: ${e instanceof Error ? e.message : String(e)}`);
+        setError({
+          key: "globe.rendererError",
+          params: { message: e instanceof Error ? e.message : String(e) },
+        });
         return;
       }
       const scene = new THREE.Scene();
@@ -417,12 +425,12 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
         <GLView style={{ width, height }} onContextCreate={onContextCreate} />
         {error ? (
           <View style={styles.loading} pointerEvents="none">
-            <Text style={styles.errorText}>{error}</Text>
+            <Text style={styles.errorText}>{t(error.key, error.params)}</Text>
           </View>
         ) : !ready ? (
           <View style={styles.loading} pointerEvents="none">
             <ActivityIndicator color="#9cc0ff" />
-            <Text style={styles.loadingText}>Загружаем Землю…</Text>
+            <Text style={styles.loadingText}>{t("globe.loading")}</Text>
           </View>
         ) : null}
       </View>

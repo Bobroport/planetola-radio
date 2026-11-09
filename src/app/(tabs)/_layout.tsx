@@ -5,6 +5,7 @@ import { Pressable, StyleSheet, Text, View, type ColorValue } from "react-native
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { PlayerBar } from "@/components/player-bar";
+import { useI18n } from "@/i18n";
 
 type IconName = ComponentProps<typeof Ionicons>["name"];
 type TabBarProps = Parameters<
@@ -66,7 +67,15 @@ function TabBar({ state, descriptors, navigation }: TabBarProps) {
               accessibilityLabel={label}
             >
               {options.tabBarIcon?.({ focused, color, size: 24 })}
-              <Text style={[styles.label, { color }]}>{label}</Text>
+              {/* В части языков подписи длиннее: уменьшаем шрифт, а не обрезаем слово. */}
+              <Text
+                style={[styles.label, { color }]}
+                numberOfLines={1}
+                adjustsFontSizeToFit
+                minimumFontScale={0.75}
+              >
+                {label}
+              </Text>
             </Pressable>
           );
         })}
@@ -76,6 +85,8 @@ function TabBar({ state, descriptors, navigation }: TabBarProps) {
 }
 
 export default function TabsLayout() {
+  const { t } = useI18n();
+
   return (
     <Tabs
       tabBar={(props) => <TabBar {...props} />}
@@ -84,22 +95,39 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="cities"
         options={{
-          title: "Города",
+          title: t("tab.cities"),
           headerShown: false,
           tabBarIcon: icon("radio", "radio-outline"),
         }}
       />
       <Tabs.Screen
         name="search"
-        options={{ title: "Поиск", tabBarIcon: icon("search", "search-outline") }}
+        options={{ title: t("tab.search"), tabBarIcon: icon("search", "search-outline") }}
+      />
+      {/* Избранные станции и понравившиеся треки — два соседних раздела. */}
+      <Tabs.Screen
+        name="stations"
+        options={{
+          title: t("tab.stations"),
+          headerTitle: t("stations.title"),
+          tabBarIcon: icon("star", "star-outline"),
+        }}
       />
       <Tabs.Screen
-        name="favorites"
-        options={{ title: "Избранное", tabBarIcon: icon("heart", "heart-outline") }}
+        name="tracks"
+        options={{
+          title: t("tab.tracks"),
+          headerTitle: t("tracks.title"),
+          tabBarIcon: icon("heart", "heart-outline"),
+        }}
       />
       <Tabs.Screen
         name="profile"
-        options={{ title: "Профиль", tabBarIcon: icon("person", "person-outline") }}
+        options={{
+          title: t("tab.profile"),
+          headerShown: false,
+          tabBarIcon: icon("person", "person-outline"),
+        }}
       />
     </Tabs>
   );
@@ -118,6 +146,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 2,
     paddingVertical: 4,
+    paddingHorizontal: 2,
   },
   pressed: {
     opacity: 0.6,

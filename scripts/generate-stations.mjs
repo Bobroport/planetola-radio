@@ -138,6 +138,46 @@ async function fetchCity(server, city) {
     .map(toStation);
 }
 
+/** Русские заголовки регионов из cities.mjs → ключи, по которым приложение берёт перевод. */
+const REGION_KEYS = {
+  "Россия и ближнее зарубежье": "cis",
+  "Европа": "europe",
+  "Ближний Восток": "middleEast",
+  "Азия": "asia",
+  "Африка": "africa",
+  "Северная Америка": "northAmerica",
+  "Южная Америка": "southAmerica",
+  "Австралия и Океания": "oceania",
+};
+
+/** Английские названия, которые нельзя получить из id простым «Title Case». */
+const ENGLISH_NAME_OVERRIDES = {
+  "rostov-on-don": "Rostov-on-Don",
+  "sao-paulo": "São Paulo",
+  "rio-de-janeiro": "Rio de Janeiro",
+  brasilia: "Brasília",
+  bogota: "Bogotá",
+  medellin: "Medellín",
+  cordoba: "Córdoba",
+  asuncion: "Asunción",
+  "san-jose": "San José",
+  "ho-chi-minh": "Ho Chi Minh City",
+  xian: "Xi'an",
+  "dar-es-salaam": "Dar es Salaam",
+  yaounde: "Yaoundé",
+  krakow: "Kraków",
+};
+
+function englishName(id) {
+  return (
+    ENGLISH_NAME_OVERRIDES[id] ??
+    id
+      .split("-")
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .join(" ")
+  );
+}
+
 /** Закреплённые станции города ставятся в начало списка; кэш на них не влияет. */
 async function withExtras(server, city, stations) {
   const extras = EXTRA_STATIONS.filter((e) => e.cityId === city.id);
@@ -190,8 +230,16 @@ async function main() {
       city.name.padEnd(18) + String(stations.length).padStart(3) + " станций" + (fromCache ? " (кэш)" : ""),
     );
     if (stations.length === 0) continue;
-    const { search: _search, ...rest } = city;
-    cities.push({ ...rest, stations });
+    cities.push({
+      id: city.id,
+      // Названия города: английское и русское. Остальные языки интерфейса показывают английское.
+      name: { en: englishName(city.id), ru: city.name },
+      countryCode: city.countryCode,
+      region: REGION_KEYS[city.region] ?? "europe",
+      lat: city.lat,
+      long: city.long,
+      stations,
+    });
   }
 
   const output = {

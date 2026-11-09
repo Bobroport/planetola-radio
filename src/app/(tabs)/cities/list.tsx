@@ -3,9 +3,11 @@ import { SectionList, StyleSheet, Text, View } from "react-native";
 
 import { CityRow } from "@/components/city-row";
 import { CITY_SECTIONS, type City } from "@/data/stations";
+import { regionKey, useI18n } from "@/i18n";
 import { usePlayer } from "@/providers/player-provider";
 
 export default function CityListScreen() {
+  const { t } = useI18n();
   const { current } = usePlayer();
 
   const openCity = (city: City) => {
@@ -27,7 +29,7 @@ export default function CityListScreen() {
           />
         )}
         renderSectionHeader={({ section }) => (
-          <Text style={styles.sectionHeader}>{section.title}</Text>
+          <Text style={styles.sectionHeader}>{t(regionKey(section.region))}</Text>
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
         stickySectionHeadersEnabled

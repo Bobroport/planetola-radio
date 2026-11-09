@@ -1,3 +1,4 @@
+import countryNamesData from "./country-names.json";
 import data from "./stations.json";
 
 export type Station = {
@@ -18,10 +19,10 @@ export type Station = {
 
 export type City = {
   id: string;
-  name: string;
-  country: string;
+  /** Название города. Интерфейс на русском берёт `ru`, на остальных языках `en`. */
+  name: { en: string; ru: string };
   countryCode: string;
-  /** Часть света для группировки списка, например «Европа». */
+  /** Ключ части света: `europe`, `asia`… Перевод — по ключу `region.<ключ>`. */
   region: string;
   lat: number;
   long: number;
@@ -31,16 +32,31 @@ export type City = {
 export const GENERATED_AT: string = data.generatedAt;
 export const CITIES: City[] = data.cities;
 
-export type CitySection = { title: string; data: City[] };
+/** Названия стран по языку интерфейса и коду страны; готовятся скриптом из данных Unicode. */
+const COUNTRY_NAMES: Record<string, Record<string, string>> = countryNamesData;
+
+export function cityName(city: City, language: string): string {
+  return language === "ru" ? city.name.ru : city.name.en;
+}
+
+export function countryName(countryCode: string, language: string): string {
+  return (
+    COUNTRY_NAMES[language]?.[countryCode] ??
+    COUNTRY_NAMES.en?.[countryCode] ??
+    countryCode
+  );
+}
+
+export type CitySection = { region: string; data: City[] };
 
 /** Города, сгруппированные по частям света в порядке появления в данных. */
 export const CITY_SECTIONS: CitySection[] = CITIES.reduce<CitySection[]>(
   (sections, city) => {
     const last = sections[sections.length - 1];
-    if (last && last.title === city.region) {
+    if (last && last.region === city.region) {
       last.data.push(city);
     } else {
-      sections.push({ title: city.region, data: [city] });
+      sections.push({ region: city.region, data: [city] });
     }
     return sections;
   },

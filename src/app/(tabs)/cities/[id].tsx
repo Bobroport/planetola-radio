@@ -2,11 +2,13 @@ import { Stack, useLocalSearchParams } from "expo-router";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 
 import { StationRow } from "@/components/station-row";
-import { getCity } from "@/data/stations";
+import { cityName, getCity } from "@/data/stations";
+import { useI18n } from "@/i18n";
 import { flagEmoji } from "@/lib/format";
 import { usePlayer } from "@/providers/player-provider";
 
 export default function CityScreen() {
+  const { language, t } = useI18n();
   const { id } = useLocalSearchParams<{ id: string }>();
   const city = getCity(id);
   const { current, play } = usePlayer();
@@ -14,8 +16,8 @@ export default function CityScreen() {
   if (!city) {
     return (
       <View style={styles.empty}>
-        <Stack.Screen options={{ title: "Город" }} />
-        <Text style={styles.emptyText}>Город не найден</Text>
+        <Stack.Screen options={{ title: "" }} />
+        <Text style={styles.emptyText}>{t("city.notFound")}</Text>
       </View>
     );
   }
@@ -23,7 +25,7 @@ export default function CityScreen() {
   return (
     <View style={styles.container}>
       <Stack.Screen
-        options={{ title: `${flagEmoji(city.countryCode)} ${city.name}` }}
+        options={{ title: `${flagEmoji(city.countryCode)} ${cityName(city, language)}` }}
       />
       <FlatList
         data={city.stations}

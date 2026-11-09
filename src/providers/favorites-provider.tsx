@@ -128,7 +128,9 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
           stationId: station.id,
           stationName: station.name,
           cityId: city.id,
-          cityName: city.name,
+          // Запасное название на случай, если город исчезнет из данных; на экране
+          // показывается название по cityId на текущем языке.
+          cityName: city.name.en,
           savedAt: new Date().toISOString(),
         };
         return [entry, ...prev];

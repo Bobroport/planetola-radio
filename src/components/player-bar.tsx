@@ -3,10 +3,12 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { Beaver } from "@/components/beaver";
 import { getCityOfStation } from "@/data/stations";
+import { useI18n } from "@/i18n";
 import { useFavorites } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
 
 export function PlayerBar() {
+  const { t } = useI18n();
   const {
     player,
     current,
@@ -23,11 +25,11 @@ export function PlayerBar() {
     return null;
   }
 
-  let statusText = "В эфире";
+  let statusText = t("player.onAir");
   if (error) {
-    statusText = `Ошибка: ${error}`;
+    statusText = t("player.error", { message: error });
   } else if (isBuffering) {
-    statusText = "Загрузка…";
+    statusText = t("player.loading");
   }
 
   const trackText = nowPlaying
@@ -54,9 +56,7 @@ export function PlayerBar() {
           </Text>
         ) : (
           <Text style={styles.trackHint} numberOfLines={1}>
-            {nowPlayingChecked
-              ? "Станция не передаёт название трека"
-              : "Узнаём, что играет…"}
+            {nowPlayingChecked ? t("player.noTrackInfo") : t("player.findingTrack")}
           </Text>
         )}
         <Text
@@ -78,7 +78,7 @@ export function PlayerBar() {
           pressed && styles.pressed,
         ]}
         accessibilityRole="button"
-        accessibilityLabel={saved ? "Убрать трек из избранного" : "Трек в избранное"}
+        accessibilityLabel={saved ? t("player.unsaveTrack") : t("player.saveTrack")}
         accessibilityState={{ selected: saved }}
       >
         <Ionicons
@@ -92,7 +92,7 @@ export function PlayerBar() {
         hitSlop={8}
         style={({ pressed }) => [styles.stop, pressed && styles.pressed]}
         accessibilityRole="button"
-        accessibilityLabel="Стоп"
+        accessibilityLabel={t("player.stop")}
       >
         <Ionicons name="stop" size={22} color="#fff" />
       </Pressable>

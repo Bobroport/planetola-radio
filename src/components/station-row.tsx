@@ -3,7 +3,8 @@ import { router } from "expo-router";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { Chip } from "@/components/chip";
-import type { City, Station } from "@/data/stations";
+import { cityName, countryName, type City, type Station } from "@/data/stations";
+import { useI18n } from "@/i18n";
 import { stationMeta, streamHost } from "@/lib/format";
 import { useFavorites } from "@/providers/favorites-provider";
 
@@ -11,13 +12,14 @@ type Props = {
   station: Station;
   isActive: boolean;
   onPress: (station: Station) => void;
-  /** Показать город и страну под названием (для поиска и плейлиста). */
+  /** Показать город и страну под названием (для поиска и избранных станций). */
   city?: City;
 };
 
 const MAX_TAGS = 4;
 
 export function StationRow({ station, isActive, onPress, city }: Props) {
+  const { language, t } = useI18n();
   const { isStationSaved, toggleStation } = useFavorites();
   const saved = isStationSaved(station.id);
   const meta = stationMeta(station);
@@ -45,7 +47,7 @@ export function StationRow({ station, isActive, onPress, city }: Props) {
         </View>
         {city ? (
           <Text style={styles.place}>
-            {city.name} · {city.country}
+            {cityName(city, language)} · {countryName(city.countryCode, language)}
           </Text>
         ) : null}
         {meta ? <Text style={styles.meta}>{meta}</Text> : null}
@@ -71,7 +73,7 @@ export function StationRow({ station, isActive, onPress, city }: Props) {
         hitSlop={10}
         style={({ pressed }) => [styles.star, pressed && styles.rowPressed]}
         accessibilityRole="button"
-        accessibilityLabel={saved ? "Убрать из плейлиста" : "В плейлист"}
+        accessibilityLabel={saved ? t("station.remove") : t("station.add")}
         accessibilityState={{ selected: saved }}
       >
         <Ionicons

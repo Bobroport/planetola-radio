@@ -9,11 +9,18 @@ import {
   type ReactNode,
 } from "react";
 
-/** Что открывать при запуске: глобус, список городов, конкретный город или плейлист (избранные станции). */
+import { DEFAULT_LANGUAGE, isLanguage } from "@/i18n/languages";
+
+/**
+ * Что открывать при запуске: глобус, список городов, конкретный город
+ * или избранные станции (значение `playlist` сохранено ради старых настроек).
+ */
 export type StartPage = "cities" | "list" | "city" | "playlist";
 
 export type Settings = {
   name: string;
+  /** Код языка интерфейса из `src/i18n/languages.json`. */
+  language: string;
   startPage: StartPage;
   startCityId: string | null;
 };
@@ -22,6 +29,7 @@ type SettingsContextValue = Settings & {
   /** Настройки прочитаны из хранилища. */
   ready: boolean;
   setName: (name: string) => void;
+  setLanguage: (language: string) => void;
   setStartPage: (startPage: StartPage) => void;
   setStartCityId: (cityId: string | null) => void;
 };
@@ -30,6 +38,7 @@ const STORAGE_KEY = "settings.v1";
 
 const DEFAULTS: Settings = {
   name: "",
+  language: DEFAULT_LANGUAGE,
   startPage: "cities",
   startCityId: null,
 };
@@ -52,6 +61,7 @@ async function load(): Promise<Settings> {
     const parsed: Partial<Settings> = JSON.parse(json);
     return {
       name: typeof parsed.name === "string" ? parsed.name : DEFAULTS.name,
+      language: isLanguage(parsed.language) ? parsed.language : DEFAULTS.language,
       startPage: isStartPage(parsed.startPage)
         ? parsed.startPage
         : DEFAULTS.startPage,
@@ -97,6 +107,12 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const setName = useCallback((name: string) => update({ name }), [update]);
+  const setLanguage = useCallback(
+    (language: string) => {
+      if (isLanguage(language)) update({ language });
+    },
+    [update],
+  );
   const setStartPage = useCallback(
     (startPage: StartPage) => update({ startPage }),
     [update],
@@ -107,8 +123,8 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
   );
 
   const value = useMemo<SettingsContextValue>(
-    () => ({ ...settings, ready, setName, setStartPage, setStartCityId }),
-    [settings, ready, setName, setStartPage, setStartCityId],
+    () => ({ ...settings, ready, setName, setLanguage, setStartPage, setStartCityId }),
+    [settings, ready, setName, setLanguage, setStartPage, setStartCityId],
   );
 
   return (

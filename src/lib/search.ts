@@ -1,4 +1,4 @@
-import { CITIES, type City, type Station } from "@/data/stations";
+import { CITIES, countryName, type City, type Station } from "@/data/stations";
 
 export type StationWithCity = { station: Station; city: City };
 
@@ -84,7 +84,11 @@ export function hasActiveFilters(f: SearchFilters): boolean {
   );
 }
 
-export function searchStations(f: SearchFilters): StationWithCity[] {
+/**
+ * Поиск по станциям. Текст ищется в названии станции, тегах, языках вещания и в названиях
+ * города и страны: на английском, на русском и на текущем языке интерфейса.
+ */
+export function searchStations(f: SearchFilters, language: string): StationWithCity[] {
   const query = normalize(f.query);
   const words = query.length > 0 ? query.split(/\s+/) : [];
 
@@ -98,8 +102,10 @@ export function searchStations(f: SearchFilters): StationWithCity[] {
     const haystack = [
       station.name,
       station.state,
-      city.name,
-      city.country,
+      city.name.en,
+      city.name.ru,
+      countryName(city.countryCode, "en"),
+      countryName(city.countryCode, language),
       ...station.tags,
       ...station.languages,
     ]

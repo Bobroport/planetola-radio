@@ -1,13 +1,15 @@
 {
-  "generatedAt": "2026-10-27T22:01:02.652Z",
+  "generatedAt": "2026-11-09T06:17:07.162Z",
   "source": "https://www.radio-browser.info",
   "cities": [
     {
       "id": "moscow",
-      "name": "Москва",
-      "country": "Россия",
+      "name": {
+        "en": "Moscow",
+        "ru": "Москва"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 55.75,
       "long": 37.62,
       "stations": [
@@ -871,10 +873,12 @@
     },
     {
       "id": "saint-petersburg",
-      "name": "Санкт-Петербург",
-      "country": "Россия",
+      "name": {
+        "en": "Saint Petersburg",
+        "ru": "Санкт-Петербург"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 59.93,
       "long": 30.32,
       "stations": [
@@ -1551,10 +1555,12 @@
     },
     {
       "id": "novosibirsk",
-      "name": "Новосибирск",
-      "country": "Россия",
+      "name": {
+        "en": "Novosibirsk",
+        "ru": "Новосибирск"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 55.03,
       "long": 82.92,
       "stations": [
@@ -1688,10 +1694,12 @@
     },
     {
       "id": "yekaterinburg",
-      "name": "Екатеринбург",
-      "country": "Россия",
+      "name": {
+        "en": "Yekaterinburg",
+        "ru": "Екатеринбург"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 56.84,
       "long": 60.6,
       "stations": [
@@ -1794,10 +1802,12 @@
     },
     {
       "id": "kazan",
-      "name": "Казань",
-      "country": "Россия",
+      "name": {
+        "en": "Kazan",
+        "ru": "Казань"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 55.79,
       "long": 49.12,
       "stations": [
@@ -1848,10 +1858,12 @@
     },
     {
       "id": "nizhny-novgorod",
-      "name": "Нижний Новгород",
-      "country": "Россия",
+      "name": {
+        "en": "Nizhny Novgorod",
+        "ru": "Нижний Новгород"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 56.3,
       "long": 44,
       "stations": [
@@ -2011,10 +2023,12 @@
     },
     {
       "id": "samara",
-      "name": "Самара",
-      "country": "Россия",
+      "name": {
+        "en": "Samara",
+        "ru": "Самара"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 53.2,
       "long": 50.15,
       "stations": [
@@ -2057,10 +2071,12 @@
     },
     {
       "id": "rostov-on-don",
-      "name": "Ростов-на-Дону",
-      "country": "Россия",
+      "name": {
+        "en": "Rostov-on-Don",
+        "ru": "Ростов-на-Дону"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 47.23,
       "long": 39.72,
       "stations": [
@@ -2117,10 +2133,12 @@
     },
     {
       "id": "krasnodar",
-      "name": "Краснодар",
-      "country": "Россия",
+      "name": {
+        "en": "Krasnodar",
+        "ru": "Краснодар"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 45.04,
       "long": 38.98,
       "stations": [
@@ -2174,10 +2192,12 @@
     },
     {
       "id": "vladivostok",
-      "name": "Владивосток",
-      "country": "Россия",
+      "name": {
+        "en": "Vladivostok",
+        "ru": "Владивосток"
+      },
       "countryCode": "RU",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 43.12,
       "long": 131.89,
       "stations": [
@@ -2216,10 +2236,12 @@
     },
     {
       "id": "kyiv",
-      "name": "Киев",
-      "country": "Украина",
+      "name": {
+        "en": "Kyiv",
+        "ru": "Киев"
+      },
       "countryCode": "UA",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 50.45,
       "long": 30.52,
       "stations": [
@@ -3016,10 +3038,12 @@
     },
     {
       "id": "kharkiv",
-      "name": "Харьков",
-      "country": "Украина",
+      "name": {
+        "en": "Kharkiv",
+        "ru": "Харьков"
+      },
       "countryCode": "UA",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 49.99,
       "long": 36.23,
       "stations": [
@@ -3115,10 +3139,12 @@
     },
     {
       "id": "odesa",
-      "name": "Одесса",
-      "country": "Украина",
+      "name": {
+        "en": "Odesa",
+        "ru": "Одесса"
+      },
       "countryCode": "UA",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 46.48,
       "long": 30.72,
       "stations": [
@@ -3207,10 +3233,12 @@
     },
     {
       "id": "lviv",
-      "name": "Львов",
-      "country": "Украина",
+      "name": {
+        "en": "Lviv",
+        "ru": "Львов"
+      },
       "countryCode": "UA",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 49.84,
       "long": 24.03,
       "stations": [
@@ -3279,10 +3307,12 @@
     },
     {
       "id": "minsk",
-      "name": "Минск",
-      "country": "Беларусь",
+      "name": {
+        "en": "Minsk",
+        "ru": "Минск"
+      },
       "countryCode": "BY",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 53.9,
       "long": 27.57,
       "stations": [
@@ -3622,10 +3652,12 @@
     },
     {
       "id": "tbilisi",
-      "name": "Тбилиси",
-      "country": "Грузия",
+      "name": {
+        "en": "Tbilisi",
+        "ru": "Тбилиси"
+      },
       "countryCode": "GE",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 41.72,
       "long": 44.79,
       "stations": [
@@ -3744,10 +3776,12 @@
     },
     {
       "id": "yerevan",
-      "name": "Ереван",
-      "country": "Армения",
+      "name": {
+        "en": "Yerevan",
+        "ru": "Ереван"
+      },
       "countryCode": "AM",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 40.18,
       "long": 44.51,
       "stations": [
@@ -3835,10 +3869,12 @@
     },
     {
       "id": "baku",
-      "name": "Баку",
-      "country": "Азербайджан",
+      "name": {
+        "en": "Baku",
+        "ru": "Баку"
+      },
       "countryCode": "AZ",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 40.41,
       "long": 49.87,
       "stations": [
@@ -3969,10 +4005,12 @@
     },
     {
       "id": "almaty",
-      "name": "Алматы",
-      "country": "Казахстан",
+      "name": {
+        "en": "Almaty",
+        "ru": "Алматы"
+      },
       "countryCode": "KZ",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 43.24,
       "long": 76.95,
       "stations": [
@@ -4096,10 +4134,12 @@
     },
     {
       "id": "astana",
-      "name": "Астана",
-      "country": "Казахстан",
+      "name": {
+        "en": "Astana",
+        "ru": "Астана"
+      },
       "countryCode": "KZ",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 51.17,
       "long": 71.43,
       "stations": [
@@ -4127,10 +4167,12 @@
     },
     {
       "id": "chisinau",
-      "name": "Кишинёв",
-      "country": "Молдова",
+      "name": {
+        "en": "Chisinau",
+        "ru": "Кишинёв"
+      },
       "countryCode": "MD",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 47.01,
       "long": 28.86,
       "stations": [
@@ -4344,10 +4386,12 @@
     },
     {
       "id": "riga",
-      "name": "Рига",
-      "country": "Латвия",
+      "name": {
+        "en": "Riga",
+        "ru": "Рига"
+      },
       "countryCode": "LV",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 56.95,
       "long": 24.11,
       "stations": [
@@ -5140,10 +5184,12 @@
     },
     {
       "id": "vilnius",
-      "name": "Вильнюс",
-      "country": "Литва",
+      "name": {
+        "en": "Vilnius",
+        "ru": "Вильнюс"
+      },
       "countryCode": "LT",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 54.69,
       "long": 25.28,
       "stations": [
@@ -5640,10 +5686,12 @@
     },
     {
       "id": "tallinn",
-      "name": "Таллин",
-      "country": "Эстония",
+      "name": {
+        "en": "Tallinn",
+        "ru": "Таллин"
+      },
       "countryCode": "EE",
-      "region": "Россия и ближнее зарубежье",
+      "region": "cis",
       "lat": 59.44,
       "long": 24.75,
       "stations": [
@@ -6471,10 +6519,12 @@
     },
     {
       "id": "london",
-      "name": "Лондон",
-      "country": "Великобритания",
+      "name": {
+        "en": "London",
+        "ru": "Лондон"
+      },
       "countryCode": "GB",
-      "region": "Европа",
+      "region": "europe",
       "lat": 51.51,
       "long": -0.13,
       "stations": [
@@ -7394,10 +7444,12 @@
     },
     {
       "id": "manchester",
-      "name": "Манчестер",
-      "country": "Великобритания",
+      "name": {
+        "en": "Manchester",
+        "ru": "Манчестер"
+      },
       "countryCode": "GB",
-      "region": "Европа",
+      "region": "europe",
       "lat": 53.48,
       "long": -2.24,
       "stations": [
@@ -7793,10 +7845,12 @@
     },
     {
       "id": "birmingham",
-      "name": "Бирмингем",
-      "country": "Великобритания",
+      "name": {
+        "en": "Birmingham",
+        "ru": "Бирмингем"
+      },
       "countryCode": "GB",
-      "region": "Европа",
+      "region": "europe",
       "lat": 52.49,
       "long": -1.89,
       "stations": [
@@ -7956,10 +8010,12 @@
     },
     {
       "id": "edinburgh",
-      "name": "Эдинбург",
-      "country": "Великобритания",
+      "name": {
+        "en": "Edinburgh",
+        "ru": "Эдинбург"
+      },
       "countryCode": "GB",
-      "region": "Европа",
+      "region": "europe",
       "lat": 55.95,
       "long": -3.19,
       "stations": [
@@ -8377,10 +8433,12 @@
     },
     {
       "id": "dublin",
-      "name": "Дублин",
-      "country": "Ирландия",
+      "name": {
+        "en": "Dublin",
+        "ru": "Дублин"
+      },
       "countryCode": "IE",
-      "region": "Европа",
+      "region": "europe",
       "lat": 53.35,
       "long": -6.26,
       "stations": [
@@ -9195,10 +9253,12 @@
     },
     {
       "id": "paris",
-      "name": "Париж",
-      "country": "Франция",
+      "name": {
+        "en": "Paris",
+        "ru": "Париж"
+      },
       "countryCode": "FR",
-      "region": "Европа",
+      "region": "europe",
       "lat": 48.86,
       "long": 2.35,
       "stations": [
@@ -10015,10 +10075,12 @@
     },
     {
       "id": "lyon",
-      "name": "Лион",
-      "country": "Франция",
+      "name": {
+        "en": "Lyon",
+        "ru": "Лион"
+      },
       "countryCode": "FR",
-      "region": "Европа",
+      "region": "europe",
       "lat": 45.76,
       "long": 4.84,
       "stations": [
@@ -10587,10 +10649,12 @@
     },
     {
       "id": "marseille",
-      "name": "Марсель",
-      "country": "Франция",
+      "name": {
+        "en": "Marseille",
+        "ru": "Марсель"
+      },
       "countryCode": "FR",
-      "region": "Европа",
+      "region": "europe",
       "lat": 43.3,
       "long": 5.37,
       "stations": [
@@ -10890,10 +10954,12 @@
     },
     {
       "id": "berlin",
-      "name": "Берлин",
-      "country": "Германия",
+      "name": {
+        "en": "Berlin",
+        "ru": "Берлин"
+      },
       "countryCode": "DE",
-      "region": "Европа",
+      "region": "europe",
       "lat": 52.52,
       "long": 13.41,
       "stations": [
@@ -11857,10 +11923,12 @@
     },
     {
       "id": "hamburg",
-      "name": "Гамбург",
-      "country": "Германия",
+      "name": {
+        "en": "Hamburg",
+        "ru": "Гамбург"
+      },
       "countryCode": "DE",
-      "region": "Европа",
+      "region": "europe",
       "lat": 53.55,
       "long": 9.99,
       "stations": [
@@ -12670,10 +12738,12 @@
     },
     {
       "id": "munich",
-      "name": "Мюнхен",
-      "country": "Германия",
+      "name": {
+        "en": "Munich",
+        "ru": "Мюнхен"
+      },
       "countryCode": "DE",
-      "region": "Европа",
+      "region": "europe",
       "lat": 48.14,
       "long": 11.58,
       "stations": [
@@ -13508,10 +13578,12 @@
     },
     {
       "id": "cologne",
-      "name": "Кёльн",
-      "country": "Германия",
+      "name": {
+        "en": "Cologne",
+        "ru": "Кёльн"
+      },
       "countryCode": "DE",
-      "region": "Европа",
+      "region": "europe",
       "lat": 50.94,
       "long": 6.96,
       "stations": [
@@ -14438,10 +14510,12 @@
     },
     {
       "id": "frankfurt",
-      "name": "Франкфурт",
-      "country": "Германия",
+      "name": {
+        "en": "Frankfurt",
+        "ru": "Франкфурт"
+      },
       "countryCode": "DE",
-      "region": "Европа",
+      "region": "europe",
       "lat": 50.11,
       "long": 8.68,
       "stations": [
@@ -15091,10 +15165,12 @@
     },
     {
       "id": "madrid",
-      "name": "Мадрид",
-      "country": "Испания",
+      "name": {
+        "en": "Madrid",
+        "ru": "Мадрид"
+      },
       "countryCode": "ES",
-      "region": "Европа",
+      "region": "europe",
       "lat": 40.42,
       "long": -3.7,
       "stations": [
@@ -15929,10 +16005,12 @@
     },
     {
       "id": "barcelona",
-      "name": "Барселона",
-      "country": "Испания",
+      "name": {
+        "en": "Barcelona",
+        "ru": "Барселона"
+      },
       "countryCode": "ES",
-      "region": "Европа",
+      "region": "europe",
       "lat": 41.39,
       "long": 2.17,
       "stations": [
@@ -16786,10 +16864,12 @@
     },
     {
       "id": "valencia",
-      "name": "Валенсия",
-      "country": "Испания",
+      "name": {
+        "en": "Valencia",
+        "ru": "Валенсия"
+      },
       "countryCode": "ES",
-      "region": "Европа",
+      "region": "europe",
       "lat": 39.47,
       "long": -0.38,
       "stations": [
@@ -17293,10 +17373,12 @@
     },
     {
       "id": "seville",
-      "name": "Севилья",
-      "country": "Испания",
+      "name": {
+        "en": "Seville",
+        "ru": "Севилья"
+      },
       "countryCode": "ES",
-      "region": "Европа",
+      "region": "europe",
       "lat": 37.39,
       "long": -5.98,
       "stations": [
@@ -17582,10 +17664,12 @@
     },
     {
       "id": "lisbon",
-      "name": "Лиссабон",
-      "country": "Португалия",
+      "name": {
+        "en": "Lisbon",
+        "ru": "Лиссабон"
+      },
       "countryCode": "PT",
-      "region": "Европа",
+      "region": "europe",
       "lat": 38.72,
       "long": -9.14,
       "stations": [
@@ -18416,10 +18500,12 @@
     },
     {
       "id": "porto",
-      "name": "Порту",
-      "country": "Португалия",
+      "name": {
+        "en": "Porto",
+        "ru": "Порту"
+      },
       "countryCode": "PT",
-      "region": "Европа",
+      "region": "europe",
       "lat": 41.15,
       "long": -8.61,
       "stations": [
@@ -18616,10 +18702,12 @@
     },
     {
       "id": "rome",
-      "name": "Рим",
-      "country": "Италия",
+      "name": {
+        "en": "Rome",
+        "ru": "Рим"
+      },
       "countryCode": "IT",
-      "region": "Европа",
+      "region": "europe",
       "lat": 41.9,
       "long": 12.5,
       "stations": [
@@ -19429,10 +19517,12 @@
     },
     {
       "id": "milan",
-      "name": "Милан",
-      "country": "Италия",
+      "name": {
+        "en": "Milan",
+        "ru": "Милан"
+      },
       "countryCode": "IT",
-      "region": "Европа",
+      "region": "europe",
       "lat": 45.46,
       "long": 9.19,
       "stations": [
@@ -19938,10 +20028,12 @@
     },
     {
       "id": "naples",
-      "name": "Неаполь",
-      "country": "Италия",
+      "name": {
+        "en": "Naples",
+        "ru": "Неаполь"
+      },
       "countryCode": "IT",
-      "region": "Европа",
+      "region": "europe",
       "lat": 40.85,
       "long": 14.27,
       "stations": [
@@ -20119,10 +20211,12 @@
     },
     {
       "id": "turin",
-      "name": "Турин",
-      "country": "Италия",
+      "name": {
+        "en": "Turin",
+        "ru": "Турин"
+      },
       "countryCode": "IT",
-      "region": "Европа",
+      "region": "europe",
       "lat": 45.07,
       "long": 7.69,
       "stations": [
@@ -20207,10 +20301,12 @@
     },
     {
       "id": "amsterdam",
-      "name": "Амстердам",
-      "country": "Нидерланды",
+      "name": {
+        "en": "Amsterdam",
+        "ru": "Амстердам"
+      },
       "countryCode": "NL",
-      "region": "Европа",
+      "region": "europe",
       "lat": 52.37,
       "long": 4.9,
       "stations": [
@@ -20234,7 +20330,7 @@
             "long": 4.911
           },
           "votes": 8,
-          "clickCount": 0
+          "clickCount": 3
         },
         {
           "id": "f0ab0c5c-7125-476c-97a4-2eabc14f5f05",
@@ -21062,10 +21158,12 @@
     },
     {
       "id": "brussels",
-      "name": "Брюссель",
-      "country": "Бельгия",
+      "name": {
+        "en": "Brussels",
+        "ru": "Брюссель"
+      },
       "countryCode": "BE",
-      "region": "Европа",
+      "region": "europe",
       "lat": 50.85,
       "long": 4.35,
       "stations": [
@@ -21892,10 +21990,12 @@
     },
     {
       "id": "zurich",
-      "name": "Цюрих",
-      "country": "Швейцария",
+      "name": {
+        "en": "Zurich",
+        "ru": "Цюрих"
+      },
       "countryCode": "CH",
-      "region": "Европа",
+      "region": "europe",
       "lat": 47.38,
       "long": 8.54,
       "stations": [
@@ -22520,10 +22620,12 @@
     },
     {
       "id": "geneva",
-      "name": "Женева",
-      "country": "Швейцария",
+      "name": {
+        "en": "Geneva",
+        "ru": "Женева"
+      },
       "countryCode": "CH",
-      "region": "Европа",
+      "region": "europe",
       "lat": 46.2,
       "long": 6.14,
       "stations": [
@@ -22703,10 +22805,12 @@
     },
     {
       "id": "vienna",
-      "name": "Вена",
-      "country": "Австрия",
+      "name": {
+        "en": "Vienna",
+        "ru": "Вена"
+      },
       "countryCode": "AT",
-      "region": "Европа",
+      "region": "europe",
       "lat": 48.21,
       "long": 16.37,
       "stations": [
@@ -23540,10 +23644,12 @@
     },
     {
       "id": "prague",
-      "name": "Прага",
-      "country": "Чехия",
+      "name": {
+        "en": "Prague",
+        "ru": "Прага"
+      },
       "countryCode": "CZ",
-      "region": "Европа",
+      "region": "europe",
       "lat": 50.08,
       "long": 14.44,
       "stations": [
@@ -23988,10 +24094,12 @@
     },
     {
       "id": "warsaw",
-      "name": "Варшава",
-      "country": "Польша",
+      "name": {
+        "en": "Warsaw",
+        "ru": "Варшава"
+      },
       "countryCode": "PL",
-      "region": "Европа",
+      "region": "europe",
       "lat": 52.23,
       "long": 21.01,
       "stations": [
@@ -24802,10 +24910,12 @@
     },
     {
       "id": "krakow",
-      "name": "Краков",
-      "country": "Польша",
+      "name": {
+        "en": "Kraków",
+        "ru": "Краков"
+      },
       "countryCode": "PL",
-      "region": "Европа",
+      "region": "europe",
       "lat": 50.06,
       "long": 19.94,
       "stations": [
@@ -25310,10 +25420,12 @@
     },
     {
       "id": "budapest",
-      "name": "Будапешт",
-      "country": "Венгрия",
+      "name": {
+        "en": "Budapest",
+        "ru": "Будапешт"
+      },
       "countryCode": "HU",
-      "region": "Европа",
+      "region": "europe",
       "lat": 47.5,
       "long": 19.04,
       "stations": [
@@ -26050,10 +26162,12 @@
     },
     {
       "id": "bucharest",
-      "name": "Бухарест",
-      "country": "Румыния",
+      "name": {
+        "en": "Bucharest",
+        "ru": "Бухарест"
+      },
       "countryCode": "RO",
-      "region": "Европа",
+      "region": "europe",
       "lat": 44.43,
       "long": 26.1,
       "stations": [
@@ -26885,10 +26999,12 @@
     },
     {
       "id": "sofia",
-      "name": "София",
-      "country": "Болгария",
+      "name": {
+        "en": "Sofia",
+        "ru": "София"
+      },
       "countryCode": "BG",
-      "region": "Европа",
+      "region": "europe",
       "lat": 42.7,
       "long": 23.32,
       "stations": [
@@ -27702,10 +27818,12 @@
     },
     {
       "id": "belgrade",
-      "name": "Белград",
-      "country": "Сербия",
+      "name": {
+        "en": "Belgrade",
+        "ru": "Белград"
+      },
       "countryCode": "RS",
-      "region": "Европа",
+      "region": "europe",
       "lat": 44.79,
       "long": 20.45,
       "stations": [
@@ -28061,10 +28179,12 @@
     },
     {
       "id": "zagreb",
-      "name": "Загреб",
-      "country": "Хорватия",
+      "name": {
+        "en": "Zagreb",
+        "ru": "Загреб"
+      },
       "countryCode": "HR",
-      "region": "Европа",
+      "region": "europe",
       "lat": 45.81,
       "long": 15.98,
       "stations": [
@@ -28543,10 +28663,12 @@
     },
     {
       "id": "athens",
-      "name": "Афины",
-      "country": "Греция",
+      "name": {
+        "en": "Athens",
+        "ru": "Афины"
+      },
       "countryCode": "GR",
-      "region": "Европа",
+      "region": "europe",
       "lat": 37.98,
       "long": 23.73,
       "stations": [
@@ -29351,10 +29473,12 @@
     },
     {
       "id": "stockholm",
-      "name": "Стокгольм",
-      "country": "Швеция",
+      "name": {
+        "en": "Stockholm",
+        "ru": "Стокгольм"
+      },
       "countryCode": "SE",
-      "region": "Европа",
+      "region": "europe",
       "lat": 59.33,
       "long": 18.07,
       "stations": [
@@ -30249,10 +30373,12 @@
     },
     {
       "id": "copenhagen",
-      "name": "Копенгаген",
-      "country": "Дания",
+      "name": {
+        "en": "Copenhagen",
+        "ru": "Копенгаген"
+      },
       "countryCode": "DK",
-      "region": "Европа",
+      "region": "europe",
       "lat": 55.68,
       "long": 12.57,
       "stations": [
@@ -30677,10 +30803,12 @@
     },
     {
       "id": "oslo",
-      "name": "Осло",
-      "country": "Норвегия",
+      "name": {
+        "en": "Oslo",
+        "ru": "Осло"
+      },
       "countryCode": "NO",
-      "region": "Европа",
+      "region": "europe",
       "lat": 59.91,
       "long": 10.75,
       "stations": [
@@ -30987,10 +31115,12 @@
     },
     {
       "id": "helsinki",
-      "name": "Хельсинки",
-      "country": "Финляндия",
+      "name": {
+        "en": "Helsinki",
+        "ru": "Хельсинки"
+      },
       "countryCode": "FI",
-      "region": "Европа",
+      "region": "europe",
       "lat": 60.17,
       "long": 24.94,
       "stations": [
@@ -31257,10 +31387,12 @@
     },
     {
       "id": "istanbul",
-      "name": "Стамбул",
-      "country": "Турция",
+      "name": {
+        "en": "Istanbul",
+        "ru": "Стамбул"
+      },
       "countryCode": "TR",
-      "region": "Европа",
+      "region": "europe",
       "lat": 41.01,
       "long": 28.98,
       "stations": [
@@ -32041,10 +32173,12 @@
     },
     {
       "id": "ankara",
-      "name": "Анкара",
-      "country": "Турция",
+      "name": {
+        "en": "Ankara",
+        "ru": "Анкара"
+      },
       "countryCode": "TR",
-      "region": "Европа",
+      "region": "europe",
       "lat": 39.93,
       "long": 32.86,
       "stations": [
@@ -32335,10 +32469,12 @@
     },
     {
       "id": "izmir",
-      "name": "Измир",
-      "country": "Турция",
+      "name": {
+        "en": "Izmir",
+        "ru": "Измир"
+      },
       "countryCode": "TR",
-      "region": "Европа",
+      "region": "europe",
       "lat": 38.42,
       "long": 27.13,
       "stations": [
@@ -32423,10 +32559,12 @@
     },
     {
       "id": "tel-aviv",
-      "name": "Тель-Авив",
-      "country": "Израиль",
+      "name": {
+        "en": "Tel Aviv",
+        "ru": "Тель-Авив"
+      },
       "countryCode": "IL",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 32.08,
       "long": 34.78,
       "stations": [
@@ -32625,10 +32763,12 @@
     },
     {
       "id": "jerusalem",
-      "name": "Иерусалим",
-      "country": "Израиль",
+      "name": {
+        "en": "Jerusalem",
+        "ru": "Иерусалим"
+      },
       "countryCode": "IL",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 31.77,
       "long": 35.21,
       "stations": [
@@ -32810,10 +32950,12 @@
     },
     {
       "id": "beirut",
-      "name": "Бейрут",
-      "country": "Ливан",
+      "name": {
+        "en": "Beirut",
+        "ru": "Бейрут"
+      },
       "countryCode": "LB",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 33.89,
       "long": 35.5,
       "stations": [
@@ -33088,10 +33230,12 @@
     },
     {
       "id": "amman",
-      "name": "Амман",
-      "country": "Иордания",
+      "name": {
+        "en": "Amman",
+        "ru": "Амман"
+      },
       "countryCode": "JO",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 31.95,
       "long": 35.93,
       "stations": [
@@ -33192,10 +33336,12 @@
     },
     {
       "id": "damascus",
-      "name": "Дамаск",
-      "country": "Сирия",
+      "name": {
+        "en": "Damascus",
+        "ru": "Дамаск"
+      },
       "countryCode": "SY",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 33.51,
       "long": 36.29,
       "stations": [
@@ -33233,10 +33379,12 @@
     },
     {
       "id": "baghdad",
-      "name": "Багдад",
-      "country": "Ирак",
+      "name": {
+        "en": "Baghdad",
+        "ru": "Багдад"
+      },
       "countryCode": "IQ",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 33.31,
       "long": 44.37,
       "stations": [
@@ -33320,10 +33468,12 @@
     },
     {
       "id": "tehran",
-      "name": "Тегеран",
-      "country": "Иран",
+      "name": {
+        "en": "Tehran",
+        "ru": "Тегеран"
+      },
       "countryCode": "IR",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 35.69,
       "long": 51.39,
       "stations": [
@@ -33374,10 +33524,12 @@
     },
     {
       "id": "riyadh",
-      "name": "Эр-Рияд",
-      "country": "Саудовская Аравия",
+      "name": {
+        "en": "Riyadh",
+        "ru": "Эр-Рияд"
+      },
       "countryCode": "SA",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 24.71,
       "long": 46.68,
       "stations": [
@@ -33723,10 +33875,12 @@
     },
     {
       "id": "jeddah",
-      "name": "Джидда",
-      "country": "Саудовская Аравия",
+      "name": {
+        "en": "Jeddah",
+        "ru": "Джидда"
+      },
       "countryCode": "SA",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 21.49,
       "long": 39.19,
       "stations": [
@@ -33791,10 +33945,12 @@
     },
     {
       "id": "dubai",
-      "name": "Дубай",
-      "country": "ОАЭ",
+      "name": {
+        "en": "Dubai",
+        "ru": "Дубай"
+      },
       "countryCode": "AE",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 25.2,
       "long": 55.27,
       "stations": [
@@ -34553,10 +34709,12 @@
     },
     {
       "id": "abu-dhabi",
-      "name": "Абу-Даби",
-      "country": "ОАЭ",
+      "name": {
+        "en": "Abu Dhabi",
+        "ru": "Абу-Даби"
+      },
       "countryCode": "AE",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 24.45,
       "long": 54.38,
       "stations": [
@@ -34585,10 +34743,12 @@
     },
     {
       "id": "doha",
-      "name": "Доха",
-      "country": "Катар",
+      "name": {
+        "en": "Doha",
+        "ru": "Доха"
+      },
       "countryCode": "QA",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 25.29,
       "long": 51.53,
       "stations": [
@@ -34654,10 +34814,12 @@
     },
     {
       "id": "kuwait-city",
-      "name": "Эль-Кувейт",
-      "country": "Кувейт",
+      "name": {
+        "en": "Kuwait City",
+        "ru": "Эль-Кувейт"
+      },
       "countryCode": "KW",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 29.38,
       "long": 47.98,
       "stations": [
@@ -34938,10 +35100,12 @@
     },
     {
       "id": "muscat",
-      "name": "Маскат",
-      "country": "Оман",
+      "name": {
+        "en": "Muscat",
+        "ru": "Маскат"
+      },
       "countryCode": "OM",
-      "region": "Ближний Восток",
+      "region": "middleEast",
       "lat": 23.59,
       "long": 58.41,
       "stations": [
@@ -34992,10 +35156,12 @@
     },
     {
       "id": "tokyo",
-      "name": "Токио",
-      "country": "Япония",
+      "name": {
+        "en": "Tokyo",
+        "ru": "Токио"
+      },
       "countryCode": "JP",
-      "region": "Азия",
+      "region": "asia",
       "lat": 35.68,
       "long": 139.69,
       "stations": [
@@ -35223,10 +35389,12 @@
     },
     {
       "id": "osaka",
-      "name": "Осака",
-      "country": "Япония",
+      "name": {
+        "en": "Osaka",
+        "ru": "Осака"
+      },
       "countryCode": "JP",
-      "region": "Азия",
+      "region": "asia",
       "lat": 34.69,
       "long": 135.5,
       "stations": [
@@ -35296,10 +35464,12 @@
     },
     {
       "id": "seoul",
-      "name": "Сеул",
-      "country": "Южная Корея",
+      "name": {
+        "en": "Seoul",
+        "ru": "Сеул"
+      },
       "countryCode": "KR",
-      "region": "Азия",
+      "region": "asia",
       "lat": 37.57,
       "long": 126.98,
       "stations": [
@@ -35354,10 +35524,12 @@
     },
     {
       "id": "beijing",
-      "name": "Пекин",
-      "country": "Китай",
+      "name": {
+        "en": "Beijing",
+        "ru": "Пекин"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 39.9,
       "long": 116.4,
       "stations": [
@@ -35600,10 +35772,12 @@
     },
     {
       "id": "shanghai",
-      "name": "Шанхай",
-      "country": "Китай",
+      "name": {
+        "en": "Shanghai",
+        "ru": "Шанхай"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 31.23,
       "long": 121.47,
       "stations": [
@@ -35929,10 +36103,12 @@
     },
     {
       "id": "guangzhou",
-      "name": "Гуанчжоу",
-      "country": "Китай",
+      "name": {
+        "en": "Guangzhou",
+        "ru": "Гуанчжоу"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 23.13,
       "long": 113.26,
       "stations": [
@@ -36049,10 +36225,12 @@
     },
     {
       "id": "shenzhen",
-      "name": "Шэньчжэнь",
-      "country": "Китай",
+      "name": {
+        "en": "Shenzhen",
+        "ru": "Шэньчжэнь"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 22.54,
       "long": 114.06,
       "stations": [
@@ -36135,10 +36313,12 @@
     },
     {
       "id": "chongqing",
-      "name": "Чунцин",
-      "country": "Китай",
+      "name": {
+        "en": "Chongqing",
+        "ru": "Чунцин"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 29.56,
       "long": 106.55,
       "stations": [
@@ -36184,10 +36364,12 @@
     },
     {
       "id": "chengdu",
-      "name": "Чэнду",
-      "country": "Китай",
+      "name": {
+        "en": "Chengdu",
+        "ru": "Чэнду"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 30.57,
       "long": 104.07,
       "stations": [
@@ -36290,10 +36472,12 @@
     },
     {
       "id": "wuhan",
-      "name": "Ухань",
-      "country": "Китай",
+      "name": {
+        "en": "Wuhan",
+        "ru": "Ухань"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 30.59,
       "long": 114.31,
       "stations": [
@@ -36319,10 +36503,12 @@
     },
     {
       "id": "xian",
-      "name": "Сиань",
-      "country": "Китай",
+      "name": {
+        "en": "Xi'an",
+        "ru": "Сиань"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 34.34,
       "long": 108.94,
       "stations": [
@@ -36380,10 +36566,12 @@
     },
     {
       "id": "nanjing",
-      "name": "Нанкин",
-      "country": "Китай",
+      "name": {
+        "en": "Nanjing",
+        "ru": "Нанкин"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 32.06,
       "long": 118.8,
       "stations": [
@@ -36430,10 +36618,12 @@
     },
     {
       "id": "hangzhou",
-      "name": "Ханчжоу",
-      "country": "Китай",
+      "name": {
+        "en": "Hangzhou",
+        "ru": "Ханчжоу"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 30.27,
       "long": 120.15,
       "stations": [
@@ -36522,10 +36712,12 @@
     },
     {
       "id": "tianjin",
-      "name": "Тяньцзинь",
-      "country": "Китай",
+      "name": {
+        "en": "Tianjin",
+        "ru": "Тяньцзинь"
+      },
       "countryCode": "CN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 39.34,
       "long": 117.36,
       "stations": [
@@ -36565,10 +36757,12 @@
     },
     {
       "id": "hong-kong",
-      "name": "Гонконг",
-      "country": "Гонконг",
+      "name": {
+        "en": "Hong Kong",
+        "ru": "Гонконг"
+      },
       "countryCode": "HK",
-      "region": "Азия",
+      "region": "asia",
       "lat": 22.32,
       "long": 114.17,
       "stations": [
@@ -36598,10 +36792,12 @@
     },
     {
       "id": "taipei",
-      "name": "Тайбэй",
-      "country": "Тайвань",
+      "name": {
+        "en": "Taipei",
+        "ru": "Тайбэй"
+      },
       "countryCode": "TW",
-      "region": "Азия",
+      "region": "asia",
       "lat": 25.03,
       "long": 121.57,
       "stations": [
@@ -36727,10 +36923,12 @@
     },
     {
       "id": "bangkok",
-      "name": "Бангкок",
-      "country": "Таиланд",
+      "name": {
+        "en": "Bangkok",
+        "ru": "Бангкок"
+      },
       "countryCode": "TH",
-      "region": "Азия",
+      "region": "asia",
       "lat": 13.76,
       "long": 100.5,
       "stations": [
@@ -37017,10 +37215,12 @@
     },
     {
       "id": "hanoi",
-      "name": "Ханой",
-      "country": "Вьетнам",
+      "name": {
+        "en": "Hanoi",
+        "ru": "Ханой"
+      },
       "countryCode": "VN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 21.03,
       "long": 105.85,
       "stations": [
@@ -37046,10 +37246,12 @@
     },
     {
       "id": "ho-chi-minh",
-      "name": "Хошимин",
-      "country": "Вьетнам",
+      "name": {
+        "en": "Ho Chi Minh City",
+        "ru": "Хошимин"
+      },
       "countryCode": "VN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 10.82,
       "long": 106.63,
       "stations": [
@@ -37089,10 +37291,12 @@
     },
     {
       "id": "phnom-penh",
-      "name": "Пномпень",
-      "country": "Камбоджа",
+      "name": {
+        "en": "Phnom Penh",
+        "ru": "Пномпень"
+      },
       "countryCode": "KH",
-      "region": "Азия",
+      "region": "asia",
       "lat": 11.56,
       "long": 104.92,
       "stations": [
@@ -37173,10 +37377,12 @@
     },
     {
       "id": "yangon",
-      "name": "Янгон",
-      "country": "Мьянма",
+      "name": {
+        "en": "Yangon",
+        "ru": "Янгон"
+      },
       "countryCode": "MM",
-      "region": "Азия",
+      "region": "asia",
       "lat": 16.87,
       "long": 96.2,
       "stations": [
@@ -37207,10 +37413,12 @@
     },
     {
       "id": "kuala-lumpur",
-      "name": "Куала-Лумпур",
-      "country": "Малайзия",
+      "name": {
+        "en": "Kuala Lumpur",
+        "ru": "Куала-Лумпур"
+      },
       "countryCode": "MY",
-      "region": "Азия",
+      "region": "asia",
       "lat": 3.14,
       "long": 101.69,
       "stations": [
@@ -37311,10 +37519,12 @@
     },
     {
       "id": "singapore",
-      "name": "Сингапур",
-      "country": "Сингапур",
+      "name": {
+        "en": "Singapore",
+        "ru": "Сингапур"
+      },
       "countryCode": "SG",
-      "region": "Азия",
+      "region": "asia",
       "lat": 1.35,
       "long": 103.82,
       "stations": [
@@ -37705,10 +37915,12 @@
     },
     {
       "id": "jakarta",
-      "name": "Джакарта",
-      "country": "Индонезия",
+      "name": {
+        "en": "Jakarta",
+        "ru": "Джакарта"
+      },
       "countryCode": "ID",
-      "region": "Азия",
+      "region": "asia",
       "lat": -6.21,
       "long": 106.85,
       "stations": [
@@ -38519,10 +38731,12 @@
     },
     {
       "id": "surabaya",
-      "name": "Сурабая",
-      "country": "Индонезия",
+      "name": {
+        "en": "Surabaya",
+        "ru": "Сурабая"
+      },
       "countryCode": "ID",
-      "region": "Азия",
+      "region": "asia",
       "lat": -7.26,
       "long": 112.75,
       "stations": [
@@ -38740,10 +38954,12 @@
     },
     {
       "id": "bandung",
-      "name": "Бандунг",
-      "country": "Индонезия",
+      "name": {
+        "en": "Bandung",
+        "ru": "Бандунг"
+      },
       "countryCode": "ID",
-      "region": "Азия",
+      "region": "asia",
       "lat": -6.92,
       "long": 107.61,
       "stations": [
@@ -39161,10 +39377,12 @@
     },
     {
       "id": "manila",
-      "name": "Манила",
-      "country": "Филиппины",
+      "name": {
+        "en": "Manila",
+        "ru": "Манила"
+      },
       "countryCode": "PH",
-      "region": "Азия",
+      "region": "asia",
       "lat": 14.6,
       "long": 120.98,
       "stations": [
@@ -39578,10 +39796,12 @@
     },
     {
       "id": "cebu",
-      "name": "Себу",
-      "country": "Филиппины",
+      "name": {
+        "en": "Cebu",
+        "ru": "Себу"
+      },
       "countryCode": "PH",
-      "region": "Азия",
+      "region": "asia",
       "lat": 10.32,
       "long": 123.9,
       "stations": [
@@ -39712,10 +39932,12 @@
     },
     {
       "id": "delhi",
-      "name": "Дели",
-      "country": "Индия",
+      "name": {
+        "en": "Delhi",
+        "ru": "Дели"
+      },
       "countryCode": "IN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 28.61,
       "long": 77.21,
       "stations": [
@@ -39850,10 +40072,12 @@
     },
     {
       "id": "mumbai",
-      "name": "Мумбаи",
-      "country": "Индия",
+      "name": {
+        "en": "Mumbai",
+        "ru": "Мумбаи"
+      },
       "countryCode": "IN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 19.08,
       "long": 72.88,
       "stations": [
@@ -40072,10 +40296,12 @@
     },
     {
       "id": "kolkata",
-      "name": "Калькутта",
-      "country": "Индия",
+      "name": {
+        "en": "Kolkata",
+        "ru": "Калькутта"
+      },
       "countryCode": "IN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 22.57,
       "long": 88.36,
       "stations": [
@@ -40102,10 +40328,12 @@
     },
     {
       "id": "chennai",
-      "name": "Ченнаи",
-      "country": "Индия",
+      "name": {
+        "en": "Chennai",
+        "ru": "Ченнаи"
+      },
       "countryCode": "IN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 13.08,
       "long": 80.27,
       "stations": [
@@ -40153,10 +40381,12 @@
     },
     {
       "id": "bangalore",
-      "name": "Бангалор",
-      "country": "Индия",
+      "name": {
+        "en": "Bangalore",
+        "ru": "Бангалор"
+      },
       "countryCode": "IN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 12.97,
       "long": 77.59,
       "stations": [
@@ -40217,10 +40447,12 @@
     },
     {
       "id": "pune",
-      "name": "Пуна",
-      "country": "Индия",
+      "name": {
+        "en": "Pune",
+        "ru": "Пуна"
+      },
       "countryCode": "IN",
-      "region": "Азия",
+      "region": "asia",
       "lat": 18.52,
       "long": 73.86,
       "stations": [
@@ -40245,10 +40477,12 @@
     },
     {
       "id": "karachi",
-      "name": "Карачи",
-      "country": "Пакистан",
+      "name": {
+        "en": "Karachi",
+        "ru": "Карачи"
+      },
       "countryCode": "PK",
-      "region": "Азия",
+      "region": "asia",
       "lat": 24.86,
       "long": 67.01,
       "stations": [
@@ -40326,10 +40560,12 @@
     },
     {
       "id": "lahore",
-      "name": "Лахор",
-      "country": "Пакистан",
+      "name": {
+        "en": "Lahore",
+        "ru": "Лахор"
+      },
       "countryCode": "PK",
-      "region": "Азия",
+      "region": "asia",
       "lat": 31.55,
       "long": 74.34,
       "stations": [
@@ -40427,10 +40663,12 @@
     },
     {
       "id": "islamabad",
-      "name": "Исламабад",
-      "country": "Пакистан",
+      "name": {
+        "en": "Islamabad",
+        "ru": "Исламабад"
+      },
       "countryCode": "PK",
-      "region": "Азия",
+      "region": "asia",
       "lat": 33.69,
       "long": 73.04,
       "stations": [
@@ -40525,10 +40763,12 @@
     },
     {
       "id": "dhaka",
-      "name": "Дакка",
-      "country": "Бангладеш",
+      "name": {
+        "en": "Dhaka",
+        "ru": "Дакка"
+      },
       "countryCode": "BD",
-      "region": "Азия",
+      "region": "asia",
       "lat": 23.81,
       "long": 90.41,
       "stations": [
@@ -40673,10 +40913,12 @@
     },
     {
       "id": "colombo",
-      "name": "Коломбо",
-      "country": "Шри-Ланка",
+      "name": {
+        "en": "Colombo",
+        "ru": "Коломбо"
+      },
       "countryCode": "LK",
-      "region": "Азия",
+      "region": "asia",
       "lat": 6.93,
       "long": 79.85,
       "stations": [
@@ -40834,10 +41076,12 @@
     },
     {
       "id": "kathmandu",
-      "name": "Катманду",
-      "country": "Непал",
+      "name": {
+        "en": "Kathmandu",
+        "ru": "Катманду"
+      },
       "countryCode": "NP",
-      "region": "Азия",
+      "region": "asia",
       "lat": 27.72,
       "long": 85.32,
       "stations": [
@@ -40948,10 +41192,12 @@
     },
     {
       "id": "cairo",
-      "name": "Каир",
-      "country": "Египет",
+      "name": {
+        "en": "Cairo",
+        "ru": "Каир"
+      },
       "countryCode": "EG",
-      "region": "Африка",
+      "region": "africa",
       "lat": 30.04,
       "long": 31.24,
       "stations": [
@@ -41480,10 +41726,12 @@
     },
     {
       "id": "casablanca",
-      "name": "Касабланка",
-      "country": "Марокко",
+      "name": {
+        "en": "Casablanca",
+        "ru": "Касабланка"
+      },
       "countryCode": "MA",
-      "region": "Африка",
+      "region": "africa",
       "lat": 33.57,
       "long": -7.59,
       "stations": [
@@ -41596,10 +41844,12 @@
     },
     {
       "id": "rabat",
-      "name": "Рабат",
-      "country": "Марокко",
+      "name": {
+        "en": "Rabat",
+        "ru": "Рабат"
+      },
       "countryCode": "MA",
-      "region": "Африка",
+      "region": "africa",
       "lat": 34.02,
       "long": -6.84,
       "stations": [
@@ -41656,10 +41906,12 @@
     },
     {
       "id": "algiers",
-      "name": "Алжир",
-      "country": "Алжир",
+      "name": {
+        "en": "Algiers",
+        "ru": "Алжир"
+      },
       "countryCode": "DZ",
-      "region": "Африка",
+      "region": "africa",
       "lat": 36.75,
       "long": 3.06,
       "stations": [
@@ -42416,10 +42668,12 @@
     },
     {
       "id": "tunis",
-      "name": "Тунис",
-      "country": "Тунис",
+      "name": {
+        "en": "Tunis",
+        "ru": "Тунис"
+      },
       "countryCode": "TN",
-      "region": "Африка",
+      "region": "africa",
       "lat": 36.81,
       "long": 10.18,
       "stations": [
@@ -42514,10 +42768,12 @@
     },
     {
       "id": "tripoli",
-      "name": "Триполи",
-      "country": "Ливия",
+      "name": {
+        "en": "Tripoli",
+        "ru": "Триполи"
+      },
       "countryCode": "LY",
-      "region": "Африка",
+      "region": "africa",
       "lat": 32.9,
       "long": 13.18,
       "stations": [
@@ -42577,10 +42833,12 @@
     },
     {
       "id": "addis-ababa",
-      "name": "Аддис-Абеба",
-      "country": "Эфиопия",
+      "name": {
+        "en": "Addis Ababa",
+        "ru": "Аддис-Абеба"
+      },
       "countryCode": "ET",
-      "region": "Африка",
+      "region": "africa",
       "lat": 9.03,
       "long": 38.74,
       "stations": [
@@ -42839,10 +43097,12 @@
     },
     {
       "id": "nairobi",
-      "name": "Найроби",
-      "country": "Кения",
+      "name": {
+        "en": "Nairobi",
+        "ru": "Найроби"
+      },
       "countryCode": "KE",
-      "region": "Африка",
+      "region": "africa",
       "lat": -1.29,
       "long": 36.82,
       "stations": [
@@ -42921,10 +43181,12 @@
     },
     {
       "id": "kampala",
-      "name": "Кампала",
-      "country": "Уганда",
+      "name": {
+        "en": "Kampala",
+        "ru": "Кампала"
+      },
       "countryCode": "UG",
-      "region": "Африка",
+      "region": "africa",
       "lat": 0.35,
       "long": 32.58,
       "stations": [
@@ -43015,10 +43277,12 @@
     },
     {
       "id": "kigali",
-      "name": "Кигали",
-      "country": "Руанда",
+      "name": {
+        "en": "Kigali",
+        "ru": "Кигали"
+      },
       "countryCode": "RW",
-      "region": "Африка",
+      "region": "africa",
       "lat": -1.94,
       "long": 30.06,
       "stations": [
@@ -43040,10 +43304,12 @@
     },
     {
       "id": "dar-es-salaam",
-      "name": "Дар-эс-Салам",
-      "country": "Танзания",
+      "name": {
+        "en": "Dar es Salaam",
+        "ru": "Дар-эс-Салам"
+      },
       "countryCode": "TZ",
-      "region": "Африка",
+      "region": "africa",
       "lat": -6.79,
       "long": 39.28,
       "stations": [
@@ -43065,10 +43331,12 @@
     },
     {
       "id": "kinshasa",
-      "name": "Киншаса",
-      "country": "ДР Конго",
+      "name": {
+        "en": "Kinshasa",
+        "ru": "Киншаса"
+      },
       "countryCode": "CD",
-      "region": "Африка",
+      "region": "africa",
       "lat": -4.44,
       "long": 15.27,
       "stations": [
@@ -43116,10 +43384,12 @@
     },
     {
       "id": "luanda",
-      "name": "Луанда",
-      "country": "Ангола",
+      "name": {
+        "en": "Luanda",
+        "ru": "Луанда"
+      },
       "countryCode": "AO",
-      "region": "Африка",
+      "region": "africa",
       "lat": -8.84,
       "long": 13.23,
       "stations": [
@@ -43761,10 +44031,12 @@
     },
     {
       "id": "lusaka",
-      "name": "Лусака",
-      "country": "Замбия",
+      "name": {
+        "en": "Lusaka",
+        "ru": "Лусака"
+      },
       "countryCode": "ZM",
-      "region": "Африка",
+      "region": "africa",
       "lat": -15.39,
       "long": 28.32,
       "stations": [
@@ -44455,10 +44727,12 @@
     },
     {
       "id": "harare",
-      "name": "Хараре",
-      "country": "Зимбабве",
+      "name": {
+        "en": "Harare",
+        "ru": "Хараре"
+      },
       "countryCode": "ZW",
-      "region": "Африка",
+      "region": "africa",
       "lat": -17.83,
       "long": 31.05,
       "stations": [
@@ -44701,10 +44975,12 @@
     },
     {
       "id": "maputo",
-      "name": "Мапуту",
-      "country": "Мозамбик",
+      "name": {
+        "en": "Maputo",
+        "ru": "Мапуту"
+      },
       "countryCode": "MZ",
-      "region": "Африка",
+      "region": "africa",
       "lat": -25.97,
       "long": 32.57,
       "stations": [
@@ -44853,10 +45129,12 @@
     },
     {
       "id": "antananarivo",
-      "name": "Антананариву",
-      "country": "Мадагаскар",
+      "name": {
+        "en": "Antananarivo",
+        "ru": "Антананариву"
+      },
       "countryCode": "MG",
-      "region": "Африка",
+      "region": "africa",
       "lat": -18.88,
       "long": 47.51,
       "stations": [
@@ -44910,10 +45188,12 @@
     },
     {
       "id": "johannesburg",
-      "name": "Йоханнесбург",
-      "country": "ЮАР",
+      "name": {
+        "en": "Johannesburg",
+        "ru": "Йоханнесбург"
+      },
       "countryCode": "ZA",
-      "region": "Африка",
+      "region": "africa",
       "lat": -26.2,
       "long": 28.04,
       "stations": [
@@ -45097,10 +45377,12 @@
     },
     {
       "id": "cape-town",
-      "name": "Кейптаун",
-      "country": "ЮАР",
+      "name": {
+        "en": "Cape Town",
+        "ru": "Кейптаун"
+      },
       "countryCode": "ZA",
-      "region": "Африка",
+      "region": "africa",
       "lat": -33.92,
       "long": 18.42,
       "stations": [
@@ -45225,10 +45507,12 @@
     },
     {
       "id": "durban",
-      "name": "Дурбан",
-      "country": "ЮАР",
+      "name": {
+        "en": "Durban",
+        "ru": "Дурбан"
+      },
       "countryCode": "ZA",
-      "region": "Африка",
+      "region": "africa",
       "lat": -29.86,
       "long": 31.02,
       "stations": [
@@ -45291,10 +45575,12 @@
     },
     {
       "id": "lagos",
-      "name": "Лагос",
-      "country": "Нигерия",
+      "name": {
+        "en": "Lagos",
+        "ru": "Лагос"
+      },
       "countryCode": "NG",
-      "region": "Африка",
+      "region": "africa",
       "lat": 6.52,
       "long": 3.38,
       "stations": [
@@ -45469,10 +45755,12 @@
     },
     {
       "id": "abuja",
-      "name": "Абуджа",
-      "country": "Нигерия",
+      "name": {
+        "en": "Abuja",
+        "ru": "Абуджа"
+      },
       "countryCode": "NG",
-      "region": "Африка",
+      "region": "africa",
       "lat": 9.06,
       "long": 7.49,
       "stations": [
@@ -45498,10 +45786,12 @@
     },
     {
       "id": "accra",
-      "name": "Аккра",
-      "country": "Гана",
+      "name": {
+        "en": "Accra",
+        "ru": "Аккра"
+      },
       "countryCode": "GH",
-      "region": "Африка",
+      "region": "africa",
       "lat": 5.6,
       "long": -0.19,
       "stations": [
@@ -45691,10 +45981,12 @@
     },
     {
       "id": "abidjan",
-      "name": "Абиджан",
-      "country": "Кот-д’Ивуар",
+      "name": {
+        "en": "Abidjan",
+        "ru": "Абиджан"
+      },
       "countryCode": "CI",
-      "region": "Африка",
+      "region": "africa",
       "lat": 5.35,
       "long": -4,
       "stations": [
@@ -46342,10 +46634,12 @@
     },
     {
       "id": "dakar",
-      "name": "Дакар",
-      "country": "Сенегал",
+      "name": {
+        "en": "Dakar",
+        "ru": "Дакар"
+      },
       "countryCode": "SN",
-      "region": "Африка",
+      "region": "africa",
       "lat": 14.72,
       "long": -17.47,
       "stations": [
@@ -46514,10 +46808,12 @@
     },
     {
       "id": "douala",
-      "name": "Дуала",
-      "country": "Камерун",
+      "name": {
+        "en": "Douala",
+        "ru": "Дуала"
+      },
       "countryCode": "CM",
-      "region": "Африка",
+      "region": "africa",
       "lat": 4.05,
       "long": 9.7,
       "stations": [
@@ -46783,10 +47079,12 @@
     },
     {
       "id": "yaounde",
-      "name": "Яунде",
-      "country": "Камерун",
+      "name": {
+        "en": "Yaoundé",
+        "ru": "Яунде"
+      },
       "countryCode": "CM",
-      "region": "Африка",
+      "region": "africa",
       "lat": 3.87,
       "long": 11.52,
       "stations": [
@@ -47092,10 +47390,12 @@
     },
     {
       "id": "new-york",
-      "name": "Нью-Йорк",
-      "country": "США",
+      "name": {
+        "en": "New York",
+        "ru": "Нью-Йорк"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 40.71,
       "long": -74.01,
       "stations": [
@@ -47999,10 +48299,12 @@
     },
     {
       "id": "los-angeles",
-      "name": "Лос-Анджелес",
-      "country": "США",
+      "name": {
+        "en": "Los Angeles",
+        "ru": "Лос-Анджелес"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 34.05,
       "long": -118.24,
       "stations": [
@@ -48832,10 +49134,12 @@
     },
     {
       "id": "chicago",
-      "name": "Чикаго",
-      "country": "США",
+      "name": {
+        "en": "Chicago",
+        "ru": "Чикаго"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 41.88,
       "long": -87.63,
       "stations": [
@@ -49652,10 +49956,12 @@
     },
     {
       "id": "houston",
-      "name": "Хьюстон",
-      "country": "США",
+      "name": {
+        "en": "Houston",
+        "ru": "Хьюстон"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 29.76,
       "long": -95.37,
       "stations": [
@@ -50027,10 +50333,12 @@
     },
     {
       "id": "phoenix",
-      "name": "Финикс",
-      "country": "США",
+      "name": {
+        "en": "Phoenix",
+        "ru": "Финикс"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 33.45,
       "long": -112.07,
       "stations": [
@@ -50193,10 +50501,12 @@
     },
     {
       "id": "philadelphia",
-      "name": "Филадельфия",
-      "country": "США",
+      "name": {
+        "en": "Philadelphia",
+        "ru": "Филадельфия"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 39.95,
       "long": -75.17,
       "stations": [
@@ -50598,10 +50908,12 @@
     },
     {
       "id": "dallas",
-      "name": "Даллас",
-      "country": "США",
+      "name": {
+        "en": "Dallas",
+        "ru": "Даллас"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 32.78,
       "long": -96.8,
       "stations": [
@@ -50897,10 +51209,12 @@
     },
     {
       "id": "miami",
-      "name": "Майами",
-      "country": "США",
+      "name": {
+        "en": "Miami",
+        "ru": "Майами"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 25.76,
       "long": -80.19,
       "stations": [
@@ -51647,10 +51961,12 @@
     },
     {
       "id": "atlanta",
-      "name": "Атланта",
-      "country": "США",
+      "name": {
+        "en": "Atlanta",
+        "ru": "Атланта"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 33.75,
       "long": -84.39,
       "stations": [
@@ -51939,10 +52255,12 @@
     },
     {
       "id": "boston",
-      "name": "Бостон",
-      "country": "США",
+      "name": {
+        "en": "Boston",
+        "ru": "Бостон"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 42.36,
       "long": -71.06,
       "stations": [
@@ -52604,10 +52922,12 @@
     },
     {
       "id": "san-francisco",
-      "name": "Сан-Франциско",
-      "country": "США",
+      "name": {
+        "en": "San Francisco",
+        "ru": "Сан-Франциско"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 37.77,
       "long": -122.42,
       "stations": [
@@ -53328,10 +53648,12 @@
     },
     {
       "id": "seattle",
-      "name": "Сиэтл",
-      "country": "США",
+      "name": {
+        "en": "Seattle",
+        "ru": "Сиэтл"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 47.61,
       "long": -122.33,
       "stations": [
@@ -53901,10 +54223,12 @@
     },
     {
       "id": "washington",
-      "name": "Вашингтон",
-      "country": "США",
+      "name": {
+        "en": "Washington",
+        "ru": "Вашингтон"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 38.9,
       "long": -77.04,
       "stations": [
@@ -54696,10 +55020,12 @@
     },
     {
       "id": "denver",
-      "name": "Денвер",
-      "country": "США",
+      "name": {
+        "en": "Denver",
+        "ru": "Денвер"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 39.74,
       "long": -104.99,
       "stations": [
@@ -54990,10 +55316,12 @@
     },
     {
       "id": "las-vegas",
-      "name": "Лас-Вегас",
-      "country": "США",
+      "name": {
+        "en": "Las Vegas",
+        "ru": "Лас-Вегас"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 36.17,
       "long": -115.14,
       "stations": [
@@ -55286,10 +55614,12 @@
     },
     {
       "id": "detroit",
-      "name": "Детройт",
-      "country": "США",
+      "name": {
+        "en": "Detroit",
+        "ru": "Детройт"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 42.33,
       "long": -83.05,
       "stations": [
@@ -55770,10 +56100,12 @@
     },
     {
       "id": "minneapolis",
-      "name": "Миннеаполис",
-      "country": "США",
+      "name": {
+        "en": "Minneapolis",
+        "ru": "Миннеаполис"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 44.98,
       "long": -93.27,
       "stations": [
@@ -56187,10 +56519,12 @@
     },
     {
       "id": "new-orleans",
-      "name": "Новый Орлеан",
-      "country": "США",
+      "name": {
+        "en": "New Orleans",
+        "ru": "Новый Орлеан"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 29.95,
       "long": -90.07,
       "stations": [
@@ -56461,10 +56795,12 @@
     },
     {
       "id": "nashville",
-      "name": "Нашвилл",
-      "country": "США",
+      "name": {
+        "en": "Nashville",
+        "ru": "Нашвилл"
+      },
       "countryCode": "US",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 36.16,
       "long": -86.78,
       "stations": [
@@ -56796,10 +57132,12 @@
     },
     {
       "id": "toronto",
-      "name": "Торонто",
-      "country": "Канада",
+      "name": {
+        "en": "Toronto",
+        "ru": "Торонто"
+      },
       "countryCode": "CA",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 43.65,
       "long": -79.38,
       "stations": [
@@ -57696,10 +58034,12 @@
     },
     {
       "id": "montreal",
-      "name": "Монреаль",
-      "country": "Канада",
+      "name": {
+        "en": "Montreal",
+        "ru": "Монреаль"
+      },
       "countryCode": "CA",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 45.5,
       "long": -73.57,
       "stations": [
@@ -58077,10 +58417,12 @@
     },
     {
       "id": "vancouver",
-      "name": "Ванкувер",
-      "country": "Канада",
+      "name": {
+        "en": "Vancouver",
+        "ru": "Ванкувер"
+      },
       "countryCode": "CA",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 49.28,
       "long": -123.12,
       "stations": [
@@ -58528,10 +58870,12 @@
     },
     {
       "id": "mexico-city",
-      "name": "Мехико",
-      "country": "Мексика",
+      "name": {
+        "en": "Mexico City",
+        "ru": "Мехико"
+      },
       "countryCode": "MX",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 19.43,
       "long": -99.13,
       "stations": [
@@ -59551,10 +59895,12 @@
     },
     {
       "id": "guadalajara",
-      "name": "Гвадалахара",
-      "country": "Мексика",
+      "name": {
+        "en": "Guadalajara",
+        "ru": "Гвадалахара"
+      },
       "countryCode": "MX",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 20.67,
       "long": -103.35,
       "stations": [
@@ -60572,10 +60918,12 @@
     },
     {
       "id": "monterrey",
-      "name": "Монтеррей",
-      "country": "Мексика",
+      "name": {
+        "en": "Monterrey",
+        "ru": "Монтеррей"
+      },
       "countryCode": "MX",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 25.69,
       "long": -100.32,
       "stations": [
@@ -61599,10 +61947,12 @@
     },
     {
       "id": "havana",
-      "name": "Гавана",
-      "country": "Куба",
+      "name": {
+        "en": "Havana",
+        "ru": "Гавана"
+      },
       "countryCode": "CU",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 23.11,
       "long": -82.37,
       "stations": [
@@ -61744,10 +62094,12 @@
     },
     {
       "id": "santo-domingo",
-      "name": "Санто-Доминго",
-      "country": "Доминикана",
+      "name": {
+        "en": "Santo Domingo",
+        "ru": "Санто-Доминго"
+      },
       "countryCode": "DO",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 18.49,
       "long": -69.93,
       "stations": [
@@ -62268,10 +62620,12 @@
     },
     {
       "id": "san-juan",
-      "name": "Сан-Хуан",
-      "country": "Пуэрто-Рико",
+      "name": {
+        "en": "San Juan",
+        "ru": "Сан-Хуан"
+      },
       "countryCode": "PR",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 18.47,
       "long": -66.11,
       "stations": [
@@ -62516,10 +62870,12 @@
     },
     {
       "id": "guatemala-city",
-      "name": "Гватемала",
-      "country": "Гватемала",
+      "name": {
+        "en": "Guatemala City",
+        "ru": "Гватемала"
+      },
       "countryCode": "GT",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 14.63,
       "long": -90.51,
       "stations": [
@@ -62921,10 +63277,12 @@
     },
     {
       "id": "san-jose",
-      "name": "Сан-Хосе",
-      "country": "Коста-Рика",
+      "name": {
+        "en": "San José",
+        "ru": "Сан-Хосе"
+      },
       "countryCode": "CR",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 9.93,
       "long": -84.08,
       "stations": [
@@ -63203,10 +63561,12 @@
     },
     {
       "id": "panama-city",
-      "name": "Панама",
-      "country": "Панама",
+      "name": {
+        "en": "Panama City",
+        "ru": "Панама"
+      },
       "countryCode": "PA",
-      "region": "Северная Америка",
+      "region": "northAmerica",
       "lat": 8.98,
       "long": -79.52,
       "stations": [
@@ -63344,10 +63704,12 @@
     },
     {
       "id": "sao-paulo",
-      "name": "Сан-Паулу",
-      "country": "Бразилия",
+      "name": {
+        "en": "São Paulo",
+        "ru": "Сан-Паулу"
+      },
       "countryCode": "BR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -23.55,
       "long": -46.63,
       "stations": [
@@ -64134,10 +64496,12 @@
     },
     {
       "id": "rio-de-janeiro",
-      "name": "Рио-де-Жанейро",
-      "country": "Бразилия",
+      "name": {
+        "en": "Rio de Janeiro",
+        "ru": "Рио-де-Жанейро"
+      },
       "countryCode": "BR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -22.91,
       "long": -43.17,
       "stations": [
@@ -64931,10 +65295,12 @@
     },
     {
       "id": "brasilia",
-      "name": "Бразилиа",
-      "country": "Бразилия",
+      "name": {
+        "en": "Brasília",
+        "ru": "Бразилиа"
+      },
       "countryCode": "BR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -15.79,
       "long": -47.88,
       "stations": [
@@ -65311,10 +65677,12 @@
     },
     {
       "id": "belo-horizonte",
-      "name": "Белу-Оризонти",
-      "country": "Бразилия",
+      "name": {
+        "en": "Belo Horizonte",
+        "ru": "Белу-Оризонти"
+      },
       "countryCode": "BR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -19.92,
       "long": -43.94,
       "stations": [
@@ -65930,10 +66298,12 @@
     },
     {
       "id": "salvador",
-      "name": "Салвадор",
-      "country": "Бразилия",
+      "name": {
+        "en": "Salvador",
+        "ru": "Салвадор"
+      },
       "countryCode": "BR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -12.97,
       "long": -38.51,
       "stations": [
@@ -66218,10 +66588,12 @@
     },
     {
       "id": "fortaleza",
-      "name": "Форталеза",
-      "country": "Бразилия",
+      "name": {
+        "en": "Fortaleza",
+        "ru": "Форталеза"
+      },
       "countryCode": "BR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -3.72,
       "long": -38.54,
       "stations": [
@@ -66515,10 +66887,12 @@
     },
     {
       "id": "recife",
-      "name": "Ресифи",
-      "country": "Бразилия",
+      "name": {
+        "en": "Recife",
+        "ru": "Ресифи"
+      },
       "countryCode": "BR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -8.05,
       "long": -34.88,
       "stations": [
@@ -66686,10 +67060,12 @@
     },
     {
       "id": "curitiba",
-      "name": "Куритиба",
-      "country": "Бразилия",
+      "name": {
+        "en": "Curitiba",
+        "ru": "Куритиба"
+      },
       "countryCode": "BR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -25.43,
       "long": -49.27,
       "stations": [
@@ -66838,10 +67214,12 @@
     },
     {
       "id": "porto-alegre",
-      "name": "Порту-Алегри",
-      "country": "Бразилия",
+      "name": {
+        "en": "Porto Alegre",
+        "ru": "Порту-Алегри"
+      },
       "countryCode": "BR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -30.03,
       "long": -51.23,
       "stations": [
@@ -67113,10 +67491,12 @@
     },
     {
       "id": "buenos-aires",
-      "name": "Буэнос-Айрес",
-      "country": "Аргентина",
+      "name": {
+        "en": "Buenos Aires",
+        "ru": "Буэнос-Айрес"
+      },
       "countryCode": "AR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -34.6,
       "long": -58.38,
       "stations": [
@@ -67933,10 +68313,12 @@
     },
     {
       "id": "cordoba",
-      "name": "Кордова",
-      "country": "Аргентина",
+      "name": {
+        "en": "Córdoba",
+        "ru": "Кордова"
+      },
       "countryCode": "AR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -31.42,
       "long": -64.18,
       "stations": [
@@ -68718,10 +69100,12 @@
     },
     {
       "id": "rosario",
-      "name": "Росарио",
-      "country": "Аргентина",
+      "name": {
+        "en": "Rosario",
+        "ru": "Росарио"
+      },
       "countryCode": "AR",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -32.95,
       "long": -60.64,
       "stations": [
@@ -69262,10 +69646,12 @@
     },
     {
       "id": "santiago",
-      "name": "Сантьяго",
-      "country": "Чили",
+      "name": {
+        "en": "Santiago",
+        "ru": "Сантьяго"
+      },
       "countryCode": "CL",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -33.45,
       "long": -70.67,
       "stations": [
@@ -69758,10 +70144,12 @@
     },
     {
       "id": "lima",
-      "name": "Лима",
-      "country": "Перу",
+      "name": {
+        "en": "Lima",
+        "ru": "Лима"
+      },
       "countryCode": "PE",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -12.05,
       "long": -77.04,
       "stations": [
@@ -70553,10 +70941,12 @@
     },
     {
       "id": "bogota",
-      "name": "Богота",
-      "country": "Колумбия",
+      "name": {
+        "en": "Bogotá",
+        "ru": "Богота"
+      },
       "countryCode": "CO",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": 4.71,
       "long": -74.07,
       "stations": [
@@ -71403,10 +71793,12 @@
     },
     {
       "id": "medellin",
-      "name": "Медельин",
-      "country": "Колумбия",
+      "name": {
+        "en": "Medellín",
+        "ru": "Медельин"
+      },
       "countryCode": "CO",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": 6.25,
       "long": -75.56,
       "stations": [
@@ -72218,10 +72610,12 @@
     },
     {
       "id": "cali",
-      "name": "Кали",
-      "country": "Колумбия",
+      "name": {
+        "en": "Cali",
+        "ru": "Кали"
+      },
       "countryCode": "CO",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": 3.45,
       "long": -76.53,
       "stations": [
@@ -72945,10 +73339,12 @@
     },
     {
       "id": "caracas",
-      "name": "Каракас",
-      "country": "Венесуэла",
+      "name": {
+        "en": "Caracas",
+        "ru": "Каракас"
+      },
       "countryCode": "VE",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": 10.48,
       "long": -66.9,
       "stations": [
@@ -73205,10 +73601,12 @@
     },
     {
       "id": "quito",
-      "name": "Кито",
-      "country": "Эквадор",
+      "name": {
+        "en": "Quito",
+        "ru": "Кито"
+      },
       "countryCode": "EC",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -0.18,
       "long": -78.47,
       "stations": [
@@ -73547,10 +73945,12 @@
     },
     {
       "id": "guayaquil",
-      "name": "Гуаякиль",
-      "country": "Эквадор",
+      "name": {
+        "en": "Guayaquil",
+        "ru": "Гуаякиль"
+      },
       "countryCode": "EC",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -2.19,
       "long": -79.89,
       "stations": [
@@ -73660,10 +74060,12 @@
     },
     {
       "id": "la-paz",
-      "name": "Ла-Пас",
-      "country": "Боливия",
+      "name": {
+        "en": "La Paz",
+        "ru": "Ла-Пас"
+      },
       "countryCode": "BO",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -16.5,
       "long": -68.15,
       "stations": [
@@ -74187,10 +74589,12 @@
     },
     {
       "id": "asuncion",
-      "name": "Асунсьон",
-      "country": "Парагвай",
+      "name": {
+        "en": "Asunción",
+        "ru": "Асунсьон"
+      },
       "countryCode": "PY",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -25.26,
       "long": -57.58,
       "stations": [
@@ -74253,10 +74657,12 @@
     },
     {
       "id": "montevideo",
-      "name": "Монтевидео",
-      "country": "Уругвай",
+      "name": {
+        "en": "Montevideo",
+        "ru": "Монтевидео"
+      },
       "countryCode": "UY",
-      "region": "Южная Америка",
+      "region": "southAmerica",
       "lat": -34.9,
       "long": -56.16,
       "stations": [
@@ -74687,10 +75093,12 @@
     },
     {
       "id": "sydney",
-      "name": "Сидней",
-      "country": "Австралия",
+      "name": {
+        "en": "Sydney",
+        "ru": "Сидней"
+      },
       "countryCode": "AU",
-      "region": "Австралия и Океания",
+      "region": "oceania",
       "lat": -33.87,
       "long": 151.21,
       "stations": [
@@ -74948,10 +75356,12 @@
     },
     {
       "id": "melbourne",
-      "name": "Мельбурн",
-      "country": "Австралия",
+      "name": {
+        "en": "Melbourne",
+        "ru": "Мельбурн"
+      },
       "countryCode": "AU",
-      "region": "Австралия и Океания",
+      "region": "oceania",
       "lat": -37.81,
       "long": 144.96,
       "stations": [
@@ -75284,10 +75694,12 @@
     },
     {
       "id": "brisbane",
-      "name": "Брисбен",
-      "country": "Австралия",
+      "name": {
+        "en": "Brisbane",
+        "ru": "Брисбен"
+      },
       "countryCode": "AU",
-      "region": "Австралия и Океания",
+      "region": "oceania",
       "lat": -27.47,
       "long": 153.03,
       "stations": [
@@ -75463,10 +75875,12 @@
     },
     {
       "id": "perth",
-      "name": "Перт",
-      "country": "Австралия",
+      "name": {
+        "en": "Perth",
+        "ru": "Перт"
+      },
       "countryCode": "AU",
-      "region": "Австралия и Океания",
+      "region": "oceania",
       "lat": -31.95,
       "long": 115.86,
       "stations": [
@@ -75678,10 +76092,12 @@
     },
     {
       "id": "auckland",
-      "name": "Окленд",
-      "country": "Новая Зеландия",
+      "name": {
+        "en": "Auckland",
+        "ru": "Окленд"
+      },
       "countryCode": "NZ",
-      "region": "Австралия и Океания",
+      "region": "oceania",
       "lat": -36.85,
       "long": 174.76,
       "stations": [

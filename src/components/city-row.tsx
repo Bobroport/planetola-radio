@@ -1,7 +1,8 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
-import type { City } from "@/data/stations";
+import { cityName, countryName, type City } from "@/data/stations";
+import { useI18n } from "@/i18n";
 import { flagEmoji } from "@/lib/format";
 
 type Props = {
@@ -11,6 +12,8 @@ type Props = {
 };
 
 export function CityRow({ city, isPlayingHere, onPress }: Props) {
+  const { language, t } = useI18n();
+
   return (
     <Pressable
       onPress={() => onPress(city)}
@@ -24,11 +27,12 @@ export function CityRow({ city, isPlayingHere, onPress }: Props) {
             <Ionicons name="volume-high" size={16} color="#1d6fd8" style={styles.playingIcon} />
           ) : null}
           <Text style={[styles.name, isPlayingHere && styles.nameActive]}>
-            {city.name}
+            {cityName(city, language)}
           </Text>
         </View>
         <Text style={styles.country}>
-          {city.country} · {city.stations.length} станций
+          {countryName(city.countryCode, language)} ·{" "}
+          {t("count.stations", { count: city.stations.length })}
         </Text>
       </View>
       <Ionicons name="chevron-forward" size={20} color="#c4c4c6" />

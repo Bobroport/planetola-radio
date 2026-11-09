@@ -1,18 +1,14 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { useState } from "react";
 import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 
-import { Chip } from "@/components/chip";
-import { StationRow } from "@/components/station-row";
-import { getStation } from "@/data/stations";
+import { cityName, getCity, getStation } from "@/data/stations";
+import { useI18n } from "@/i18n";
 import { formatDateTime } from "@/lib/format";
 import {
   useFavorites,
   type FavoriteTrack,
 } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
-
-type Section = "stations" | "tracks";
 
 function TrackRow({
   item,
@@ -25,7 +21,11 @@ function TrackRow({
   onPlay: (item: FavoriteTrack) => void;
   onRemove: (id: string) => void;
 }) {
+  const { language, t } = useI18n();
   const canPlay = getStation(item.stationId) !== undefined;
+  // Название города берём из данных на текущем языке; сохранённое — запасной вариант.
+  const city = getCity(item.cityId);
+  const place = city ? cityName(city, language) : item.cityName;
 
   return (
     <Pressable
@@ -41,16 +41,16 @@ function TrackRow({
           style={[styles.station, isPlayingStation && styles.stationActive]}
           numberOfLines={1}
         >
-          {item.stationName} · {item.cityName}
+          {item.stationName} · {place}
         </Text>
-        <Text style={styles.time}>{formatDateTime(item.savedAt)}</Text>
+        <Text style={styles.time}>{formatDateTime(item.savedAt, language)}</Text>
       </View>
       <Pressable
         onPress={() => onRemove(item.id)}
         hitSlop={10}
         style={({ pressed }) => [styles.remove, pressed && styles.rowPressed]}
         accessibilityRole="button"
-        accessibilityLabel="Удалить из избранного"
+        accessibilityLabel={t("tracks.remove")}
       >
         <Ionicons name="close" size={22} color="#999" />
       </Pressable>
@@ -58,68 +58,22 @@ function TrackRow({
   );
 }
 
-export default function FavoritesScreen() {
-  const [section, setSection] = useState<Section>("stations");
-  const { favorites, remove, stationIds } = useFavorites();
+/** Понравившиеся треки: то, что пользователь отметил сердцем в плеере. */
+export default function LikedTracksScreen() {
+  const { t } = useI18n();
+  const { favorites, remove } = useFavorites();
   const { current, play } = usePlayer();
-
-  const playlist = stationIds
-    .map((id) => getStation(id))
-    .filter((found) => found !== undefined);
 
   const playTrackStation = (item: FavoriteTrack) => {
     const found = getStation(item.stationId);
     if (found) play(found.station);
   };
 
-  const header = (
-    <View style={styles.segments}>
-      <Chip
-        label={`Плейлист · ${playlist.length}`}
-        selected={section === "stations"}
-        onPress={() => setSection("stations")}
-      />
-      <Chip
-        label={`Треки · ${favorites.length}`}
-        selected={section === "tracks"}
-        onPress={() => setSection("tracks")}
-      />
-    </View>
-  );
-
-  if (section === "stations") {
-    return (
-      <View style={styles.container}>
-        <FlatList
-          data={playlist}
-          keyExtractor={({ station }) => station.id}
-          ListHeaderComponent={header}
-          renderItem={({ item }) => (
-            <StationRow
-              station={item.station}
-              city={item.city}
-              isActive={current?.id === item.station.id}
-              onPress={play}
-            />
-          )}
-          ItemSeparatorComponent={() => <View style={styles.separator} />}
-          contentContainerStyle={styles.list}
-          ListEmptyComponent={
-            <Text style={styles.empty}>
-              Плейлист пуст. Нажмите ☆ рядом со станцией, чтобы добавить её сюда.
-            </Text>
-          }
-        />
-      </View>
-    );
-  }
-
   return (
     <View style={styles.container}>
       <FlatList
         data={favorites}
         keyExtractor={(item) => item.id}
-        ListHeaderComponent={header}
         renderItem={({ item }) => (
           <TrackRow
             item={item}
@@ -130,11 +84,7 @@ export default function FavoritesScreen() {
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
         contentContainerStyle={styles.list}
-        ListEmptyComponent={
-          <Text style={styles.empty}>
-            Пока пусто. Нажмите ♡ в плеере, когда играет понравившийся трек.
-          </Text>
-        }
+        ListEmptyComponent={<Text style={styles.empty}>{t("tracks.empty")}</Text>}
       />
     </View>
   );
@@ -146,14 +96,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   list: {
-    paddingBottom: 8,
+    paddingVertical: 4,
     flexGrow: 1,
-  },
-  segments: {
-    flexDirection: "row",
-    gap: 8,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
   },
   row: {
     flexDirection: "row",

@@ -4,7 +4,8 @@ import { useCallback, useEffect, useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { EarthGL } from "@/components/earth-gl";
-import { CITIES, getCity, type City } from "@/data/stations";
+import { CITIES, cityName, countryName, getCity, type City } from "@/data/stations";
+import { useI18n } from "@/i18n";
 import { flagEmoji } from "@/lib/format";
 import { usePlayer } from "@/providers/player-provider";
 import { useSettings } from "@/providers/settings-provider";
@@ -19,6 +20,7 @@ function openCity(city: City) {
 }
 
 export default function GlobeScreen() {
+  const { language, t } = useI18n();
   const { current } = usePlayer();
   const { ready, startPage, startCityId } = useSettings();
   const [focused, setFocused] = useState<City | null>(null);
@@ -29,12 +31,13 @@ export default function GlobeScreen() {
   useEffect(() => {
     if (!ready || startPageApplied) return;
     startPageApplied = true;
-    if (startPage === "city" && startCityId && getCity(startCityId)) {
-      openCity(getCity(startCityId) as City);
+    const startCity = startPage === "city" ? getCity(startCityId ?? undefined) : undefined;
+    if (startCity) {
+      openCity(startCity);
     } else if (startPage === "list") {
       router.push("/cities/list");
     } else if (startPage === "playlist") {
-      router.navigate("/favorites");
+      router.navigate("/stations");
     }
   }, [ready, startPage, startCityId]);
 
@@ -48,7 +51,7 @@ export default function GlobeScreen() {
     <View style={styles.container}>
       <Stack.Screen
         options={{
-          title: "Глобус",
+          title: t("globe.title"),
           headerStyle: { backgroundColor: "#0b1020" },
           headerTintColor: "#fff",
           headerRight: () => (
@@ -90,10 +93,11 @@ export default function GlobeScreen() {
           >
             <Text style={styles.cardFlag}>{flagEmoji(focused.countryCode)}</Text>
             <View style={styles.cardText}>
-              <Text style={styles.cardTitle}>{focused.name}</Text>
+              <Text style={styles.cardTitle}>{cityName(focused, language)}</Text>
               <Text style={styles.cardSubtitle}>
-                {focused.country} · {focused.stations.length} станций
-                {playingCity?.id === focused.id ? " · сейчас играет" : ""}
+                {countryName(focused.countryCode, language)} ·{" "}
+                {t("count.stations", { count: focused.stations.length })}
+                {playingCity?.id === focused.id ? ` · ${t("city.nowPlaying")}` : ""}
               </Text>
             </View>
             <Ionicons name="chevron-forward" size={22} color="#9cc0ff" />
@@ -102,10 +106,10 @@ export default function GlobeScreen() {
           <View style={styles.cardRow}>
             <Ionicons name="earth" size={22} color="#9cc0ff" />
             <View style={styles.cardText}>
-              <Text style={styles.cardTitle}>Вращайте шар</Text>
+              <Text style={styles.cardTitle}>{t("globe.spin")}</Text>
               <Text style={styles.cardSubtitle}>
-                Подведите город к центру или нажмите на точку · {CITIES.length} городов,{" "}
-                {TOTAL_STATIONS} станций
+                {t("globe.hint")} · {t("count.cities", { count: CITIES.length })} ·{" "}
+                {t("count.stations", { count: TOTAL_STATIONS })}
               </Text>
             </View>
           </View>
