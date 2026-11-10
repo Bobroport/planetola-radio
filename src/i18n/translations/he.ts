@@ -59,6 +59,8 @@ export const he: Dictionary = {
   "tracks.title": "שירים שאהבתי",
   "tracks.empty": "עדיין אין כאן דבר. הקישו על הלב בנגן כשאתם אוהבים שיר.",
   "tracks.remove": "הסרה מהשירים שאהבתי",
+  "tracks.copy": "העתקת שם השיר",
+  "tracks.copied": "הועתק",
 
   "profile.hello": "שלום!",
   "profile.helloName": "שלום, {name}!",

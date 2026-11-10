@@ -59,6 +59,8 @@ export const ar: Dictionary = {
   "tracks.title": "الأغاني التي أعجبتني",
   "tracks.empty": "لا يوجد شيء هنا بعد. اضغط على القلب في المشغّل عندما تعجبك أغنية.",
   "tracks.remove": "إزالة من الأغاني التي أعجبتني",
+  "tracks.copy": "نسخ عنوان الأغنية",
+  "tracks.copied": "تم النسخ",
 
   "profile.hello": "مرحبًا!",
   "profile.helloName": "مرحبًا، {name}!",

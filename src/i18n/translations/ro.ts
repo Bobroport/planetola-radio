@@ -59,6 +59,8 @@ export const ro: Dictionary = {
   "tracks.title": "Piese apreciate",
   "tracks.empty": "Încă nu e nimic aici. Atinge inima din player când îți place o piesă.",
   "tracks.remove": "Elimină din piesele apreciate",
+  "tracks.copy": "Copiază titlul piesei",
+  "tracks.copied": "Copiat",
 
   "profile.hello": "Salut!",
   "profile.helloName": "Salut, {name}!",

@@ -59,6 +59,8 @@ export const nb: Dictionary = {
   "tracks.title": "Likte låter",
   "tracks.empty": "Ingenting her ennå. Trykk på hjertet i spilleren når du liker en låt.",
   "tracks.remove": "Fjern fra likte låter",
+  "tracks.copy": "Kopier låttittelen",
+  "tracks.copied": "Kopiert",
 
   "profile.hello": "Hei!",
   "profile.helloName": "Hei, {name}!",

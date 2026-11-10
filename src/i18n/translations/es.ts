@@ -59,6 +59,8 @@ export const es: Dictionary = {
   "tracks.title": "Canciones que me gustan",
   "tracks.empty": "Aún no hay nada. Toca el corazón en el reproductor cuando te guste una canción.",
   "tracks.remove": "Quitar de las canciones que me gustan",
+  "tracks.copy": "Copiar el título de la canción",
+  "tracks.copied": "Copiado",
 
   "profile.hello": "¡Hola!",
   "profile.helloName": "¡Hola, {name}!",

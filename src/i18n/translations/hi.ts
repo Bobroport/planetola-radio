@@ -59,6 +59,8 @@ export const hi: Dictionary = {
   "tracks.title": "पसंद किए गए गाने",
   "tracks.empty": "अभी यहाँ कुछ नहीं है। कोई गाना पसंद आए तो प्लेयर में दिल पर टैप करें।",
   "tracks.remove": "पसंदीदा गानों से हटाएँ",
+  "tracks.copy": "गाने का नाम कॉपी करें",
+  "tracks.copied": "कॉपी हो गया",
 
   "profile.hello": "नमस्ते!",
   "profile.helloName": "नमस्ते, {name}!",

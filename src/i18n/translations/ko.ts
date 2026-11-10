@@ -59,6 +59,8 @@ export const ko: Dictionary = {
   "tracks.title": "좋아요 표시한 곡",
   "tracks.empty": "아직 아무것도 없습니다. 마음에 드는 곡이 나오면 플레이어의 하트를 탭하세요.",
   "tracks.remove": "좋아요 표시한 곡에서 삭제",
+  "tracks.copy": "곡 제목 복사",
+  "tracks.copied": "복사됨",
 
   "profile.hello": "안녕하세요!",
   "profile.helloName": "안녕하세요, {name}님!",

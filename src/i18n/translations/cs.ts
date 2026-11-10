@@ -59,6 +59,8 @@ export const cs: Dictionary = {
   "tracks.title": "Oblíbené skladby",
   "tracks.empty": "Zatím tu nic není. Klepněte na srdce v přehrávači, když se vám skladba líbí.",
   "tracks.remove": "Odebrat z oblíbených skladeb",
+  "tracks.copy": "Kopírovat název skladby",
+  "tracks.copied": "Zkopírováno",
 
   "profile.hello": "Ahoj!",
   "profile.helloName": "Ahoj, {name}!",

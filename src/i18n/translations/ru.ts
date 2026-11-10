@@ -59,6 +59,8 @@ export const ru: Dictionary = {
   "tracks.title": "Понравившиеся треки",
   "tracks.empty": "Пока пусто. Нажмите сердце в плеере, когда играет понравившийся трек.",
   "tracks.remove": "Убрать из понравившихся",
+  "tracks.copy": "Скопировать название трека",
+  "tracks.copied": "Скопировано",
 
   "profile.hello": "Привет!",
   "profile.helloName": "Привет, {name}!",

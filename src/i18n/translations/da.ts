@@ -59,6 +59,8 @@ export const da: Dictionary = {
   "tracks.title": "Numre, du synes godt om",
   "tracks.empty": "Her er tomt endnu. Tryk på hjertet i afspilleren, når du kan lide et nummer.",
   "tracks.remove": "Fjern fra numre, du synes godt om",
+  "tracks.copy": "Kopiér nummerets titel",
+  "tracks.copied": "Kopieret",
 
   "profile.hello": "Hej!",
   "profile.helloName": "Hej, {name}!",

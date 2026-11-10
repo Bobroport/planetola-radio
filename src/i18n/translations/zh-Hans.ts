@@ -59,6 +59,8 @@ export const zhHans: Dictionary = {
   "tracks.title": "喜欢的歌曲",
   "tracks.empty": "这里还没有内容。听到喜欢的歌时，点按播放器里的爱心。",
   "tracks.remove": "从喜欢的歌曲中移除",
+  "tracks.copy": "复制歌曲名",
+  "tracks.copied": "已复制",
 
   "profile.hello": "你好！",
   "profile.helloName": "你好，{name}！",

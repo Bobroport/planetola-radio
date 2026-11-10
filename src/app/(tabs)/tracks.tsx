@@ -1,4 +1,6 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
+import * as Clipboard from "expo-clipboard";
+import { useEffect, useState } from "react";
 import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 
 import { cityName, getCity, getStation } from "@/data/stations";
@@ -9,6 +11,8 @@ import {
   type FavoriteTrack,
 } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
+
+const COPIED_HINT_MS = 1500;
 
 function TrackRow({
   item,
@@ -27,6 +31,21 @@ function TrackRow({
   const city = getCity(item.cityId);
   const place = city ? cityName(city, language) : item.cityName;
 
+  // После копирования на полторы секунды показываем «Скопировано» вместо даты.
+  const [copied, setCopied] = useState(false);
+  useEffect(() => {
+    if (!copied) return;
+    const timer = setTimeout(() => setCopied(false), COPIED_HINT_MS);
+    return () => clearTimeout(timer);
+  }, [copied]);
+
+  const copyTitle = () => {
+    const text = item.artist ? `${item.artist} — ${item.title}` : item.title;
+    Clipboard.setStringAsync(text)
+      .then(() => setCopied(true))
+      .catch((e: unknown) => console.warn("Не удалось скопировать в буфер", e));
+  };
+
   return (
     <Pressable
       onPress={() => onPlay(item)}
@@ -43,12 +62,29 @@ function TrackRow({
         >
           {item.stationName} · {place}
         </Text>
-        <Text style={styles.time}>{formatDateTime(item.savedAt, language)}</Text>
+        {copied ? (
+          <Text style={styles.copied}>{t("tracks.copied")}</Text>
+        ) : (
+          <Text style={styles.time}>{formatDateTime(item.savedAt, language)}</Text>
+        )}
       </View>
+      <Pressable
+        onPress={copyTitle}
+        hitSlop={10}
+        style={({ pressed }) => [styles.action, pressed && styles.rowPressed]}
+        accessibilityRole="button"
+        accessibilityLabel={t("tracks.copy")}
+      >
+        <Ionicons
+          name={copied ? "checkmark" : "copy-outline"}
+          size={22}
+          color={copied ? "#34a853" : "#1d6fd8"}
+        />
+      </Pressable>
       <Pressable
         onPress={() => onRemove(item.id)}
         hitSlop={10}
-        style={({ pressed }) => [styles.remove, pressed && styles.rowPressed]}
+        style={({ pressed }) => [styles.action, pressed && styles.rowPressed]}
         accessibilityRole="button"
         accessibilityLabel={t("tracks.remove")}
       >
@@ -133,8 +169,13 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#999",
   },
-  remove: {
-    marginLeft: 12,
+  copied: {
+    fontSize: 12,
+    color: "#34a853",
+    fontWeight: "600",
+  },
+  action: {
+    marginLeft: 4,
     padding: 8,
   },
   separator: {

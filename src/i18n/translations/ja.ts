@@ -59,6 +59,8 @@ export const ja: Dictionary = {
   "tracks.title": "「いいね」した曲",
   "tracks.empty": "まだ何もありません。気に入った曲が流れたら、プレーヤーのハートをタップしてください。",
   "tracks.remove": "「いいね」した曲から削除",
+  "tracks.copy": "曲名をコピー",
+  "tracks.copied": "コピーしました",
 
   "profile.hello": "こんにちは！",
   "profile.helloName": "こんにちは、{name}さん！",

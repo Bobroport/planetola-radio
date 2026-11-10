@@ -58,6 +58,8 @@ export const en = {
   "tracks.title": "Liked tracks",
   "tracks.empty": "Nothing here yet. Tap the heart in the player when you like a track.",
   "tracks.remove": "Remove from liked tracks",
+  "tracks.copy": "Copy track title",
+  "tracks.copied": "Copied",
 
   "profile.hello": "Hello!",
   "profile.helloName": "Hello, {name}!",

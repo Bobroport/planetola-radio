@@ -59,6 +59,8 @@ export const id: Dictionary = {
   "tracks.title": "Lagu yang disukai",
   "tracks.empty": "Belum ada apa-apa. Ketuk hati di pemutar saat Anda menyukai sebuah lagu.",
   "tracks.remove": "Hapus dari lagu yang disukai",
+  "tracks.copy": "Salin judul lagu",
+  "tracks.copied": "Disalin",
 
   "profile.hello": "Halo!",
   "profile.helloName": "Halo, {name}!",

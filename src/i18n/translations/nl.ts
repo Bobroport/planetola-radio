@@ -59,6 +59,8 @@ export const nl: Dictionary = {
   "tracks.title": "Gelikete nummers",
   "tracks.empty": "Nog niets hier. Tik op het hart in de speler als je een nummer leuk vindt.",
   "tracks.remove": "Verwijderen uit gelikete nummers",
+  "tracks.copy": "Titel kopiëren",
+  "tracks.copied": "Gekopieerd",
 
   "profile.hello": "Hallo!",
   "profile.helloName": "Hallo, {name}!",

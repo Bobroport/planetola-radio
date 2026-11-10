@@ -59,6 +59,8 @@ export const zhHant: Dictionary = {
   "tracks.title": "喜歡的歌曲",
   "tracks.empty": "這裡還沒有內容。聽到喜歡的歌時，點一下播放器裡的愛心。",
   "tracks.remove": "從喜歡的歌曲中移除",
+  "tracks.copy": "複製歌曲名稱",
+  "tracks.copied": "已複製",
 
   "profile.hello": "你好！",
   "profile.helloName": "你好，{name}！",

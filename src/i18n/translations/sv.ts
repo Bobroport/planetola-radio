@@ -59,6 +59,8 @@ export const sv: Dictionary = {
   "tracks.title": "Gillade låtar",
   "tracks.empty": "Inget här än. Tryck på hjärtat i spelaren när du gillar en låt.",
   "tracks.remove": "Ta bort från gillade låtar",
+  "tracks.copy": "Kopiera låttiteln",
+  "tracks.copied": "Kopierat",
 
   "profile.hello": "Hej!",
   "profile.helloName": "Hej, {name}!",

@@ -59,6 +59,8 @@ export const pl: Dictionary = {
   "tracks.title": "Polubione utwory",
   "tracks.empty": "Na razie nic tu nie ma. Dotknij serca w odtwarzaczu, gdy spodoba ci się utwór.",
   "tracks.remove": "Usuń z polubionych utworów",
+  "tracks.copy": "Kopiuj tytuł utworu",
+  "tracks.copied": "Skopiowano",
 
   "profile.hello": "Cześć!",
   "profile.helloName": "Cześć, {name}!",

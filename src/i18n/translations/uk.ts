@@ -59,6 +59,8 @@ export const uk: Dictionary = {
   "tracks.title": "Вподобані треки",
   "tracks.empty": "Поки порожньо. Натисніть серце в плеєрі, коли грає трек, який вам подобається.",
   "tracks.remove": "Прибрати з вподобаних",
+  "tracks.copy": "Скопіювати назву треку",
+  "tracks.copied": "Скопійовано",
 
   "profile.hello": "Привіт!",
   "profile.helloName": "Привіт, {name}!",

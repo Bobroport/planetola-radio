@@ -59,6 +59,8 @@ export const hr: Dictionary = {
   "tracks.title": "Pjesme koje mi se sviđaju",
   "tracks.empty": "Ovdje još nema ničega. Dodirni srce u playeru kad ti se pjesma svidi.",
   "tracks.remove": "Ukloni iz pjesama koje mi se sviđaju",
+  "tracks.copy": "Kopiraj naziv pjesme",
+  "tracks.copied": "Kopirano",
 
   "profile.hello": "Bok!",
   "profile.helloName": "Bok, {name}!",

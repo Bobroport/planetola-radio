@@ -59,6 +59,8 @@ export const tr: Dictionary = {
   "tracks.title": "Beğenilen parçalar",
   "tracks.empty": "Henüz burada bir şey yok. Bir parçayı beğendiğinizde oynatıcıdaki kalbe dokunun.",
   "tracks.remove": "Beğenilen parçalardan kaldır",
+  "tracks.copy": "Parça adını kopyala",
+  "tracks.copied": "Kopyalandı",
 
   "profile.hello": "Merhaba!",
   "profile.helloName": "Merhaba, {name}!",
