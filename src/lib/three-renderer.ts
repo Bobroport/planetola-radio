@@ -109,6 +109,18 @@ export async function loadTextureFromAsset(
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  // Анизотропная фильтрация: у краёв шара текстура смотрится под острым углом и без неё мылится.
+  const anisotropy =
+    gl.getExtension("EXT_texture_filter_anisotropic") ??
+    gl.getExtension("WEBKIT_EXT_texture_filter_anisotropic");
+  if (anisotropy) {
+    const max = gl.getParameter(anisotropy.MAX_TEXTURE_MAX_ANISOTROPY_EXT) as number;
+    gl.texParameterf(
+      gl.TEXTURE_2D,
+      anisotropy.TEXTURE_MAX_ANISOTROPY_EXT,
+      Math.min(8, Number.isFinite(max) && max > 0 ? max : 1),
+    );
+  }
   gl.generateMipmap(gl.TEXTURE_2D);
   gl.bindTexture(gl.TEXTURE_2D, null);
   // renderer.resetState() здесь не вызывать: он делает GL-вызовы, которые expo-gl не принимает,

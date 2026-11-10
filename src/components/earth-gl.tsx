@@ -92,7 +92,7 @@ const RAD = Math.PI / 180;
 const EARTH_RADIUS = 1;
 const MARKER_ALTITUDE = 1.004;
 
-const EARTH_TEXTURE = require("../../assets/textures/earth-blue-marble-2048.jpg");
+const EARTH_TEXTURE = require("../../assets/textures/earth-blue-marble-5400.jpg");
 
 const MAX_STATIONS = Math.max(...CITIES.map((c) => c.stations.length));
 
