@@ -16,8 +16,8 @@
 1. Запушить репозиторий на GitHub (ветка `main`).
 2. В настройках репозитория: Settings → Pages → Build and deployment → Source: **GitHub Actions**.
 3. Workflow `.github/workflows/pages.yml` при каждом пуше в `main` выкладывает папку `site/`.
-4. Адреса страниц: `https://<github-user>.github.io/<repo>/privacy.html` и
-   `https://<github-user>.github.io/<repo>/support.html`. Их нужно вписать в App Store Connect
+4. Адреса страниц: `https://bobroport.github.io/planetola-radio/privacy.html` и
+   `https://bobroport.github.io/planetola-radio/support.html`. Их нужно вписать в App Store Connect
    (App Information → Privacy Policy URL, Support URL) и в `RELEASE.md`.
 
 Если менять дату политики, она указана в заголовке `privacy.html` и `privacy.ru.html`.
