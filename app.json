@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Бобёр Радио",
+    "name": "Planetola Radio FM",
     "slug": "radio-app",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "radioapp",
@@ -13,7 +13,7 @@
       "supportsTablet": false,
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
-        "CFBundleDisplayName": "Бобёр Радио"
+        "CFBundleDisplayName": "Planetola Radio FM"
       }
     },
     "android": {
