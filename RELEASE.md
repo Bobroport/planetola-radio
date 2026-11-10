@@ -104,7 +104,7 @@ https://appstoreconnect.apple.com/apps/6832317886
    (Settings → Pages → Source: GitHub Actions) адреса будут:
    - Privacy Policy URL: `https://<github-user>.github.io/<repo>/privacy.html`
    - Support URL: `https://<github-user>.github.io/<repo>/support.html`
-   Перед публикацией заменить `SUPPORT_EMAIL` в `site/config.js` на реальный адрес.
+   Адрес поддержки задан в `site/config.js`.
    Приложение не собирает личных данных: имя пользователя и избранное хранятся только на устройстве.
    Сетевые запросы идут к радиостанциям (поток и название трека) и к Radio Browser (счётчик запусков
    станции без идентификаторов). Это и надо описать.

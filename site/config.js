@@ -1,5 +1,5 @@
 // Единственное место, где задаётся адрес поддержки. Замените SUPPORT_EMAIL на реальный адрес.
-window.SUPPORT_EMAIL = "SUPPORT_EMAIL";
+window.SUPPORT_EMAIL = "iv.bartashov@gmail.com";
 
 document.addEventListener("DOMContentLoaded", function () {
   var email = window.SUPPORT_EMAIL;
