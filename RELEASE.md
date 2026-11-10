@@ -100,6 +100,11 @@ https://appstoreconnect.apple.com/apps/6832317886
 ### Обязательные материалы
 
 3. **Политика конфиденциальности** — публичный URL, без него форма не отправляется.
+   Страницы готовы в папке `site/` (см. `site/README.md`): после пуша на GitHub и включения Pages
+   (Settings → Pages → Source: GitHub Actions) адреса будут:
+   - Privacy Policy URL: `https://<github-user>.github.io/<repo>/privacy.html`
+   - Support URL: `https://<github-user>.github.io/<repo>/support.html`
+   Перед публикацией заменить `SUPPORT_EMAIL` в `site/config.js` на реальный адрес.
    Приложение не собирает личных данных: имя пользователя и избранное хранятся только на устройстве.
    Сетевые запросы идут к радиостанциям (поток и название трека) и к Radio Browser (счётчик запусков
    станции без идентификаторов). Это и надо описать.
