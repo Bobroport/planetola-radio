@@ -2,13 +2,13 @@
   "expo": {
     "name": "Planetola Radio FM",
     "slug": "radio-app",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "radioapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon",
+      "icon": "./assets/images/icon.png",
       "bundleIdentifier": "com.zokoz.radioapp",
       "supportsTablet": false,
       "infoPlist": {
@@ -18,10 +18,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "monochromeImage": "./assets/images/android-icon-monochrome.png",
+        "backgroundColor": "#0b1020"
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.zokoz.radioapp",
@@ -41,9 +41,9 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#0b1020",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 220
         }
       ],
       [
