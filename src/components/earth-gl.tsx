@@ -83,7 +83,10 @@ function keepRendering(scene: Scene, ms: number = SETTLE_MS): void {
 }
 
 const MIN_ZOOM = 1;
-const MAX_ZOOM = 3.5;
+/** 10,5× — втрое больше прежнего максимума 3,5×. */
+const MAX_ZOOM = 10.5;
+/** Расстояние от камеры до поверхности шара при масштабе 1 (радиус шара = 1). */
+const SURFACE_DISTANCE_AT_ZOOM_1 = 2.35;
 /** В радианах: ближе этого к центру город считается «в фокусе». */
 const FOCUS_RADIUS = 0.14;
 const INITIAL_VIEW: GlobeView = { rotation: { lambda: -30, phi: -40 }, zoom: 1 };
@@ -132,7 +135,9 @@ function updateMarkerScales(markers: THREE.InstancedMesh, zoom: number): void {
 
 /** Расстояние камеры от центра шара для данного масштаба. */
 function cameraDistance(zoom: number): number {
-  return 1.25 + 2.1 / zoom;
+  // Расстояние до поверхности обратно пропорционально зуму, поэтому видимое увеличение
+  // растёт линейно: зум 10,5 показывает ровно втрое крупнее, чем 3,5.
+  return EARTH_RADIUS + SURFACE_DISTANCE_AT_ZOOM_1 / zoom;
 }
 
 /** Направление «в зрителя» в локальных координатах шара для текущего поворота. */
@@ -300,7 +305,8 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
         specular: 0x1a2a44,
         shininess: 14,
       });
-      const earth = new THREE.Mesh(new THREE.SphereGeometry(EARTH_RADIUS, 96, 64), material);
+      // 160×112 сегментов: при зуме 10× граней сферы не видно.
+      const earth = new THREE.Mesh(new THREE.SphereGeometry(EARTH_RADIUS, 160, 112), material);
       // У SphereGeometry нулевой меридиан текстуры лежит на +X, а latLongToVector3 кладёт его на +Z.
       // Поворот сферы на -90° вокруг Y совмещает карту с маркерами городов.
       earth.rotation.y = -Math.PI / 2;
