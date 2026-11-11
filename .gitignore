@@ -47,3 +47,6 @@ example
 
 # Кэш выгрузки станций
 scripts/.cache/
+
+# Скриншоты для App Store Connect: бинарники не храним в git
+store/screenshots/
