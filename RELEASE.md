@@ -93,7 +93,7 @@ https://appstoreconnect.apple.com/apps/6832317886
 
 ### В проекте
 
-1. Поставить релизную версию в `app.json` (`version`, например `1.0.0`), собрать и отправить:
+1. Версия в `app.json` (`version`) должна совпадать с версией страницы в App Store Connect (сейчас `1.0`), иначе сборку нельзя выбрать. Собрать и отправить:
    `npx eas-cli@latest build --platform ios --profile production --auto-submit`.
 2. Убедиться, что сборка прошла обработку и видна в TestFlight.
 
