@@ -45,6 +45,11 @@ export const da: Dictionary = {
   "player.saveTrack": "Synes godt om nummeret",
   "player.unsaveTrack": "Fjern fra numre, du synes godt om",
   "player.stop": "Stop",
+  "player.play": "Afspil",
+  "player.pause": "Pause",
+  "player.paused": "På pause",
+  "player.next": "Næste station",
+  "player.previous": "Forrige station",
 
   "station.add": "Føj til favoritstationer",
   "station.remove": "Fjern fra favoritstationer",

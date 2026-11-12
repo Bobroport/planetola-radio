@@ -45,6 +45,11 @@ export const el: Dictionary = {
   "player.saveTrack": "Μου αρέσει αυτό το τραγούδι",
   "player.unsaveTrack": "Αφαίρεση από τα τραγούδια που μου αρέσουν",
   "player.stop": "Διακοπή",
+  "player.play": "Αναπαραγωγή",
+  "player.pause": "Παύση",
+  "player.paused": "Σε παύση",
+  "player.next": "Επόμενος σταθμός",
+  "player.previous": "Προηγούμενος σταθμός",
 
   "station.add": "Προσθήκη στους αγαπημένους σταθμούς",
   "station.remove": "Αφαίρεση από τους αγαπημένους σταθμούς",

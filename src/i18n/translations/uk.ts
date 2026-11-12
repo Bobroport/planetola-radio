@@ -45,6 +45,11 @@ export const uk: Dictionary = {
   "player.saveTrack": "Додати трек до вподобаних",
   "player.unsaveTrack": "Прибрати трек із вподобаних",
   "player.stop": "Стоп",
+  "player.play": "Відтворити",
+  "player.pause": "Пауза",
+  "player.paused": "На паузі",
+  "player.next": "Наступна станція",
+  "player.previous": "Попередня станція",
 
   "station.add": "Додати до обраних станцій",
   "station.remove": "Прибрати з обраних станцій",

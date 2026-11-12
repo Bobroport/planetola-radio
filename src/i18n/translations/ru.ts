@@ -45,6 +45,11 @@ export const ru: Dictionary = {
   "player.saveTrack": "Добавить трек в понравившиеся",
   "player.unsaveTrack": "Убрать трек из понравившихся",
   "player.stop": "Стоп",
+  "player.play": "Играть",
+  "player.pause": "Пауза",
+  "player.paused": "На паузе",
+  "player.next": "Следующая станция",
+  "player.previous": "Предыдущая станция",
 
   "station.add": "Добавить в избранные станции",
   "station.remove": "Убрать из избранных станций",

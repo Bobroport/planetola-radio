@@ -45,6 +45,11 @@ export const tr: Dictionary = {
   "player.saveTrack": "Bu parçayı beğen",
   "player.unsaveTrack": "Beğenilen parçalardan kaldır",
   "player.stop": "Durdur",
+  "player.play": "Oynat",
+  "player.pause": "Duraklat",
+  "player.paused": "Duraklatıldı",
+  "player.next": "Sonraki istasyon",
+  "player.previous": "Önceki istasyon",
 
   "station.add": "Favori istasyonlara ekle",
   "station.remove": "Favori istasyonlardan kaldır",

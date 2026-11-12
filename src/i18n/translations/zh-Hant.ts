@@ -45,6 +45,11 @@ export const zhHant: Dictionary = {
   "player.saveTrack": "喜歡這首歌",
   "player.unsaveTrack": "從喜歡的歌曲中移除",
   "player.stop": "停止",
+  "player.play": "播放",
+  "player.pause": "暫停",
+  "player.paused": "已暫停",
+  "player.next": "下一個電台",
+  "player.previous": "上一個電台",
 
   "station.add": "加入收藏的電台",
   "station.remove": "從收藏的電台中移除",

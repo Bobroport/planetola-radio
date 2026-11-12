@@ -172,7 +172,7 @@ export default function SearchScreen() {
             city={item.city}
             showCountry
             isActive={current?.id === item.station.id}
-            onPress={play}
+            onPress={(station) => play(station, results.map((r) => r.station))}
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}

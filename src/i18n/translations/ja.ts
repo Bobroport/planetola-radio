@@ -45,6 +45,11 @@ export const ja: Dictionary = {
   "player.saveTrack": "この曲に「いいね」する",
   "player.unsaveTrack": "「いいね」した曲から削除",
   "player.stop": "停止",
+  "player.play": "再生",
+  "player.pause": "一時停止",
+  "player.paused": "一時停止中",
+  "player.next": "次の放送局",
+  "player.previous": "前の放送局",
 
   "station.add": "お気に入りの放送局に追加",
   "station.remove": "お気に入りの放送局から削除",

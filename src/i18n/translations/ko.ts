@@ -45,6 +45,11 @@ export const ko: Dictionary = {
   "player.saveTrack": "이 곡 좋아요",
   "player.unsaveTrack": "좋아요 표시한 곡에서 삭제",
   "player.stop": "정지",
+  "player.play": "재생",
+  "player.pause": "일시정지",
+  "player.paused": "일시정지됨",
+  "player.next": "다음 방송국",
+  "player.previous": "이전 방송국",
 
   "station.add": "즐겨찾는 방송국에 추가",
   "station.remove": "즐겨찾는 방송국에서 삭제",

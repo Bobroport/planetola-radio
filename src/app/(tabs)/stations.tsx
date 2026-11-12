@@ -26,7 +26,7 @@ export default function FavoriteStationsScreen() {
             city={item.city}
             showCountry
             isActive={current?.id === item.station.id}
-            onPress={play}
+            onPress={(station) => play(station, stations.map((s) => s.station))}
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}

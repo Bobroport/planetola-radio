@@ -45,6 +45,11 @@ export const id: Dictionary = {
   "player.saveTrack": "Sukai lagu ini",
   "player.unsaveTrack": "Hapus dari lagu yang disukai",
   "player.stop": "Berhenti",
+  "player.play": "Putar",
+  "player.pause": "Jeda",
+  "player.paused": "Dijeda",
+  "player.next": "Stasiun berikutnya",
+  "player.previous": "Stasiun sebelumnya",
 
   "station.add": "Tambahkan ke stasiun favorit",
   "station.remove": "Hapus dari stasiun favorit",

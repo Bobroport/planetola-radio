@@ -45,6 +45,11 @@ export const de: Dictionary = {
   "player.saveTrack": "Titel gefällt mir",
   "player.unsaveTrack": "Aus „Gefällt mir“ entfernen",
   "player.stop": "Stopp",
+  "player.play": "Wiedergabe",
+  "player.pause": "Pause",
+  "player.paused": "Pausiert",
+  "player.next": "Nächster Sender",
+  "player.previous": "Vorheriger Sender",
 
   "station.add": "Zu Lieblingssendern hinzufügen",
   "station.remove": "Aus Lieblingssendern entfernen",

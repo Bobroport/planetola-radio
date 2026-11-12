@@ -53,7 +53,7 @@ export default function CityScreen() {
           <StationRow
             station={item}
             isActive={current?.id === item.id}
-            onPress={play}
+            onPress={(station) => play(station, city.stations)}
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}

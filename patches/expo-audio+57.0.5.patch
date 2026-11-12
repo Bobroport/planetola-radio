@@ -1,0 +1,138 @@
+diff --git a/node_modules/expo-audio/build/AudioConstants.d.ts b/node_modules/expo-audio/build/AudioConstants.d.ts
+index cfd92ad..9154a69 100644
+--- a/node_modules/expo-audio/build/AudioConstants.d.ts
++++ b/node_modules/expo-audio/build/AudioConstants.d.ts
+@@ -15,5 +15,12 @@ export type AudioLockScreenOptions = {
+      * and scrub bar, and disable seek controls.
+      */
+     isLiveStream?: boolean;
++    /**
++     * Whether the next/previous track buttons should be enabled on the lock screen (and therefore
++     * in CarPlay, on headsets and steering wheel controls). The player emits a `remoteCommand`
++     * event instead of changing tracks itself.
++     * @platform ios
++     */
++    showNextPrevious?: boolean;
+ };
+ //# sourceMappingURL=AudioConstants.d.ts.map
+\ No newline at end of file
+diff --git a/node_modules/expo-audio/build/AudioModule.types.d.ts b/node_modules/expo-audio/build/AudioModule.types.d.ts
+index f3ae4ee..c4763e0 100644
+--- a/node_modules/expo-audio/build/AudioModule.types.d.ts
++++ b/node_modules/expo-audio/build/AudioModule.types.d.ts
+@@ -222,6 +222,14 @@ export type AudioEvents = {
+     playbackStatusUpdate(status: AudioStatus): void;
+     /** Fired when audio sampling is enabled and new sample data is available. */
+     audioSampleUpdate(data: AudioSample): void;
++    /**
++     * Fired when the user presses next/previous track on the lock screen, in CarPlay, on a headset
++     * or steering wheel. Only when `showNextPrevious` was passed to `setActiveForLockScreen`.
++     * @platform ios
++     */
++    remoteCommand(event: {
++        command: 'next' | 'previous';
++    }): void;
+ };
+ export declare class AudioRecorder extends SharedObject<RecordingEvents> {
+     /**
+diff --git a/node_modules/expo-audio/ios/AudioRecords.swift b/node_modules/expo-audio/ios/AudioRecords.swift
+index 33db27c..a1f8424 100644
+--- a/node_modules/expo-audio/ios/AudioRecords.swift
++++ b/node_modules/expo-audio/ios/AudioRecords.swift
+@@ -70,6 +70,7 @@ struct LockScreenOptions: Record {
+   @Field var showSeekForward: Bool = false
+   @Field var showSeekBackward: Bool = false
+   @Field var isLiveStream: Bool? = false
++  @Field var showNextPrevious: Bool = false
+ }
+ 
+ enum BitRateStrategy: String, Enumerable {
+diff --git a/node_modules/expo-audio/ios/MediaController.swift b/node_modules/expo-audio/ios/MediaController.swift
+index e977f57..19b9a88 100644
+--- a/node_modules/expo-audio/ios/MediaController.swift
++++ b/node_modules/expo-audio/ios/MediaController.swift
+@@ -303,12 +303,34 @@ class MediaController {
+       return .success
+     }
+ 
++    // Next/previous track (lock screen, CarPlay, headset and steering wheel buttons) are not
++    // handled natively: the active player emits a "remoteCommand" event and JS decides what to play.
++    remoteCommandCenter.nextTrackCommand.addTarget { [weak self] _ in
++      guard let player = self?.activePlayer else {
++        return .commandFailed
++      }
++
++      player.emit(event: "remoteCommand", payload: ["command": "next"])
++      return .success
++    }
++
++    remoteCommandCenter.previousTrackCommand.addTarget { [weak self] _ in
++      guard let player = self?.activePlayer else {
++        return .commandFailed
++      }
++
++      player.emit(event: "remoteCommand", payload: ["command": "previous"])
++      return .success
++    }
++
+     remoteCommandCenter.playCommand.isEnabled = true
+     remoteCommandCenter.pauseCommand.isEnabled = true
+     remoteCommandCenter.togglePlayPauseCommand.isEnabled = true
+     remoteCommandCenter.changePlaybackPositionCommand.isEnabled = !isLiveStream
+     remoteCommandCenter.skipForwardCommand.isEnabled = options?.showSeekForward ?? false
+     remoteCommandCenter.skipBackwardCommand.isEnabled = options?.showSeekBackward ?? false
++    remoteCommandCenter.nextTrackCommand.isEnabled = options?.showNextPrevious ?? false
++    remoteCommandCenter.previousTrackCommand.isEnabled = options?.showNextPrevious ?? false
+   }
+ 
+   private func disableRemoteCommands() {
+@@ -318,6 +340,8 @@ class MediaController {
+     remoteCommandCenter.changePlaybackPositionCommand.isEnabled = false
+     remoteCommandCenter.skipForwardCommand.isEnabled = false
+     remoteCommandCenter.skipBackwardCommand.isEnabled = false
++    remoteCommandCenter.nextTrackCommand.isEnabled = false
++    remoteCommandCenter.previousTrackCommand.isEnabled = false
+ 
+     // Remove event targets
+     remoteCommandCenter.playCommand.removeTarget(self)
+@@ -326,5 +350,7 @@ class MediaController {
+     remoteCommandCenter.changePlaybackPositionCommand.removeTarget(self)
+     remoteCommandCenter.skipForwardCommand.removeTarget(self)
+     remoteCommandCenter.skipBackwardCommand.removeTarget(self)
++    remoteCommandCenter.nextTrackCommand.removeTarget(self)
++    remoteCommandCenter.previousTrackCommand.removeTarget(self)
+   }
+ }
+diff --git a/node_modules/expo-audio/src/AudioConstants.ts b/node_modules/expo-audio/src/AudioConstants.ts
+index dcc0452..d988c99 100644
+--- a/node_modules/expo-audio/src/AudioConstants.ts
++++ b/node_modules/expo-audio/src/AudioConstants.ts
+@@ -16,4 +16,11 @@ export type AudioLockScreenOptions = {
+    * and scrub bar, and disable seek controls.
+    */
+   isLiveStream?: boolean;
++  /**
++   * Whether the next/previous track buttons should be enabled on the lock screen (and therefore
++   * in CarPlay, on headsets and steering wheel controls). The player emits a `remoteCommand`
++   * event instead of changing tracks itself.
++   * @platform ios
++   */
++  showNextPrevious?: boolean;
+ };
+diff --git a/node_modules/expo-audio/src/AudioModule.types.ts b/node_modules/expo-audio/src/AudioModule.types.ts
+index 7e75371..2207d21 100644
+--- a/node_modules/expo-audio/src/AudioModule.types.ts
++++ b/node_modules/expo-audio/src/AudioModule.types.ts
+@@ -280,6 +280,12 @@ export type AudioEvents = {
+   playbackStatusUpdate(status: AudioStatus): void;
+   /** Fired when audio sampling is enabled and new sample data is available. */
+   audioSampleUpdate(data: AudioSample): void;
++  /**
++   * Fired when the user presses next/previous track on the lock screen, in CarPlay, on a headset
++   * or steering wheel. Only when `showNextPrevious` was passed to `setActiveForLockScreen`.
++   * @platform ios
++   */
++  remoteCommand(event: { command: 'next' | 'previous' }): void;
+ };
+ 
+ export declare class AudioRecorder extends SharedObject<RecordingEvents> {

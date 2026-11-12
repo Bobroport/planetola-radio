@@ -45,6 +45,11 @@ export const he: Dictionary = {
   "player.saveTrack": "אהבתי את השיר",
   "player.unsaveTrack": "הסרה מהשירים שאהבתי",
   "player.stop": "עצירה",
+  "player.play": "הפעלה",
+  "player.pause": "השהיה",
+  "player.paused": "מושהה",
+  "player.next": "התחנה הבאה",
+  "player.previous": "התחנה הקודמת",
 
   "station.add": "הוספה לתחנות המועדפות",
   "station.remove": "הסרה מהתחנות המועדפות",

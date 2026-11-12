@@ -46,6 +46,11 @@ export const pt: Dictionary = {
   "player.saveTrack": "Gosto desta faixa",
   "player.unsaveTrack": "Remover das faixas de que gosto",
   "player.stop": "Parar",
+  "player.play": "Reproduzir",
+  "player.pause": "Pausa",
+  "player.paused": "Em pausa",
+  "player.next": "Estação seguinte",
+  "player.previous": "Estação anterior",
 
   "station.add": "Adicionar às estações favoritas",
   "station.remove": "Remover das estações favoritas",

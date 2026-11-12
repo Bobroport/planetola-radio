@@ -45,6 +45,11 @@ export const sv: Dictionary = {
   "player.saveTrack": "Gilla den här låten",
   "player.unsaveTrack": "Ta bort från gillade låtar",
   "player.stop": "Stoppa",
+  "player.play": "Spela",
+  "player.pause": "Paus",
+  "player.paused": "Pausad",
+  "player.next": "Nästa station",
+  "player.previous": "Föregående station",
 
   "station.add": "Lägg till i favoritstationer",
   "station.remove": "Ta bort från favoritstationer",

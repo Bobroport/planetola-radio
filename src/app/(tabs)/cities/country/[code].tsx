@@ -83,7 +83,11 @@ export default function CountryScreen() {
           </View>
         }
         renderItem={({ item }) => (
-          <StationRow station={item} isActive={current?.id === item.id} onPress={play} />
+          <StationRow
+            station={item}
+            isActive={current?.id === item.id}
+            onPress={(station) => play(station, visible)}
+          />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
         ListEmptyComponent={

@@ -45,6 +45,11 @@ export const hr: Dictionary = {
   "player.saveTrack": "Sviđa mi se ova pjesma",
   "player.unsaveTrack": "Ukloni iz pjesama koje mi se sviđaju",
   "player.stop": "Zaustavi",
+  "player.play": "Reproduciraj",
+  "player.pause": "Pauza",
+  "player.paused": "Pauzirano",
+  "player.next": "Sljedeća postaja",
+  "player.previous": "Prethodna postaja",
 
   "station.add": "Dodaj u omiljene postaje",
   "station.remove": "Ukloni iz omiljenih postaja",

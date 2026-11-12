@@ -45,6 +45,11 @@ export const ro: Dictionary = {
   "player.saveTrack": "Îmi place piesa",
   "player.unsaveTrack": "Elimină din piesele apreciate",
   "player.stop": "Oprește",
+  "player.play": "Redare",
+  "player.pause": "Pauză",
+  "player.paused": "În pauză",
+  "player.next": "Postul următor",
+  "player.previous": "Postul anterior",
 
   "station.add": "Adaugă la posturile favorite",
   "station.remove": "Elimină din posturile favorite",

@@ -45,6 +45,11 @@ export const ar: Dictionary = {
   "player.saveTrack": "أعجبتني هذه الأغنية",
   "player.unsaveTrack": "إزالة من الأغاني التي أعجبتني",
   "player.stop": "إيقاف",
+  "player.play": "تشغيل",
+  "player.pause": "إيقاف مؤقت",
+  "player.paused": "متوقف مؤقتًا",
+  "player.next": "المحطة التالية",
+  "player.previous": "المحطة السابقة",
 
   "station.add": "إضافة إلى المحطات المفضلة",
   "station.remove": "إزالة من المحطات المفضلة",

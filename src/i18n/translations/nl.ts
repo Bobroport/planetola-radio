@@ -45,6 +45,11 @@ export const nl: Dictionary = {
   "player.saveTrack": "Vind dit nummer leuk",
   "player.unsaveTrack": "Verwijderen uit gelikete nummers",
   "player.stop": "Stoppen",
+  "player.play": "Afspelen",
+  "player.pause": "Pauze",
+  "player.paused": "Gepauzeerd",
+  "player.next": "Volgende zender",
+  "player.previous": "Vorige zender",
 
   "station.add": "Toevoegen aan favoriete zenders",
   "station.remove": "Verwijderen uit favoriete zenders",

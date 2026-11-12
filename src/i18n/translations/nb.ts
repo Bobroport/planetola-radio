@@ -45,6 +45,11 @@ export const nb: Dictionary = {
   "player.saveTrack": "Lik denne låten",
   "player.unsaveTrack": "Fjern fra likte låter",
   "player.stop": "Stopp",
+  "player.play": "Spill av",
+  "player.pause": "Pause",
+  "player.paused": "Pauset",
+  "player.next": "Neste stasjon",
+  "player.previous": "Forrige stasjon",
 
   "station.add": "Legg til i favorittstasjoner",
   "station.remove": "Fjern fra favorittstasjoner",

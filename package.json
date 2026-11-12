@@ -42,6 +42,7 @@
     "@types/three": "^0.166.0",
     "eslint": "^9.39.5",
     "eslint-config-expo": "~57.0.2",
+    "patch-package": "^8.0.1",
     "typescript": "~6.0.3"
   },
   "scripts": {
@@ -51,7 +52,8 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "generate-stations": "node scripts/generate-stations.mjs && node scripts/generate-country-names.mjs",
-    "generate-countries": "node scripts/generate-countries.mjs"
+    "generate-countries": "node scripts/generate-countries.mjs",
+    "postinstall": "patch-package"
   },
   "private": true,
   "overrides": {

@@ -45,6 +45,11 @@ export const cs: Dictionary = {
   "player.saveTrack": "Líbí se mi tato skladba",
   "player.unsaveTrack": "Odebrat z oblíbených skladeb",
   "player.stop": "Zastavit",
+  "player.play": "Přehrát",
+  "player.pause": "Pozastavit",
+  "player.paused": "Pozastaveno",
+  "player.next": "Další stanice",
+  "player.previous": "Předchozí stanice",
 
   "station.add": "Přidat mezi oblíbené stanice",
   "station.remove": "Odebrat z oblíbených stanic",

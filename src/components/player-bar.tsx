@@ -17,6 +17,11 @@ export function PlayerBar() {
     isPlaying,
     isBuffering,
     error,
+    pause,
+    resume,
+    next,
+    previous,
+    hasQueue,
     stop,
   } = usePlayer();
   const { isSaved, toggle } = useFavorites();
@@ -25,11 +30,14 @@ export function PlayerBar() {
     return null;
   }
 
+  const paused = !isPlaying && !isBuffering;
   let statusText = t("player.onAir");
   if (error) {
     statusText = t("player.error", { message: error });
   } else if (isBuffering) {
     statusText = t("player.loading");
+  } else if (paused) {
+    statusText = t("player.paused");
   }
 
   const trackText = nowPlaying
@@ -67,12 +75,43 @@ export function PlayerBar() {
           {statusText}
         </Text>
       </View>
+      {hasQueue ? (
+        <Pressable
+          onPress={previous}
+          hitSlop={6}
+          style={({ pressed }) => [styles.iconButton, pressed && styles.pressed]}
+          accessibilityRole="button"
+          accessibilityLabel={t("player.previous")}
+        >
+          <Ionicons name="play-skip-back" size={22} color="#fff" />
+        </Pressable>
+      ) : null}
+      <Pressable
+        onPress={paused ? resume : pause}
+        hitSlop={6}
+        style={({ pressed }) => [styles.iconButton, pressed && styles.pressed]}
+        accessibilityRole="button"
+        accessibilityLabel={paused ? t("player.play") : t("player.pause")}
+      >
+        <Ionicons name={paused ? "play" : "pause"} size={28} color="#fff" />
+      </Pressable>
+      {hasQueue ? (
+        <Pressable
+          onPress={next}
+          hitSlop={6}
+          style={({ pressed }) => [styles.iconButton, pressed && styles.pressed]}
+          accessibilityRole="button"
+          accessibilityLabel={t("player.next")}
+        >
+          <Ionicons name="play-skip-forward" size={22} color="#fff" />
+        </Pressable>
+      ) : null}
       <Pressable
         onPress={() => {
           if (nowPlaying) toggle(nowPlaying, current, city);
         }}
         disabled={!canSave}
-        hitSlop={8}
+        hitSlop={6}
         style={({ pressed }) => [
           styles.iconButton,
           !canSave && styles.disabled,
@@ -84,18 +123,18 @@ export function PlayerBar() {
       >
         <Ionicons
           name={saved ? "heart" : "heart-outline"}
-          size={26}
+          size={24}
           color={saved ? "#ff375f" : "#fff"}
         />
       </Pressable>
       <Pressable
         onPress={stop}
-        hitSlop={8}
+        hitSlop={6}
         style={({ pressed }) => [styles.stop, pressed && styles.pressed]}
         accessibilityRole="button"
         accessibilityLabel={t("player.stop")}
       >
-        <Ionicons name="stop" size={22} color="#fff" />
+        <Ionicons name="stop" size={20} color="#fff" />
       </Pressable>
     </View>
   );
@@ -105,16 +144,17 @@ const styles = StyleSheet.create({
   bar: {
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: 12,
+    paddingHorizontal: 10,
     paddingVertical: 8,
     backgroundColor: "#1d1d1f",
   },
   beaver: {
-    marginRight: 8,
+    marginRight: 6,
   },
   info: {
     flex: 1,
     gap: 2,
+    marginRight: 4,
   },
   name: {
     color: "#fff",
@@ -138,8 +178,7 @@ const styles = StyleSheet.create({
     color: "#ff6b6b",
   },
   iconButton: {
-    marginLeft: 8,
-    padding: 6,
+    padding: 5,
   },
   disabled: {
     opacity: 0.3,
@@ -149,9 +188,9 @@ const styles = StyleSheet.create({
   },
   stop: {
     marginLeft: 4,
-    width: 42,
-    height: 42,
-    borderRadius: 21,
+    width: 38,
+    height: 38,
+    borderRadius: 19,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#ff3b30",

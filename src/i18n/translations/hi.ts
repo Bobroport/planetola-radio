@@ -45,6 +45,11 @@ export const hi: Dictionary = {
   "player.saveTrack": "यह गाना पसंद करें",
   "player.unsaveTrack": "पसंदीदा गानों से हटाएँ",
   "player.stop": "रोकें",
+  "player.play": "चलाएँ",
+  "player.pause": "रोकें",
+  "player.paused": "रुका हुआ",
+  "player.next": "अगला स्टेशन",
+  "player.previous": "पिछला स्टेशन",
 
   "station.add": "पसंदीदा स्टेशनों में जोड़ें",
   "station.remove": "पसंदीदा स्टेशनों से हटाएँ",
