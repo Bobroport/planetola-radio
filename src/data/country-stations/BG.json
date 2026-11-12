@@ -1,0 +1,2994 @@
+{
+ "countryCode": "BG",
+ "stations": [
+  {
+   "id": "736c9d38-8947-4d73-b5d8-347c592654fc",
+   "name": "Extreme Deep House Radio",
+   "streamUrl": "https://whsh4u-panel.com/proxy/yfryujzw/stream",
+   "homepage": "https://www.extremedeephouse.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "deep house",
+    "nu disco",
+    "vocal house"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1585,
+   "clickCount": 35,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3f107ac4-949c-4c65-8bea-d1cba3a7e728",
+   "name": "Vanilla",
+   "streamUrl": "https://play.global.audio/vanillahi.aac",
+   "homepage": "https://radioplay.bg/",
+   "codec": "AAC",
+   "bitrate": 160,
+   "tags": [
+    "chill out"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": {
+    "lat": 42.698,
+    "long": 23.322
+   },
+   "votes": 1457,
+   "clickCount": 25,
+   "countryCode": "BG"
+  },
+  {
+   "id": "9f5946d9-301f-4cf7-a1e8-7bdf7280d924",
+   "name": "City HipHop R&B",
+   "streamUrl": "https://play.global.audio/cityrabhi.aac",
+   "homepage": "https://radioplay.bg/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "hiphop r&b"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": {
+    "lat": 42.698,
+    "long": 23.322
+   },
+   "votes": 808,
+   "clickCount": 25,
+   "countryCode": "BG"
+  },
+  {
+   "id": "51408d80-4b67-40e0-9617-671759799c2b",
+   "name": "Badrock Hard & Heavy",
+   "streamUrl": "https://streams.badrockradio.net/hard-heavy",
+   "homepage": "https://badrockradio.net/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "death metal",
+    "heavy metal",
+    "metal",
+    "punk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Bulgaria",
+   "geo": {
+    "lat": 42.697,
+    "long": 23.322
+   },
+   "votes": 54,
+   "clickCount": 20,
+   "countryCode": "BG"
+  },
+  {
+   "id": "7a9787ef-210e-4915-b604-c5b1e63ed525",
+   "name": "Avto Radio",
+   "streamUrl": "https://playerservices.streamtheworld.com/api/livestream-redirect/AVTORADIOAAC_L.aac",
+   "homepage": "https://www.avtoradio.bg/",
+   "codec": "AAC+",
+   "bitrate": 48,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 338,
+   "clickCount": 18,
+   "countryCode": "BG"
+  },
+  {
+   "id": "d112f1ff-0501-4449-82c9-3d5935fc1a90",
+   "name": "Dark Wave Radomir",
+   "streamUrl": "https://dwrstream.eu/",
+   "homepage": "https://dwr.radio/",
+   "codec": "AAC",
+   "bitrate": 32,
+   "tags": [
+    "alternative",
+    "avantgarde",
+    "dark wave",
+    "ebm",
+    "experimental",
+    "grindcore"
+   ],
+   "languages": [],
+   "state": "Pernik",
+   "geo": {
+    "lat": 42.549,
+    "long": 22.961
+   },
+   "votes": 103,
+   "clickCount": 17,
+   "countryCode": "BG"
+  },
+  {
+   "id": "f7f48681-9777-47e4-9cb4-9ee86fd09229",
+   "name": "bTV Radio",
+   "streamUrl": "https://cdn.bweb.bg/radio/btv-radio.mp3",
+   "homepage": "https://btvradio.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "news"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 42.683,
+    "long": 23.316
+   },
+   "votes": 339,
+   "clickCount": 16,
+   "countryCode": "BG"
+  },
+  {
+   "id": "6b681eda-9c8f-4a3d-82db-6d6c8ac7cb08",
+   "name": "RADIO VERONIKA",
+   "streamUrl": "https://play.global.audio/veronika64",
+   "homepage": "http://radioveronika.bg/",
+   "codec": "MP3",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 234,
+   "clickCount": 15,
+   "countryCode": "BG"
+  },
+  {
+   "id": "479f7f2f-5e2d-4550-a49d-be5eb577749f",
+   "name": "BNR Horizont",
+   "streamUrl": "https://play.global.audio/testb.aac?dist=RADIOPLAY",
+   "homepage": "https://bnr.bg/horizont",
+   "codec": "AAC",
+   "bitrate": 48,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 416,
+   "clickCount": 13,
+   "countryCode": "BG"
+  },
+  {
+   "id": "e1ad62d7-44ef-4cb6-aa9f-fded04e06477",
+   "name": "folk mix",
+   "streamUrl": "https://listen.radiofolkmix.com/folkmixios",
+   "homepage": "https://radiofolkmix.com/",
+   "codec": "AAC",
+   "bitrate": 256,
+   "tags": [
+    "folk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 59,
+   "clickCount": 13,
+   "countryCode": "BG"
+  },
+  {
+   "id": "8035abbd-9c9a-4a00-a789-cd76449687c4",
+   "name": "Radio Nova",
+   "streamUrl": "https://25453.live.streamtheworld.com/RADIO_NOVAAAC_H.aac",
+   "homepage": "https://www.radionova.bg/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": {
+    "lat": 42.667,
+    "long": 23.297
+   },
+   "votes": 12,
+   "clickCount": 9,
+   "countryCode": "BG"
+  },
+  {
+   "id": "d534c717-e63d-4e8b-bfae-eb7a5c057d12",
+   "name": "Радио Дарик Русе 91.6 FM",
+   "streamUrl": "https://a12.asurahosting.com/listen/darik_radio/radio.mp3",
+   "homepage": "https://darikradio.bg/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "local radio",
+    "music",
+    "news"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 11,
+   "clickCount": 9,
+   "countryCode": "BG"
+  },
+  {
+   "id": "345d48b7-bfe4-4e33-afeb-b5ab1d07aa96",
+   "name": "Radio Jugomania",
+   "streamUrl": "https://s8.yesstreaming.net:17051/autodj",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "folk"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1415,
+   "clickCount": 8,
+   "countryCode": "BG"
+  },
+  {
+   "id": "971e9589-29d4-4db3-872b-542e3562b3c3",
+   "name": "Deluxe Radio Bulgaria | HQ",
+   "streamUrl": "https://play.radiomaxxfm.com/deluxe-high",
+   "homepage": "https://radiomaxxfm.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "ambient",
+    "chillout",
+    "lounge"
+   ],
+   "languages": [],
+   "state": "Sofia - town",
+   "geo": null,
+   "votes": 150,
+   "clickCount": 8,
+   "countryCode": "BG"
+  },
+  {
+   "id": "92a6e7a5-ee82-420d-9c57-91a99e2dbb8b",
+   "name": "Veronika 6 bez 10",
+   "streamUrl": "https://play.global.audio/6bez10.aac",
+   "homepage": "http://www.radioveronika.bg/",
+   "codec": "AAC",
+   "bitrate": 56,
+   "tags": [
+    "pop folk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 8,
+   "countryCode": "BG"
+  },
+  {
+   "id": "adc3d8e1-abab-478f-9730-852e749f9504",
+   "name": "XRaydio 1 – Your Kaleidoscope Of Sounds",
+   "streamUrl": "https://xraydio.ddns.net/live",
+   "homepage": "https://xraydio.net/",
+   "codec": "AAC",
+   "bitrate": 160,
+   "tags": [
+    "acid house",
+    "americana",
+    "disco",
+    "dream pop",
+    "electro",
+    "garage punk"
+   ],
+   "languages": [],
+   "state": "Plovdiv",
+   "geo": null,
+   "votes": 56,
+   "clickCount": 7,
+   "countryCode": "BG"
+  },
+  {
+   "id": "e00ed8d4-5a16-4361-8142-0aad6b0326fd",
+   "name": "XRaydio 3 – Your Rock & Roll Partner In Crime",
+   "streamUrl": "https://xraydio.ddns.net/xraydio3",
+   "homepage": "https://xraydio.net/",
+   "codec": "AAC",
+   "bitrate": 160,
+   "tags": [
+    "blues punk",
+    "garage rock",
+    "glam rock",
+    "outlaw country",
+    "power pop",
+    "psychobilly"
+   ],
+   "languages": [],
+   "state": "Plovdiv",
+   "geo": null,
+   "votes": 67,
+   "clickCount": 6,
+   "countryCode": "BG"
+  },
+  {
+   "id": "06b00648-7a02-4a6c-855f-423c008f3185",
+   "name": "Veselina Retro",
+   "streamUrl": "https://nova-radio.neterra.tv/veselinaretro",
+   "homepage": "https://www.radioveselina.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "retro folk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 6,
+   "countryCode": "BG"
+  },
+  {
+   "id": "e8ac22a4-b9ee-47cd-b386-b393f834dab2",
+   "name": "NovaNews Bulgaria",
+   "streamUrl": "https://play.global.audio/novanews.aac",
+   "homepage": "https://nova.bg/news",
+   "codec": "AAC",
+   "bitrate": 48,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 168,
+   "clickCount": 5,
+   "countryCode": "BG"
+  },
+  {
+   "id": "280a4ae0-6946-4db7-8f5f-9cf122cfca1c",
+   "name": "EILO Techno Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=techno",
+   "homepage": "https://www.eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "techno"
+   ],
+   "languages": [],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 130,
+   "clickCount": 5,
+   "countryCode": "BG"
+  },
+  {
+   "id": "c7b0ec29-d191-41bd-8294-6086902b4166",
+   "name": "EILO Trance Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=trance",
+   "homepage": "https://www.eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "trance"
+   ],
+   "languages": [],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 73,
+   "clickCount": 5,
+   "countryCode": "BG"
+  },
+  {
+   "id": "4f52c805-c794-4bca-9b1b-722fa0208e57",
+   "name": "Radio 1 (Радио 1 -Едно Русе0 -Ruse 88.9 FM",
+   "streamUrl": "https://28933.live.streamtheworld.com/RADIO_1AAC_H.aac",
+   "homepage": "https://radio1.bg/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "local radio",
+    "music",
+    "news"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 21,
+   "clickCount": 5,
+   "countryCode": "BG"
+  },
+  {
+   "id": "2f01c2fa-1867-465f-8666-0089fd2aff74",
+   "name": "Radio Lagoshevtsi",
+   "streamUrl": "https://radio.vidinlan.com/mp3",
+   "homepage": "https://lagushevtsi.com/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "vidin",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 5,
+   "countryCode": "BG"
+  },
+  {
+   "id": "36968279-b491-4b4f-a0bd-8fd5e5ea18ce",
+   "name": "Радио Фокус Русе 99.7 FM",
+   "streamUrl": "https://focusradio.dataserv.cc/1",
+   "homepage": "https://www.focus-radio.net/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 7,
+   "clickCount": 5,
+   "countryCode": "BG"
+  },
+  {
+   "id": "9fdee52c-3959-49c3-8220-27e24bab7f6f",
+   "name": "Radio Euronews Bulgaria",
+   "streamUrl": "https://play.euronews.bg/euronews-high",
+   "homepage": "https://radio.euronews.bg/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "news",
+    "talk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 5,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3cca606d-6b4f-4644-8139-5d11fb897500",
+   "name": "radio Maia",
+   "streamUrl": "https://radio.rn-tv.com:8000/stream/1/",
+   "homepage": "https://radiomaia.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "Burgas",
+   "geo": {
+    "lat": 42.502,
+    "long": 27.468
+   },
+   "votes": 421,
+   "clickCount": 4,
+   "countryCode": "BG"
+  },
+  {
+   "id": "5912285f-4424-49e8-bb24-9fe9a456891b",
+   "name": "City HipHop RaB",
+   "streamUrl": "https://play.global.audio/cityrab.aac",
+   "homepage": "https://radioplay.bg/",
+   "codec": "AAC",
+   "bitrate": 48,
+   "tags": [
+    "hiphop r&b"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": {
+    "lat": 42.698,
+    "long": 23.322
+   },
+   "votes": 198,
+   "clickCount": 4,
+   "countryCode": "BG"
+  },
+  {
+   "id": "25608063-9335-43a9-a911-4697ea76a0ad",
+   "name": "BadRock Radio",
+   "streamUrl": "https://radio.jump.bg:7028/live",
+   "homepage": "https://www.badrockradio.net/",
+   "codec": "MP3",
+   "bitrate": 96,
+   "tags": [
+    "hard rock",
+    "hardcore",
+    "heavy metal",
+    "heavy power metal",
+    "heavy rock",
+    "metal"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 42.053,
+    "long": 25.585
+   },
+   "votes": 185,
+   "clickCount": 4,
+   "countryCode": "BG"
+  },
+  {
+   "id": "5fbd494e-5350-4c9f-b6c9-4fbfc18dfc2d",
+   "name": "N-Joy BG",
+   "streamUrl": "https://cdn.bweb.bg/radio/njoy.mp3",
+   "homepage": "https://njoy.bg/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 126,
+   "clickCount": 4,
+   "countryCode": "BG"
+  },
+  {
+   "id": "d14b51b2-f045-4a10-a46b-86536e747963",
+   "name": "Badrock Golden Era",
+   "streamUrl": "https://streams.badrockradio.net/golden-era",
+   "homepage": "https://badrockradio.net/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "classic rock",
+    "rock"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Bulgaria",
+   "geo": {
+    "lat": 42.697,
+    "long": 23.322
+   },
+   "votes": 108,
+   "clickCount": 4,
+   "countryCode": "BG"
+  },
+  {
+   "id": "f8b18196-6a49-40ab-b1bc-63ad45b3da50",
+   "name": "Easy Radio",
+   "streamUrl": "https://live.easyradio.bg/aac?type=.mp3",
+   "homepage": "https://easyradio.bg/#",
+   "codec": "AAC",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 65,
+   "clickCount": 4,
+   "countryCode": "BG"
+  },
+  {
+   "id": "61f28b98-91ee-476b-9863-099b2aa58d10",
+   "name": "Balkan Radio",
+   "streamUrl": "https://samcloud.spacial.com/api/listen?sid=99064&m=sc&rid=175019&t=ssl",
+   "homepage": "https://balkanradio.com/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "america",
+    "balkan",
+    "balkansko",
+    "best",
+    "bulgarian",
+    "folk"
+   ],
+   "languages": [
+    "bulgarian",
+    "english",
+    "greek"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 42.697,
+    "long": 23.322
+   },
+   "votes": 51,
+   "clickCount": 4,
+   "countryCode": "BG"
+  },
+  {
+   "id": "968079d6-451b-44a9-9602-9ea06169e212",
+   "name": "Jazz FM - Sofia",
+   "streamUrl": "https://cdn.bweb.bg/radio/jazz-fm.mp3",
+   "homepage": "https://jazzfm.bg/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 46,
+   "clickCount": 4,
+   "countryCode": "BG"
+  },
+  {
+   "id": "82f53581-d4fa-4d5f-9599-009c400a7a8f",
+   "name": "Metro HITS Radio",
+   "streamUrl": "https://eu1.reliastream.com/proxy/mhr?mp=/MHR",
+   "homepage": "https://metrocast.top/hits",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "entertainment",
+    "hits",
+    "morning show",
+    "news",
+    "pop",
+    "talk show"
+   ],
+   "languages": [
+    "bulgarian",
+    "english"
+   ],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 339,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "8dc17c0b-d06b-4cdc-8218-9847696c4d01",
+   "name": "Radio Party Mix",
+   "streamUrl": "https://cast6.asurahosting.com/proxy/iliyan12/stream.mp3",
+   "homepage": "https://pozdravite.net/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "folk"
+   ],
+   "languages": [],
+   "state": "София",
+   "geo": {
+    "lat": 42.123,
+    "long": 24.77
+   },
+   "votes": 126,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "1d93cdf8-81a1-4be7-bd96-57ea52341823",
+   "name": "Radio Nostalgia",
+   "streamUrl": "https://sc.mpbnl.nl/radionostalgia.mp3",
+   "homepage": "https://notefmbg.free.bg",
+   "codec": "AAC+",
+   "bitrate": 384,
+   "tags": [
+    "2010s music",
+    "2010",
+    "2000s",
+    "hit music",
+    "pop music",
+    "pop"
+   ],
+   "languages": [
+    "bulgarian",
+    "english"
+   ],
+   "state": "Varna",
+   "geo": null,
+   "votes": 82,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "d89f7a54-c6fa-4e60-a7ff-f787a4749576",
+   "name": "Radioplay Cafe",
+   "streamUrl": "https://play.global.audio/cafehi.aac",
+   "homepage": "https://radioplay.bg/",
+   "codec": "AAC",
+   "bitrate": 160,
+   "tags": [
+    "cafe"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": {
+    "lat": 42.698,
+    "long": 23.322
+   },
+   "votes": 79,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "55bca38f-f222-405a-98f9-7f809c43539d",
+   "name": "XRaydio 2 – Your Vintage Jukebox",
+   "streamUrl": "https://xraydio.ddns.net/jukebox",
+   "homepage": "https://xraydio.net/",
+   "codec": "AAC",
+   "bitrate": 160,
+   "tags": [
+    "vintage",
+    "oldies",
+    "jet set lounge",
+    "garage",
+    "mod",
+    "vintage soul"
+   ],
+   "languages": [],
+   "state": "Plovdiv",
+   "geo": null,
+   "votes": 71,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "f716da14-3b8b-4d87-a680-6f40dba97f65",
+   "name": "Note FM",
+   "streamUrl": "https://sc.mpbnl.nl/notefm.mp3",
+   "homepage": "https://notefmbg.free.bg",
+   "codec": "AAC+",
+   "bitrate": 384,
+   "tags": [
+    "hit music",
+    "pop music",
+    "pop",
+    "dance",
+    "dance music"
+   ],
+   "languages": [
+    "bulgarian",
+    "english"
+   ],
+   "state": "Varna",
+   "geo": null,
+   "votes": 57,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "a79232c0-285a-4156-bedc-2325a3c718a8",
+   "name": "Tvoeto Radio",
+   "streamUrl": "https://stream.sweetradio.online:8001/tvr",
+   "homepage": "http://tvoetoradio.net/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": null,
+   "votes": 23,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "4a72719d-2fcd-4791-87e0-3883c56290b9",
+   "name": "Радио FM+ Русе 94.4 FM",
+   "streamUrl": "https://pulsar.atlantis.bg:8443/fmplusnew",
+   "homepage": "https://radiofmplus.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 21,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "8fe94e98-282a-45a8-8406-ed34bf31945a",
+   "name": "Energy 90s",
+   "streamUrl": "https://play.global.audio/energy-90s",
+   "homepage": "https://radioenergy.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "105e5e91-67bd-4638-80d5-004124e50cce",
+   "name": "Extreme Deep House Radio",
+   "streamUrl": "https://stream1.rcast.net/72921",
+   "homepage": "https://www.extremedeephouse.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "deep house",
+    "nu disco",
+    "vocal house"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "96b58791-6b1e-409c-83ca-ba018080427c",
+   "name": "Радио Рибка.бг",
+   "streamUrl": "https://xn--80abuj1a.xn--90ae/live-radio",
+   "homepage": "https://xn--80abuj1a.xn--90ae/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "Bulgaria",
+   "geo": {
+    "lat": 43.242,
+    "long": 27.848
+   },
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "558c4adf-b1ab-4c2e-99ab-ae2755f2a538",
+   "name": "BadRock Radio",
+   "streamUrl": "https://streams.badrockradio.net/national",
+   "homepage": "https://www.badrockradio.net/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "classic rock",
+    "rock"
+   ],
+   "languages": [],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "0dde101e-5225-4abb-860f-7a94902fdc6a",
+   "name": "Veselina Folk",
+   "streamUrl": "https://nova-radio.neterra.tv/veselinafolk",
+   "homepage": "https://www.radioveselina.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "1093be0c-28cb-4622-ba7d-079b5737aec4",
+   "name": "Radio Bizonio",
+   "streamUrl": "https://a13.asurahosting.com/listen/radio_bizonio_2/radio.mp3",
+   "homepage": "https://radiobizonio.com/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "hip-hop",
+    "rap",
+    "rnb",
+    "trap"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "Sofia City",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 3,
+   "countryCode": "BG"
+  },
+  {
+   "id": "277a3721-3418-4fe4-9a6e-1ea87f4db9d5",
+   "name": "Radio Zorana Sofia",
+   "streamUrl": "https://radio.jump.bg/proxy/radio12/stream",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "misc"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 421,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "a4dd70ed-9120-43db-95a2-47fc09205fe4",
+   "name": "Metro Love 80s",
+   "streamUrl": "https://eu1.reliastream.com/proxy/love80?mp=/MLR80S",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 194,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "6066f309-890c-4e1d-952c-28a1c7670651",
+   "name": "RADIO BGRADIO",
+   "streamUrl": "https://play.global.audio/bgradio128",
+   "homepage": "https://bgradio.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 148,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "cb177161-202d-4895-865d-07333927f41d",
+   "name": "Radio Contact",
+   "streamUrl": "https://listen.radioking.com/radio/490082/stream/546899",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "misc"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 59,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "f610872e-d45f-4830-b792-1be6f49dccec",
+   "name": "Metro Virtuoso Hits",
+   "streamUrl": "https://eu1.reliastream.com/proxy/mvr?mp=/MVR",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classical"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 32,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "72ff9fb6-7458-4fe6-878e-0cd608718ab3",
+   "name": "Radio Fresh -Ruse 93,6 FM",
+   "streamUrl": "https://streamer2.atlantis.bg:8443/fresh",
+   "homepage": "https://radiofresh.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "entertainment",
+    "news",
+    "pop",
+    "rock",
+    "sports"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 20,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "0c5c526f-d09f-49d7-89c6-4e82fe55b470",
+   "name": "Braille FM",
+   "streamUrl": "https://radio.jump.bg:7181/live",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "misc"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "4fead057-98ce-4341-a7a8-b86b1784711d",
+   "name": "Darik Nostalgie",
+   "streamUrl": "https://a10.asurahosting.com:7600/radio.mp3",
+   "homepage": "https://dariknostalgie.bg/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "music"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3c30a055-aaf9-438a-98c3-5d32a02bd1e5",
+   "name": "Energy NRJ Bulgaria 00s Only (AAC 128)",
+   "streamUrl": "https://play.global.audio/energy-00shi.aac",
+   "homepage": "https://radioenergy.bg/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "00's",
+    "2000s",
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "fea0c23d-7252-460c-a8dd-2db957c128b0",
+   "name": "Radio 1 Rock (AAC 128)",
+   "streamUrl": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_1_ROCKAAC_H.aac",
+   "homepage": "https://www.radio1rock.bg/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "classic rock",
+    "rock"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "96f0bf7e-8f2e-4231-81f2-4235eebcc41a",
+   "name": "Radio Dolce Vita",
+   "streamUrl": "https://streamer2.atlantis.bg:8443/dolcevita",
+   "homepage": "https://radiodolcevita.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "66489c0f-ce9b-4918-8e80-f69a1aa35b2c",
+   "name": "EILO Psychedelic Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=psychedelic",
+   "homepage": "https://eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "electronic",
+    "psychedelic",
+    "psytrance"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "fe5ee614-070b-4fe1-a03e-9d3e1b5a435f",
+   "name": "BadRock Classic Rock",
+   "streamUrl": "https://streams.badrockradio.net/classic-rock",
+   "homepage": "https://www.badrockradio.net/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "classic rock"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "af0ece30-92bf-4578-81bb-e206ef44e59a",
+   "name": "Lozenets Radio",
+   "streamUrl": "https://c18.radioboss.fm/stream/784",
+   "homepage": "https://new-age.listen2myshow.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 42.627,
+    "long": 23.354
+   },
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "36e3ed92-00ce-4992-9c1c-201e58606e5f",
+   "name": "Dark wave Radomir",
+   "streamUrl": "https://dwrstream.eu/?ver=209395",
+   "homepage": "https://dwr.radio/",
+   "codec": "AAC+",
+   "bitrate": 7,
+   "tags": [],
+   "languages": [
+    "bulgarian",
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 2,
+   "countryCode": "BG"
+  },
+  {
+   "id": "de10a769-c277-4fa1-9549-9f98be87265b",
+   "name": "Radio 1 Bulgaria",
+   "streamUrl": "https://play.global.audio:80/radio164",
+   "homepage": "https://radio1.bg/",
+   "codec": "MP3",
+   "bitrate": 64,
+   "tags": [
+    "90s",
+    "classic pop",
+    "classic rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 397,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "6866b413-18de-4eff-92d2-2405598a43a7",
+   "name": "Metro Love 90s Plus",
+   "streamUrl": "https://eu1.reliastream.com/proxy/love80?mp=/MLR90S",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 304,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "5b360510-c4fd-4c57-9875-36fcaabeca1e",
+   "name": "Hot Hits FM",
+   "streamUrl": "https://live.hothitsfm.com/stream",
+   "homepage": "https://hothitsfm.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 296,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "de3b4926-f22f-4704-9b8d-29fd3c1337d1",
+   "name": "onlineDJradio",
+   "streamUrl": "https://play.onlinedjradio.com:7000/live",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "electronic"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 230,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "8a6a10ac-1a60-4c18-a91b-0573d086d798",
+   "name": "Bg Estrada",
+   "streamUrl": "https://playerservices.streamtheworld.com/api/livestream-redirect/BG_ESTRADAAAC_L.aac?dist=onlineradiobox",
+   "homepage": "https://www.bgradio.bg/",
+   "codec": "AAC+",
+   "bitrate": 48,
+   "tags": [
+    "bg only",
+    "dance"
+   ],
+   "languages": [],
+   "state": "Sofia",
+   "geo": {
+    "lat": 42.78,
+    "long": 23.41
+   },
+   "votes": 188,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "9ff0313b-5adf-4b1a-85f8-0eda7926f8d3",
+   "name": "Bad Rock Radio 1",
+   "streamUrl": "https://play-radio0.jump.bg:7028/live",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 96,
+   "tags": [
+    "rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 171,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "a149f4b4-db63-4c6b-ab20-b6f9296d0eb6",
+   "name": "City Latin",
+   "streamUrl": "https://play.global.audio/citylatin.aac",
+   "homepage": "https://radioplay.bg/",
+   "codec": "AAC",
+   "bitrate": 48,
+   "tags": [
+    "latin"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": {
+    "lat": 42.698,
+    "long": 23.322
+   },
+   "votes": 163,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "73f63aaa-b9f6-4a2b-b7fb-47b7a246b04c",
+   "name": "Коледно радио",
+   "streamUrl": "https://play.global.audio/radio1-koledahi.aac",
+   "homepage": "https://www.radio1.bg/article/xmas-radio",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "aac",
+    "christmas",
+    "hd",
+    "коледа",
+    "коледна музика",
+    "коледно радио"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 162,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3e71f3bc-b950-4b32-8e56-ada2ce0da600",
+   "name": "Радио Зиг Заг - Най-яките парчета",
+   "streamUrl": "https://radyo.yayin.com.tr:4474/stream",
+   "homepage": "https://radio-zigzag.free.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "pop",
+    "rnb and 90's"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 128,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "845fdeb3-e744-4b8d-ba4d-749597a692b5",
+   "name": "Radio Strimonika",
+   "streamUrl": "https://play-radio0.jump.bg:7666/stream",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "misc"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 124,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "f659afac-bcf5-4122-9773-0c1c6e151893",
+   "name": "Classic FM",
+   "streamUrl": "https://cdn.bweb.bg/radio/classic-fm.mp3",
+   "homepage": "http://www.classicfm.bg/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 52,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "70176545-10de-4ea3-9073-e8f06ec04261",
+   "name": "Metro Country Rock HD",
+   "streamUrl": "https://radio.jump.bg/proxy/feed104?mp=/MSRR",
+   "homepage": "https://metrocast.top/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "country",
+    "country rock",
+    "metro",
+    "modern country",
+    "rock",
+    "андрей"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 51,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "37658307-90a1-49cb-b9f0-0db9ea974494",
+   "name": "Radio El Shada",
+   "streamUrl": "https://stream-40.zeno.fm/hku46gxdexquv?zs=d8gnzJrzS0GpfjuXp_Lx_Q",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "talk & speech"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 49,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "0affe3d8-31d1-49a8-aa4e-6087255b1951",
+   "name": "Cherveniat Papagal",
+   "streamUrl": "https://stream-64.zeno.fm/80qzq207rm0uv?zs=_xFVUn2nS3qDiPZ-lCCmIQ",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 42,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "7128ba37-7fd9-4e14-95f3-71178e101526",
+   "name": "Metro Love Hits",
+   "streamUrl": "https://eu1.reliastream.com/proxy/service?mp=/service",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 42,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "a19682bb-87dc-45ce-b0e5-c0827f2084d4",
+   "name": "Hit FM Bulgaria",
+   "streamUrl": "https://play.hitfmbg.com/hitfm-high",
+   "homepage": "https://hitfmbg.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "dance",
+    "hits",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 25,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3ad3c940-88ca-497b-986e-e8dca1951b28",
+   "name": "Metro Love Xmas Radio",
+   "streamUrl": "https://radio.jump.bg/proxy/feedyyy02?mp=/MLR70S",
+   "homepage": "https://metrocast.top/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "128k",
+    "christmas",
+    "hd",
+    "love",
+    "mp3",
+    "xmas"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 23,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "e22716d5-e746-4434-aafb-d1d4efa5c208",
+   "name": "Metro Dance Radio",
+   "streamUrl": "https://eu1.reliastream.com/proxy/mdr?mp=/MDR",
+   "homepage": "https://metrocast.top/dance/",
+   "codec": "MP3",
+   "bitrate": 112,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 23,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "57acee9a-fdf9-40ef-9240-87441738552a",
+   "name": "Metro Dance Radio HD",
+   "streamUrl": "https://radio.jump.bg/proxy/predp?mp=/MDR",
+   "homepage": "https://metrocast.top/dance/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 23,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "ca6ac624-77cd-4f39-9871-883cb7857337",
+   "name": "Радио Вероника Русе 99.0 FM",
+   "streamUrl": "https://28933.live.streamtheworld.com/RADIO_VERONIKAAAC_H.aac",
+   "homepage": "https://www.radioveronika.bg/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "etno",
+    "folk music",
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 22,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "fb30ac4a-3077-4aa3-bd15-9ee99da9106f",
+   "name": "MAGIC PARTY",
+   "streamUrl": "https://nova-radio.neterra.tv/magicparty",
+   "homepage": "https://play.nova.bg/video/magicparty/611100",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "90s",
+    "party",
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "6692cbbd-d238-49be-b953-92872584ef2c",
+   "name": "NJS Radio - New Jack Swing",
+   "streamUrl": "https://stream.njsradio.com/njs",
+   "homepage": "https://njsradio.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 16,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "df9d72d6-cef9-4d06-bbf1-cc35b57ed400",
+   "name": "KATRA FM",
+   "streamUrl": "https://live.katrafm.com/",
+   "homepage": "https://katrafm.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "bf1a0f56-bb9b-4c32-a4d9-03fb8e57005c",
+   "name": "Rosen Dimitrov",
+   "streamUrl": "https://stream.sweetradio.online:8001/HD",
+   "homepage": "https://sweetradio.online/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "bc0664f7-1df0-4d7c-81ab-5f91b4716ca3",
+   "name": "Радио Energy Болгария Русе 100.5 FM",
+   "streamUrl": "https://29103.live.streamtheworld.com/RADIO_ENERGYAAC_H.aac",
+   "homepage": "https://radioenergy.bg/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 5,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "19314d29-c6c6-47b1-a3fb-36dae1008a79",
+   "name": "Glarus Retro FM",
+   "streamUrl": "https://radio.comnet.bg:12301/radio-glarus-retro.mp3",
+   "homepage": "https://glarusretro.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "81d1c9d0-12a4-4cd0-8ea4-0703ea1fac90",
+   "name": "Radio Big Boss",
+   "streamUrl": "https://141.147.25.113:8000/radio.mp3",
+   "homepage": "https://141.147.25.113/public/radio_big_boss",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "chalga"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 42.484,
+    "long": 25.314
+   },
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "39b3b4eb-9a6a-4cab-9b84-141b519ea9d7",
+   "name": "Radio ZARA",
+   "streamUrl": "https://www.radiozara.bg/play",
+   "homepage": "https://www.radiozara.bg/",
+   "codec": "AAC+",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3fd7d3ef-3102-4b99-8aed-96b615bb9453",
+   "name": "EILO Ambient & Chill Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=ambient",
+   "homepage": "https://eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ambient",
+    "chillout",
+    "electronic"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "c5e62114-111f-4a27-889a-cc8a327aad4a",
+   "name": "MIXX",
+   "streamUrl": "https://radio.comnet.bg:12301/radio-mixx.mp3",
+   "homepage": "http://www.radiomixx.net/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Burgas",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "03aebcd3-e672-438d-9192-4ba7b7c3852b",
+   "name": "radio kesarevo",
+   "streamUrl": "https://ssl22.radyotelekom.com/8136/stream",
+   "homepage": "http://tat.freewb.ro/-radio-kesarevo",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "bulgaria"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "e06fb182-e1fe-4920-ab98-0c7b1e3b7d4a",
+   "name": "Energy NRJ Bulgaria 90s Only (AAC 128)",
+   "streamUrl": "https://play.global.audio/energy-90shi.aac",
+   "homepage": "https://radioenergy.bg/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "90's",
+    "90s",
+    "eurodance",
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "8aab8f31-c81c-4372-9ee6-869e5bc20d3f",
+   "name": "DJ ZONE HOUSE RADIO 24/7",
+   "streamUrl": "https://stream.djzone.mobi/djzone",
+   "homepage": "https://djzone.mobi/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "b986ba13-d4ed-44c4-8068-b6b14aee3477",
+   "name": "EILO Hard Techno Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=hard",
+   "homepage": "https://eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "electronic",
+    "hard techno",
+    "techno"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "20b56eb1-e7c7-4de3-aa09-ecf652c31e2a",
+   "name": "bTV Radio Русе 89.9 FM",
+   "streamUrl": "https://cdn.btv.bg/radio/btv-radio.mp3",
+   "homepage": "https://btvradio.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "music",
+    "news"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "0cfa5145-2260-4451-8750-a091326b2787",
+   "name": "Radio NET",
+   "streamUrl": "https://icecast.haskovo.net:9443/",
+   "homepage": "https://www.haskovo.net/radio-net",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "chillout",
+    "lounge",
+    "smooth jazz"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Haskovo",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3d62571d-a9aa-4df6-87ec-b3d6fec750c2",
+   "name": "RadioAdrenalina",
+   "streamUrl": "https://ssl22.radyotelekom.com/8386/stream",
+   "homepage": "http://radioadrenalina.free.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "chalga",
+    "pop-folk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Targovishte",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "b99a9c2f-373c-44ce-a4be-b9e36df17823",
+   "name": "The Voice of Bulgaria",
+   "streamUrl": "https://nova-radio.neterra.tv/voiceofbg",
+   "homepage": "https://thevoice.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "8e5d3455-1ac4-4754-8b00-6b7182cb9c92",
+   "name": "Veronika 6 bez 10 (AAC 128)",
+   "streamUrl": "https://play.global.audio/6bez10hi.aac",
+   "homepage": "http://www.radioveronika.bg/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "pop folk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "01ac466c-e368-4692-b41e-164ccb1c4a25",
+   "name": "Radioto.bg",
+   "streamUrl": "https://radio.jump.bg/proxy/radiotobg2?mp=/stream",
+   "homepage": "https://radioto.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "4a69b39d-7a20-48a5-b4e7-7ce6e8c49e73",
+   "name": "Smooth One Radio",
+   "streamUrl": "https://radio.jump.bg/proxy/servicech1?mp=/SMOOTHONE",
+   "homepage": "https://metrocast.top/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Sofia City",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "9e48333a-7d99-4a4b-a5fe-9b413da8dbca",
+   "name": "Radio Bella",
+   "streamUrl": "https://online.radiobella.com/listen/radio.bella/radio.mp3",
+   "homepage": "https://www.radiobella.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "local radio",
+    "news",
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Blagoevgrad",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "897c3fc5-fcba-417f-b981-b49cbabaa2af",
+   "name": "������ �������",
+   "streamUrl": "https://play-radio0.jump.bg:7146/;stream",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop-folk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Vratsa",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3dd2d494-32df-40a1-ac44-b70316bf3e9c",
+   "name": "Radio Retro Samokov",
+   "streamUrl": "https://radio.jump.bg/proxy/stanimi1/radioRETRO",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "oldies",
+    "retro"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "1aeb3ebb-3720-45da-a48e-92470ea275c8",
+   "name": "EILO Drum & Bass Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=drum",
+   "homepage": "https://eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "drum and bass",
+    "electronic"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3539dc4a-670a-4c74-91e3-eb4d54a42ea6",
+   "name": "Maxx FM Bulgaria | HQ",
+   "streamUrl": "https://play.radiomaxxfm.com/maxx-high",
+   "homepage": "https://radiomaxxfm.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "dance",
+    "deep house",
+    "electronic"
+   ],
+   "languages": [],
+   "state": "Sofia - town",
+   "geo": null,
+   "votes": 153,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "7c1f1bff-d7d3-41b3-b640-8ce2757b2f4a",
+   "name": "Sunny Beach Radio",
+   "streamUrl": "https://sunny-beachradio.stream.laut.fm/sunny-beachradio",
+   "homepage": "https://www.facebook.com/SunnyBeachRadio.Bulgaria/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 126,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "68db2b22-56ab-4f8e-96a6-e50012884f65",
+   "name": "BadRock Radio National",
+   "streamUrl": "https://radiocp.jump.bg/proxy/stan1?mp=/live",
+   "homepage": "https://www.badrockradio.net/",
+   "codec": "MP3",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 97,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "8d6ccb47-cf6b-4bdf-a174-12578c07dd9e",
+   "name": "City Latin",
+   "streamUrl": "https://play.global.audio/citylatinhi.aac",
+   "homepage": "https://radioplay.bg/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "latin"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": {
+    "lat": 42.698,
+    "long": 23.322
+   },
+   "votes": 86,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "fcf6e570-c7ea-4982-8b50-8ece3e6837c6",
+   "name": "Metro Top Radio",
+   "streamUrl": "https://eu1.reliastream.com/proxy/mgr?mp=/MGR",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 64,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 84,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "4ea44ab9-8dd1-470c-8576-2ff7a7b60d24",
+   "name": "Metro Country Rock",
+   "streamUrl": "https://eu1.reliastream.com/proxy/feedb?mp=/CRR64",
+   "homepage": "",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 68,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "087bbce7-9fc7-48f3-9f8b-1b1109852108",
+   "name": "Радио „Епархийски глас“",
+   "streamUrl": "https://radio.mitropolia-sofia.org:7610/stream",
+   "homepage": "https://radio-glas.mitropolia-sofia.org/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "christian orthodox",
+    "christianity",
+    "faith",
+    "orthodox",
+    "orthodox christian",
+    "orthodox church"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 56,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "77017883-8042-45a8-89ef-78b7d3d1ade0",
+   "name": "Radio Ruse",
+   "streamUrl": "https://radio.ruse.bg:8010/radioruse",
+   "homepage": "https://radioruse.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Ruse",
+   "geo": {
+    "lat": 43.849,
+    "long": 25.954
+   },
+   "votes": 55,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "c10f82ec-a899-469f-a371-2466ffca524c",
+   "name": "Metro Urban Hits",
+   "streamUrl": "https://eu1.reliastream.com/proxy/metroxmas?mp=/MCR",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "rap"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 38,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "f1542263-5db9-4f88-86fb-43c7b2611cad",
+   "name": "Fred Film Radio(Български език)",
+   "streamUrl": "https://s10.webradio-hosting.com/proxy/fredradiobg/stream",
+   "homepage": "http://www.fred.fm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "culture",
+    "film",
+    "movie"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 37,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "624be6bb-ab3c-4a0f-952e-0c45e980b162",
+   "name": "Muzaica Radio",
+   "streamUrl": "https://radio.muzaica.fm:9000/stream",
+   "homepage": "https://muzaica.fm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "blues",
+    "dance",
+    "electronic",
+    "funk",
+    "jazz",
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 36,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "39cabfcd-4a82-4b69-ad2f-92d402818975",
+   "name": "KOLEDNOTO RADIO",
+   "streamUrl": "https://play.global.audio/radio1-koleda.aac",
+   "homepage": "https://www.radioplay.bg/?radio=koledno",
+   "codec": "AAC",
+   "bitrate": 48,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 34,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "55829f8a-368b-493c-85fe-baa9065412a8",
+   "name": "Metro Love 00s",
+   "streamUrl": "https://eu1.reliastream.com/proxy/metroplusc?mp=/MLR2K",
+   "homepage": "",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 31,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "bec81518-f9d9-48b5-a390-834be7f15223",
+   "name": "Victoria Radio",
+   "streamUrl": "https://play.radiomaxxfm.com/victoriafm",
+   "homepage": "https://radiomaxxfm.com/",
+   "codec": "AAC+",
+   "bitrate": 80,
+   "tags": [
+    "dance",
+    "pop"
+   ],
+   "languages": [],
+   "state": "Sofia - town",
+   "geo": null,
+   "votes": 28,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "649b43ec-52b0-47dc-b974-c7077f07cf31",
+   "name": "Радио Bulgaria ON AIR Русе 103.9 FM",
+   "streamUrl": "https://live.radio.bgonair.bg/RadioBOA",
+   "homepage": "https://www.bgonair.bg/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 21,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "992a81a6-5007-43f7-90c4-b823d5849d70",
+   "name": "Radio Rashi online",
+   "streamUrl": "https://s2.free-shoutcast.com/stream/18214",
+   "homepage": "https://radiorashi.alle.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "broken beat",
+    "dance",
+    "folk",
+    "folklore",
+    "folkloree",
+    "grupo digital retroland"
+   ],
+   "languages": [],
+   "state": "South Carolina",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "eeab63e3-9d8c-4b8e-8139-44412206400a",
+   "name": "Easy Radio BG",
+   "streamUrl": "https://live.easyradio.bg/192?type=.mp3",
+   "homepage": "https://live.easyradio.bg/192?type=.mp3",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "internet"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 16,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "4c26f1be-9a28-4967-bcfd-06afbbf97d13",
+   "name": "Fusion7",
+   "streamUrl": "https://radio.palamarka.com/listen/fusion7/radio.mp3",
+   "homepage": "https://radio.palamarka.com/public/fusion7",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Плевен",
+   "geo": null,
+   "votes": 15,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "0bdfeaf3-3d5b-42d8-af96-a04c4f929882",
+   "name": "RADIO ZETRA",
+   "streamUrl": "https://radio.jump.bg/proxy/etzetrap/;stream/1",
+   "homepage": "https://zetramedia.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "40ccc5e3-d30a-44f7-990f-c6b72feac5e6",
+   "name": "BG Estrada",
+   "streamUrl": "https://play.global.audio/bgestrada",
+   "homepage": "https://bgradio.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": {
+    "lat": 42.698,
+    "long": 23.322
+   },
+   "votes": 3,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "87b2d880-4792-4fe6-a5c4-4aba7bc79040",
+   "name": "City K-Pop",
+   "streamUrl": "https://play.global.audio/citykpophi.aac",
+   "homepage": "https://city.bg/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "k-pop",
+    "kpop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "6a3015a8-9310-43d1-9b2f-32f4b7339ad1",
+   "name": "EILO Jazz, Funk & Soul Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=jazzfunksoul",
+   "homepage": "https://eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "funk",
+    "jazz",
+    "soul"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "cc8fb7fa-e821-46c8-a4b3-8a846493b03e",
+   "name": "Радио N-JOY Русе 101.6 FM",
+   "streamUrl": "https://cdn.btv.bg/radio/njoy.mp3",
+   "homepage": "https://njoy.bg/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 3,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "f10d046c-ca54-4df6-96d1-68b6597456b5",
+   "name": "KISS LOUNGE RADIO",
+   "streamUrl": "https://nova-radio.neterra.tv/kiss",
+   "homepage": "https://play.nova.bg/video/kisschristmas/611102",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "8bfc8432-1918-4945-a138-403155a9e18c",
+   "name": "Radio Nova",
+   "streamUrl": "https://25453.live.streamtheworld.com/RADIO_NOVAAAC_L.aac",
+   "homepage": "https://www.radionova.bg/",
+   "codec": "AAC+",
+   "bitrate": 48,
+   "tags": [],
+   "languages": [],
+   "state": "Sofia - town",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "5b31706a-87f1-465e-a28d-86daa4d4000c",
+   "name": "Радио Фолк 91.5",
+   "streamUrl": "https://radio.comnet.bg:12301/radio-folk.mp3",
+   "homepage": "https://radio-folk.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "bulgarian folk",
+    "folk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Burgas",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "dc699a1f-9d20-4993-b42d-70d28e444a87",
+   "name": "MHT Radio Petrich",
+   "streamUrl": "https://mht.hopto.org:8444/stream/1",
+   "homepage": "https://mht.hopto.org/MHTRadio/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 41.399,
+    "long": 23.199
+   },
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "ca387396-ca8b-45af-8f01-30c0a49644c2",
+   "name": "EYE SEE CHAOS RADIO STATION",
+   "streamUrl": "https://radio.eyeseechaos.net/listen/eye_see_chaos_radio/radio.mp3",
+   "homepage": "https://eyeseechaos.net/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "6ebedbdc-cf68-43a0-846c-49728c635531",
+   "name": "BG Voice Hit Mix",
+   "streamUrl": "https://stream.radio.co/s53f1b7497/listen",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "bulgarian",
+    "hits"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "f67c41ac-86a2-4f7b-9308-42db17e56e8d",
+   "name": "EILO Earth & Beat Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=earthbeat",
+   "homepage": "https://eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "electronic",
+    "ethnic",
+    "world"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "4260ea98-dfe5-4ad4-a88e-a62aeccb6691",
+   "name": "Радио БГ Русе 97.4 FM",
+   "streamUrl": "https://27913.live.streamtheworld.com/BG_RADIOAAC_H.aac",
+   "homepage": "https://www.bgradio.bg/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.846,
+    "long": 25.96
+   },
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "594154dd-a4f6-4dea-9173-52f85f4589d4",
+   "name": "EILO House Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=house",
+   "homepage": "https://eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "electronic",
+    "house"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "97d97922-b388-4821-b8e4-c3371aad454a",
+   "name": "BG Estrada",
+   "streamUrl": "https://play.global.audio/bgestradahi.aac",
+   "homepage": "https://bgradio.bg/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia City",
+   "geo": {
+    "lat": 42.698,
+    "long": 23.322
+   },
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "dcb676b4-5e9a-468d-8641-f887b6c54b5b",
+   "name": "Nova News (AAC 128)",
+   "streamUrl": "https://play.global.audio/novanewshi.aac",
+   "homepage": "https://nova.bg/radio",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "news"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "4c0b539e-a32c-4e0c-b56a-de79254626b6",
+   "name": "��� ��������",
+   "streamUrl": "https://play.global.audio/testbhi.aac",
+   "homepage": "https://bnrnews.bg/horizont",
+   "codec": "AAC",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "32aa78d3-cd54-444d-947e-1b0dfebc8a69",
+   "name": "SoulFreak - Soulful House Radio",
+   "streamUrl": "https://soulfreak.djzone.mobi/soulfreak",
+   "homepage": "https://soulfreak.fanclub.rocks/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Plovdiv",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "6f422200-793a-4bbd-9839-3fe881549a0b",
+   "name": "Radio 3:16",
+   "streamUrl": "https://stream.3-16.bg:8010/radio.mp3",
+   "homepage": "https://3-16.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "ee1a4265-5a2e-492a-a37c-fc32d12cc937",
+   "name": "Radio Tuturutka 97.4 Evropa",
+   "streamUrl": "https://stream.zeno.fm/uc2rmbyhvd5uv",
+   "homepage": "https://zeno.fm/radio/radio-tuturutka-97-4-evropa/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "folk",
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Varna",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3d2a080a-d977-4d8c-9d3e-78e1af851dd2",
+   "name": "PetiPolk Radio",
+   "streamUrl": "https://cast4.my-control-panel.com/proxy/anatoli1/stream",
+   "homepage": "https://petipolk.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "hip-hop",
+    "rap",
+    "rnb"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Shumen",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "c6eeb7a1-dbe1-4bd0-b8b3-1fcf718a3877",
+   "name": "Rila Folk",
+   "streamUrl": "https://play-radio6.jump.bg:7016/play;",
+   "homepage": "http://rilafolk.eu/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "folk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Sofia",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "961209d7-4aa1-4955-b9d7-7befd6c8037e",
+   "name": "Briefley Radio",
+   "streamUrl": "https://listen.radioking.com/radio/772229/stream/839543",
+   "homepage": "https://www.briefley.com/radio/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "children",
+    "kids",
+    "stories"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "1b3c9cee-976b-4e81-894d-2eab0b08dae4",
+   "name": "Радио Севтополис",
+   "streamUrl": "https://radio.jump.bg/proxy/radio123/",
+   "homepage": "https://radiosevtopolis.eu/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "news",
+    "pop",
+    "rock"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Stara Zagora",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "4d4286a7-9c6b-4936-8059-673a016d30f1",
+   "name": "Internacional 1",
+   "streamUrl": "https://play-radio0.jump.bg:7598/;",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "balkan",
+    "folk",
+    "pop-folk"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Varna",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "d178afeb-0739-48da-aba8-0e802b6b5572",
+   "name": "Radio Romantic",
+   "streamUrl": "https://g5.turbohost.eu/proxy/romantic/stream",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ballads",
+    "romantic"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Varna",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "b77487e0-b941-4feb-8b23-d5f6a43c10b2",
+   "name": "Coda Radio",
+   "streamUrl": "https://radio.jump.bg/proxy/feed82?mp=/coda",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Sofia City",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "57dd6d42-0b59-433e-9beb-efd4d42ff628",
+   "name": "Radio OxFM",
+   "streamUrl": "https://mpc.my-control-panel.eu:8002/stream",
+   "homepage": "",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "balkan",
+    "folk"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "298371df-ecf9-46b3-90ac-b46fe5af7f61",
+   "name": "EILO Dubstep Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=dubstep",
+   "homepage": "https://eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dubstep",
+    "electronic"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "2bd2057b-6b17-4343-ae2f-0de00e5c6fcc",
+   "name": "radio1rock",
+   "streamUrl": "https://149.13.0.81/radio1rock128",
+   "homepage": "https://www.radio1rock.bg/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classic rock",
+    "heavy metal",
+    "rock"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "f9216b30-3657-47cb-b0f7-1102022522a5",
+   "name": "Radio Atlantic",
+   "streamUrl": "https://c32.radioboss.fm:8853/stream",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "hits",
+    "pop"
+   ],
+   "languages": [
+    "bulgarian"
+   ],
+   "state": "Plovdiv",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  },
+  {
+   "id": "3f95a663-c532-4112-8977-05fe5642bb82",
+   "name": "EILO Mixotic Radio",
+   "streamUrl": "https://eilo.org/streamer.php?ch=mixotic",
+   "homepage": "https://eilo.org/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "electronic",
+    "mixes"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "BG"
+  }
+ ]
+}

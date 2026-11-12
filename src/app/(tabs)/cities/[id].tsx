@@ -1,8 +1,10 @@
-import { Stack, useLocalSearchParams } from "expo-router";
+import { router, Stack, useLocalSearchParams } from "expo-router";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 
+import { LinkRow } from "@/components/link-row";
 import { StationRow } from "@/components/station-row";
-import { cityName, getCity } from "@/data/stations";
+import { countryCatalogCount, hasCountryCatalog } from "@/data/countries";
+import { cityName, countryName, getCity } from "@/data/stations";
 import { useI18n } from "@/i18n";
 import { flagEmoji } from "@/lib/format";
 import { usePlayer } from "@/providers/player-provider";
@@ -30,6 +32,23 @@ export default function CityScreen() {
       <FlatList
         data={city.stations}
         keyExtractor={(item) => item.id}
+        ListHeaderComponent={
+          hasCountryCatalog(city.countryCode) ? (
+            <LinkRow
+              icon="flag-outline"
+              title={t("country.allStations", {
+                country: countryName(city.countryCode, language),
+              })}
+              subtitle={t("count.stations", { count: countryCatalogCount(city.countryCode) })}
+              onPress={() =>
+                router.push({
+                  pathname: "/cities/country/[code]",
+                  params: { code: city.countryCode },
+                })
+              }
+            />
+          ) : null
+        }
         renderItem={({ item }) => (
           <StationRow
             station={item}

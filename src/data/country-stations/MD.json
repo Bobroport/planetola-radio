@@ -1,0 +1,1265 @@
+{
+ "countryCode": "MD",
+ "stations": [
+  {
+   "id": "f09eef4e-bcca-416b-9280-f69e6280fd02",
+   "name": "Radio Relax - Jazz & Blues",
+   "streamUrl": "https://radio2.dixi.md/listen/relax_jazz__blues/relaxjazzblues128.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "blues",
+    "jazz"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 88,
+   "clickCount": 63,
+   "countryCode": "MD"
+  },
+  {
+   "id": "e45b77ad-3e75-4b16-bdb4-75cd6aa5baff",
+   "name": "Hit FM 2000s HITS",
+   "streamUrl": "https://radio3.dixi.md/listen/hit_fm_2000s_hits/hitfm2000hit128.aac",
+   "homepage": "https://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "00s",
+    "2000s",
+    "2000s dance",
+    "moldova",
+    "retro hits"
+   ],
+   "languages": [
+    "english",
+    "russian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 85,
+   "clickCount": 42,
+   "countryCode": "MD"
+  },
+  {
+   "id": "91900e91-4864-4ff0-b782-50817669c4ac",
+   "name": "Retro FM Moldova",
+   "streamUrl": "https://efir.retrofm.md:8000/retro",
+   "homepage": "https://retrofm.md/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "retro"
+   ],
+   "languages": [
+    "romanian",
+    "russian"
+   ],
+   "state": "Chișinău",
+   "geo": {
+    "lat": 47.007,
+    "long": 28.864
+   },
+   "votes": 617,
+   "clickCount": 41,
+   "countryCode": "MD"
+  },
+  {
+   "id": "8b6000a2-0eeb-4eb2-8511-a168de0e9ce9",
+   "name": "Kiss FM Moldova",
+   "streamUrl": "https://live.kissfm.md/kissfm.chisinau",
+   "homepage": "https://www.kissfm.md/",
+   "codec": "AAC",
+   "bitrate": 80,
+   "tags": [
+    "top hits",
+    "top40"
+   ],
+   "languages": [
+    "moldovian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 47.019,
+    "long": 28.852
+   },
+   "votes": 1386,
+   "clickCount": 35,
+   "countryCode": "MD"
+  },
+  {
+   "id": "c07ab03b-0903-4a1d-ad14-c1ef20087e05",
+   "name": "Hit FM Best Hits",
+   "streamUrl": "https://radio3.dixi.md/listen/hit_fm_best_hits/hitfm_besthits128.aac",
+   "homepage": "http://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 272,
+   "clickCount": 30,
+   "countryCode": "MD"
+  },
+  {
+   "id": "fc7c995c-6aa6-4627-9051-958fefa36c28",
+   "name": "HIT FM Trance Hits",
+   "streamUrl": "https://radio3.dixi.md/listen/hit_fm_trance/trance128.aac",
+   "homepage": "https://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "trance"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 20,
+   "clickCount": 29,
+   "countryCode": "MD"
+  },
+  {
+   "id": "434c8386-c889-47b3-aad6-42100dc1b84f",
+   "name": "HIT FM Tricolor de Hituri",
+   "streamUrl": "https://radio3.dixi.md/listen/hit_fm_tricolour/hitfmtricolor128.aac",
+   "homepage": "https://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "hits",
+    "pop"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 8,
+   "clickCount": 28,
+   "countryCode": "MD"
+  },
+  {
+   "id": "168b79d5-be7b-436f-b144-759696655d6d",
+   "name": "HIT FM K-Pop Hits",
+   "streamUrl": "https://radio3.dixi.md/listen/kpop_hits/kpop_hits.aac",
+   "homepage": "https://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "k-pop"
+   ],
+   "languages": [
+    "korean"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 26,
+   "countryCode": "MD"
+  },
+  {
+   "id": "9a05ee72-a353-43fa-b780-df716d3a57af",
+   "name": "Radio Vintage",
+   "streamUrl": "https://live.radiovintage.md/vintage_main",
+   "homepage": "https://radiovintage.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "00s",
+    "90s"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 24,
+   "countryCode": "MD"
+  },
+  {
+   "id": "206380e4-f015-4665-bddd-133d1327d672",
+   "name": "Hit FM Hot Hits",
+   "streamUrl": "https://radio3.dixi.md/listen/hit_fm_hot_hits/hitfm_hothits128.aac",
+   "homepage": "http://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 291,
+   "clickCount": 23,
+   "countryCode": "MD"
+  },
+  {
+   "id": "d0d6ddda-0681-472f-97f8-1f60d8276c7a",
+   "name": "HIT FM Русский Хит",
+   "streamUrl": "https://radio3.dixi.md/listen/hit_fm_russkoe_hitovoe/hitfm_ruhit128.aac",
+   "homepage": "https://hitfm.md/ru",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "hit"
+   ],
+   "languages": [
+    "молдавский",
+    "язык: русский"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 254,
+   "clickCount": 22,
+   "countryCode": "MD"
+  },
+  {
+   "id": "81a9eb5b-2da6-472c-a6c7-1ebe3f3e87c4",
+   "name": "Sex Sound Radio",
+   "streamUrl": "https://sexsoundradio.com:8000/radio.mp3",
+   "homepage": "https://sexsoundradio.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "adult",
+    "asmr",
+    "erotic",
+    "explicit",
+    "female voices",
+    "noise"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 72,
+   "clickCount": 15,
+   "countryCode": "MD"
+  },
+  {
+   "id": "0d4f0702-c2c4-48c9-9343-9f7b9ccafe47",
+   "name": "Radio Relax - Nature",
+   "streamUrl": "https://radio8.dixi.md/listen/relax_ice_arena/relaxicearena128.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "ambient",
+    "nature"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 10,
+   "countryCode": "MD"
+  },
+  {
+   "id": "4136b20f-f645-4609-8ceb-84bff54c50f6",
+   "name": "Radio ROKS (Moldova) - Rock Ballads",
+   "streamUrl": "https://radio6.dixi.md/listen/rock_ballads/rockballads128.aac",
+   "homepage": "https://radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "rock ballads"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 8,
+   "countryCode": "MD"
+  },
+  {
+   "id": "d86169ad-3b18-4c84-a330-9dd5b0a0e2a5",
+   "name": "Radio Noroc Moldova",
+   "streamUrl": "https://stream.noroc.tv/radionoroc_aac",
+   "homepage": "https://www.radionoroc.md/",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1566,
+   "clickCount": 6,
+   "countryCode": "MD"
+  },
+  {
+   "id": "0e527d75-30db-4d43-850c-4db38984c18e",
+   "name": "Megapolis Fm",
+   "streamUrl": "https://megapolisfm.md:8443/886",
+   "homepage": "https://megapolisfm.md/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "dance pop",
+    "electronic",
+    "house",
+    "new music"
+   ],
+   "languages": [
+    "moldovian",
+    "romanian",
+    "russian"
+   ],
+   "state": "Chișinău",
+   "geo": null,
+   "votes": 644,
+   "clickCount": 6,
+   "countryCode": "MD"
+  },
+  {
+   "id": "7a540c6b-a9d6-4722-a833-a6676629f539",
+   "name": "Radio Relax - lo-fi",
+   "streamUrl": "https://radio8.dixi.md/listen/relax_lofi/relax_lofi128.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "chill",
+    "lo-fi"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 6,
+   "countryCode": "MD"
+  },
+  {
+   "id": "4e71220b-64e6-45bd-9cba-7d5554a01200",
+   "name": "Radio Relax - Sweet Dreams",
+   "streamUrl": "https://radio1.dixi.md/listen/sweet_dreams/radio.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "alternative pop",
+    "dream pop",
+    "indie pop",
+    "shoegaze",
+    "slowcore"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 6,
+   "countryCode": "MD"
+  },
+  {
+   "id": "d2eed60e-ef02-4f89-ad0d-6726f88cb4b7",
+   "name": "HIT FM Orchestral Classics",
+   "streamUrl": "https://radio7.dixi.md/listen/orchestral-classics/orchestral-classics.aac",
+   "homepage": "https://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "classical"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 6,
+   "countryCode": "MD"
+  },
+  {
+   "id": "0280d853-bec5-40f2-895f-77746e2b0b38",
+   "name": "Kiss FM Chișinău",
+   "streamUrl": "https://dc.digi.live.kissfm.ro/kissfm.chisinau",
+   "homepage": "https://www.kissfm.md/",
+   "codec": "AAC",
+   "bitrate": 80,
+   "tags": [
+    "hits",
+    "moldova",
+    "romanian"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 44,
+   "clickCount": 5,
+   "countryCode": "MD"
+  },
+  {
+   "id": "5306033e-8ae2-4e29-82a5-70045a0994ed",
+   "name": "Radio ROKS Moldova",
+   "streamUrl": "https://stream.dixi.md:9443/Roks",
+   "homepage": "https://www.radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "moldova",
+    "radio roks",
+    "radio roks moldova",
+    "rock"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "Chișinău",
+   "geo": {
+    "lat": 47.013,
+    "long": 28.844
+   },
+   "votes": 127,
+   "clickCount": 4,
+   "countryCode": "MD"
+  },
+  {
+   "id": "7ff4a334-50ab-439a-ba82-47a3c2dd0082",
+   "name": "Radio Plai",
+   "streamUrl": "https://stream.radioplai.md/live",
+   "homepage": "https://www.radioplai.md/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "folk",
+    "pop"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 28,
+   "clickCount": 4,
+   "countryCode": "MD"
+  },
+  {
+   "id": "814b4e82-2580-4320-9ccb-0fbbb4144d20",
+   "name": "Radio Ai Noștri",
+   "streamUrl": "https://s5.radio.co/sfd9f42d1d/listen",
+   "homepage": "https://www.ainostri.com/",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "pop",
+    "talk"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 21,
+   "clickCount": 4,
+   "countryCode": "MD"
+  },
+  {
+   "id": "2cb31647-dfca-4bae-b5ad-a6724be0d92b",
+   "name": "DeepNova Radio",
+   "streamUrl": "https://a8.asurahosting.com:8820/radio.mp3",
+   "homepage": "https://deepnovaradio.com/blog/radiochannel/deepnova-320/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 4,
+   "countryCode": "MD"
+  },
+  {
+   "id": "29c0dffe-f333-45f2-b5cb-fdcfd9d92093",
+   "name": "Radio ROKS (Moldova) - Workout",
+   "streamUrl": "https://radio6.dixi.md/listen/workout_rock/workout.aac",
+   "homepage": "https://radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "rock",
+    "workout"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 10,
+   "clickCount": 4,
+   "countryCode": "MD"
+  },
+  {
+   "id": "255d3cc9-fdd2-4552-8bc2-de8aadb83a1a",
+   "name": "Radio ROKS (Moldova) - Hard'n'Heavy",
+   "streamUrl": "https://radio5.dixi.md/listen/roks_hardnheavy/roks_hardnheavy.aac",
+   "homepage": "https://radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "hard rock",
+    "heavy metal"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 4,
+   "countryCode": "MD"
+  },
+  {
+   "id": "b7326932-a9f9-49f6-8bc7-b2ccba8b3772",
+   "name": "Radio Relax - Versiuni Acustice",
+   "streamUrl": "https://radio8.dixi.md/listen/relax_acoustic_version/relax_acousticversion128.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "acoustic"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 4,
+   "countryCode": "MD"
+  },
+  {
+   "id": "68d28c67-fb11-450a-9343-46dfa4ec32f4",
+   "name": "Radio ROKS (Moldova) - New Rock",
+   "streamUrl": "https://radio6.dixi.md/listen/new_rock/new_rock128.aac",
+   "homepage": "https://radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "alternative rock",
+    "new rock",
+    "pop rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 4,
+   "countryCode": "MD"
+  },
+  {
+   "id": "3d8b1284-142e-4b13-a141-24c458c96a2a",
+   "name": "Jurnal Fm",
+   "streamUrl": "https://audio.jurnalfm.md/hq",
+   "homepage": "https://jurnalfm.md/",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "hits",
+    "music",
+    "new music",
+    "news",
+    "pop",
+    "talk"
+   ],
+   "languages": [
+    "moldovian",
+    "romanian",
+    "russian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 786,
+   "clickCount": 3,
+   "countryCode": "MD"
+  },
+  {
+   "id": "5145b988-1283-48a1-9cd7-4dc128009718",
+   "name": "Radio Cafe Moldova",
+   "streamUrl": "https://play.radiocafe.md:7000/radio.mp3",
+   "homepage": "https://radiocafe.md/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 3,
+   "countryCode": "MD"
+  },
+  {
+   "id": "504847b7-6baa-4fce-a62c-e0e6218fe562",
+   "name": "Vocea Basarabiei",
+   "streamUrl": "https://stream.noroc.tv/radiovb_aac",
+   "homepage": "https://voceabasarabiei.md/",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "folk",
+    "news",
+    "talk"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 3,
+   "countryCode": "MD"
+  },
+  {
+   "id": "53f5bc27-58d5-4c30-9bcd-e117ef23d98c",
+   "name": "Radio Relax - Tricolor",
+   "streamUrl": "https://radio1.dixi.md/listen/relax_tricolor/relaxtricolor128.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 3,
+   "countryCode": "MD"
+  },
+  {
+   "id": "4d51be51-641d-4b05-b2cd-8cf2cf152e5a",
+   "name": "Hit FM Chișinău 101.7 fm",
+   "streamUrl": "https://stream.dixi.md:9443/HitFM",
+   "homepage": "https://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "romanian",
+    "russian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 3,
+   "countryCode": "MD"
+  },
+  {
+   "id": "c65cc092-58ab-44ad-8585-610b0411ee38",
+   "name": "Radio Relax - Weekend fără griji",
+   "streamUrl": "https://radio8.dixi.md/listen/relax_weekend/relax_weekend.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "chillout",
+    "easy listening"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 3,
+   "countryCode": "MD"
+  },
+  {
+   "id": "40a45617-74c2-49ee-aef6-b329978da43e",
+   "name": "Muz FM Moldova",
+   "streamUrl": "https://live.muzfm.md/muzfm",
+   "homepage": "https://muzfm.md/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 47.003,
+    "long": 28.854
+   },
+   "votes": 502,
+   "clickCount": 2,
+   "countryCode": "MD"
+  },
+  {
+   "id": "ef7e6372-87d6-426e-bced-e2fa92401666",
+   "name": "Radio RFI Moldova",
+   "streamUrl": "https://asculta.radiorfi.ro/live.mp3",
+   "homepage": "http://www.rfi.ro/r-moldova",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "english",
+    "french",
+    "romanian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 47.006,
+    "long": 28.862
+   },
+   "votes": 405,
+   "clickCount": 2,
+   "countryCode": "MD"
+  },
+  {
+   "id": "2e932e59-c33f-4064-9e8d-924537b383ae",
+   "name": "Hit FM Dance",
+   "streamUrl": "https://radio4.dixi.md/listen/hit_fm_dance_hits/hitfmdancehits128.aac",
+   "homepage": "https://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 47.011,
+    "long": 28.845
+   },
+   "votes": 181,
+   "clickCount": 2,
+   "countryCode": "MD"
+  },
+  {
+   "id": "835c1306-01f8-4291-ac6d-623739c9b891",
+   "name": "Radio ZUM 1",
+   "streamUrl": "https://streams.radiozum.md/listen/zum1/ZUM1",
+   "homepage": "https://radiozum.md/",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "dance",
+    "hits",
+    "new",
+    "new music",
+    "pop"
+   ],
+   "languages": [
+    "moldovian",
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 175,
+   "clickCount": 2,
+   "countryCode": "MD"
+  },
+  {
+   "id": "82954a7f-a9fc-4176-9fa7-972a72cf411d",
+   "name": "DeepNova Radio - DanceNova",
+   "streamUrl": "https://a3.asurahosting.com/listen/dance_house_hits/radio-192.mp3%20(320kbps%20MP3)",
+   "homepage": "https://deepnovaradio.com/ro/blog/radiochannel/best-dance-house/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "club hits",
+    "dance house",
+    "edm"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 2,
+   "countryCode": "MD"
+  },
+  {
+   "id": "731e33db-8138-40d2-9581-b2f5911c66e4",
+   "name": "Focul din Vatră",
+   "streamUrl": "https://aiciascult.eu/radio",
+   "homepage": "https://aiciascult.eu/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "dance",
+    "hits",
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 13,
+   "clickCount": 2,
+   "countryCode": "MD"
+  },
+  {
+   "id": "de2ffee4-907f-46d5-b04b-4b165bb11662",
+   "name": "HIT FM Latino Hits",
+   "streamUrl": "https://radio4.dixi.md/listen/hit_fm_latino_hits/radio.mp3",
+   "homepage": "https://hitfm.md/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "latin",
+    "pop"
+   ],
+   "languages": [
+    "portuguese",
+    "spanish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 2,
+   "countryCode": "MD"
+  },
+  {
+   "id": "dbcd81fd-4ae5-4bb2-ab3f-e0957e5cf2f2",
+   "name": "Radio ROKS (Moldova) - Rock Tricolor",
+   "streamUrl": "https://radio5.dixi.md/listen/roks_tricolor/roks_tricolor128.aac",
+   "homepage": "https://radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "rock"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 2,
+   "countryCode": "MD"
+  },
+  {
+   "id": "8b879437-84c8-4fa9-8c35-56dd10e8fd12",
+   "name": "Radio Relax - SanRemo",
+   "streamUrl": "https://radio8.dixi.md/listen/relax_sanromero/relax_sanromero128.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "italian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "MD"
+  },
+  {
+   "id": "708cf1ea-1454-4212-886b-3100bea9df8c",
+   "name": "Hit Fm Drive Mode",
+   "streamUrl": "https://radio7.dixi.md/listen/hit_fm_drive_mode/hitfmdrivemode128.aac",
+   "homepage": "http://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 140,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "4063ddb3-61a2-47ff-a61d-ef73813df792",
+   "name": "Первое радио в вашем мобильном",
+   "streamUrl": "https://cdn.cybercdn.live/Pervoia/Audio/icecast.audio",
+   "homepage": "https://www.891fm.co.il/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 85,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "938ba257-1ac8-49a5-bf60-eb26f0fe75ec",
+   "name": "Radio ZUM4",
+   "streamUrl": "https://streams.radiozum.md/listen/zum4/ZUM4",
+   "homepage": "https://www.radiozum.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "chill",
+    "lo-fi",
+    "lounge",
+    "relax"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "Chișinău",
+   "geo": null,
+   "votes": 82,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "3866b002-333c-4052-92f8-e642637edfc9",
+   "name": "Master Class FM (MD)",
+   "streamUrl": "https://listen3.myradio24.com/master1",
+   "homepage": "",
+   "codec": "AAC",
+   "bitrate": 68,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "afe8da7e-5b5f-463d-8e34-2e264a07dbb6",
+   "name": "Radio ROKS (Moldova) - Indie Rock",
+   "streamUrl": "https://radio6.dixi.md/listen/indie_rock/indie_rock.aac",
+   "homepage": "https://radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "indie rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "84894d41-5e1a-4f8b-bae0-1684a3894ca9",
+   "name": "VibeFM",
+   "streamUrl": "https://stream.radio.co/s6a544f6c9/listen",
+   "homepage": "https://www.vibefm.md/",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "club",
+    "dance",
+    "dj",
+    "electronic"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 16,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "47badc2c-2650-49b9-8aa0-67a3253a7161",
+   "name": "HIT FM Eurovision Hits",
+   "streamUrl": "https://radio7.dixi.md/listen/hit_fm_eurovision_hits/eurovisionhits.aac",
+   "homepage": "https://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "eurodance",
+    "europe",
+    "european",
+    "european music",
+    "eurovision",
+    "eurovision song contest"
+   ],
+   "languages": [
+    "english",
+    "moldovian",
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "a2e51f8c-15c8-4579-93dd-1b55ce3d0823",
+   "name": "Radio Relax - Funk & Soul",
+   "streamUrl": "https://radio1.dixi.md/listen/relax_funk_soul/relaxfunkandsoul128.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "funk",
+    "soul"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "93a73902-6418-4e68-9fd8-0a97d68cd0b8",
+   "name": "Realitatea FM",
+   "streamUrl": "https://radio.realitatea.group/realitatea",
+   "homepage": "https://realitatea.md/realitatea-fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "oldies",
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "7c311dae-8274-4f94-ad80-7f5392b4db2f",
+   "name": "CITY FM",
+   "streamUrl": "https://live.cityfm.md:8001/cityfm",
+   "homepage": "https://cityfm.md/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "eb45d18e-c495-4ad0-b734-7449836001fa",
+   "name": "Radio Relax - VinoPizza",
+   "streamUrl": "https://radio2.dixi.md/listen/relax_vinopizza/vinopizza.aac",
+   "homepage": "https://radiorelax.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "italian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "81dd500c-83da-4a1a-b538-19916f14b2f9",
+   "name": "Radio ROKS (Moldova) - Pop Rock",
+   "streamUrl": "https://radio6.dixi.md/listen/pop_rock/pop_rock.acc",
+   "homepage": "https://radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "pop rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "f9718c94-92af-48ea-b712-353daa2522cb",
+   "name": "IMAGO.FM",
+   "streamUrl": "https://radio.imago.fm:8007/_a",
+   "homepage": "https://imago.fm/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "alternative",
+    "eclectic",
+    "indie",
+    "jazz",
+    "pop",
+    "rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "c61b4874-9a0a-4843-94dd-ebff18e7be0a",
+   "name": "Radio ROKS - Acoustic Rock",
+   "streamUrl": "https://radio6.dixi.md/listen/acoustic/radio.aac",
+   "homepage": "https://radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "acoustic rock",
+    "rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "f9aa87c1-a788-4c69-b9df-1c0beb36d293",
+   "name": "Radio Dar",
+   "streamUrl": "https://radiodar.md/stream.php",
+   "homepage": "https://radiodar.md/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "folk",
+    "news",
+    "pop",
+    "talk"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "MD"
+  },
+  {
+   "id": "ad013d77-cdf0-42b0-ae73-a5c12347237b",
+   "name": "Radio ZUM 2",
+   "streamUrl": "https://streams.radiozum.md/listen/zum2/ZUM2",
+   "homepage": "https://radiozum.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "00s",
+    "10s",
+    "2000s",
+    "2010s",
+    "hits",
+    "pop"
+   ],
+   "languages": [
+    "moldovian",
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 253,
+   "clickCount": 0,
+   "countryCode": "MD"
+  },
+  {
+   "id": "57ffd204-ac80-4d68-9e71-ddcdf766336c",
+   "name": "Hit FM Summer Hits",
+   "streamUrl": "https://radio4.dixi.md/listen/hit_fm_summer_hits/hitfmsummerhits128.aac",
+   "homepage": "http://hitfm.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 122,
+   "clickCount": 0,
+   "countryCode": "MD"
+  },
+  {
+   "id": "c63563c8-edc3-4bb5-9962-63375bb4d6ad",
+   "name": "Smile FM",
+   "streamUrl": "https://sonicssl.namehost.ro/8050/;",
+   "homepage": "https://www.smilefm.md/",
+   "codec": "AAC+",
+   "bitrate": 48,
+   "tags": [
+    "chr",
+    "hits",
+    "pop",
+    "top40"
+   ],
+   "languages": [
+    "romanian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 62,
+   "clickCount": 0,
+   "countryCode": "MD"
+  },
+  {
+   "id": "62ab091a-48f1-4a28-90fc-637b7568ab32",
+   "name": "Radio Fresh MD",
+   "streamUrl": "https://stream-151.zeno.fm/ttofovumhg1vv?zs=3vmFlLhiROOIFik2GUoxgw",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 61,
+   "clickCount": 0,
+   "countryCode": "MD"
+  },
+  {
+   "id": "12a4e399-1067-4102-9401-fde70ccf131f",
+   "name": "RADIO MUZFM",
+   "streamUrl": "https://live.muzfm.md//muzfmhd",
+   "homepage": "https://muzfm.md/",
+   "codec": "AAC+",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 0,
+   "countryCode": "MD"
+  },
+  {
+   "id": "fb22f28c-d4d6-4a03-92cc-ceba6ec92937",
+   "name": "RadioBEAT",
+   "streamUrl": "https://ssl.omegahost.ro/9998/stream",
+   "homepage": "https://radiobeat.md/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 0,
+   "countryCode": "MD"
+  },
+  {
+   "id": "ae71ee84-2d8f-400c-8822-17241b970be2",
+   "name": "Radio ROKS (Moldova) - Classic Rock",
+   "streamUrl": "https://radio5.dixi.md/listen/classic_rock/roks_classic_rock128.aac",
+   "homepage": "https://radioroks.md/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "classic rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 0,
+   "countryCode": "MD"
+  },
+  {
+   "id": "ac110d5f-a387-4f02-a253-d08268921a29",
+   "name": "SoundAds",
+   "streamUrl": "https://radio-soundads.webdelo.com/listen/soundads/radio.mp3",
+   "homepage": "https://soundads.webdelo.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "MD"
+  }
+ ]
+}

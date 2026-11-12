@@ -1,0 +1,3407 @@
+{
+ "countryCode": "UA",
+ "stations": [
+  {
+   "id": "8fae0da6-d485-4e98-8860-d71720a49dcc",
+   "name": "Kiss FM Ukrainian",
+   "streamUrl": "https://online.kissfm.ua/KissFM_Ukr",
+   "homepage": "https://www.kissfm.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 50.483,
+    "long": 30.486
+   },
+   "votes": 9531,
+   "clickCount": 39,
+   "countryCode": "UA"
+  },
+  {
+   "id": "e75c8795-d8e6-456e-a0b2-6f5992966969",
+   "name": "Хіт FM",
+   "streamUrl": "https://online.hitfm.ua/HitFM_HD",
+   "homepage": "https://www.hitfm.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "320kbps",
+    "pop music"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 50.456,
+    "long": 30.52
+   },
+   "votes": 1388,
+   "clickCount": 33,
+   "countryCode": "UA"
+  },
+  {
+   "id": "673104f3-2e52-40f1-91df-d17306d63023",
+   "name": "Мелодія FM",
+   "streamUrl": "https://online.melodiafm.ua/MelodiaFM",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3980,
+   "clickCount": 31,
+   "countryCode": "UA"
+  },
+  {
+   "id": "a39688fa-2959-4b0c-8bf7-8cf0bc9dd108",
+   "name": "Lounge FM",
+   "streamUrl": "https://cast.mediaonline.net.ua/loungefm320",
+   "homepage": "https://loungefm.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "chillout",
+    "lounge"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kiev",
+   "geo": {
+    "lat": 50.171,
+    "long": 30.498
+   },
+   "votes": 180,
+   "clickCount": 30,
+   "countryCode": "UA"
+  },
+  {
+   "id": "47651599-e323-4375-a9bf-aaae945e243e",
+   "name": "TRANCE IS STAR RADIO",
+   "streamUrl": "https://myradio24.org/tisradio",
+   "homepage": "https://twitter.com/tranceisstar",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "best music for you"
+   ],
+   "languages": [
+    "english",
+    "russian",
+    "ukrainian"
+   ],
+   "state": "Novosyolky",
+   "geo": null,
+   "votes": 7755,
+   "clickCount": 28,
+   "countryCode": "UA"
+  },
+  {
+   "id": "4748a2a9-2f27-4e4d-a15f-a91448a75830",
+   "name": "Radio ROCKS Kyiv 103.6FM HD",
+   "streamUrl": "https://online.radioroks.ua/RadioROKS_HD",
+   "homepage": "https://play.tavr.media/radioroks/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "classic rock",
+    "heavy metal",
+    "rock"
+   ],
+   "languages": [
+    "english",
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": {
+    "lat": 50.483,
+    "long": 30.483
+   },
+   "votes": 1005,
+   "clickCount": 26,
+   "countryCode": "UA"
+  },
+  {
+   "id": "0a010e69-30ae-4b26-a3a8-b57b105d16ca",
+   "name": "106.5 Kiss FM",
+   "streamUrl": "https://online.kissfm.ua/KissFM_HD",
+   "homepage": "https://www.kissfm.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "dance",
+    "electronic"
+   ],
+   "languages": [
+    "english",
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": {
+    "lat": 50.483,
+    "long": 30.483
+   },
+   "votes": 715,
+   "clickCount": 24,
+   "countryCode": "UA"
+  },
+  {
+   "id": "1380f2d6-2312-49c0-a618-f44ff83c3f75",
+   "name": "Radio ROKS Classic Rock",
+   "streamUrl": "https://online.radioroks.ua/RadioROKS_ClassicRock_HD",
+   "homepage": "https://www.radioroks.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "classic rock",
+    "rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1042,
+   "clickCount": 21,
+   "countryCode": "UA"
+  },
+  {
+   "id": "d813e74b-48dd-4ef5-b842-b6bf11c759cf",
+   "name": "Kiss FM Deep",
+   "streamUrl": "https://online.kissfm.ua/KissFM_Deep",
+   "homepage": "https://www.kissfm.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "deep"
+   ],
+   "languages": [],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 830,
+   "clickCount": 20,
+   "countryCode": "UA"
+  },
+  {
+   "id": "96309e77-0601-11e8-ae97-52543be04c81",
+   "name": "Brokenbeats",
+   "streamUrl": "https://stream.brokenbeats.net/tune",
+   "homepage": "http://brokenbeats.net/",
+   "codec": "AAC",
+   "bitrate": 320,
+   "tags": [
+    "atmospheric",
+    "downtempo",
+    "drum and bass"
+   ],
+   "languages": [
+    "english",
+    "russian",
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5514,
+   "clickCount": 18,
+   "countryCode": "UA"
+  },
+  {
+   "id": "d0050edc-29b5-4b7e-83fb-c4584c54b811",
+   "name": "Europa Plus",
+   "streamUrl": "https://s5.radioforge.com:7908/live?n=77357",
+   "homepage": "https://europaplus.kiev.ua/",
+   "codec": "MP3",
+   "bitrate": 224,
+   "tags": [
+    "dance",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": {
+    "lat": 50.422,
+    "long": 30.526
+   },
+   "votes": 586,
+   "clickCount": 17,
+   "countryCode": "UA"
+  },
+  {
+   "id": "1f8772ff-bb21-4e7e-a0c6-1c9606e7e8f4",
+   "name": "Radio Svoboda (Радіо Свобода)",
+   "streamUrl": "https://n04.radiojar.com/hcrb063nn3quv?rj-ttl=5&rj-tok=AAABijO2KqMAvyNNc6ijVnKFQA",
+   "homepage": "https://www.svoboda.org/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "news"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 720,
+   "clickCount": 15,
+   "countryCode": "UA"
+  },
+  {
+   "id": "8a6e95dc-2fc0-40f3-8df4-d31d64096c92",
+   "name": "Гуляй Радіо",
+   "streamUrl": "https://online.radioplayer.ua/GuliayRadio",
+   "homepage": "https://www.guliayradio.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "128 kbit/s",
+    "disco",
+    "https",
+    "internet radio",
+    "mp3"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 280,
+   "clickCount": 15,
+   "countryCode": "UA"
+  },
+  {
+   "id": "577f14dd-72e7-4523-8d80-978e56ea8453",
+   "name": "REPLAY NEWS - Українська       Новинне радіо кожні 5 хвилин",
+   "streamUrl": "https://replaynewsuk.ice.infomaniak.ch/replaynewsuk-128.mp3",
+   "homepage": "https://www.replaynews.net/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "news"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 24,
+   "clickCount": 15,
+   "countryCode": "UA"
+  },
+  {
+   "id": "d4faa904-e82f-41f1-a4a6-a95e7d333fab",
+   "name": "PowerFM",
+   "streamUrl": "https://cast.brg.ua/powerfm_main_public_mp3_hq",
+   "homepage": "https://powerfm.ua/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "other",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 101,
+   "clickCount": 14,
+   "countryCode": "UA"
+  },
+  {
+   "id": "7a3745cd-bf32-493d-97b7-dac324354b7c",
+   "name": "Radio Relax",
+   "streamUrl": "https://online.radiorelax.ua/RadioRelax",
+   "homepage": "https://www.radiorelax.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "easy listening"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 50.484,
+    "long": 30.484
+   },
+   "votes": 1025,
+   "clickCount": 13,
+   "countryCode": "UA"
+  },
+  {
+   "id": "1ac5a368-79bb-4382-a855-269989009598",
+   "name": "Kiss FM Ukraine HD",
+   "streamUrl": "https://online.kissfm.ua/KissFM_Ukr_HD",
+   "homepage": "https://www.kissfm.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3818,
+   "clickCount": 12,
+   "countryCode": "UA"
+  },
+  {
+   "id": "44a503e9-9663-4cbd-b4d2-6c1cd6bdf4b7",
+   "name": "DJFM DANCE",
+   "streamUrl": "https://cast.brg.ua/djfmdance_main_public_mp3_hq",
+   "homepage": "https://djfm.ua/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "dance",
+    "music",
+    "other",
+    "pop",
+    "varied"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 76,
+   "clickCount": 12,
+   "countryCode": "UA"
+  },
+  {
+   "id": "44ad083f-ecca-43cc-90cd-0a125b12fd00",
+   "name": "DJFM.UA [MP3 256k]",
+   "streamUrl": "https://cast.fex.net/djfm_x",
+   "homepage": "https://djfm.ua/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 379,
+   "clickCount": 11,
+   "countryCode": "UA"
+  },
+  {
+   "id": "3ac2b9cc-46f2-42c3-b63f-975da3b70000",
+   "name": "RockRadio UA (РокРадіо UA)",
+   "streamUrl": "https://rockradioua.online:8433/rock_256",
+   "homepage": "https://rockradioua.online/",
+   "codec": "AAC",
+   "bitrate": 256,
+   "tags": [
+    "rock ua"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kherson",
+   "geo": {
+    "lat": 46.625,
+    "long": 32.619
+   },
+   "votes": 352,
+   "clickCount": 11,
+   "countryCode": "UA"
+  },
+  {
+   "id": "bfe4692c-4158-4fca-9a41-7eb7112aab59",
+   "name": "Avtoradio",
+   "streamUrl": "https://cast.mediaonline.net.ua/avtoradio",
+   "homepage": "https://avtoradio.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 99,
+   "clickCount": 10,
+   "countryCode": "UA"
+  },
+  {
+   "id": "52be99a0-c223-4ddf-8e71-1eb0b43552f3",
+   "name": "Єдині новини",
+   "streamUrl": "https://online-news.radioplayer.ua/RadioNews",
+   "homepage": "https://radioplayer.ua/",
+   "codec": "MP3",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7560,
+   "clickCount": 9,
+   "countryCode": "UA"
+  },
+  {
+   "id": "70f82553-eb32-463e-9bd9-a17331a89177",
+   "name": "FM Disco Melody",
+   "streamUrl": "https://online.melodiafm.ua/MelodiaFM_Disco",
+   "homepage": "https://www.melodiafm.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "disco",
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 367,
+   "clickCount": 9,
+   "countryCode": "UA"
+  },
+  {
+   "id": "d4d42ef7-28b7-4b15-b357-df994d8adec3",
+   "name": "Люкс ФМ – Українські хіти",
+   "streamUrl": "https://lux.radio.tvstitch.com/ukrayinski-hiti-sd",
+   "homepage": "https://lux.fm/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "ukraine"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 122,
+   "clickCount": 9,
+   "countryCode": "UA"
+  },
+  {
+   "id": "1bd919f5-4014-41c8-b5bb-7e892c3af375",
+   "name": "109FM",
+   "streamUrl": "https://solid48.streamupsolutions.com/proxy/cfujtbgw/109fm",
+   "homepage": "https://www.109fm.net/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "house",
+    "progressive",
+    "techno",
+    "trance"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 71,
+   "clickCount": 9,
+   "countryCode": "UA"
+  },
+  {
+   "id": "5fd5b0bf-dd9f-48ef-9948-641ab45d9446",
+   "name": "RadioRelax_Instrumental_HD",
+   "streamUrl": "https://online.radiorelax.ua/RadioRelax_Instrumental_HD",
+   "homepage": "https://online.radiorelax.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 2273,
+   "clickCount": 8,
+   "countryCode": "UA"
+  },
+  {
+   "id": "9c418a38-41fa-4079-91c8-5b01d4c3a505",
+   "name": "Radio ROCKS Новий Рок 103.6FM HD",
+   "streamUrl": "https://online.radioroks.ua/RadioROKS_NewRock_HD",
+   "homepage": "https://play.tavr.media/radioroks/newrock/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "alternative rock",
+    "modern rock",
+    "rock"
+   ],
+   "languages": [
+    "english",
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 898,
+   "clickCount": 8,
+   "countryCode": "UA"
+  },
+  {
+   "id": "6bb76adf-2a9f-42dc-9540-2a4590b962c7",
+   "name": "Radio Jazz Cover",
+   "streamUrl": "https://online.radiojazz.ua/RadioJazz_Cover_HD",
+   "homepage": "https://play.tavr.media/radiojazz/cover/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 754,
+   "clickCount": 8,
+   "countryCode": "UA"
+  },
+  {
+   "id": "67a26db6-d9c9-4437-ba7c-27201546cabe",
+   "name": "Прямий FM",
+   "streamUrl": "https://cast.mediaonline.net.ua/prmfm320",
+   "homepage": "https://prm.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "320 kbit/s",
+    "https",
+    "mp3",
+    "news",
+    "talk"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 307,
+   "clickCount": 8,
+   "countryCode": "UA"
+  },
+  {
+   "id": "38df9888-784d-49ba-b7a8-3cc2d6e7b8d1",
+   "name": "Rock",
+   "streamUrl": "https://stream.zeno.fm/r6o4xljca6cvv",
+   "homepage": "https://stream.zeno.fm/r6o4xljca6cvv",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 49.883,
+    "long": 32.107
+   },
+   "votes": 162,
+   "clickCount": 8,
+   "countryCode": "UA"
+  },
+  {
+   "id": "b4671436-5606-44ff-9b76-032fa5670be0",
+   "name": "Brokenbeats",
+   "streamUrl": "https://brokenbeats.net/stream/aac",
+   "homepage": "https://brokenbeats.net/",
+   "codec": "AAC",
+   "bitrate": 320,
+   "tags": [
+    "drum & bass",
+    "drum 'n' bass",
+    "drum and bass"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 146,
+   "clickCount": 8,
+   "countryCode": "UA"
+  },
+  {
+   "id": "0486a31e-960c-4f7e-93b1-bf801073952d",
+   "name": "Радіо Максимум",
+   "streamUrl": "https://lux.radio.tvstitch.com/kyiv/max_adv_sd",
+   "homepage": "https://maximum.fm/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "128 kbit/s",
+    "aac",
+    "https",
+    "music",
+    "news"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 84,
+   "clickCount": 8,
+   "countryCode": "UA"
+  },
+  {
+   "id": "5da88f97-8e90-4288-9fb1-bc2a15860e08",
+   "name": "Люкс ФМ – Золоті хіти",
+   "streamUrl": "https://lux.radio.tvstitch.com/zoloti-hiti-sd",
+   "homepage": "https://lux.fm/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "retro"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 41,
+   "clickCount": 8,
+   "countryCode": "UA"
+  },
+  {
+   "id": "99a2654f-97ae-45d9-a5c9-60f1ba914192",
+   "name": "Люкс ФМ – Chill and Relax",
+   "streamUrl": "https://lux.radio.tvstitch.com/chill-sd",
+   "homepage": "https://lux.fm/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "chill",
+    "chillout",
+    "relax",
+    "ukraine"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 13,
+   "clickCount": 8,
+   "countryCode": "UA"
+  },
+  {
+   "id": "e2e83370-1d1b-4cb9-a9ef-168a50b5c900",
+   "name": "Radio Shanson",
+   "streamUrl": "https://cast.brg.ua/newshanson_main_public_mp3_hq",
+   "homepage": "https://brg.ua/radio-shanson/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "music",
+    "oldies",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 97,
+   "clickCount": 7,
+   "countryCode": "UA"
+  },
+  {
+   "id": "0d82a261-11ae-4af7-a34c-6952f3a886a3",
+   "name": "RadiVo",
+   "streamUrl": "https://radivo.thx8te.kh.ua/listen/radivo/radio.mp3",
+   "homepage": "https://radivo.thx8te.kh.ua/public/radivo",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "mix",
+    "pop",
+    "rock"
+   ],
+   "languages": [
+    "russian",
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 50.01,
+    "long": 36.255
+   },
+   "votes": 20,
+   "clickCount": 7,
+   "countryCode": "UA"
+  },
+  {
+   "id": "1748f193-6d40-4a9e-acbc-e284984c00d0",
+   "name": "K-Pop 24",
+   "streamUrl": "https://lux.radio.tvstitch.com/k-pop-sd",
+   "homepage": "https://lux.fm/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "kpop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 13,
+   "clickCount": 7,
+   "countryCode": "UA"
+  },
+  {
+   "id": "79cebe09-a7f1-4685-a056-24ed66d439c1",
+   "name": "Lounge FM Acoustic",
+   "streamUrl": "https://cast.mediaonline.net.ua/acoustic320",
+   "homepage": "https://loungefm.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "acoustic",
+    "lounge",
+    "relax"
+   ],
+   "languages": [],
+   "state": "Kiev",
+   "geo": {
+    "lat": 50.447,
+    "long": 30.528
+   },
+   "votes": 229,
+   "clickCount": 6,
+   "countryCode": "UA"
+  },
+  {
+   "id": "6d811320-a8f9-452d-9844-9305f93b7db9",
+   "name": "Radio Jazz Christmas",
+   "streamUrl": "https://online.radiojazz.ua/RadioJazz_Christmas_HD",
+   "homepage": "https://radiojazz.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "misc"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 143,
+   "clickCount": 6,
+   "countryCode": "UA"
+  },
+  {
+   "id": "8492e24d-7908-4cc4-9ee7-c3d5475c42d7",
+   "name": "7 Rays Radio",
+   "streamUrl": "https://7rays.stream.laut.fm/7rays",
+   "homepage": "https://7promeniv.com.ua/radio",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ambient",
+    "chillout",
+    "deep space",
+    "healing",
+    "meditation",
+    "new age"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Lviv",
+   "geo": null,
+   "votes": 56,
+   "clickCount": 6,
+   "countryCode": "UA"
+  },
+  {
+   "id": "759f46ed-7a0f-4ae1-9e1e-949fad8eaffe",
+   "name": "Dr.DIO Radio",
+   "streamUrl": "https://drdio.studio/stream/live.mp3",
+   "homepage": "https://drdio.studio/radio",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "ambient",
+    "chillout",
+    "deep house",
+    "downtempo",
+    "electronic",
+    "focus"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 6,
+   "countryCode": "UA"
+  },
+  {
+   "id": "de6a22f5-f88d-4320-967a-23a756f6962b",
+   "name": "Kiss FM Digital HD",
+   "streamUrl": "https://online.kissfm.ua/KissFM_Digital_HD",
+   "homepage": "https://play.tavr.media/kissfm/digital/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "dance"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kiev",
+   "geo": null,
+   "votes": 877,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "f1a55c38-d92a-4ba5-a0d0-d4e29601d533",
+   "name": "Kiss FM Digital SD",
+   "streamUrl": "https://online.kissfm.ua/KissFM_Digital",
+   "homepage": "https://play.tavr.media/kissfm/digital/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance"
+   ],
+   "languages": [
+    "english",
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": {
+    "lat": 50.484,
+    "long": 30.484
+   },
+   "votes": 330,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "c063268d-f6bf-49d3-8f4c-82dc95cd7292",
+   "name": "Megapolis FM 105.2 Kryvyi Rih",
+   "streamUrl": "https://cast.megapolis.fm/listen/kryvyi_rih/radio.mp3",
+   "homepage": "https://cast.megapolis.fm/public/kryvyi_rih",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "DP",
+   "geo": {
+    "lat": 47.91,
+    "long": 33.392
+   },
+   "votes": 260,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "c67c1183-a504-4ca8-9c33-ab8bb8a49aa0",
+   "name": "Авторадіо",
+   "streamUrl": "https://cast.mediaonline.net.ua/avtoradio320",
+   "homepage": "https://avtoradio.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 239,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "2663055f-88c9-49d2-a45c-7a54be4820a5",
+   "name": "Lounge FM",
+   "streamUrl": "https://cast.mediaonline.net.ua/chillout320",
+   "homepage": "https://loungefm.com.ua/chill",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "chillout"
+   ],
+   "languages": [
+    "english",
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 179,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "f2f1f40c-ded5-46ba-b3f2-9e362d10ea5b",
+   "name": "Радіо П'ятниця",
+   "streamUrl": "https://cast.mediaonline.net.ua/radiopyatnica320",
+   "homepage": "https://radiopyatnica.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 125,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "7d3a75c7-5796-454f-90d1-d6b890df64f4",
+   "name": "Одесса радио",
+   "streamUrl": "https://listen6.myradio24.com/odesradio",
+   "homepage": "https://listen6.myradio24.com/odesradio",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "russian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 35,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "a978a096-5b89-4212-a751-b825e50ee6c1",
+   "name": "РАДІОПІХОТА",
+   "streamUrl": "https://online.pihota.fm/listen/radio/aac64",
+   "homepage": "https://pihota.fm/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "metal",
+    "punk",
+    "rap",
+    "rock"
+   ],
+   "languages": [],
+   "state": "Choose One...",
+   "geo": {
+    "lat": 48.741,
+    "long": 37.592
+   },
+   "votes": 16,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "1ea69d4e-3c4a-40f6-bcf0-6118562ffe34",
+   "name": "Classic Radio",
+   "streamUrl": "https://online.classicradio.ua/ClassicRadio",
+   "homepage": "https://www.classicradio.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classical"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "cfe6595d-308e-45c9-8917-5cd76b73a607",
+   "name": "Радіоточка 48 кБ/с",
+   "streamUrl": "https://radio.ukr.radio/ur5-aacplus-l",
+   "homepage": "https://ukr.radio/channel.html?channelID=5",
+   "codec": "AAC+",
+   "bitrate": 48,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 50.45,
+    "long": 30.526
+   },
+   "votes": 2,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "b394d068-feab-48af-9ce2-aac41378e624",
+   "name": "Радіоточка 192 кБ/с",
+   "streamUrl": "https://radio.ukr.radio/ur5-mp3",
+   "homepage": "https://ukr.radio/channel.html?channelID=5",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 50.445,
+    "long": 30.522
+   },
+   "votes": 1,
+   "clickCount": 5,
+   "countryCode": "UA"
+  },
+  {
+   "id": "705a8179-a2e3-479d-91fb-26dbb95e4856",
+   "name": "Радіо Шлягер FM",
+   "streamUrl": "https://cast.brg.ua/shanson_main_public_mp3_hq",
+   "homepage": "https://shlager.fm/",
+   "codec": "MP3",
+   "bitrate": 224,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 717,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "a05a6ebb-b01e-48ae-bab3-2cdbf53635f7",
+   "name": "Radio NV",
+   "streamUrl": "https://online-radio.nv.ua/radionv.mp3",
+   "homepage": "https://radio.nv.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "christian",
+    "christmas music"
+   ],
+   "languages": [
+    "russian",
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 539,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "ed3880a4-7ac6-4872-8931-9f6cb433f260",
+   "name": "Radio Gold Ukraine",
+   "streamUrl": "https://online.radioplayer.ua/RadioGold",
+   "homepage": "https://www.radiogold.com.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 50.423,
+    "long": 30.509
+   },
+   "votes": 490,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "4833b353-709b-48fd-9d0a-a4a93e766602",
+   "name": "relax int",
+   "streamUrl": "https://online.radiorelax.ua/RadioRelax_Int",
+   "homepage": "https://www.radiorelax.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 298,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "8593f489-f319-41af-86e7-f2f7adc121de",
+   "name": "Radio Jazz Gold FM",
+   "streamUrl": "https://online.radiojazz.ua/RadioJazz_Gold",
+   "homepage": "https://play.tavr.media/radiojazz/gold/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classic jazz",
+    "jazz"
+   ],
+   "languages": [
+    "english",
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": {
+    "lat": 50.421,
+    "long": 30.531
+   },
+   "votes": 127,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "5b2885bc-d75f-4b14-8ffe-099246c0ce3d",
+   "name": "Радіо Мегаполіс (Кам'янське)",
+   "streamUrl": "https://cast.megapolis.fm/listen/kamyanske/radio.mp3",
+   "homepage": "https://www.megapolis.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "information",
+    "local news",
+    "music",
+    "news",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 111,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "e3ae1493-433e-4793-834e-a32aae9ed36e",
+   "name": "Smart Zeros",
+   "streamUrl": "https://s61.radiolize.com//radio//8000//radio.mp3",
+   "homepage": "https://smart2000s.com/cool-songs-for-2000-theme-party/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "00s",
+    "2000s",
+    "dance",
+    "decades",
+    "hip-hop",
+    "house"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 93,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "ff2ab1e0-e007-4f48-aeb0-396c3d177717",
+   "name": "Trans World Radio Ukraine",
+   "streamUrl": "https://radio.eclipse-streaming.co.za/listen/transworldradioukraine/TWR-ukraine_48.m4a",
+   "homepage": "https://twr-ua.org/",
+   "codec": "AAC",
+   "bitrate": 48,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 92,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "76ed8895-5d5a-4ae0-889d-f53aa411b764",
+   "name": "MFM Ukraine",
+   "streamUrl": "https://radio.mfm.ua/online128",
+   "homepage": "https://radio.mfm.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 91,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "eb859bdf-f4d9-41ca-8052-d4ea4a0b2ab9",
+   "name": "Радіо «РЕЙД»",
+   "streamUrl": "https://a9.asurahosting.com:7390/radio.mp3",
+   "homepage": "https://radio.raid.army/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "alternative",
+    "rock"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 50.434,
+    "long": 30.571
+   },
+   "votes": 22,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "8ab38dcb-1d66-4a4f-9470-0d8b63fa0805",
+   "name": "Громадське радіо",
+   "streamUrl": "https://hromadske.radio/radio_https_upstream",
+   "homepage": "https://hromadske.radio/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "128 kbit/s",
+    "https",
+    "mp3",
+    "news",
+    "podcasts"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 22,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "9a627ab5-735d-40e7-9f5a-89863d6d4910",
+   "name": "Українські хіти",
+   "streamUrl": "https://radio.dobreff.com/ukraine.mp3",
+   "homepage": "https://radio.dobreff.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "ukrainian"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 10,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "0f0c1ca4-1ac2-4a46-abd4-755bcfaa1769",
+   "name": "Mj Play FM",
+   "streamUrl": "https://mjplay.empirecraft.lv/stream",
+   "homepage": "https://mjplay.empirecraft.lv/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "country",
+    "gaming",
+    "ncs",
+    "no-copyright",
+    "rock",
+    "ukrainian"
+   ],
+   "languages": [
+    "english",
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 50.745,
+    "long": 25.32
+   },
+   "votes": 8,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "b2637f5b-a99c-4495-aa18-a2095eb09945",
+   "name": "NRJ RADIO",
+   "streamUrl": "https://cast.mediaonline.net.ua/nrj320",
+   "homepage": "https://nrjradio.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "04de73fa-2e12-4e79-a181-ef81935f1c3d",
+   "name": "ТЮ FM",
+   "streamUrl": "https://tyufm.com/radio.mp3",
+   "homepage": "https://tyufm.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "4d5215e7-34ec-42ea-b317-f76c7f2bf785",
+   "name": "Happy Radio",
+   "streamUrl": "https://stream.zeno.fm/nkeaps48xg0uv",
+   "homepage": "https://www.happyradio.fm/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "місто Київ",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 4,
+   "countryCode": "UA"
+  },
+  {
+   "id": "eb80d934-0983-4e13-ae40-c49058120b48",
+   "name": "Радіо Байрактар",
+   "streamUrl": "https://online.radiobayraktar.ua/RadioBayraktar_HD",
+   "homepage": "https://www.radiobayraktar.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "propaganda",
+    "various"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 238,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "4f5602e9-b9f5-4bee-a06b-58bb6a6bc1f7",
+   "name": "Радіо ПТРК",
+   "streamUrl": "https://service.ptrk.tv:8443/PTRK",
+   "homepage": "https://ptrk.tv/radio",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 216,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "5095ccc8-4f14-4b0b-986e-c80c54f839c1",
+   "name": "Буковинська Хвиля",
+   "streamUrl": "https://100.cv.ua:8443/play",
+   "homepage": "https://www.100fm.cv.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 86,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "156661f7-db32-4f54-9075-a731703fbc25",
+   "name": "Ax Radio!",
+   "streamUrl": "https://m.axradio.net/stream.mp3",
+   "homepage": "https://axradio.net/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "dance",
+    "hits",
+    "house",
+    "pop"
+   ],
+   "languages": [
+    "english",
+    "ukrainian"
+   ],
+   "state": "Zaporizhzhia",
+   "geo": {
+    "lat": 47.861,
+    "long": 35.107
+   },
+   "votes": 74,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "523cf9da-d947-4037-bd6a-3a9c68c05e6a",
+   "name": "MAGIC Radio",
+   "streamUrl": "https://cast.brg.ua/business_main_public_mp3_hq",
+   "homepage": "https://brg.ua/magic-radio/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 70,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "e1c4b3cf-f925-47a5-9b5b-00107f26606d",
+   "name": "The West Pole Radio",
+   "streamUrl": "https://online.z-polus.info/hq",
+   "homepage": "https://z-polus.info/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Ivano Frankivsk",
+   "geo": {
+    "lat": 48.908,
+    "long": 24.707
+   },
+   "votes": 63,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "efad14d3-369e-496c-953d-e2f7cb1202d2",
+   "name": "ABN Radio",
+   "streamUrl": "https://radio.andrew-lviv.net/abn128",
+   "homepage": "https://radio.andrew-lviv.net/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "320 kbit/s",
+    "dance",
+    "electronic",
+    "house",
+    "https",
+    "internet radio"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 47,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "04ab24cb-b826-4573-9ced-f9433d62540f",
+   "name": "Radio Bayraktar",
+   "streamUrl": "https://online.radiobayraktar.ua/RadioBayraktar",
+   "homepage": "https://www.radiobayraktar.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 42,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "783c9af5-8c9c-4b73-801a-1abf880864e4",
+   "name": "Хомякс ФМ Луганск 102.3",
+   "streamUrl": "https://radio.play-fm.ru:8001/homyak",
+   "homepage": "https://vk.com/club172222955",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "русская популярная музыка",
+    "юмор"
+   ],
+   "languages": [
+    "язык: русский"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 38,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "efe499e7-ba61-4629-8436-20ede0d29f34",
+   "name": "Радіо Інді.UA",
+   "streamUrl": "https://online.radioplayer.ua/RadioIndieUA",
+   "homepage": "https://play.tavr.media/radioindieua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop",
+    "rnb",
+    "rock"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 36,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "cc45c968-e9b9-4597-8ffb-1629ff6abc3c",
+   "name": "Радіо Дзвони",
+   "streamUrl": "https://radio.dzvony.org.ua/",
+   "homepage": "https://www.dzvony.org.ua/",
+   "codec": "AAC+",
+   "bitrate": 48,
+   "tags": [
+    "40 kbit/s",
+    "aac",
+    "https",
+    "ivano-frankivsk",
+    "music",
+    "regional radio"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 20,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "436cd5ea-1223-449c-8bc3-f2aab84f3e91",
+   "name": "Jam progressive",
+   "streamUrl": "https://jam5.uk/listen/progressiveua/radio.mp3",
+   "homepage": "https://jam5.uk/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "deep house",
+    "progressive",
+    "progressive house",
+    "progressive trance",
+    "techno"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "38aa8e0f-532d-4082-99d2-1c2c25895235",
+   "name": "Minatrix.FM: Независимое онлайн-радио и сообщество артистов для публикации музыки.",
+   "streamUrl": "https://minatrix.fm:8002/play",
+   "homepage": "https://minatrix.fm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Odessa",
+   "geo": null,
+   "votes": 8,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "0f81f654-ce29-4f96-97c3-5e41d5ee2188",
+   "name": "Lux FM Lviv",
+   "streamUrl": "https://lux.radio.tvstitch.com/lux_lviv_adv_sd",
+   "homepage": "https://lviv-radio.lux.fm/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "3884fc2b-d0fc-4244-b3a6-a3fd18e78b31",
+   "name": "Волна счастья Khvylia Shchastia",
+   "streamUrl": "https://listen.radioking.com/radio/562580/stream/622265",
+   "homepage": "https://volnaschastiya.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "christian",
+    "religious"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "0f230b00-ebd9-495d-830e-1a5626f3d6a9",
+   "name": "Army FM",
+   "streamUrl": "https://icecast.armyfm.com.ua:8443/ArmyFM",
+   "homepage": "https://www.armyfm.com.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "4ae296eb-beb2-4ad2-8878-2131af965bfc",
+   "name": "RadiumFM Kyiv",
+   "streamUrl": "https://stream.radiumfm.com/kyiv",
+   "homepage": "https://radiumfm.com/kyiv",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ai generated",
+    "jazz",
+    "news",
+    "retro",
+    "rhythm and blues",
+    "soul"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "23d618bf-3843-4587-8844-e1a46ebdf7ed",
+   "name": "EQVE Radio",
+   "streamUrl": "https://listen1.myradio24.com/nazarik",
+   "homepage": "https://myradio24.com/nazarik",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dazzling music",
+    "pop music",
+    "relax"
+   ],
+   "languages": [
+    "english",
+    "russian"
+   ],
+   "state": "Kiev",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "3b17c846-ef07-4f2a-8a9a-b50c3e7927e4",
+   "name": "На своїй хвилі Новодністровськ",
+   "streamUrl": "https://online-novodnistrovsk.pp.ua:8443/playHD",
+   "homepage": "http://novod.info/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 3,
+   "countryCode": "UA"
+  },
+  {
+   "id": "237394a3-359c-4dc4-b19f-82e9cb590108",
+   "name": "Informator FM",
+   "streamUrl": "https://main.inf.fm:8101/;?type=http&nocache=221893",
+   "homepage": "https://informator.fm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Dnepr",
+   "geo": null,
+   "votes": 697,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "6930d86f-e6a0-45e5-8581-88bf044c2f3a",
+   "name": "Radio Relax Christmas",
+   "streamUrl": "https://online.radiorelax.ua/RadioRelax_Christmas_HD",
+   "homepage": "https://radiorelax.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "misc"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 188,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "a6e7696f-e9bb-4b0e-9bba-728a6e92a150",
+   "name": "True Black Metal Radio",
+   "streamUrl": "https://trueblackmetalradio.com:8000/radio",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 168,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "b6ddc823-f87a-4e74-9077-80185593e912",
+   "name": "Top Radio FROM UKRAINE TO SPAIN",
+   "streamUrl": "https://laut.fm/topradio",
+   "homepage": "https://laut.fm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "radio",
+    "top"
+   ],
+   "languages": [
+    "castellano. español"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 118,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "4abcb0d3-1c2a-4c5c-91da-e877afc56ad5",
+   "name": "Слобожанське ФМ",
+   "streamUrl": "https://globalic.stream:1810/stream",
+   "homepage": "https://www.sfm.in.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "information",
+    "music",
+    "national",
+    "news",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 117,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "4a1c7503-b670-4e20-ae86-2e0db9ab8b0b",
+   "name": "Явір ФМ",
+   "streamUrl": "https://complex.in.ua/Yavir",
+   "homepage": "https://yavir.fm/",
+   "codec": "AAC+",
+   "bitrate": 160,
+   "tags": [
+    "160 kbit/s",
+    "aac",
+    "https",
+    "music",
+    "regional radio",
+    "yavoriv"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 49.945,
+    "long": 23.39
+   },
+   "votes": 94,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "00bbb722-3a63-45c0-bbdb-088d1ef117bc",
+   "name": "Люкс ФМ – Сучасні хіти",
+   "streamUrl": "https://lux.radio.tvstitch.com/suchasni-hiti-sd",
+   "homepage": "https://lux.fm/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 91,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "f363dba1-817c-4e8e-8ac4-3f3de11ae374",
+   "name": "Радіо Західний полюс",
+   "streamUrl": "https://online.z-polus.info/mobile",
+   "homepage": "https://z-polus.info/",
+   "codec": "AAC",
+   "bitrate": 32,
+   "tags": [
+    "32 kbit/s",
+    "aac",
+    "https",
+    "ivano-frankivsk",
+    "music",
+    "podcasts"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 48.919,
+    "long": 24.707
+   },
+   "votes": 60,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "dafe1408-1d61-498a-bc51-3737835fdf61",
+   "name": "Явір FM",
+   "streamUrl": "https://complex.in.ua/Yavir320",
+   "homepage": "https://yavir.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 58,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "702fec9f-c451-48d0-95bc-e555c9b1ace2",
+   "name": "Перше міське радіо (Одеса)",
+   "streamUrl": "https://live.1tv.od.ua/radio/stream/icecast.audio",
+   "homepage": "https://1tv.od.ua/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "information",
+    "local news",
+    "music",
+    "news",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 51,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "62ab8fff-2ba2-45a8-9bb7-b45b9493eda4",
+   "name": "Радіо NovaLine",
+   "streamUrl": "https://stream.novaline.net.ua/Novaline_320",
+   "homepage": "https://novaline.fm/en/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 49,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "dbe80a28-9b80-4bff-928c-6d9d02fc67da",
+   "name": "Радіо Перше",
+   "streamUrl": "https://live.radio1.com.ua/liveradio64",
+   "homepage": "https://radio1.com.ua/",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [
+    "64 kbit/s",
+    "aac",
+    "https",
+    "lviv",
+    "music",
+    "news"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 42,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "8373f4cb-8354-4853-944d-c8f820024bde",
+   "name": "Звичайне україномовне радіо",
+   "streamUrl": "https://whsh4u-panel.com/proxy/yvlxzzdx?mp=/stream",
+   "homepage": "https://zvukrradio.wixsite.com/mysite",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "128 kbit/s",
+    "https",
+    "internet radio",
+    "mp3",
+    "music"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 41,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "43d6ed69-bb53-44ab-bc5d-919c238e7708",
+   "name": "Наше Радіо 107,9",
+   "streamUrl": "https://online.nasheradio.ua/NasheRadio_HD",
+   "homepage": "https://www.nasheradio.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "Kyiv",
+   "geo": {
+    "lat": 50.483,
+    "long": 30.483
+   },
+   "votes": 36,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "5538ea54-668e-480b-a4d1-5992732f8d6a",
+   "name": "Бізнес Радіо",
+   "streamUrl": "https://cast.brg.ua/businessradio_main_public_mp3_hq",
+   "homepage": "https://brg.ua/business-radio/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "music",
+    "national",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 20,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "8b25c413-0434-4766-9e85-c873d3095405",
+   "name": "Балта FM",
+   "streamUrl": "https://podilske.com:8013/online",
+   "homepage": "https://www.facebook.com/groups/1118064122579904/?ref=share",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "information",
+    "local news",
+    "music",
+    "news",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 16,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "bcb09619-5b4c-4442-88e6-3d255dbdefbe",
+   "name": "Радіо Смак",
+   "streamUrl": "https://ipradio.net:8443/radiosmak",
+   "homepage": "https://smakfm.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "160 kbit/s",
+    "aac+",
+    "https",
+    "music",
+    "regional radio"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 16,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "bf845f6a-cb74-420e-a61d-2345ab435830",
+   "name": "coma.fm",
+   "streamUrl": "https://stream.radio.co/s4360dbc20/listen",
+   "homepage": "https://coma.fm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 10,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "94543b27-7148-4328-83d6-27927a452965",
+   "name": "Worship",
+   "streamUrl": "https://radio.dobreff.com/worship.mp3",
+   "homepage": "https://radio.dobreff.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "christian worship",
+    "gospel worship",
+    "praise & worship",
+    "praise and worship",
+    "worship"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "952bb6e5-61b6-48fd-98ee-bef77e96ea0b",
+   "name": "Teren.fm",
+   "streamUrl": "https://online.teren.fm/teren_320",
+   "homepage": "https://teren.fm/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "regional radio"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "bb0fb246-622e-4f4c-84be-00b0f9a0e7cb",
+   "name": "RadiumFM Lviv",
+   "streamUrl": "https://stream.radiumfm.com/lviv",
+   "homepage": "https://radiumfm.com/lviv",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ai generated",
+    "jazz",
+    "news",
+    "retro",
+    "rhythm and blues",
+    "soul"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "4dc45295-e3d9-40c6-9f61-5205243492de",
+   "name": "STYLE FM",
+   "streamUrl": "https://myradio24.org/station",
+   "homepage": "https://fm.co.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "d2df0d36-eee6-4cd5-b3c3-8f72b7df50dc",
+   "name": "Wolf Music Radio",
+   "streamUrl": "https://a3.asurahosting.com/listen/wolf_music_radio/radio.mp3",
+   "homepage": "https://wolfmusicradio.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "e4acb662-d8dd-46d2-bfd4-63be2f9b84f6",
+   "name": "Радіо Нікополя",
+   "streamUrl": "https://stream.nikopolnews.net/listen/radio_nikopol/high",
+   "homepage": "https://radio.nikopolnews.net/",
+   "codec": "AAC",
+   "bitrate": 248,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Nikopol",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "b1cf4453-97c1-4f3a-8013-ddd4a20e6324",
+   "name": "Hotswinki",
+   "streamUrl": "https://stream.laut.fm/hotswinki",
+   "homepage": "https://laut.fm/hotswinki",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "dance pop",
+    "edm",
+    "electronic",
+    "house",
+    "pop"
+   ],
+   "languages": [
+    "englsih",
+    "german"
+   ],
+   "state": "Odesa Oblast",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "e205f4ee-2168-45b0-87e5-11b994c74d0c",
+   "name": "Радіо Світанок",
+   "streamUrl": "https://online.radiosvitanok.org.ua/live",
+   "homepage": "https://radiosvitanok.org.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "catholic",
+    "catholic religious",
+    "christian music",
+    "music",
+    "prayers",
+    "talk"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Ternopil",
+   "geo": {
+    "lat": 49.55,
+    "long": 25.596
+   },
+   "votes": 2,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "17528bdc-aef8-4297-82a9-de7a10fb70df",
+   "name": "Вільне РАДІО Жовква ФМ",
+   "streamUrl": "https://cast108372.customer.uar.net/live320",
+   "homepage": "https://vilneradio.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "84841363-aa42-4748-ba4f-c4b9eff1ab00",
+   "name": "Радіо Нікополя",
+   "streamUrl": "https://stream.nikopolnews.net/listen/radio_nikopol/nikopolnews.mp3",
+   "homepage": "https://radio.nikopolnews.net/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Nikopol",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "80e812dc-48a3-4678-a7b5-429c2cba04ba",
+   "name": "Meder FM",
+   "streamUrl": "https://myradio24.org/7934",
+   "homepage": "https://myradio24.com/7934",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "hits",
+    "lofi",
+    "pop music"
+   ],
+   "languages": [
+    "english",
+    "russian",
+    "ukrainian"
+   ],
+   "state": "Kiev",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 2,
+   "countryCode": "UA"
+  },
+  {
+   "id": "86d1b2ee-e494-4041-8117-2379ce3dffe2",
+   "name": "Radio TREK",
+   "streamUrl": "https://cast.radiotrek.rv.ua:8433/MP3_320",
+   "homepage": "https://radiotrek.rv.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "misc"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 341,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "3e1d723b-fcfe-4651-b593-b82ac2ecd646",
+   "name": "Garmonia Mira",
+   "streamUrl": "https://garmonia-stream.fakel.com.ua/1",
+   "homepage": "https://garmoniamira.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classical",
+    "jazz",
+    "smooth"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 46.464,
+    "long": 30.721
+   },
+   "votes": 238,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "e089e38a-1f24-4379-9e6b-58784032ebdf",
+   "name": "Kyiv 98 FM",
+   "streamUrl": "https://cdn.vsnw.net:8943/kyiv_fm_128k",
+   "homepage": "https://radio.kyiv.media/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "local news",
+    "news talk",
+    "talk"
+   ],
+   "languages": [],
+   "state": "Kyiv",
+   "geo": null,
+   "votes": 207,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "e9048554-83f6-4ef0-91b9-66efc1ab2f25",
+   "name": "Lounge FM Terrace",
+   "streamUrl": "https://cast.mediaonline.net.ua/terrace320",
+   "homepage": "https://loungefm.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "lounge",
+    "relax"
+   ],
+   "languages": [],
+   "state": "Kiev",
+   "geo": {
+    "lat": 50.452,
+    "long": 30.508
+   },
+   "votes": 191,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "55040b59-13c3-439a-80e3-2984e8156679",
+   "name": "Західний полюс West Pole 64k AAC+",
+   "streamUrl": "https://online.z-polus.info/mobilehq",
+   "homepage": "https://z-polus.info/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Ivano Frankivsk",
+   "geo": null,
+   "votes": 137,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "007a6934-18bc-4b23-8b21-54db0e9cc98a",
+   "name": "Yantarne FM",
+   "streamUrl": "https://complex.in.ua/yantarne",
+   "homepage": "https://yantarne.fm/",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [
+    "64 kbit/s",
+    "aac",
+    "https",
+    "music",
+    "regional radio"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 98,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "0fff80a7-81f6-4676-9026-820a4f3bb90b",
+   "name": "Радіо Ґарта / Garta",
+   "streamUrl": "https://rockradioua.online:8433/metal_256",
+   "homepage": "https://rockradioua.online/",
+   "codec": "AAC",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 66,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "313014df-4f67-467b-af15-ba2cfde41e8c",
+   "name": "Радіо Захід FM+",
+   "streamUrl": "https://radio.zfm.com.ua:8443/zfm",
+   "homepage": "https://zfm.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 43,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "f5f7cad7-e13f-4428-b3ff-51196e4816c8",
+   "name": "X Radio",
+   "streamUrl": "https://giss.tv:666/xradio_channel.ogg",
+   "homepage": "https://xradio.in.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 32,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "7854411c-70ce-4fc3-b56c-87ce23e9fbce",
+   "name": "Подільське",
+   "streamUrl": "https://podilske.com:8013/p-radio",
+   "homepage": "https://www.podilske.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 30,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "6fa6125e-2658-483d-807c-785b8bec409a",
+   "name": "Радіо Новий День",
+   "streamUrl": "https://stream.zeno.fm/4rv8rzsdyjttv",
+   "homepage": "https://1019.kr.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "128 kbit/s",
+    "https",
+    "internet radio",
+    "mp3",
+    "music"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 29,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "f3dea656-095a-4fdf-9eb0-caaf92540d07",
+   "name": "URC Radio",
+   "streamUrl": "https://streamer.radio.co/sdff2fd6a8/listen",
+   "homepage": "https://urcradio.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "192 kbit/s",
+    "https",
+    "mp3",
+    "music"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 24,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "feb989ea-87b7-4cf2-9fd3-a683032966ee",
+   "name": "Вільне Радіо",
+   "streamUrl": "https://complex.in.ua/live",
+   "homepage": "http://www.vilneradio.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "128 kbit/s",
+    "https",
+    "mp3",
+    "music",
+    "regional news",
+    "regional radio"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 23,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "84b975fd-b2d9-408e-9136-5a80ad043fb3",
+   "name": "Радіо Українська Пісня",
+   "streamUrl": "https://listen2.myradio24.com/50904",
+   "homepage": "https://radioua.com.ua/371-uaestrada.html",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "ukrainian",
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 23,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "05176ba0-a4d5-4a54-a52f-c274d3530945",
+   "name": "Радіо Місто над Бугом",
+   "streamUrl": "https://stream.mistonadbugom.com.ua/radiomistonadbugom",
+   "homepage": "https://mistonadbugom.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "320 kbit/s",
+    "https",
+    "mp3",
+    "music",
+    "regional radio"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 20,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "d41500d4-87f6-46ef-a3e1-f43a32dde9dd",
+   "name": "Сфера-ФМ (Рівне)",
+   "streamUrl": "https://cdn-br2.live-tv.cloud/sferarvFM/64k/icecast.audio",
+   "homepage": "https://sfera-tv.com.ua/sfera-fm",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [
+    "information",
+    "music",
+    "news",
+    "pop",
+    "rock",
+    "varied"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "16aa4d9b-c4f0-4e4e-881b-208d39e560e9",
+   "name": "Радіо Ми Україна",
+   "streamUrl": "https://cast.mediaonline.net.ua/wau320",
+   "homepage": "https://weua.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "hot ac"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "82b93a24-f468-410a-8b9b-86dc377e1912",
+   "name": "KMusic Radio",
+   "streamUrl": "https://stream.zeno.fm/z9x8zy7747zuv",
+   "homepage": "https://play.xtvmedia.pp.ua/player/KMusicRadio/air.html",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "128 kbit/s",
+    "https",
+    "internet radio",
+    "mp3",
+    "music"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 17,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "ef049282-20bb-4e2f-8a1c-2abbdd208a5d",
+   "name": "Бліц-FM (Умань)",
+   "streamUrl": "https://stream.blits-fm.ua/aac32",
+   "homepage": "https://blits-fm.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "entertainment",
+    "info",
+    "music",
+    "news",
+    "pop",
+    "varied"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 17,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "998c7386-f5d3-49fc-9c67-6fe9b4e00dfd",
+   "name": "Радіо КРИВБАС",
+   "streamUrl": "https://onair.kryvbas.fm/RadioKryvbas",
+   "homepage": "https://www.kryvbas.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "information",
+    "local news",
+    "music",
+    "news",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 16,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "9690e3f7-f6d9-409c-b3a4-90144f17481c",
+   "name": "Бліц-FM (Фастів)",
+   "streamUrl": "https://stream.blits-fm.ua/stream64",
+   "homepage": "https://blits-fm.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "entertainment",
+    "info",
+    "music",
+    "news",
+    "pop",
+    "varied"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "280bae1a-b668-4098-b4c6-1c0f47672f5d",
+   "name": "Радіо Social.Net.Ua",
+   "streamUrl": "https://radio.social.net.ua/live.mp3",
+   "homepage": "https://radio.social.net.ua/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "128 kbit/s",
+    "https",
+    "mp3"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "3d73d70f-ce5a-4f08-95dd-da97a1e77157",
+   "name": "Радіо Нове Життя",
+   "streamUrl": "https://online.novezhitya.net:8000/nlradio_ua-hi.aac",
+   "homepage": "https://novezhitya.net/",
+   "codec": "AAC",
+   "bitrate": 320,
+   "tags": [
+    "256 kbit/s",
+    "aac",
+    "https",
+    "internet radio",
+    "religion"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "b36f37aa-f573-445b-8686-b1a9ecbcb032",
+   "name": "Live.dy Chat Sound",
+   "streamUrl": "https://www.myinstants.com/media/sounds/live-dy-chat-sound.mp3",
+   "homepage": "https://www.last.fm/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "Oblast",
+   "geo": null,
+   "votes": 13,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "6e44c1b1-10d0-4681-8f51-d96ab452d3f4",
+   "name": "Ulyublene radio Horodyshche 98 FM",
+   "streamUrl": "https://listen7.myradio24.com/ulyublene",
+   "homepage": "https://ufm.24media.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "5ba60a62-6886-4243-9e8e-71ace6b60df9",
+   "name": "Сфера-ФМ",
+   "streamUrl": "https://cdn-br2.live-tv.cloud/sferarvFM/320k/icecast.audio",
+   "homepage": "https://sfera-tv.com.ua/sfera-fm",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "information",
+    "local news",
+    "music",
+    "news",
+    "other",
+    "pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "7c78de8b-6e61-4df0-977a-9618c76e7b43",
+   "name": "Jazz Radio",
+   "streamUrl": "https://online.radiojazz.ua/RadioJazz",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "jazz"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "e3455b6f-7b8a-481c-8025-e6ef2954d5db",
+   "name": "Radio «RAID»",
+   "streamUrl": "https://a9.asurahosting.com/listen/radio_raid/radio.mp3",
+   "homepage": "https://radio.raid.army/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "44a5c575-7863-4b4d-912f-795ef0440488",
+   "name": "Pihota.FM",
+   "streamUrl": "https://online.pihota.fm/listen/radio/128",
+   "homepage": "https://pihota.fm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "f4fe59a9-181a-4468-ae2f-e36fc8fa878b",
+   "name": "K-Pop Radio",
+   "streamUrl": "https://online.radioplayer.ua/KpopRadio",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "k-pop"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "a9d35607-aa30-462d-889d-ea6de95fa55c",
+   "name": "Misto FM Juda",
+   "streamUrl": "https://stream.mistofm.com/listen/misto_fm_juda/radio.mp3",
+   "homepage": "https://mistofm.com/juda",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "97115fc5-552f-42e2-9298-362dbff78596",
+   "name": "Sun FM",
+   "streamUrl": "https://stream.sunfmua.com/live",
+   "homepage": "https://www.sunfm.ua/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 50.388,
+    "long": 30.278
+   },
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "d6755872-0829-48c6-8a1a-4c755def02d3",
+   "name": "Test Duplicate Check",
+   "streamUrl": "https://stream320.galychyna.fm/WebSite",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "7fbabf72-3dd2-4d7e-8924-94bcdbb51530",
+   "name": "Lounge Music",
+   "streamUrl": "https://radio.dobreff.com/lounge.mp3",
+   "homepage": "https://radio.dobreff.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "lounge",
+    "lounge music",
+    "lounge radio"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "UA"
+  },
+  {
+   "id": "d9627713-24ed-445b-bbc9-27981c8dc9fd",
+   "name": "Твоє радіо",
+   "streamUrl": "https://complex.in.ua/tvoeRadio",
+   "homepage": "https://www.tvoeradio.com/",
+   "codec": "AAC+",
+   "bitrate": 80,
+   "tags": [
+    "80 kbit/s",
+    "aac+",
+    "https",
+    "music",
+    "regional radio"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 165,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "2229d2b2-1306-4eba-8c6c-5413a722c8d0",
+   "name": "Play FM Луганск 105.5ФМ",
+   "streamUrl": "https://radio.play-fm.ru:8001/playfm",
+   "homepage": "http://play-fm.ru/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance"
+   ],
+   "languages": [
+    "язык: русский"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 100,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "8ab689a3-39b4-479e-b8dd-d5f718d9005a",
+   "name": "Радіо Накипіло / Radio Nakypilo",
+   "streamUrl": "https://radiostream.nakypilo.ua/full",
+   "homepage": "https://radio.nakypilo.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "electronic",
+    "jazz",
+    "pop",
+    "ukraine",
+    "ukrainian",
+    "ukrainian rock"
+   ],
+   "languages": [],
+   "state": "Kharkiv",
+   "geo": null,
+   "votes": 54,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "200b6db5-c533-4bcd-9674-40205fce5bd6",
+   "name": "Радіо X.ON",
+   "streamUrl": "https://audio.x-on.com.ua:8443/x-on-aacp-64.aac",
+   "homepage": "https://x-on.com.ua/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "64 kbit/s",
+    "aac",
+    "https",
+    "music",
+    "regional radio"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 46,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "2b3fc7cf-18a4-482a-bc14-4e7bb4c22544",
+   "name": "Радіо Голос Надії",
+   "streamUrl": "https://s4.radio.co/s052c88338/low",
+   "homepage": "https://radio.hope.ua/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "64 kbit/s",
+    "aac",
+    "https",
+    "podcasts",
+    "religion"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 28,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "af10c773-b594-4105-bdde-0d13d80feb8e",
+   "name": "Радіо Сільпо",
+   "streamUrl": "https://stream.radio.silpo.ua/silpo",
+   "homepage": "https://radio.silpo.ua/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "64 kbit/s",
+    "aac",
+    "https",
+    "internet radio",
+    "music"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 28,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "321ebdf3-45a2-44a7-aa12-180b4f7429c3",
+   "name": "Радіо РАІ",
+   "streamUrl": "https://radio.rai.ua:9000/rai",
+   "homepage": "https://rai.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "aac",
+    "https",
+    "music",
+    "regional news",
+    "regional radio"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 24,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "21359462-0325-4c9b-943d-08a59626de84",
+   "name": "KMusic Radio Мегахіт",
+   "streamUrl": "https://stream.zeno.fm/jkatjk36u8zvv",
+   "homepage": "https://play.xtvmedia.pp.ua/player/KMusicRadio/megahit.html",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "128 kbit/s",
+    "https",
+    "internet radio",
+    "mp3",
+    "music"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 22,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "990aa9cd-b761-46ea-8c50-e79c5a235a31",
+   "name": "Радіо С4",
+   "streamUrl": "https://radio.c4.com.ua:8443/320",
+   "homepage": "https://c4.com.ua/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "320 kbit/s",
+    "https",
+    "mp3",
+    "music",
+    "regional radio"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 48.294,
+    "long": 25.937
+   },
+   "votes": 22,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "102e2326-fc6d-48b7-ad9f-013782fed8c4",
+   "name": "Радіо Сяйво",
+   "streamUrl": "https://stream.ntktv.ua/syaivo.mp3",
+   "homepage": "https://syaivo.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "320 kbit/s",
+    "https",
+    "mp3",
+    "music",
+    "regional radio"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 22,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "705579c1-3e2e-4d1e-aa30-50159faf8a2e",
+   "name": "Радіо Хартія (Radio Khartia)",
+   "streamUrl": "https://a9.asurahosting.com/listen/radio_khartia/radio.mp3",
+   "homepage": "https://www.radiokhartia.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "Kharkiv",
+   "geo": {
+    "lat": 49.976,
+    "long": 36.266
+   },
+   "votes": 16,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "d19a08a6-7439-4e88-ae90-2759f1f43e76",
+   "name": "ТІМ FM",
+   "streamUrl": "https://tim-fm.tim.ua/mp3",
+   "homepage": "https://timfm.online/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "320 kbit/s",
+    "https",
+    "mp3",
+    "music",
+    "news",
+    "regional news"
+   ],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "12c25025-f962-48dc-b7af-714a3853a98b",
+   "name": "Жидачів FM",
+   "streamUrl": "https://complex.in.ua/zhudachiv",
+   "homepage": "https://www.facebook.com/radio.zhydachiv/",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [
+    "local radio",
+    "music",
+    "news"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Zhydachiv",
+   "geo": {
+    "lat": 49.388,
+    "long": 24.135
+   },
+   "votes": 4,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "b0b3ab64-d3c4-4381-a79a-559176e1d187",
+   "name": "Коростень фм",
+   "streamUrl": "https://radio.korostenmedia.news/stream",
+   "homepage": "https://korostenmedia.news/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "ukranian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "7e3f88b5-b1fb-4ef3-834b-9de705bbb677",
+   "name": "SahajRadio",
+   "streamUrl": "https://sahaj.radio.fm/bhajans.mp3",
+   "homepage": "https://sahaj.radio.fm/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "UA"
+  },
+  {
+   "id": "5b17e1b4-aa29-462b-922f-ab9244811b9f",
+   "name": "Радіо Нікополя",
+   "streamUrl": "https://stream.nikopolnews.net/listen/radio_nikopol/radio.mp3",
+   "homepage": "https://radio.nikopolnews.net/",
+   "codec": "AAC",
+   "bitrate": 32,
+   "tags": [],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Nikopol",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "UA"
+  }
+ ]
+}

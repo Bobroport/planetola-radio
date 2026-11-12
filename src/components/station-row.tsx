@@ -14,16 +14,23 @@ type Props = {
   onPress: (station: Station) => void;
   /** Показать город и страну под названием (для поиска и избранных станций). */
   city?: City;
+  /** Без города показать хотя бы страну (станции из полных страновых списков). */
+  showCountry?: boolean;
 };
 
 const MAX_TAGS = 4;
 
-export function StationRow({ station, isActive, onPress, city }: Props) {
+export function StationRow({ station, isActive, onPress, city, showCountry }: Props) {
   const { language, t } = useI18n();
   const { isStationSaved, toggleStation } = useFavorites();
   const saved = isStationSaved(station.id);
   const meta = stationMeta(station);
   const tags = station.tags.slice(0, MAX_TAGS);
+  const place = city
+    ? `${cityName(city, language)} · ${countryName(city.countryCode, language)}`
+    : showCountry
+      ? countryName(station.countryCode, language)
+      : null;
 
   return (
     <Pressable
@@ -45,11 +52,7 @@ export function StationRow({ station, isActive, onPress, city }: Props) {
             {station.name}
           </Text>
         </View>
-        {city ? (
-          <Text style={styles.place}>
-            {cityName(city, language)} · {countryName(city.countryCode, language)}
-          </Text>
-        ) : null}
+        {place ? <Text style={styles.place}>{place}</Text> : null}
         {meta ? <Text style={styles.meta}>{meta}</Text> : null}
         {tags.length > 0 ? (
           <View style={styles.chips}>
@@ -69,7 +72,7 @@ export function StationRow({ station, isActive, onPress, city }: Props) {
         </Text>
       </View>
       <Pressable
-        onPress={() => toggleStation(station.id)}
+        onPress={() => toggleStation(station)}
         hitSlop={10}
         style={({ pressed }) => [styles.star, pressed && styles.rowPressed]}
         accessibilityRole="button"

@@ -1,0 +1,658 @@
+{
+ "countryCode": "CY",
+ "stations": [
+  {
+   "id": "0b42d20d-3351-4005-82bb-21a0de5b1233",
+   "name": "塞浦路斯中文广播",
+   "streamUrl": "https://cdn.istoikona.com/ccnradio/ccnradio/icecast.audio",
+   "homepage": "https://ccnnetwork.cn/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "chinese"
+   ],
+   "languages": [
+    "chinese"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 511,
+   "clickCount": 16,
+   "countryCode": "CY"
+  },
+  {
+   "id": "22ee0638-4a0b-4f08-96e3-54e6451a8b97",
+   "name": "NJOY Radio",
+   "streamUrl": "https://stream.radiojar.com/mg7kftnzka3vv",
+   "homepage": "https://www.njoyradio.com.cy/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 41,
+   "clickCount": 6,
+   "countryCode": "CY"
+  },
+  {
+   "id": "7758bd16-da9a-40db-9333-48a550b0801f",
+   "name": "BitrRcord",
+   "streamUrl": "https://c10.radioboss.fm:18095/stream",
+   "homepage": "https://bitrecord.one/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 47.881,
+    "long": 35.152
+   },
+   "votes": 102,
+   "clickCount": 5,
+   "countryCode": "CY"
+  },
+  {
+   "id": "5c8ec37e-f584-4af2-93d7-d942ae6bf41c",
+   "name": "KISS FM 89.0 - 88.5",
+   "streamUrl": "https://securestreams3.autopo.st:1417/89FM",
+   "homepage": "https://kissfm.com.cy/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 37,
+   "clickCount": 5,
+   "countryCode": "CY"
+  },
+  {
+   "id": "b2ab79d2-1954-4cf1-944c-46fa90b9021b",
+   "name": "MixFM Cyprus",
+   "streamUrl": "https://link.radiojar.com/c27wx6pdh8vtv",
+   "homepage": "https://www.mixfmradio.com/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "chillout",
+    "pop music",
+    "pop rock",
+    "rock"
+   ],
+   "languages": [
+    "english",
+    "greek"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 35.051,
+    "long": 33.195
+   },
+   "votes": 246,
+   "clickCount": 4,
+   "countryCode": "CY"
+  },
+  {
+   "id": "57e9fe17-be3c-4911-aa7e-a302e056b119",
+   "name": "Zenith",
+   "streamUrl": "https://live3.istoikona.net:9836/stream",
+   "homepage": "https://zenithfm.com.cy/live/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 111,
+   "clickCount": 4,
+   "countryCode": "CY"
+  },
+  {
+   "id": "670526e2-4e5c-4900-a866-fcba98540310",
+   "name": "РУССКОЕ РАДИО КИПР",
+   "streamUrl": "https://live.vblcast.com/proxy/russianradio/stream/",
+   "homepage": "https://russianradio.cy/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "english",
+    "russian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 96,
+   "clickCount": 4,
+   "countryCode": "CY"
+  },
+  {
+   "id": "33cdfba0-cc12-4a39-ae71-1127e6bf9600",
+   "name": "Zucca",
+   "streamUrl": "https://stream.zuccaradio.com/stream?",
+   "homepage": "https://zuccaradio.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 35.177,
+    "long": 33.362
+   },
+   "votes": 5,
+   "clickCount": 4,
+   "countryCode": "CY"
+  },
+  {
+   "id": "7e738aa1-e7af-4e4f-81f4-c1bcd0668e22",
+   "name": "Greek Laika Nonstop Radio",
+   "streamUrl": "https://radio.greeklaika.com/listen/greek_laika_nonstop_radio/radio.mp3",
+   "homepage": "https://greeklaika.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "classic hits",
+    "greek hits",
+    "greek music",
+    "pop"
+   ],
+   "languages": [
+    "greek"
+   ],
+   "state": "Nicosia",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 4,
+   "countryCode": "CY"
+  },
+  {
+   "id": "ebeb167e-f696-445f-9160-43fa76f0c816",
+   "name": "Dance FM",
+   "streamUrl": "https://live.enerjiplay.com/stream/dancefm",
+   "homepage": "https://www.nrgplay.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Nicosia",
+   "geo": null,
+   "votes": 154,
+   "clickCount": 3,
+   "countryCode": "CY"
+  },
+  {
+   "id": "9699f00f-7251-4f5b-b887-e20fe4b4d048",
+   "name": "Active 107.4",
+   "streamUrl": "https://securestreams3.autopo.st:1417/active",
+   "homepage": "https://activeradio.com.cy/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "local news",
+    "music"
+   ],
+   "languages": [
+    "greek"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 35.17,
+    "long": 33.36
+   },
+   "votes": 100,
+   "clickCount": 3,
+   "countryCode": "CY"
+  },
+  {
+   "id": "73e9c84f-87cd-4c11-bb8d-492caa909c11",
+   "name": "FEELGOOD.FM",
+   "streamUrl": "https://radio.feelgood.fm/mp3",
+   "homepage": "https://feelgood.fm/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "various"
+   ],
+   "languages": [
+    "english",
+    "german"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 35.006,
+    "long": 34.048
+   },
+   "votes": 76,
+   "clickCount": 3,
+   "countryCode": "CY"
+  },
+  {
+   "id": "f755cfdd-7d89-409d-84b7-a7fa8158589d",
+   "name": "VIVA FM 104.3",
+   "streamUrl": "https://stream1.themediasite.co.uk/8060/stream",
+   "homepage": "https://vivafmcyprus.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 34,
+   "clickCount": 3,
+   "countryCode": "CY"
+  },
+  {
+   "id": "a217bafc-5165-46cf-9d78-142809f9efe8",
+   "name": "Ναυάγιο",
+   "streamUrl": "https://radio-navagio.com/stream",
+   "homepage": "https://radio-navagio.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "greek music"
+   ],
+   "languages": [
+    "greek"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 27,
+   "clickCount": 3,
+   "countryCode": "CY"
+  },
+  {
+   "id": "0d7238c8-883d-4be7-ba89-6dd930988dfe",
+   "name": "Jujube Radio Love Songs",
+   "streamUrl": "https://jujuberadio.com/love",
+   "homepage": "https://jujuberadio.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "ballads",
+    "love songs",
+    "soft pop"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "CY"
+  },
+  {
+   "id": "97e7c7c1-713e-4998-9f91-66e83460c803",
+   "name": "Jujube Radio Chinese Classics",
+   "streamUrl": "https://jujuberadio.com/chinese",
+   "homepage": "https://jujuberadio.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "cantopop",
+    "chinese pop",
+    "mandopop"
+   ],
+   "languages": [
+    "chinese"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "CY"
+  },
+  {
+   "id": "f4277c57-b4af-4bfb-8d7a-3c043bd9aa2c",
+   "name": "Lugaradio",
+   "streamUrl": "https://91.200.41.23:8443/192/stream",
+   "homepage": "https://lradio.in/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Limassol",
+   "geo": {
+    "lat": 34.687,
+    "long": 33.031
+   },
+   "votes": 0,
+   "clickCount": 3,
+   "countryCode": "CY"
+  },
+  {
+   "id": "5309c12b-ef84-43a2-8e6b-1d9d994bea01",
+   "name": "Capital Turk",
+   "streamUrl": "https://radyo1.radyo-dinle.tc/8210/stream",
+   "homepage": "https://www.nrgplay.com/radyolar",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "kktc",
+    "north cyprus"
+   ],
+   "languages": [
+    "turkish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 3,
+   "countryCode": "CY"
+  },
+  {
+   "id": "a440e2d9-37cf-4b4e-adb3-b94e65541f60",
+   "name": "Radio Sfera 102.2",
+   "streamUrl": "https://securestreams3.autopo.st:1417/sfera",
+   "homepage": "https://sfera.com.cy/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "greek pop"
+   ],
+   "languages": [
+    "greek"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 254,
+   "clickCount": 2,
+   "countryCode": "CY"
+  },
+  {
+   "id": "53cfef35-635f-4c9d-a125-8f627981628e",
+   "name": "Politis 107.6 FM",
+   "streamUrl": "https://cdn.istoikona.com/politis/live/icecast.audio",
+   "homepage": "https://politis.com.cy/radio",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Nicosia",
+   "geo": null,
+   "votes": 39,
+   "clickCount": 2,
+   "countryCode": "CY"
+  },
+  {
+   "id": "8b7436cc-4503-4de5-8db1-d6368eb23a7e",
+   "name": "Jujube Radio Classic Rock",
+   "streamUrl": "https://jujuberadio.com/classicrock",
+   "homepage": "https://jujuberadio.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "classic rock",
+    "rock"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "CY"
+  },
+  {
+   "id": "1ed3fcdb-1931-49c2-b99b-012e82bdc0b5",
+   "name": "Radyo Sim",
+   "streamUrl": "https://live.enerjiplay.com/stream/radyosim",
+   "homepage": "https://www.nrgplay.com/radyolar",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "kktc",
+    "north cyprus"
+   ],
+   "languages": [
+    "turkish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 2,
+   "countryCode": "CY"
+  },
+  {
+   "id": "5f9e8bee-c061-47d8-9fd7-9bb2dcf99c2f",
+   "name": "Mix4.me uplifitng trance web radio",
+   "streamUrl": "https://s9.webradio-hosting.com/proxy/mix4me/stream",
+   "homepage": "https://www.mix4.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "balearic",
+    "cyprus",
+    "trance",
+    "uplifting trance"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 58,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "83f965c4-a71d-439e-949b-45621908dd8b",
+   "name": "Rock FM Cyprus",
+   "streamUrl": "https://live3.istoikona.net/proxy/rockfm/stream",
+   "homepage": "https://rockfmcyprus.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "46927910-5bd1-4142-aac9-73e12942e9d3",
+   "name": "Super Sport FM",
+   "streamUrl": "https://r1.cloudskep.com/radio3/supersportfm/icecast.audio",
+   "homepage": "https://sport-fm.com.cy/radio/",
+   "codec": "MP3",
+   "bitrate": 56,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 17,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "90a9493d-1735-45a4-bf6b-4d85eac05066",
+   "name": "Enerji",
+   "streamUrl": "https://live.enerjiplay.com/stream/enerji",
+   "homepage": "https://www.nrgplay.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Nicosia",
+   "geo": null,
+   "votes": 15,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "7a0523b9-8d11-4be9-b50a-18343bf8cc8c",
+   "name": "Radio ReyMod",
+   "streamUrl": "https://server.streamcasthd.com:7092/;",
+   "homepage": "https://www.reymod.com/radio",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "2e1501dc-dbb8-47d2-bca6-e848107d22c4",
+   "name": "Radio Turbo21",
+   "streamUrl": "https://radioturbo21.com/radio/stream",
+   "homepage": "https://radioturbo21.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "1980s",
+    "80s",
+    "pop",
+    "rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "1064b224-2700-4d55-979f-b1a570211289",
+   "name": "Radio T.O.A",
+   "streamUrl": "https://live3.istoikona.net/proxy/radiotoa/stream",
+   "homepage": "https://sites.google.com/site/toalarnacas/on-line-radio",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "1439b51e-70dc-4335-92c5-d100609ce81c",
+   "name": "Jujube Radio Party Classics",
+   "streamUrl": "https://jujuberadio.com/partyclassics",
+   "homepage": "https://jujuberadio.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "70s",
+    "80s",
+    "disco",
+    "oldies"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "7022dcf0-2e31-42e8-a24e-dc4edab9106e",
+   "name": "Jujube Radio Hits",
+   "streamUrl": "https://jujuberadio.com/live",
+   "homepage": "https://jujuberadio.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "41660c82-d479-4e59-a64c-dc616927c237",
+   "name": "Jujube Radio Dance Hits",
+   "streamUrl": "https://jujuberadio.com/dance",
+   "homepage": "https://jujuberadio.com/dance",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "club",
+    "dance",
+    "edm",
+    "house"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "5410588b-6614-48e6-9b88-8f372f8512f8",
+   "name": "Capital Radio",
+   "streamUrl": "https://radyo1.radyo-dinle.tc/8256/stream",
+   "homepage": "https://www.nrgplay.com/radyolar",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "kktc",
+    "north cyprus"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "f8e3a9e1-dd9b-42a7-a25c-18b2826791ac",
+   "name": "Play FM",
+   "streamUrl": "https://radyo.playfm.com.tr/listen/playfm/playfm.mp3",
+   "homepage": "https://www.nrgplay.com/radyolar",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "kktc",
+    "north cyprus"
+   ],
+   "languages": [
+    "turkish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "CY"
+  },
+  {
+   "id": "179c916e-99eb-4b1d-879f-222342a4d442",
+   "name": "Radyo Juke",
+   "streamUrl": "https://stream.netradyom.com/listen/radyojuke/radio.mp3",
+   "homepage": "https://www.nrgplay.com/radyolar",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "kktc",
+    "north cyprus"
+   ],
+   "languages": [
+    "turkish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "CY"
+  }
+ ]
+}

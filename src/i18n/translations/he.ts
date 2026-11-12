@@ -21,6 +21,12 @@ export const he: Dictionary = {
   "city.nowPlaying": "מתנגן עכשיו",
   "city.notFound": "העיר לא נמצאה",
   "cities.title": "ערים",
+  "cities.countries": "תחנות לפי מדינה",
+  "cities.countriesHint": "רשימות מלאות לאירופה, רוסיה וארה״ב",
+  "countries.title": "מדינות",
+  "country.allStations": "כל התחנות: {country}",
+  "country.filter": "סינון לפי שם או תגית",
+  "country.notFound": "המדינה לא נמצאה",
 
   "region.cis": "רוסיה והמדינות השכנות",
   "region.europe": "אירופה",
@@ -52,6 +58,7 @@ export const he: Dictionary = {
   "search.all": "כל התחנות: {count}",
   "search.reset": "איפוס",
   "search.empty": "לא נמצא דבר",
+  "search.loading": "טוען את הקטלוג המלא…",
 
   "stations.title": "תחנות מועדפות",
   "stations.empty": "עדיין אין תחנות מועדפות. הקישו על הכוכב שליד תחנה כדי להוסיף אותה לכאן.",

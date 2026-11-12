@@ -21,6 +21,12 @@ export const tr: Dictionary = {
   "city.nowPlaying": "şu anda çalıyor",
   "city.notFound": "Şehir bulunamadı",
   "cities.title": "Şehirler",
+  "cities.countries": "Ülkeye göre istasyonlar",
+  "cities.countriesHint": "Avrupa, Rusya ve ABD için tam listeler",
+  "countries.title": "Ülkeler",
+  "country.allStations": "Tüm istasyonlar: {country}",
+  "country.filter": "Ada veya etikete göre filtrele",
+  "country.notFound": "Ülke bulunamadı",
 
   "region.cis": "Rusya ve komşu ülkeler",
   "region.europe": "Avrupa",
@@ -52,6 +58,7 @@ export const tr: Dictionary = {
   "search.all": "Tüm istasyonlar: {count}",
   "search.reset": "Sıfırla",
   "search.empty": "Hiçbir şey bulunamadı",
+  "search.loading": "Tam katalog yükleniyor…",
 
   "stations.title": "Favori istasyonlar",
   "stations.empty": "Henüz favori istasyon yok. Buraya eklemek için bir istasyonun yanındaki yıldıza dokunun.",

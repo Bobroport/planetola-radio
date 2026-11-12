@@ -21,6 +21,12 @@ export const ar: Dictionary = {
   "city.nowPlaying": "يُشغَّل الآن",
   "city.notFound": "لم يتم العثور على المدينة",
   "cities.title": "المدن",
+  "cities.countries": "المحطات حسب البلد",
+  "cities.countriesHint": "قوائم كاملة لأوروبا وروسيا والولايات المتحدة",
+  "countries.title": "البلدان",
+  "country.allStations": "كل المحطات: {country}",
+  "country.filter": "تصفية حسب الاسم أو الوسم",
+  "country.notFound": "البلد غير موجود",
 
   "region.cis": "روسيا والدول المجاورة",
   "region.europe": "أوروبا",
@@ -52,6 +58,7 @@ export const ar: Dictionary = {
   "search.all": "كل المحطات: {count}",
   "search.reset": "إعادة تعيين",
   "search.empty": "لم يتم العثور على شيء",
+  "search.loading": "جارٍ تحميل الكتالوج الكامل…",
 
   "stations.title": "المحطات المفضلة",
   "stations.empty": "لا توجد محطات مفضلة بعد. اضغط على النجمة بجانب أي محطة لإضافتها هنا.",

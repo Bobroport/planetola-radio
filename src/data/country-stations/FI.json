@@ -1,0 +1,1548 @@
+{
+ "countryCode": "FI",
+ "stations": [
+  {
+   "id": "595687e1-9fa0-49d7-8cb7-d6ed63f6d8b3",
+   "name": "Christmas FM Non-stop!",
+   "streamUrl": "https://xmas-node1.zip.wf/live.aac",
+   "homepage": "https://armisa.it/natale",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "advent",
+    "canti natalizi",
+    "canzoni di natale",
+    "carols",
+    "chansons de noël",
+    "christmas"
+   ],
+   "languages": [
+    "italian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 66.504,
+    "long": 25.729
+   },
+   "votes": 2955,
+   "clickCount": 446,
+   "countryCode": "FI"
+  },
+  {
+   "id": "1917621f-352f-4589-8e4d-74c0402cd11b",
+   "name": "NRJ",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/nrj/nrj_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/nrj",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Uusimaa",
+   "geo": {
+    "lat": 60.171,
+    "long": 24.942
+   },
+   "votes": 221,
+   "clickCount": 30,
+   "countryCode": "FI"
+  },
+  {
+   "id": "8f7ecd3e-7be3-4525-aa79-6408cef9fda8",
+   "name": "YleX",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleX/icecast.audio",
+   "homepage": "https://www.ylex.fi/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.955,
+    "long": 24.909
+   },
+   "votes": 572,
+   "clickCount": 29,
+   "countryCode": "FI"
+  },
+  {
+   "id": "dfecd929-2688-4107-90b4-766a0e0cb663",
+   "name": "Nostalgia",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/nostalgia/nostalgia_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/radio-nostalgia",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "nostalgia"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Uusimaa",
+   "geo": {
+    "lat": 60.171,
+    "long": 24.942
+   },
+   "votes": 219,
+   "clickCount": 16,
+   "countryCode": "FI"
+  },
+  {
+   "id": "b302c01c-2a1b-4c8c-9440-ac3d6226c668",
+   "name": "Kasari",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/kasari/kasari_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/kasari/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "decades"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 159,
+   "clickCount": 16,
+   "countryCode": "FI"
+  },
+  {
+   "id": "824aae39-9fe7-487f-afe0-7d7e04eaa407",
+   "name": "HaulFM",
+   "streamUrl": "https://stream.haul.fm/haulmpfm.mp3",
+   "homepage": "https://haul.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 10,
+   "countryCode": "FI"
+  },
+  {
+   "id": "9d79fe27-142d-43b1-a723-0718482f6e09",
+   "name": "YLE Radio Suomi Hämeenlinna",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleHameenlinna/icecast.audio",
+   "homepage": "https://areena.yle.fi/podcastit/ohjelmat/yle-radio-suomi?_c=yle-radio-suomi-hameenlinna",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Häme",
+   "geo": {
+    "lat": 60.997,
+    "long": 24.465
+   },
+   "votes": 65,
+   "clickCount": 9,
+   "countryCode": "FI"
+  },
+  {
+   "id": "2c794d05-0cc1-4dfa-be31-52c0ab2cc19d",
+   "name": "Basso",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/basso/bassoradio_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/basso/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "rap"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 91,
+   "clickCount": 8,
+   "countryCode": "FI"
+  },
+  {
+   "id": "32191e96-d5ef-413d-a602-4a359125dd8f",
+   "name": "Ysäri",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/ysari/ysari_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/ysari",
+   "codec": "AAC",
+   "bitrate": 63,
+   "tags": [
+    "90s",
+    "pop"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Uusimaa",
+   "geo": {
+    "lat": 60.171,
+    "long": 24.941
+   },
+   "votes": 80,
+   "clickCount": 8,
+   "countryCode": "FI"
+  },
+  {
+   "id": "bfe4ba5c-8049-4095-9242-c55715f454a3",
+   "name": "Radio Keskisuomalainen",
+   "streamUrl": "https://cast.radiokeskisuomalainen.fi/radiokeskisuomalainen",
+   "homepage": "https://www.radiokeskisuomalainen.fi/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "finland",
+    "finnish",
+    "keski-suomi"
+   ],
+   "state": "Keski-Suomi",
+   "geo": {
+    "lat": 62.249,
+    "long": 25.775
+   },
+   "votes": 61,
+   "clickCount": 8,
+   "countryCode": "FI"
+  },
+  {
+   "id": "fed9a975-d67c-44d1-8591-f44208c196e3",
+   "name": "Doubleclap Radio",
+   "streamUrl": "https://s3.radio.co/scfd7273b2/listen",
+   "homepage": "https://doubleclap.dance/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "dance",
+    "electronic",
+    "hardstyle",
+    "house",
+    "lounge",
+    "psytrance"
+   ],
+   "languages": [
+    "english",
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 546,
+   "clickCount": 7,
+   "countryCode": "FI"
+  },
+  {
+   "id": "894979fa-cd9e-4d5e-bd01-548eb71f5c20",
+   "name": "YLE radio Suomi, Jyväskylä",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleJKL/icecast.audio",
+   "homepage": "https://areena.yle.fi/podcastit/ohjelmat/57-3gO4bl7J6?_c=yle-radio-suomi-jyvaskyla",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Keski-Suomi",
+   "geo": {
+    "lat": 62.244,
+    "long": 25.759
+   },
+   "votes": 117,
+   "clickCount": 7,
+   "countryCode": "FI"
+  },
+  {
+   "id": "3f123871-dbca-4e37-b97c-6caf70315a1d",
+   "name": "Radio Nova",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/radionova/radionova_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/radio-nova",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Uusimaa",
+   "geo": {
+    "lat": 60.171,
+    "long": 24.942
+   },
+   "votes": 53,
+   "clickCount": 7,
+   "countryCode": "FI"
+  },
+  {
+   "id": "2ceb9095-c509-4c30-a530-1df60e2600f1",
+   "name": "Yle radio Vega Östnyland",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleVegaOstnyland/icecast.audio",
+   "homepage": "https://areena.yle.fi/radio/suorat/radio-vega-ostnyland",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 60.252,
+    "long": 25.658
+   },
+   "votes": 15,
+   "clickCount": 7,
+   "countryCode": "FI"
+  },
+  {
+   "id": "962b509f-0601-11e8-ae97-52543be04c81",
+   "name": "Radio Santa Claus",
+   "streamUrl": "https://streaming.radiostreamlive.com/radiosantaclaus_devices",
+   "homepage": "http://www.radiosantaclaus.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "christmas music",
+    "helsinki",
+    "rsl"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "Uusimaa",
+   "geo": null,
+   "votes": 279,
+   "clickCount": 6,
+   "countryCode": "FI"
+  },
+  {
+   "id": "675970e4-ead1-4129-a680-1e7b64c96ecb",
+   "name": "Radio City",
+   "streamUrl": "https://streaming.radioplay.fi/fi_radiocity_128.mp3",
+   "homepage": "https://radioplay.fi/radio-city",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "hits",
+    "local",
+    "pop",
+    "rock"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Uusimaa",
+   "geo": null,
+   "votes": 24,
+   "clickCount": 6,
+   "countryCode": "FI"
+  },
+  {
+   "id": "4f17f78c-02c8-4603-a2f6-128f755f3e14",
+   "name": "Radio Helsinki",
+   "streamUrl": "https://stream.radiohelsinki.fi/stream",
+   "homepage": "https://radiohelsinki.fi/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "alternative",
+    "helsinki",
+    "indie",
+    "news",
+    "talk"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 6,
+   "countryCode": "FI"
+  },
+  {
+   "id": "cc11cce3-f00f-4543-b1c4-d867e0d0cea4",
+   "name": "Järviradio",
+   "streamUrl": "https://jarviradio.radiotaajuus.fi:9000/jr",
+   "homepage": "https://www.jarviradio.fi/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 63.01,
+    "long": 23.803
+   },
+   "votes": 53,
+   "clickCount": 5,
+   "countryCode": "FI"
+  },
+  {
+   "id": "892e5cbd-bd92-494f-a96b-ecb367221666",
+   "name": "Yle Vega Västnyland",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleVegaVastnyland/icecast.audio",
+   "homepage": "https://arenan.yle.fi/poddar/program/yle-vega?_c=radio-vega-vastnyland",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "swedish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 50,
+   "clickCount": 5,
+   "countryCode": "FI"
+  },
+  {
+   "id": "19c02f0d-5c38-46df-bd0b-088fd057e16e",
+   "name": "Yle Radio Suomi, Kuopio",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleKuopio/icecast.audio",
+   "homepage": "https://yle.fi/",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 33,
+   "clickCount": 5,
+   "countryCode": "FI"
+  },
+  {
+   "id": "5b477c0e-5a75-42b9-af39-d7b9d73d065a",
+   "name": "Ysäri",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/ysari/ysari_128.mp3?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/ysari/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 5,
+   "countryCode": "FI"
+  },
+  {
+   "id": "d1b6995d-3877-4f20-9f4d-4dea4eb6eadf",
+   "name": "HYPR demoscene radio",
+   "streamUrl": "https://hypr.website/hypr.mp3",
+   "homepage": "https://hypr.website/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "demos",
+    "demoscene"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 60.203,
+    "long": 24.937
+   },
+   "votes": 10,
+   "clickCount": 5,
+   "countryCode": "FI"
+  },
+  {
+   "id": "12f3ea7f-4041-4d54-9a57-fdb0f0c32714",
+   "name": "RadioSE.fi",
+   "streamUrl": "https://wr2.downtime.fi/kaakko.aac",
+   "homepage": "https://www.radiose.fi/",
+   "codec": "AAC",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 60.909,
+    "long": 26.623
+   },
+   "votes": 7,
+   "clickCount": 5,
+   "countryCode": "FI"
+  },
+  {
+   "id": "e5d11894-7c55-4fbc-94c4-fa78596013c0",
+   "name": "YleRadioSuomiTampere",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleTampere/icecast.audio",
+   "homepage": "https://areena.yle.fi/audio/ohjelmat/yle-radio-suomi?_c=yle-radio-suomi-tampere",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Pirkanmaa",
+   "geo": {
+    "lat": 61.49,
+    "long": 23.77
+   },
+   "votes": 180,
+   "clickCount": 4,
+   "countryCode": "FI"
+  },
+  {
+   "id": "06bf8b75-fc48-44e8-a9b4-24c0ab8dbc80",
+   "name": "Kiss",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/kiss/kiss_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/kiss",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Uusimaa",
+   "geo": {
+    "lat": 60.171,
+    "long": 24.942
+   },
+   "votes": 86,
+   "clickCount": 4,
+   "countryCode": "FI"
+  },
+  {
+   "id": "903f8f5e-541f-4296-bed8-7f3be8d43d8a",
+   "name": "Yle Radio Suomi, Mikkeli",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleMikkeli/icecast.audio",
+   "homepage": "https://areena.yle.fi/audio/ohjelmat/57-3gO4bl7J6?_c=yle-radio-suomi-mikkeli",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "Etelä-Savo",
+   "geo": {
+    "lat": 61.668,
+    "long": 27.287
+   },
+   "votes": 67,
+   "clickCount": 4,
+   "countryCode": "FI"
+  },
+  {
+   "id": "17d8fdef-c658-4d5a-bbbe-d19ec6e82982",
+   "name": "Tampereen Kiakkoradio: Tappara",
+   "streamUrl": "https://st.downtime.fi/kiakko-tappara.aac",
+   "homepage": "https://kiakkoradio.fi/",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Tampere",
+   "geo": {
+    "lat": 61.498,
+    "long": 23.774
+   },
+   "votes": 61,
+   "clickCount": 4,
+   "countryCode": "FI"
+  },
+  {
+   "id": "d1ca287d-bca5-43fd-bd88-e6b1c407cd22",
+   "name": "Yle Radio Suomi - Pori",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YlePori/icecast.audio",
+   "homepage": "https://areena.yle.fi/audio/ohjelmat/yle-radio-suomi?_c=yle-radio-suomi-pori",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 50,
+   "clickCount": 4,
+   "countryCode": "FI"
+  },
+  {
+   "id": "a19530b7-3549-4a93-bc7b-022a1e1cb2ff",
+   "name": "NinjaBox 24/7",
+   "streamUrl": "https://djuplink.com/ninjabox.mp3",
+   "homepage": "https://www.savustamo.fi/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "chill",
+    "deep house",
+    "drum & bass",
+    "dubtechno",
+    "electronic",
+    "neurofunk"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 4,
+   "countryCode": "FI"
+  },
+  {
+   "id": "60b55178-8844-4a25-b1b9-2cbf3f10bb65",
+   "name": "Yle Vega Österbotten",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleVegaOsterbotten/icecast.audio",
+   "homepage": "https://arenan.yle.fi/radio/program/yle-vega?_c=radio-vega-osterbotten",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 203,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "22c402d1-2a7f-4713-8e2b-646070026dba",
+   "name": "Yle Klassinen",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleKlassinen/icecast.audio",
+   "homepage": "https://yle.fi/aihe/klassinen",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [
+    "classical"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 114,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "a580840c-0e32-46f7-ba93-18343baef202",
+   "name": "TOP51",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/top51/top51_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/top51/",
+   "codec": "AAC",
+   "bitrate": 63,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 46,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "d52c33e2-fb2d-46e6-ad38-8eee3c7b6bd0",
+   "name": "Sea FM",
+   "streamUrl": "https://s3.myradiostream.com/4976/listen.mp3",
+   "homepage": "https://www.seafm.fi/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "dance",
+    "pop",
+    "r´n´b",
+    "top 40"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 65.011,
+    "long": 25.471
+   },
+   "votes": 35,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "46c36cc2-e313-4a24-935a-fc667ad96730",
+   "name": "Yle Radio Suomi, Kotka",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleKotka/icecast.audio",
+   "homepage": "https://areena.yle.fi/podcastit/ohjelmat/57-3gO4bl7J6?_c=yle-radio-suomi-kotka",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 30,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "5ccaf433-c2df-46e7-8e38-61e4445fe43c",
+   "name": "YleRadioSuomiLahti",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleLahti/icecast.audio",
+   "homepage": "https://areena.yle.fi/podcastit/ohjelmat/57-3gO4bl7J6?_c=yle-radio-suomi-lahti",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Päijät-Häme",
+   "geo": {
+    "lat": 60.984,
+    "long": 25.654
+   },
+   "votes": 12,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "f46a7f78-6fbd-4251-a44f-33024264fab6",
+   "name": "Radio Sun",
+   "streamUrl": "https://st.downtime.fi/sun.mp3",
+   "homepage": "https://radiosun.fi/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Pirkanmaa",
+   "geo": {
+    "lat": 61.529,
+    "long": 23.632
+   },
+   "votes": 6,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "f7001430-7f36-4562-93b8-31b7f070a327",
+   "name": "FugeFM",
+   "streamUrl": "https://streaming.broadcast.radio/fugefm",
+   "homepage": "https://fuengirola.fi/fugefm/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "66888158-1c1e-4fae-893a-442860d1f20a",
+   "name": "Radio Moreeni",
+   "streamUrl": "https://moreenistream.tuni.fi/moreeni.mp3",
+   "homepage": "https://radiomoreeni.fi/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "Pirkanmaa",
+   "geo": {
+    "lat": 61.505,
+    "long": 23.743
+   },
+   "votes": 4,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "617baea8-d8cc-412d-ab01-09f8b7b7ef21",
+   "name": "Kerhoradio",
+   "streamUrl": "https://c40.radioboss.fm:8056/stream",
+   "homepage": "https://kerhoradio.fi/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "ice-hockey",
+    "sport"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 60.995,
+    "long": 24.432
+   },
+   "votes": 4,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "ba8ca8d2-32f0-4f31-aea4-4e57773e6357",
+   "name": "Radio Boofi",
+   "streamUrl": "https://radio.iranian.fi/listen/vip/radio.mp3",
+   "homepage": "https://iranian.fi/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "Southwest Finland (Varsinais-Suomi)",
+   "geo": {
+    "lat": 60.432,
+    "long": 22.244
+   },
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "d6684d02-578f-43f9-95c8-61b837bb2caf",
+   "name": "Järviradio Puhe",
+   "streamUrl": "https://jarviradio.radiotaajuus.fi:9000/jrpuhe",
+   "homepage": "https://www.jarviradio.fi/jrpuhe",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Uusimaa",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 3,
+   "countryCode": "FI"
+  },
+  {
+   "id": "960c6812-0601-11e8-ae97-52543be04c81",
+   "name": "Sveriges Radio - SR Sisuradio",
+   "streamUrl": "https://live1.sr.se/finska-aac-320",
+   "homepage": "https://sverigesradio.se/",
+   "codec": "AAC",
+   "bitrate": 312,
+   "tags": [
+    "finnish",
+    "music",
+    "news",
+    "public radio",
+    "sveriges radio"
+   ],
+   "languages": [
+    "finnish",
+    "swedish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 725,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "a5b17fee-4e81-4d90-a1a9-284181ac3c6c",
+   "name": "Radio 957",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/radio957/radio957_128.mp3?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/radio-957/?stationId=257",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 24,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "75c67c01-bc98-4cc0-8b11-3a324bb4c565",
+   "name": "Radio Pori",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/radiopori/radiopori_128.mp3?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://radioplay.fi/radio-pori/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 22,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "6178fc05-36af-4649-8fc2-66923a27cb7f",
+   "name": "Yle radio Suomi Etelä-pohjanmaa",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleSeinajoki/icecast.audio",
+   "homepage": "https://areena.yle.fi/podcastit/ohjelmat/57-3gO4bl7J6?_c=yle-radio-suomi-seinajoki",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 17,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "ea090fe5-8c86-446c-b678-ca9be46b218e",
+   "name": "Yle Vega Åboland",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleVegaAboland/icecast.audio",
+   "homepage": "https://arenan.yle.fi/poddar/1-72901213",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "8720abb1-9d81-4ff3-94f7-5ba4bc79ab48",
+   "name": "Yle Radio Suomi, Rovaniemi",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleRovaniemi/icecast.audio",
+   "homepage": "https://areena.yle.fi/podcastit/ohjelmat/57-3gO4bl7J6?_c=yle-radio-suomi-rovaniemi",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "65ee044c-b0e0-4fc2-961e-3817014ff330",
+   "name": "Pride Radio",
+   "streamUrl": "https://streaming.radioplay.fi/fi_pride_128.mp3",
+   "homepage": "https://radioplay.fi/pride-radio",
+   "codec": "AAC",
+   "bitrate": 68,
+   "tags": [
+    "dance",
+    "hits",
+    "lgbt",
+    "pop"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "National (Finland)",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "5fa5e2f9-c8fd-4100-9bd3-447a768edd70",
+   "name": "Radio W&M",
+   "streamUrl": "https://stream.zeno.fm/qgeotx9vzpluv",
+   "homepage": "https://catskinrex.net/radio-wm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "americana",
+    "blues",
+    "classical",
+    "country",
+    "dance",
+    "disco"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 61.474,
+    "long": 23.514
+   },
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "64636a34-a2f0-4388-bc20-6b0415aa2434",
+   "name": "Tekoälyradio",
+   "streamUrl": "https://streaming.radioplay.fi/fi_tekoalyradio_128.mp3",
+   "homepage": "https://radioplay.fi/tekoalyradio",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ai",
+    "hits",
+    "pop"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "National (Finland)",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "464b4abe-6ca8-4a97-92b1-3b1f1f8daf66",
+   "name": "Radio City",
+   "streamUrl": "https://stream-redirect.bauermedia.fi/radiocity/radiocity_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein",
+   "homepage": "https://rayo.fi/radio-city",
+   "codec": "AAC",
+   "bitrate": 63,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "FI"
+  },
+  {
+   "id": "a00152c4-a3e3-416f-acf5-4e8d29709934",
+   "name": "Savon Aallot",
+   "streamUrl": "https://cast.savonaallot.fi/savonaallot",
+   "homepage": "https://www.savonaallot.fi/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 59,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "45c3659d-27a8-4209-910b-7e0e746301a8",
+   "name": "Radio Patmos",
+   "streamUrl": "https://s3.yesstreaming.net:7011/radio",
+   "homepage": "https://www.patmos.fi/radio-patmos/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "religious"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 42,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "549e9584-1d27-4a8b-8755-dca57bbe82a8",
+   "name": "Radio Tuottaja1",
+   "streamUrl": "https://kaupunkiradio.radiotaajuus.fi:9013/radio",
+   "homepage": "https://kaupunkikanava.fi/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "music",
+    "pop"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 37,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "4d1a27b8-9c81-4bd1-b79d-ca43b75c1b0a",
+   "name": "Yle radio Suomi Pohjanmaa",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YlePohjanmaa/icecast.audio",
+   "homepage": "https://areena.yle.fi/podcastit/ohjelmat/57-3gO4bl7J6",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 17,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "d22c6215-80d5-4b54-9ccc-f712b9ba50d6",
+   "name": "Radio Nostalgia",
+   "streamUrl": "https://streaming.radioplay.fi/nostalgia/nostalgia_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_ukrp&aw_0_req.userConsentV2=~TCSTRING~&rp_source=1&aw_0_1st.skey=1770708690",
+   "homepage": "https://www.radioplayer.fi/kanavat/radio-nostalgia",
+   "codec": "AAC",
+   "bitrate": 67,
+   "tags": [
+    "nostalgia"
+   ],
+   "languages": [],
+   "state": "Uusimaa",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "b6b4301e-7c69-4c01-b798-5083b5b11f5c",
+   "name": "Radio Tempo",
+   "streamUrl": "https://cast.radiotempo.fi/radiotempo",
+   "homepage": "https://www.radiotempo.fi/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "4ab82b0e-cef6-4d86-9235-2591c37813bf",
+   "name": "SuomiRap",
+   "streamUrl": "https://streaming.radioplay.fi/fi_suomirap_128.mp3",
+   "homepage": "https://radioplay.fi/suomirap",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "finnish rap",
+    "hip hop",
+    "rap"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "National (Finland)",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "e176bf3f-f6cb-4ab8-830a-e1025254462e",
+   "name": "Yle Sámi Radio",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleSami/icecast.audio",
+   "homepage": "https://areena.yle.fi/podcastit/ohjelmat/30-698",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "d6459d7c-1cdf-4aa3-b5db-85a67ce4c4b0",
+   "name": "Radio Ramona",
+   "streamUrl": "https://stream.protonbroadcast.com:8443/ramona.mp3",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "news",
+    "pop",
+    "rock",
+    "sports"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "f3fcac89-0f90-4534-90af-0a1d9fae1624",
+   "name": "Radio Soho",
+   "streamUrl": "https://sohostream.djonline.fi:8008/radio",
+   "homepage": "https://radiosoho.fi/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "community",
+    "local",
+    "music"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Pirkanmaa",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "768a8929-c719-4ae2-ad04-c8e031fad2d8",
+   "name": "Radio Vaasa",
+   "streamUrl": "https://stream.protonbroadcast.com:8443/radiovaasa.mp3",
+   "homepage": "https://www.radiovaasa.fi/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "bilingual",
+    "community",
+    "local",
+    "regional"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Pohjanmaa",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "297bb132-c38f-47f7-aa30-03a3cfc0de13",
+   "name": "Kesäseuraradio",
+   "streamUrl": "https://kesaseuraradio.out.airtime.pro/kesaseuraradio_b",
+   "homepage": "https://www.kesaseuraradio.fi/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "christian",
+    "community",
+    "talk"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Suomi",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "7bbec1fb-da28-45db-b0c5-72100f09c37a",
+   "name": "Radio Classic",
+   "streamUrl": "https://streaming.radioplay.fi/fi_classic_128.mp3",
+   "homepage": "https://radioplay.fi/radio-classic",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classical",
+    "instrumental"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "National (Finland)",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "ff752290-8b6d-48bf-a0de-608287c7d30b",
+   "name": "Radio Auran Aallot",
+   "streamUrl": "https://streaming.radioplay.fi/fi_auranaallot_128.mp3",
+   "homepage": "https://radioplay.fi/auran-aallot",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "adult contemporary",
+    "local",
+    "pop",
+    "rock",
+    "top40"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Southwest Finland (Varsinais-Suomi)",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "77a2ea2c-ae79-48bf-998a-0be1752563e9",
+   "name": "Vömba FM",
+   "streamUrl": "https://c4.radioboss.fm:18123/live",
+   "homepage": "https://vombafm.fi/",
+   "codec": "AAC",
+   "bitrate": 320,
+   "tags": [
+    "80s",
+    "90s",
+    "community",
+    "estonian",
+    "online"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Suomi",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "0559438c-2c99-44b5-b0c9-f1ae8a631bba",
+   "name": "Karjalainen Syke",
+   "streamUrl": "https://radio.diks.fi/karjalainensyke",
+   "homepage": "https://www.karjalainensyke.fi/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "local",
+    "news",
+    "pop",
+    "regional"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Pohjois-Karjala",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "ee50d1e9-9168-4798-a68f-d7416d0791b5",
+   "name": "Yle Radio Suomi, Joensuu",
+   "streamUrl": "https://icecast.live.yle.fi/radio/YleJoensuu/icecast.audio",
+   "homepage": "https://areena.yle.fi/podcastit/ohjelmat/57-3gO4bl7J6?_c=yle-radio-suomi-joensuu",
+   "codec": "AAC+",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "406ae171-f116-455c-b7f2-d3795a660bce",
+   "name": "Fin Est FM",
+   "streamUrl": "https://shoutcast.finestfm.fi/;",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "see on parim eestikeelne raadio soomes"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "FI"
+  },
+  {
+   "id": "fecf5025-96de-11e8-a767-52543be04c81",
+   "name": "Radio Voima",
+   "streamUrl": "https://cast2.radiovoima.fi/voima.mp3",
+   "homepage": "https://www.radiovoima.fi/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 338,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "43697d5f-6d6a-4390-b9eb-5974f963ffc1",
+   "name": "Radio Dei Kajaani",
+   "streamUrl": "https://stream.dei.fi:8443/kajaani",
+   "homepage": "https://www.radiodei.fi/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "christian"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 16,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "06e81ebd-b7fc-4bd6-8bb1-88d77f0d31a8",
+   "name": "Radio Dei Lahti",
+   "streamUrl": "https://stream.dei.fi:8443/lahti",
+   "homepage": "https://www.radiodei.fi/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "df8a5795-f3bb-4e72-ae0a-87c8455625bf",
+   "name": "Radio Sandels",
+   "streamUrl": "https://radiosandels.radiotaajuus.fi:9050/radio",
+   "homepage": "https://www.radiosandels.fi/nettiradio/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "kuopio",
+   "geo": null,
+   "votes": 10,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "495de093-2d90-4a51-ae8c-743086872fcd",
+   "name": "DOUBLECLAP RADIO",
+   "streamUrl": "https://s3.radio.co/scfd7273b2/low",
+   "homepage": "https://doubleclap.dance/",
+   "codec": "MP3",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 8,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "b98188e0-3392-485d-8265-c3995c9b1858",
+   "name": "REPLAY NEWS - Suomi",
+   "streamUrl": "https://replaynewsfi.ice.infomaniak.ch/replaynewsfi-128.mp3",
+   "homepage": "https://www.replaynews.net/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "information",
+    "news"
+   ],
+   "languages": [
+    "finland"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "dd6fb0c5-42ac-4eff-9c11-3833d7fe7737",
+   "name": "Radio Kaakko",
+   "streamUrl": "https://wr2.downtime.fi/kaakko.mp3",
+   "homepage": "https://radiokaakko.fi/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "0269dbb3-a6a5-4919-a92e-94be46bb8fd8",
+   "name": "RollFM",
+   "streamUrl": "https://rollfm.online/",
+   "homepage": "https://www.rollfm.fi/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "a1d96ed6-a5db-41cb-b294-8ed44973a468",
+   "name": "FinnRadio",
+   "streamUrl": "https://servidor39-5.brlogic.com:7076/live",
+   "homepage": "https://finnradio.net/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "alternative",
+    "indie",
+    "online"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Suomi",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "1898ce90-f0a9-4a9a-99bd-18ee739322bb",
+   "name": "Radio Mega",
+   "streamUrl": "https://streaming.radioplay.fi/fi_radiomega_128.mp3",
+   "homepage": "https://radioplay.fi/radio-mega",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "local",
+    "pop",
+    "rock"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Northern Ostrobothnia (Pohjois-Pohjanmaa)",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 0,
+   "countryCode": "FI"
+  },
+  {
+   "id": "45535d17-5ff5-488b-a5b8-f20861074f1f",
+   "name": "Radio City Kiekkoradio",
+   "streamUrl": "https://wr2.downtime.fi/kiekko.mp3",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "lätkä",
+    "täytemusiikki"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "FI"
+  }
+ ]
+}

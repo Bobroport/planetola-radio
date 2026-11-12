@@ -15,6 +15,8 @@ export type Station = {
   geo: { lat: number; long: number } | null;
   votes: number;
   clickCount: number;
+  /** Код страны ISO 3166-1: у станций из городов совпадает с кодом города. */
+  countryCode: string;
 };
 
 export type City = {

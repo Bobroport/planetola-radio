@@ -21,6 +21,12 @@ export const sv: Dictionary = {
   "city.nowPlaying": "spelas nu",
   "city.notFound": "Staden hittades inte",
   "cities.title": "Städer",
+  "cities.countries": "Stationer per land",
+  "cities.countriesHint": "Kompletta listor för Europa, Ryssland och USA",
+  "countries.title": "Länder",
+  "country.allStations": "Alla stationer: {country}",
+  "country.filter": "Filtrera efter namn eller tagg",
+  "country.notFound": "Landet hittades inte",
 
   "region.cis": "Ryssland och grannländer",
   "region.europe": "Europa",
@@ -52,6 +58,7 @@ export const sv: Dictionary = {
   "search.all": "Alla stationer: {count}",
   "search.reset": "Återställ",
   "search.empty": "Inget hittades",
+  "search.loading": "Läser in hela katalogen…",
 
   "stations.title": "Favoritstationer",
   "stations.empty": "Inga favoritstationer än. Tryck på stjärnan bredvid en station för att lägga till den här.",

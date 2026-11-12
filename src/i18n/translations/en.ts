@@ -20,6 +20,12 @@ export const en = {
   "city.nowPlaying": "now playing",
   "city.notFound": "City not found",
   "cities.title": "Cities",
+  "cities.countries": "Stations by country",
+  "cities.countriesHint": "Full lists for Europe, Russia and the USA",
+  "countries.title": "Countries",
+  "country.allStations": "All stations in {country}",
+  "country.filter": "Filter by name or tag",
+  "country.notFound": "Country not found",
 
   "region.cis": "Russia and neighbors",
   "region.europe": "Europe",
@@ -51,6 +57,7 @@ export const en = {
   "search.all": "All stations: {count}",
   "search.reset": "Reset",
   "search.empty": "Nothing found",
+  "search.loading": "Loading the full catalog…",
 
   "stations.title": "Favorite stations",
   "stations.empty": "No favorite stations yet. Tap the star next to a station to add it here.",

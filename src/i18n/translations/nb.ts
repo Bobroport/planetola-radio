@@ -21,6 +21,12 @@ export const nb: Dictionary = {
   "city.nowPlaying": "spilles nå",
   "city.notFound": "Fant ikke byen",
   "cities.title": "Byer",
+  "cities.countries": "Stasjoner etter land",
+  "cities.countriesHint": "Fullstendige lister for Europa, Russland og USA",
+  "countries.title": "Land",
+  "country.allStations": "Alle stasjoner: {country}",
+  "country.filter": "Filtrer etter navn eller emneknagg",
+  "country.notFound": "Fant ikke landet",
 
   "region.cis": "Russland og naboland",
   "region.europe": "Europa",
@@ -52,6 +58,7 @@ export const nb: Dictionary = {
   "search.all": "Alle stasjoner: {count}",
   "search.reset": "Nullstill",
   "search.empty": "Ingen treff",
+  "search.loading": "Laster hele katalogen…",
 
   "stations.title": "Favorittstasjoner",
   "stations.empty": "Ingen favorittstasjoner ennå. Trykk på stjernen ved en stasjon for å legge den til her.",

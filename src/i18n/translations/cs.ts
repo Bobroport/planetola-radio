@@ -21,6 +21,12 @@ export const cs: Dictionary = {
   "city.nowPlaying": "právě hraje",
   "city.notFound": "Město nenalezeno",
   "cities.title": "Města",
+  "cities.countries": "Stanice podle země",
+  "cities.countriesHint": "Úplné seznamy pro Evropu, Rusko a USA",
+  "countries.title": "Země",
+  "country.allStations": "Všechny stanice: {country}",
+  "country.filter": "Filtrovat podle názvu nebo štítku",
+  "country.notFound": "Země nenalezena",
 
   "region.cis": "Rusko a sousední země",
   "region.europe": "Evropa",
@@ -52,6 +58,7 @@ export const cs: Dictionary = {
   "search.all": "Všechny stanice: {count}",
   "search.reset": "Vymazat",
   "search.empty": "Nic nenalezeno",
+  "search.loading": "Načítání celého katalogu…",
 
   "stations.title": "Oblíbené stanice",
   "stations.empty": "Zatím žádné oblíbené stanice. Klepněte na hvězdičku u stanice a přidejte ji sem.",

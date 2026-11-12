@@ -21,6 +21,12 @@ export const el: Dictionary = {
   "city.nowPlaying": "παίζει τώρα",
   "city.notFound": "Η πόλη δεν βρέθηκε",
   "cities.title": "Πόλεις",
+  "cities.countries": "Σταθμοί ανά χώρα",
+  "cities.countriesHint": "Πλήρεις λίστες για Ευρώπη, Ρωσία και ΗΠΑ",
+  "countries.title": "Χώρες",
+  "country.allStations": "Όλοι οι σταθμοί: {country}",
+  "country.filter": "Φιλτράρισμα κατά όνομα ή ετικέτα",
+  "country.notFound": "Η χώρα δεν βρέθηκε",
 
   "region.cis": "Ρωσία και γειτονικές χώρες",
   "region.europe": "Ευρώπη",
@@ -52,6 +58,7 @@ export const el: Dictionary = {
   "search.all": "Όλοι οι σταθμοί: {count}",
   "search.reset": "Επαναφορά",
   "search.empty": "Δεν βρέθηκε τίποτα",
+  "search.loading": "Φόρτωση πλήρους καταλόγου…",
 
   "stations.title": "Αγαπημένοι σταθμοί",
   "stations.empty": "Δεν υπάρχουν ακόμη αγαπημένοι σταθμοί. Πατήστε το αστέρι δίπλα σε έναν σταθμό για να τον προσθέσετε εδώ.",

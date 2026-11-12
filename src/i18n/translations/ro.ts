@@ -21,6 +21,12 @@ export const ro: Dictionary = {
   "city.nowPlaying": "se redă acum",
   "city.notFound": "Orașul nu a fost găsit",
   "cities.title": "Orașe",
+  "cities.countries": "Posturi după țară",
+  "cities.countriesHint": "Liste complete pentru Europa, Rusia și SUA",
+  "countries.title": "Țări",
+  "country.allStations": "Toate posturile: {country}",
+  "country.filter": "Filtrează după nume sau etichetă",
+  "country.notFound": "Țara nu a fost găsită",
 
   "region.cis": "Rusia și țările vecine",
   "region.europe": "Europa",
@@ -52,6 +58,7 @@ export const ro: Dictionary = {
   "search.all": "Toate posturile: {count}",
   "search.reset": "Resetează",
   "search.empty": "Nimic găsit",
+  "search.loading": "Se încarcă catalogul complet…",
 
   "stations.title": "Posturi favorite",
   "stations.empty": "Încă nu ai posturi favorite. Atinge steaua de lângă un post pentru a-l adăuga aici.",

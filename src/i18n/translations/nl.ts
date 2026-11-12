@@ -21,6 +21,12 @@ export const nl: Dictionary = {
   "city.nowPlaying": "speelt nu",
   "city.notFound": "Stad niet gevonden",
   "cities.title": "Steden",
+  "cities.countries": "Zenders per land",
+  "cities.countriesHint": "Volledige lijsten voor Europa, Rusland en de VS",
+  "countries.title": "Landen",
+  "country.allStations": "Alle zenders: {country}",
+  "country.filter": "Filteren op naam of tag",
+  "country.notFound": "Land niet gevonden",
 
   "region.cis": "Rusland en buurlanden",
   "region.europe": "Europa",
@@ -52,6 +58,7 @@ export const nl: Dictionary = {
   "search.all": "Alle zenders: {count}",
   "search.reset": "Wissen",
   "search.empty": "Niets gevonden",
+  "search.loading": "Volledige catalogus laden…",
 
   "stations.title": "Favoriete zenders",
   "stations.empty": "Nog geen favoriete zenders. Tik op de ster naast een zender om die hier toe te voegen.",

@@ -9,35 +9,21 @@ import { fileURLToPath } from "node:url";
 
 import { CITIES } from "./cities.mjs";
 import { EXTRA_STATIONS } from "./extra-stations.mjs";
+import {
+  dedupeByUrl,
+  fetchJson,
+  isExcludedName,
+  isPlayable,
+  pickServer,
+  sleep,
+  toStation,
+} from "./station-utils.mjs";
 
-const USER_AGENT = "radio-app-generator/1.0";
-const FALLBACK_SERVER = "https://de1.api.radio-browser.info";
 const GEO_RADIUS_M = 30_000;
 const STATIONS_PER_CITY = 40;
 const REQUEST_DELAY_MS = 150;
-const MAX_ATTEMPTS = 5;
-const RETRY_DELAY_MS = 3000;
-const ALLOWED_CODECS = ["MP3", "AAC"];
 
-// Список городов вынесен в scripts/cities.mjs
-
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-async function pickServer() {
-  try {
-    const res = await fetch("https://all.api.radio-browser.info/json/servers", {
-      headers: { "User-Agent": USER_AGENT },
-    });
-    const servers = await res.json();
-    const names = [...new Set(servers.map((s) => s.name))];
-    if (names.length > 0) {
-      return "https://" + names[Math.floor(Math.random() * names.length)];
-    }
-  } catch (e) {
-    console.warn("Не удалось получить список серверов, используем запасной:", e.message);
-  }
-  return FALLBACK_SERVER;
-}
+// Список городов вынесен в scripts/cities.mjs, общие помощники — в scripts/station-utils.mjs
 
 async function search(server, params) {
   const url = new URL("/json/stations/search", server);
@@ -47,68 +33,6 @@ async function search(server, params) {
     url.searchParams.set(k, String(v));
   }
   return fetchJson(url);
-}
-
-/** GET с повторами; после MAX_ATTEMPTS неудач возвращает пустой список, а не падает. */
-async function fetchJson(url) {
-  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-    try {
-      const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      await sleep(REQUEST_DELAY_MS);
-      return await res.json();
-    } catch (e) {
-      const reason = e.cause?.message || e.message;
-      if (attempt === MAX_ATTEMPTS) {
-        console.warn("  пропуск после " + MAX_ATTEMPTS + " попыток: " + url.search + " (" + reason + ")");
-        return [];
-      }
-      console.warn("  повтор " + attempt + ": " + url.search + " (" + reason + ")");
-      await sleep(RETRY_DELAY_MS * attempt);
-    }
-  }
-  return [];
-}
-
-function isPlayable(s, { allowHttp = false } = {}) {
-  if (s.lastcheckok !== 1 || s.hls === 1) return false;
-  const url = s.url_resolved || s.url;
-  if (!url) return false;
-  if (!url.startsWith("https://") && !(allowHttp && url.startsWith("http://"))) return false;
-  const codec = String(s.codec || "").toUpperCase();
-  return ALLOWED_CODECS.some((c) => codec.startsWith(c));
-}
-
-/** "#english, Español,english" -> ["english", "español"] */
-function splitList(value) {
-  const seen = new Set();
-  return String(value || "")
-    .split(",")
-    .map((t) => t.trim().replace(/^#+/, "").toLowerCase())
-    .filter((t) => t && !seen.has(t) && seen.add(t));
-}
-
-function toStation(s) {
-  const hasGeo = typeof s.geo_lat === "number" && typeof s.geo_long === "number";
-  // Только то, что использует приложение: поля вроде favicon и дат проверки выкинуты ради размера.
-  return {
-    id: s.stationuuid,
-    name: s.name.trim(),
-    streamUrl: s.url_resolved || s.url,
-    homepage: s.homepage || "",
-    codec: String(s.codec || "").toUpperCase(),
-    bitrate: s.bitrate || 0,
-    tags: splitList(s.tags).slice(0, 6),
-    languages: splitList(s.language).slice(0, 3),
-    state: (s.state || "").trim(),
-    geo: hasGeo ? { lat: round3(s.geo_lat), long: round3(s.geo_long) } : null,
-    votes: s.votes || 0,
-    clickCount: s.clickcount || 0,
-  };
-}
-
-function round3(n) {
-  return Math.round(n * 1000) / 1000;
 }
 
 async function fetchCity(server, city) {
@@ -125,17 +49,10 @@ async function fetchCity(server, city) {
     add(await search(server, { name: term, countrycode: city.countryCode }));
   }
 
-  const seenUrls = new Set();
-  return [...found.values()]
-    .sort((a, b) => b.clickcount - a.clickcount || b.votes - a.votes)
-    .filter((s) => {
-      const url = s.url_resolved || s.url;
-      if (seenUrls.has(url)) return false;
-      seenUrls.add(url);
-      return true;
-    })
+  const sorted = [...found.values()].sort((a, b) => b.clickcount - a.clickcount || b.votes - a.votes);
+  return dedupeByUrl(sorted)
     .slice(0, STATIONS_PER_CITY)
-    .map(toStation);
+    .map((s) => toStation(s, city.countryCode));
 }
 
 /** Русские заголовки регионов из cities.mjs → ключи, по которым приложение берёт перевод. */
@@ -192,7 +109,7 @@ async function withExtras(server, city, stations) {
       console.warn("  закреплённая станция пропущена (нет в базе или не играет): " + extra.uuid);
       continue;
     }
-    pinned.push(toStation(s));
+    pinned.push(toStation(s, city.countryCode));
     await sleep(REQUEST_DELAY_MS);
   }
   const pinnedIds = new Set(pinned.map((s) => s.id));
@@ -225,6 +142,10 @@ async function main() {
       stations = await fetchCity(server, city);
       await writeFile(cachePath, JSON.stringify(stations), "utf8");
     }
+    // Кэш мог быть собран до появления countryCode и фильтра названий: приводим к текущему формату.
+    stations = stations
+      .filter((s) => !isExcludedName(s.name))
+      .map((s) => ({ ...s, countryCode: city.countryCode }));
     stations = await withExtras(server, city, stations);
     console.log(
       city.name.padEnd(18) + String(stations.length).padStart(3) + " станций" + (fromCache ? " (кэш)" : ""),

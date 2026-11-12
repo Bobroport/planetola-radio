@@ -21,6 +21,12 @@ export const hr: Dictionary = {
   "city.nowPlaying": "trenutno svira",
   "city.notFound": "Grad nije pronađen",
   "cities.title": "Gradovi",
+  "cities.countries": "Postaje po državama",
+  "cities.countriesHint": "Potpuni popisi za Europu, Rusiju i SAD",
+  "countries.title": "Države",
+  "country.allStations": "Sve postaje: {country}",
+  "country.filter": "Filtriraj po nazivu ili oznaci",
+  "country.notFound": "Država nije pronađena",
 
   "region.cis": "Rusija i susjedne zemlje",
   "region.europe": "Europa",
@@ -52,6 +58,7 @@ export const hr: Dictionary = {
   "search.all": "Sve postaje: {count}",
   "search.reset": "Poništi",
   "search.empty": "Ništa nije pronađeno",
+  "search.loading": "Učitavanje cijelog kataloga…",
 
   "stations.title": "Omiljene postaje",
   "stations.empty": "Još nema omiljenih postaja. Dodirni zvjezdicu pokraj postaje da je dodaš ovdje.",

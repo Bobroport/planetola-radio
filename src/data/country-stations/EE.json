@@ -1,0 +1,1625 @@
+{
+ "countryCode": "EE",
+ "stations": [
+  {
+   "id": "208c966b-0df4-4939-943f-1ac7bfe9d2ee",
+   "name": "Rock FM",
+   "streamUrl": "https://edge02.cdn.bitflip.ee:8888/rck?_i=5f5ab186",
+   "homepage": "https://sky.ee/rockfm",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.433,
+    "long": 24.746
+   },
+   "votes": 5226,
+   "clickCount": 24,
+   "countryCode": "EE"
+  },
+  {
+   "id": "1ee96040-bfb6-4209-9ab8-14a26ff73ad0",
+   "name": "Raadio Elmar",
+   "streamUrl": "https://le304.euddn.net/6276e3d130eeaaa49d1dfa872339bef90194b27e48d1e02d53180b566e47e9da0e254ba1c5e1536432224a4c33c3c6965b37203cc1d8b48978f27ec018157e88ae6491469777e9b5a285115f823dafeacdc39aefc0f84c328e62d128e2b9e9c4242e4ee321d403bad13f0f33f265380e8c24b46174ae982eaba21c20d166cf21ed2bd841fe2c1a189e91e560fb06ca3620508e4822cb39e9e7546ee46196581b8e90ebe8f5277acffd37eeda94b9e616/elmar.aac",
+   "homepage": "https://elmar.pleier.ee/",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.432,
+    "long": 24.762
+   },
+   "votes": 1284,
+   "clickCount": 12,
+   "countryCode": "EE"
+  },
+  {
+   "id": "a2624589-8279-4be3-9ea0-514dcd29cef8",
+   "name": "Võmba FM",
+   "streamUrl": "https://c4.radioboss.fm:18123/stream",
+   "homepage": "https://xn--vmbafm-pxa.fi/",
+   "codec": "AAC",
+   "bitrate": 320,
+   "tags": [
+    "1990s",
+    "90s",
+    "pop"
+   ],
+   "languages": [
+    "estonian",
+    "finnish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 60.149,
+    "long": 24.88
+   },
+   "votes": 699,
+   "clickCount": 12,
+   "countryCode": "EE"
+  },
+  {
+   "id": "841ec916-508c-4948-9c16-6208f1e5015c",
+   "name": "Raadio Kuku",
+   "streamUrl": "https://le302.euddn.net/262e009c70e67e5c7828d92062d3a43f353ad986da1ffab5f17536ea486f159277827d676da06172ba156613a935b04514a1faacc6eeb6437dd1530e61cdd091ed4008b5dff0de8514dd9c396baa4dce33d38e19d1e5ab13fc2ef8f2bfc633968d317d1b4665a30a743abd07fec2ac636060def26d3a21ba8663a0e0364479ccff38790fdaf694f87defbe6b63d025c39363d0b7792f5ee485f3a9aedc2ceac5b2f51c59e91305a47e1a91c389e5cc6d/kuku_high.mp3",
+   "homepage": "https://kuku.pleier.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.431,
+    "long": 24.771
+   },
+   "votes": 1414,
+   "clickCount": 10,
+   "countryCode": "EE"
+  },
+  {
+   "id": "4b889ec9-03bd-4926-9daf-492883756e55",
+   "name": "Global Export FM",
+   "streamUrl": "https://radio.globalexport.ee/stream.mp3",
+   "homepage": "https://radio.globalexport.ee/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "estonian news",
+    "news",
+    "talk",
+    "tallinn",
+    "weather"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Harju maakond",
+   "geo": {
+    "lat": 59.437,
+    "long": 24.754
+   },
+   "votes": 1,
+   "clickCount": 10,
+   "countryCode": "EE"
+  },
+  {
+   "id": "7cde649e-2976-4311-8e6a-62cdcd6edb44",
+   "name": "Duo Party",
+   "streamUrl": "https://le304.euddn.net/9d6ed890e419482f92a6e2c9ad35e87e3f6ae8d5aeb1d0e44fb98e7f5a789fa628cbdbaf7a21b2faa53639e0ac6715c14f8466be457b2d7c5941e4153e47b3f81a9e6414a6db34cf2480fef595544dc2d2f5c81ece047f6c671a2283f6cada32ac2dca12d7e4936d739e7df7eecaad5542cac287c6d6c75bba4d2e3c49c4751ce9917e589336981113dd536d82ebc403e2971926bda60f749c784c46cc3cd91a74d98f306917bc58b27daa1f6e8f0b4d/duodance.aac",
+   "homepage": "https://raadioduo.pleier.ee/duo-party",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "dance"
+   ],
+   "languages": [
+    "estonia"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.426,
+    "long": 24.779
+   },
+   "votes": 183,
+   "clickCount": 9,
+   "countryCode": "EE"
+  },
+  {
+   "id": "694c17ea-4de8-4055-a6a5-a2b1dcadfb91",
+   "name": "Star FM",
+   "streamUrl": "https://ice.leviracloud.eu/star320-mp3",
+   "homepage": "https://raadiod.com/star-fm/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 48,
+   "clickCount": 6,
+   "countryCode": "EE"
+  },
+  {
+   "id": "619c88a6-f858-4c39-861e-da47fcd77b85",
+   "name": "Star Fm",
+   "streamUrl": "https://ice.leviracloud.eu/star96-aac",
+   "homepage": "https://starfm.tv3.ee/",
+   "codec": "AAC",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1318,
+   "clickCount": 5,
+   "countryCode": "EE"
+  },
+  {
+   "id": "a2a7db6e-e625-11e8-a9cc-52543be04c81",
+   "name": "Äripäeva Raadio",
+   "streamUrl": "https://www.aripaev.ee/raadio/stream.mp3",
+   "homepage": "https://www.aripaev.ee/raadio/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "business news",
+    "estonia"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 266,
+   "clickCount": 5,
+   "countryCode": "EE"
+  },
+  {
+   "id": "91ff5c64-9080-4976-b506-aee6c755a94a",
+   "name": "Star FM Eesti",
+   "streamUrl": "https://ice.leviracloud.eu/starFMEesti96-aac",
+   "homepage": "https://starfm.tv3.ee/",
+   "codec": "AAC",
+   "bitrate": 0,
+   "tags": [
+    "00's",
+    "10's",
+    "20's",
+    "80's",
+    "90's",
+    "top 40"
+   ],
+   "languages": [
+    "estonia"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.349,
+    "long": 24.774
+   },
+   "votes": 90,
+   "clickCount": 5,
+   "countryCode": "EE"
+  },
+  {
+   "id": "98a2bd0a-a207-4c3c-b273-df0a0dba20dc",
+   "name": "Radio Azathoth Revival",
+   "streamUrl": "https://cast4.asurahosting.com/proxy/aadu/stream",
+   "homepage": "https://cast4.asurahosting.com/start/aadu",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "garage rock",
+    "krautrock",
+    "psychedelic rock"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 23,
+   "clickCount": 5,
+   "countryCode": "EE"
+  },
+  {
+   "id": "32eb1eb1-b712-4137-b670-0a620ce04d97",
+   "name": "Relax cafe",
+   "streamUrl": "https://stream.relaxfm.ee/cafe",
+   "homepage": "https://www.relaxfm.ee/",
+   "codec": "AAC",
+   "bitrate": 96,
+   "tags": [
+    "jazz",
+    "smooth jazz"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 605,
+   "clickCount": 4,
+   "countryCode": "EE"
+  },
+  {
+   "id": "1842c0ab-efa4-4e7d-bf50-6bd3f9ded92a",
+   "name": "Hitmix Estonia",
+   "streamUrl": "https://stream.hitmix.ee:8443/HIT_320",
+   "homepage": "https://hitmix.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.463,
+    "long": 24.38
+   },
+   "votes": 130,
+   "clickCount": 4,
+   "countryCode": "EE"
+  },
+  {
+   "id": "3d02a973-8cde-45db-9185-07438068f548",
+   "name": "Relax FM Eesti",
+   "streamUrl": "https://stream.relaxfm.ee/relax",
+   "homepage": "https://sky.ee/relaxfm",
+   "codec": "AAC",
+   "bitrate": 88,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 67,
+   "clickCount": 4,
+   "countryCode": "EE"
+  },
+  {
+   "id": "266acf45-a1ad-4a67-9a81-3cdf54dc8ceb",
+   "name": "Duo Gold (Estonia)",
+   "streamUrl": "https://le306.euddn.net/b0bbf88036bd56673374571b3a575f0067a8c01aeea93c438544602bd2adec11e71080d2fe5e0aa8db4ec04cfa98986c0780df8dd6446441a8543fd1f87f64f57b15cfe2fbad56474a5028784b967d7e434e995ed3ed84e1f023185b840e75f5b169f5c706ae6203f2b8c1fd88b4b67c04992a04f05eb32e598ea06088c69d146c3b2b5f413f8af1e93c8e4502784b35bf545a0e3ff86a7d950bd21a6a875987705147d45abcc4eab53abd322a75d0c2/kuld.aac",
+   "homepage": "https://raadioduo.pleier.ee/duo-gold",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "gold",
+    "oldies"
+   ],
+   "languages": [
+    "eesti",
+    "estonia",
+    "estonian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.436,
+    "long": 24.745
+   },
+   "votes": 20,
+   "clickCount": 4,
+   "countryCode": "EE"
+  },
+  {
+   "id": "af59d217-e29d-4274-b817-6be6dd78d54c",
+   "name": "Kiss FM",
+   "streamUrl": "https://stream.skymedia.ee/live/KISS",
+   "homepage": "https://sky.ee/kissfm",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": {
+    "lat": 59.404,
+    "long": 24.731
+   },
+   "votes": 16,
+   "clickCount": 4,
+   "countryCode": "EE"
+  },
+  {
+   "id": "b759ab6c-2a20-4b05-bf27-d29100716029",
+   "name": "Hits Show Radio",
+   "streamUrl": "https://stream.zeno.fm/7sreyeyustkuv",
+   "homepage": "https://kuula-raadiojaama.online/",
+   "codec": "MP3",
+   "bitrate": 112,
+   "tags": [
+    "dance",
+    "electronic",
+    "trance"
+   ],
+   "languages": [
+    "english",
+    "estonia"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 58.392,
+    "long": 26.147
+   },
+   "votes": 9,
+   "clickCount": 4,
+   "countryCode": "EE"
+  },
+  {
+   "id": "27a69f19-4001-4bf4-b602-92511bc1e682",
+   "name": "HPS Bassline",
+   "streamUrl": "https://azura.hpsbassline.club/listen/haapsaly_bassline/radio.mp3",
+   "homepage": "https://www.hpsbassline.club/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "dj sets",
+    "drum and bass",
+    "frenchcore",
+    "happy hardcore",
+    "hardcore",
+    "hardstyle/handsup/edm"
+   ],
+   "languages": [],
+   "state": "Läänemaa",
+   "geo": {
+    "lat": 58.939,
+    "long": 23.541
+   },
+   "votes": 4,
+   "clickCount": 4,
+   "countryCode": "EE"
+  },
+  {
+   "id": "08824e6f-0f14-4dc4-9e84-b100c3c1a338",
+   "name": "Tre Raadio Ring FM",
+   "streamUrl": "https://cdn.treraadio.ee/ringfm",
+   "homepage": "https://ringfm.treraadio.ee/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "community radio",
+    "regional"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 411,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "a2cbad2f-eaef-4c44-9a9a-c162d7dd301d",
+   "name": "NRJ",
+   "streamUrl": "https://edge01.cdn.bitflip.ee:8888/NRJ?_i=5b8169cb",
+   "homepage": "https://sky.ee/nrj",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "dance"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.411,
+    "long": 24.737
+   },
+   "votes": 196,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "3f930fbb-d418-459e-8923-3584620a2428",
+   "name": "Sky Plus",
+   "streamUrl": "https://skymedia-live.bitflip.ee/SKYPLUS",
+   "homepage": "https://sky.ee/skyplus",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 139,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "99dba6ec-5162-498b-a7f6-4f9d67a1eae2",
+   "name": "Raadio Kidzone",
+   "streamUrl": "https://le304.euddn.net/0f4d35240619188aede7145119faf106d2743578c5bbd5e52a5bcfca96fa1cf7af161cb54480d8cdc14a5dcdb674dba69782b48c686088473a796f0fc2a4b2e8a30780103b4e855e0117a040dacb81d8c0f9a151e9644c2fcce1746a4fed52d2e1b7271fa2bb6cb54a0a34e3b6d2ada7a8e6e4d032283e3632a628cf25becafa94bc8c0138fb46586923b977b066ffe2f48eadf071dc9225a623470c3ff2f9c3306e5db4f3868f707bb3dbd0b14cfec7/kidzone.aac",
+   "homepage": "https://raadioduo.pleier.ee/uudised/raadio-kidzone-eesti-esimene-lasteraadio",
+   "codec": "AAC",
+   "bitrate": 160,
+   "tags": [],
+   "languages": [
+    "english",
+    "estonian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 58.399,
+    "long": 26.631
+   },
+   "votes": 27,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "31946e60-f679-4d3b-933f-d7dbda58d6ba",
+   "name": "Raadio Kadi",
+   "streamUrl": "https://edge06.cdn.bitflip.ee:8888/kadi",
+   "homepage": "https://kadi.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 58.253,
+    "long": 22.486
+   },
+   "votes": 27,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "a13e6834-cb4c-423d-912b-d8b25962b88b",
+   "name": "Elmari Kuld",
+   "streamUrl": "https://le11.euddn.net/d15d071d4f73afad16807c29a8cfe7447ef9fb6dc8928de64be3300e8ca0f3ca5c5b547137da3e2640917468e13ac1d7701b052f6ec9a2a3e207246d31ad7e936db6e1331b35e581cf1c988b303c617e81caf69b44a4afdcaceb809a218d0a9dd4aec230d75e57587a911bdb0faaaaa126ba9f040b7014729c340e2ab241ccfc0af5a1112d14756b8f322bf7a153eace53f699eeebaffdff8ab7ca1c91e4b2505f8f7dee05e2d8150305addddea91bd3/elmarikuld.aac",
+   "homepage": "https://elmar.pleier.ee/elmari-kuld",
+   "codec": "AAC+",
+   "bitrate": 160,
+   "tags": [
+    "1970s",
+    "1980s",
+    "1990s",
+    "classic pop",
+    "estonia",
+    "vintage"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.439,
+    "long": 24.747
+   },
+   "votes": 17,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "3c65a674-3fc7-4924-ad4f-8c9531f552fb",
+   "name": "Radio Nostalgia Estonia",
+   "streamUrl": "https://c16.radioboss.fm:8327/stream",
+   "homepage": "https://radionostalgia.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "retro"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "a627e7d9-6152-4a0e-8533-0cc22ab80491",
+   "name": "Retro FM",
+   "streamUrl": "https://stream.skymedia.ee/live/RETRO",
+   "homepage": "https://retrofm.sky.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "80s",
+    "90s",
+    "oldies",
+    "pop",
+    "retro"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "3b089bf1-8411-40a2-8516-cf6d6d576991",
+   "name": "BIGfm",
+   "streamUrl": "https://sc2.flamebox.org/bigfm-hd",
+   "homepage": "https://bigfm.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "hits",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "7fd6f545-eb50-4cbf-8485-2d6f965786e5",
+   "name": "AiEon",
+   "streamUrl": "https://raadio.aieon.ee/radio.mp3",
+   "homepage": "https://raadio.aieon.ee/public/raadio",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "country",
+    "house",
+    "jazz",
+    "music",
+    "news talk",
+    "various music"
+   ],
+   "languages": [
+    "estonia"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.428,
+    "long": 24.777
+   },
+   "votes": 0,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "69084a62-d6db-4ca7-bcfd-65773e56a366",
+   "name": "Retro FM - Jõulud",
+   "streamUrl": "https://stream.skymedia.ee/live/RetroJ6ulud",
+   "homepage": "https://retrofm.sky.ee/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "christmas",
+    "hits",
+    "retro"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 3,
+   "countryCode": "EE"
+  },
+  {
+   "id": "8545fda3-dab7-4897-9263-462815742015",
+   "name": "Sky Plus",
+   "streamUrl": "https://stream.skymedia.ee/live/SKYPLUS",
+   "homepage": "https://sky.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Harjumaa",
+   "geo": {
+    "lat": 59.43,
+    "long": 24.727
+   },
+   "votes": 977,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "1b6fd0fd-a475-4f6d-ab49-645b744447e1",
+   "name": "KlaRa Nostalgia",
+   "streamUrl": "https://icecast.err.ee/klaranostalgia.mp3",
+   "homepage": "https://klara.err.ee/nostalgia",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "classical",
+    "jazz"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.435,
+    "long": 24.768
+   },
+   "votes": 123,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "f257abd4-9397-4110-b810-c7ca9fb8fbf7",
+   "name": "KlaRa Jazz",
+   "streamUrl": "https://icecast.err.ee/klarajazz.mp3",
+   "homepage": "https://klara.err.ee/jazz",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "jazz"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.435,
+    "long": 24.768
+   },
+   "votes": 88,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "5be25c88-4f25-4a69-96ff-e48979e796f5",
+   "name": "Raadio Duo",
+   "streamUrl": "https://le03.euddn.net/643e1d6549b37ef476e9291c8a2416f4c7a26fd8c57720075bfc75e9f8989cec756cd63e9bedeab335cb6d27c3cf06643a3b5e57c811be0e6789ef0d2b81e1d1a37bb18b37f32cd4af628f7044d43fa5f323de0c4edf8f1019b07a3fdeb4bac2410fbbe27a31a7c3f9c3d63da38af0935a770bf4447693219bf8317e70ab02c958b988455d7b1b47dc0715c9eaf503c9ecccde7213c5b4c9a328e2377aeac41517a186c7148f9b516b9cd799b32b8d8c/radioduo.aac",
+   "homepage": "https://raadioduo.pleier.ee/",
+   "codec": "AAC+",
+   "bitrate": 192,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 81,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "f62e23d6-8104-44e4-a994-5007428289d6",
+   "name": "Jumor FM Estonia",
+   "streamUrl": "https://a10.asurahosting.com:7640/radio.mp3",
+   "homepage": "https://jumorfm.ee/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "dccda812-d94d-4619-89d5-81ec9f5d75d0",
+   "name": "PUNK FM",
+   "streamUrl": "https://sapircast.caster.fm:11309/OsZpV",
+   "homepage": "https://www.punkfm.ee/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "alternative",
+    "hardcore",
+    "punk",
+    "ska"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Võru",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "fce644c0-558c-4c4b-9835-7c67f1ea6dca",
+   "name": "PCR.FM (Parnu Club Radio)",
+   "streamUrl": "https://pcrfm.radiocult.fm/stream",
+   "homepage": "https://pcr.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "dance",
+    "dj",
+    "electronic",
+    "house",
+    "techno"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "Parnu",
+   "geo": {
+    "lat": 58.386,
+    "long": 24.497
+   },
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "cbc3d2c2-133d-4efc-97f8-875e560c9344",
+   "name": "NRJ Estonia",
+   "streamUrl": "https://stream.skymedia.ee/live/NRJ",
+   "homepage": "https://nrj.sky.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "dance",
+    "electronic",
+    "hits",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "d797889f-bf90-4a46-bd94-82b5b53388e2",
+   "name": "Elmari ballaadid",
+   "streamUrl": "https://le301.euddn.net/1b430e08538e81b139fe85decd04412c87dc967f01bdf99e2895deed47c32e018e4dd3c8d41525c19a5cb7c768f645f73e83ec4c61dd6f510ececb718e3602e90ea91e21686e366f1d21b66eb50489726a22e41b707db30db405b8a1ed8541638360f23785acd8429e10d081093c1dd4f8e383c32fed7354f1129edeae9d53a7ec229e8a84848842b4f4ce78d4c064a0620409d6d377b017a97ac3c2feb6b0796532cbd57de05bc3a39e77740426e39467a76a4a544a6f900e00ceac3434cfe0/EB_elmariballaadid.aac",
+   "homepage": "https://elmar.pleier.ee/elmari-ballaadid",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "balada",
+    "pop"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "1ca62b19-44b3-405f-b455-b1de5854e098",
+   "name": "Relax Instrumental",
+   "streamUrl": "https://stream.relaxfm.ee/instrumental",
+   "homepage": "https://relaxfm.sky.ee/",
+   "codec": "AAC",
+   "bitrate": 96,
+   "tags": [
+    "easy listening",
+    "instrumental",
+    "jazz"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "2fa88d22-f282-4f4b-8c9c-70c6937fa502",
+   "name": "Радіо DrUzi",
+   "streamUrl": "https://druzi.fm:8443/192mp3",
+   "homepage": "https://druzi.ee/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "dance",
+    "news",
+    "pop",
+    "talk"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "387b334b-d28e-40f9-a51b-dbd9e9281711",
+   "name": "Elmari tantsuõhtu",
+   "streamUrl": "https://le301.euddn.net/b91c98b912b7613c1a0ea4a5b0f58a703df5a670fafc9feb9fe09184e880923430d539b79efe9ba636997f228c6c70a8456e3669e27dd2415b6dfa07f4715e01c4c2347cd304f1ae45ca5da4dc60ea88fbb434786cfc4dfe51efc1da39e89279df91e6dd42e62b82fe7e8b60ac123dc2dfe27e26601efe421e9d6e13a257ce08b96878c424890f93abb4c779c9d23778780b9e33c4b84ba7c5f79e5fbec8cbda878e88a60f5d3b12be31c5928eeded91728fbd16c96d742301db6b03ec06dcd4/elmaritantsuohtu.aac",
+   "homepage": "https://elmaritantsuohtu.pleier.ee/",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "dance",
+    "folk",
+    "pop"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 2,
+   "countryCode": "EE"
+  },
+  {
+   "id": "5e498e8c-9025-4b6d-b49a-e0d5ed9285f2",
+   "name": "FinEst Radio",
+   "streamUrl": "https://shoutcast.finestfm.fi/stream/1/:80/;stream",
+   "homepage": "https://finestfm.fi/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1432,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "dd6671b8-263a-43d8-95be-a6cb08de6b20",
+   "name": "Retro FM Estonia",
+   "streamUrl": "https://stream.skymedia.ee/live/RETRO_AAC",
+   "homepage": "https://sky.ee/retrofm",
+   "codec": "AAC",
+   "bitrate": 88,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 166,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "1227cb0c-1047-422e-b54e-b4822ce9f281",
+   "name": "KlaRa Klassika",
+   "streamUrl": "https://icecast.err.ee/klaraklassika.mp3",
+   "homepage": "https://klara.err.ee/klassika",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "classical"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.435,
+    "long": 24.768
+   },
+   "votes": 95,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "af1616c5-56b9-49b0-b7c2-38dfb3c07a49",
+   "name": "Kiss FM",
+   "streamUrl": "https://edge02.cdn.bitflip.ee:8888/KISS",
+   "homepage": "https://sky.ee/kissfm",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": {
+    "lat": 59.404,
+    "long": 24.731
+   },
+   "votes": 86,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "3b46b40f-e906-4566-9213-0f8e79e16da4",
+   "name": "R2 Eesti",
+   "streamUrl": "https://icecast.err.ee/r2eestikorge.mp3",
+   "homepage": "https://r2extra.err.ee/r2eesti",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.435,
+    "long": 24.768
+   },
+   "votes": 60,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "df5f5446-7a0d-4072-8584-1d40c3c65707",
+   "name": "Taifuun FM",
+   "streamUrl": "https://eagle.streemlion.com/proxy/taifuunfm?mp=/stream",
+   "homepage": "https://taifuun.eu/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 30,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "05781c28-9d5a-40c5-af53-a36d2b8e2ae9",
+   "name": "Legendaarne Raadio",
+   "streamUrl": "https://edge01.cdn.bitflip.ee:8888/Legendaarne?_i=52831a92",
+   "homepage": "https://sky.ee/legendaarne",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "hip-hop",
+    "rap"
+   ],
+   "languages": [
+    "english",
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": {
+    "lat": 59.436,
+    "long": 24.746
+   },
+   "votes": 13,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "fde1bf20-db90-4691-a10f-18f91599e597",
+   "name": "Radio Olematu",
+   "streamUrl": "https://radio.olematu.ee/listen/radio_olematu/radio.mp3",
+   "homepage": "https://olematu.ee/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "ai music",
+    "eclectic",
+    "international",
+    "pop",
+    "rock",
+    "variety"
+   ],
+   "languages": [
+    "english",
+    "italian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 8,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "899374d2-d08d-4ea0-aefb-37cff8ef3960",
+   "name": "HITS RADIO ESTONIA",
+   "streamUrl": "https://artemis.streamerr.co/listen/hitsradioestonia/radio.mp3",
+   "homepage": "https://hitsradio.ee/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [],
+   "state": "Tallinn",
+   "geo": {
+    "lat": 59.414,
+    "long": 24.785
+   },
+   "votes": 7,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "2ce7678c-04cb-4821-a75d-132c8d4280c2",
+   "name": "Пирамида FM",
+   "streamUrl": "https://listen9.myradio24.com/93928",
+   "homepage": "https://piramidafm.tilda.ws/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "adult contemporary",
+    "hits",
+    "pop"
+   ],
+   "languages": [
+    "russian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "92804b55-2a5e-47bb-8b4e-b6d12bc620a5",
+   "name": "Raadio REMIX",
+   "streamUrl": "https://stream.hostbee.nl:5740/stream",
+   "homepage": "https://raadioremix.rf.gd/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "alternative",
+    "chill out",
+    "electronic",
+    "hip hop",
+    "indie"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "46859921-bec2-4326-a085-bb1d4728c9b3",
+   "name": "Chat Raadio",
+   "streamUrl": "https://puma.streemlion.com:1830/stream",
+   "homepage": "https://jasva.net/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "pop"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "07520a11-a65e-4298-804f-1ff7b1cacb53",
+   "name": "Radio DRUZI",
+   "streamUrl": "https://stream.druzi.media/192mp3",
+   "homepage": "https://druzi.media/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "culture",
+    "estonia",
+    "news",
+    "pop",
+    "talk",
+    "ukrainian"
+   ],
+   "languages": [
+    "ukrainian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "8cca3d09-a483-4709-af7e-482eb0f62b37",
+   "name": "MyHits Dance",
+   "streamUrl": "https://le304.euddn.net/5d22e31e78bcae636d35732932ba3ebf4c95d392f34caea5b49983989ae66b78255c1075ddc6b343c3d7f5992ccc66a04ffda2e0980d81e77b7abdd2a6024b01c9dce3d16d916f3aa0b820df486aafaab10092c24f7181d7dcaab1c86cd5116197625b5d2d7814fd4c1a522e3465b46fe1206821933443aa2c393af8a55717658e6f7ed97d84bef8f74ab6b00b5434cb7b9754dcd32f66406e6776899eb93c380136c8af38068007585b20230c252422/md_mhdance.aac",
+   "homepage": "https://myhitsdance.pleier.ee/",
+   "codec": "AAC",
+   "bitrate": 160,
+   "tags": [
+    "dance",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "89b39e02-0aba-4c39-b767-984ac7db1859",
+   "name": "XFM Eesti",
+   "streamUrl": "https://sc2.treraadio.ee/xfm-tallinn",
+   "homepage": "https://xfm.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "dance",
+    "hits",
+    "news",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "36fdf13a-63f4-48cf-8bf2-721067f607fa",
+   "name": "Retro FM Eestikas",
+   "streamUrl": "https://stream.skymedia.ee/live/retro2.mp3",
+   "homepage": "https://retrofm.sky.ee/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "adult contemporary",
+    "oldies",
+    "retro"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "4ba1954b-b9a5-47c5-91e4-13439cfdfdfc",
+   "name": "MyHits Rock",
+   "streamUrl": "https://le304.euddn.net/c59f69940aa92d5d673b6b76f220d5482b60382198d6eb420791fb63eaffb3cb77ca3a9cef7310686b67328941c398407715d64658b227ecc2afd97fb89a5a820e12fd705f8dbe7c3b90325e116161bce4f2a3f696050eb127f5f9d42fda22b9d2998175a28102d9f4fc554d187797e349b171d59aa741c919bee94732a10c4b1b5f79f59d810d5c3f10978df3bbd462914f2e88ed4fecd050e4a79a2a34f20edee291512296a94c3a355ae14f69f165ce76f41de2cd8d09e572e0c3f26200ae/MHR_myhitsrock.aac",
+   "homepage": "https://myhitsrock.pleier.ee/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [
+    "indie",
+    "metal",
+    "rock"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "9841da34-8bf0-4916-aa2b-81e620edc454",
+   "name": "XL Radio Estonia",
+   "streamUrl": "https://stream.rcast.net/69794",
+   "homepage": "https://xlradio.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "club",
+    "dance",
+    "pop"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tartu",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "8c877ce7-0f67-4806-960d-8805664b16bd",
+   "name": "Radio Maximum",
+   "streamUrl": "https://stream.radiomaximum.ee/stream",
+   "homepage": "https://radiomaximum.ee/",
+   "codec": "AAC",
+   "bitrate": 320,
+   "tags": [
+    "adult contemporary",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "russian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "8f5a0564-651e-40cc-9740-a2e98d795d9d",
+   "name": "Super Рок",
+   "streamUrl": "https://stream.skymedia.ee/live/rrock",
+   "homepage": "https://super.radio/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "classic rock",
+    "rock"
+   ],
+   "languages": [
+    "russian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "EE"
+  },
+  {
+   "id": "cc242589-6948-4e3c-948a-ef20195805c5",
+   "name": "Raadio 7",
+   "streamUrl": "https://edge05.cdn.bitflip.ee:8888/R7",
+   "homepage": "https://raadio7.ee/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "christian"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Estonia",
+   "geo": {
+    "lat": 59.436,
+    "long": 24.744
+   },
+   "votes": 482,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "f3fe9e03-7cb6-42b3-a71a-f5a94885d0da",
+   "name": "NRJ Tallinn",
+   "streamUrl": "https://edge03.cdn.bitflip.ee:8888/NRJ",
+   "homepage": "https://nrj.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "dance",
+    "edm",
+    "pop dance"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.432,
+    "long": 24.74
+   },
+   "votes": 296,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "a1b766be-8f2a-4556-8f6c-be42ed0accb3",
+   "name": "Sky-Radio",
+   "streamUrl": "https://stream.skymedia.ee/live/SKY",
+   "homepage": "http://www.sky-radio.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [
+    "russian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 217,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "cd706e3b-e435-4e5a-bf8e-c0e2c5072de0",
+   "name": "Power Hit Radio",
+   "streamUrl": "https://ice.leviracloud.eu/phr96-aac?",
+   "homepage": "http://power.tv3.ee/",
+   "codec": "AAC",
+   "bitrate": 0,
+   "tags": [
+    "hot adult contemporary"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 194,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "37723443-7b1f-4001-a9ec-d37a12b63ceb",
+   "name": "IDA Radio",
+   "streamUrl": "https://broadcast.idaidaida.net:8000/stream",
+   "homepage": "https://idaidaida.net/",
+   "codec": "AAC",
+   "bitrate": 320,
+   "tags": [
+    "alternative",
+    "music",
+    "popular music"
+   ],
+   "languages": [
+    "estonian",
+    "finnish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "278b3d8e-8f30-43cd-853d-a0cd7aba4894",
+   "name": "Legendaarne Raadio",
+   "streamUrl": "https://stream.skymedia.ee/live/Legendaarne",
+   "homepage": "https://sky.ee/legendaarne",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "hip-hop",
+    "rap"
+   ],
+   "languages": [
+    "english",
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": {
+    "lat": 59.428,
+    "long": 24.732
+   },
+   "votes": 12,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "3cca537f-0533-4810-b962-c9885527c9d6",
+   "name": "RUUT FM",
+   "streamUrl": "https://a1.asurahosting.com/listen/ruut_fm/radio.mp3",
+   "homepage": "https://ruutfm.treraadio.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 57.775,
+    "long": 26.044
+   },
+   "votes": 9,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "8292e637-6ed6-4ed3-8273-f3e3b84913bc",
+   "name": "Hits Show Radio - EST",
+   "streamUrl": "https://stream.zeno.fm/dghp9excl67vv",
+   "homepage": "https://videod-elust-enesest.wixsite.com/kuula-raadiojaama",
+   "codec": "MP3",
+   "bitrate": 112,
+   "tags": [
+    "dance",
+    "house",
+    "pop",
+    "trance"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "d949f80a-9a36-4b8e-b128-4fb6f3750a83",
+   "name": "Hot Fields AI Radio",
+   "streamUrl": "https://radio.citrina.ee/listen/hot_fields_ai_radio/radio.mp3",
+   "homepage": "https://radio.citrina.ee/public/hot_fields_ai_radio",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "estoni"
+   ],
+   "state": "Viljandi maakond",
+   "geo": {
+    "lat": 58.483,
+    "long": 25.701
+   },
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "63605956-305a-4806-80a0-c3da8e62f3ff",
+   "name": "NEUROSCOPE FM",
+   "streamUrl": "https://a13.asurahosting.com/listen/neuroscope_fm/radio.mp3",
+   "homepage": "https://neuroscope.fm/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "d12b1da7-33ca-42a3-bfd3-6d5fc7da5c21",
+   "name": "NRJ DnB",
+   "streamUrl": "https://stream.skymedia.ee/live/NRJdnb",
+   "homepage": "https://nrj.sky.ee/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "dance",
+    "electronic"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "4500023c-8d14-4a1e-8913-a405c58ab6ed",
+   "name": "Super Ретро",
+   "streamUrl": "https://stream.skymedia.ee/live/rrretro",
+   "homepage": "https://superradio.sky.ee/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "pop",
+    "retro"
+   ],
+   "languages": [
+    "russian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "6b2be64f-bc1e-4076-b447-853c4da80cb8",
+   "name": "Vikerraadio",
+   "streamUrl": "https://icecast.err.ee/vikerraadiokorge.mp3",
+   "homepage": "https://vikerraadio.err.ee/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "news"
+   ],
+   "languages": [
+    "eesti"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.435,
+    "long": 24.768
+   },
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "df89e10f-97af-4a04-b1eb-c42e2511188f",
+   "name": "SSS-Radio",
+   "streamUrl": "https://uvn-67-97.tll01.zonevs.eu/sss-radio",
+   "homepage": "https://sss-radio.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "news",
+    "oldies",
+    "pop",
+    "rock",
+    "talk"
+   ],
+   "languages": [
+    "finnish"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "c9fbea70-22ed-4f24-952f-fe1d7f713f51",
+   "name": "Tunitemusic",
+   "streamUrl": "https://stream.radiojar.com/6x51bmzpfy3vv",
+   "homepage": "https://tunitemusic.com/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "ambient",
+    "chill out",
+    "classical",
+    "jazz"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "1c60a71b-13aa-4e2e-8ee6-5eb27da51993",
+   "name": "Space FM",
+   "streamUrl": "https://stream.spacefm.ee/live",
+   "homepage": "https://spacefm.ee/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "pop"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "EE"
+  },
+  {
+   "id": "aaa0d15b-f0c1-4128-8379-71cb34108b18",
+   "name": "Tagatuba FM",
+   "streamUrl": "https://mcr.streams.gr:10416/stream",
+   "homepage": "https://tagatubaraadio.ee/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "rock"
+   ],
+   "languages": [
+    "estonian"
+   ],
+   "state": "Tallinn",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "EE"
+  }
+ ]
+}

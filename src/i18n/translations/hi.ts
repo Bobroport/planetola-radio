@@ -21,6 +21,12 @@ export const hi: Dictionary = {
   "city.nowPlaying": "अभी चल रहा है",
   "city.notFound": "शहर नहीं मिला",
   "cities.title": "शहर",
+  "cities.countries": "देश के अनुसार स्टेशन",
+  "cities.countriesHint": "यूरोप, रूस और अमेरिका की पूरी सूचियाँ",
+  "countries.title": "देश",
+  "country.allStations": "सभी स्टेशन: {country}",
+  "country.filter": "नाम या टैग से फ़िल्टर करें",
+  "country.notFound": "देश नहीं मिला",
 
   "region.cis": "रूस और पड़ोसी देश",
   "region.europe": "यूरोप",
@@ -52,6 +58,7 @@ export const hi: Dictionary = {
   "search.all": "सभी स्टेशन: {count}",
   "search.reset": "रीसेट करें",
   "search.empty": "कुछ नहीं मिला",
+  "search.loading": "पूरा कैटलॉग लोड हो रहा है…",
 
   "stations.title": "पसंदीदा स्टेशन",
   "stations.empty": "अभी कोई पसंदीदा स्टेशन नहीं है। किसी स्टेशन को यहाँ जोड़ने के लिए उसके पास वाले तारे पर टैप करें।",

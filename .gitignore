@@ -50,3 +50,6 @@ scripts/.cache/
 
 # Скриншоты для App Store Connect: бинарники не храним в git
 store/screenshots/
+
+# Баннер шапки страницы App Store (Header), тоже бинарник
+store/marketing/

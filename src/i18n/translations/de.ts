@@ -21,6 +21,12 @@ export const de: Dictionary = {
   "city.nowPlaying": "läuft gerade",
   "city.notFound": "Stadt nicht gefunden",
   "cities.title": "Städte",
+  "cities.countries": "Sender nach Land",
+  "cities.countriesHint": "Vollständige Listen für Europa, Russland und die USA",
+  "countries.title": "Länder",
+  "country.allStations": "Alle Sender: {country}",
+  "country.filter": "Nach Name oder Tag filtern",
+  "country.notFound": "Land nicht gefunden",
 
   "region.cis": "Russland und Nachbarländer",
   "region.europe": "Europa",
@@ -52,6 +58,7 @@ export const de: Dictionary = {
   "search.all": "Alle Sender: {count}",
   "search.reset": "Zurücksetzen",
   "search.empty": "Nichts gefunden",
+  "search.loading": "Gesamter Katalog wird geladen…",
 
   "stations.title": "Lieblingssender",
   "stations.empty": "Noch keine Lieblingssender. Tippe auf den Stern neben einem Sender, um ihn hier hinzuzufügen.",

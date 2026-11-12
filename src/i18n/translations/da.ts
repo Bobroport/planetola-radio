@@ -21,6 +21,12 @@ export const da: Dictionary = {
   "city.nowPlaying": "afspilles nu",
   "city.notFound": "Byen blev ikke fundet",
   "cities.title": "Byer",
+  "cities.countries": "Stationer efter land",
+  "cities.countriesHint": "Komplette lister for Europa, Rusland og USA",
+  "countries.title": "Lande",
+  "country.allStations": "Alle stationer: {country}",
+  "country.filter": "Filtrer efter navn eller tag",
+  "country.notFound": "Landet blev ikke fundet",
 
   "region.cis": "Rusland og nabolande",
   "region.europe": "Europa",
@@ -52,6 +58,7 @@ export const da: Dictionary = {
   "search.all": "Alle stationer: {count}",
   "search.reset": "Nulstil",
   "search.empty": "Intet fundet",
+  "search.loading": "Indlæser hele kataloget…",
 
   "stations.title": "Favoritstationer",
   "stations.empty": "Ingen favoritstationer endnu. Tryk på stjernen ved en station for at tilføje den her.",

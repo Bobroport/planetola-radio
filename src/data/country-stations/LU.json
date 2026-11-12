@@ -1,0 +1,232 @@
+{
+ "countryCode": "LU",
+ "stations": [
+  {
+   "id": "05c826f8-95e7-41f0-893e-c1c4f48fcd05",
+   "name": "Braintrip Radio",
+   "streamUrl": "https://stream.laut.fm/braintrip-radio",
+   "homepage": "https://laut.fm/braintrip-radio",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "krautrock",
+    "psychedelic rock",
+    "space rock",
+    "stoner"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 84,
+   "clickCount": 8,
+   "countryCode": "LU"
+  },
+  {
+   "id": "80f07344-504e-48dd-8775-ab60c4a82068",
+   "name": "Radio 100komma7",
+   "streamUrl": "https://stream.100komma7.lu/100komma7/live/mp3/128/stream.mp3",
+   "homepage": "https://100komma7.lu/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "french",
+    "luxembourgish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 49.622,
+    "long": 6.152
+   },
+   "votes": 149,
+   "clickCount": 6,
+   "countryCode": "LU"
+  },
+  {
+   "id": "c7e4019b-f3ac-4167-a1e7-f7e5438ae218",
+   "name": "AAAudio",
+   "streamUrl": "https://rocket.streamradio.fr:8008/",
+   "homepage": "https://yomusic.top/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ambient",
+    "downtempo",
+    "electronic",
+    "electronica",
+    "jazz",
+    "r&b"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 49.61,
+    "long": 6.13
+   },
+   "votes": 4,
+   "clickCount": 3,
+   "countryCode": "LU"
+  },
+  {
+   "id": "b2989e82-db94-455a-babb-5d28d74c547a",
+   "name": "RTL Today",
+   "streamUrl": "https://shoutcast.rtl.lu/rtltodayradio",
+   "homepage": "http://today.rtl.lu/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 8,
+   "clickCount": 2,
+   "countryCode": "LU"
+  },
+  {
+   "id": "971f6221-4fee-11e9-a4d7-52543be04c81",
+   "name": "Free Radio Luxembourg FRL",
+   "streamUrl": "https://www.radioking.com/play/rfm-luxembourg/137599",
+   "homepage": "https://www.radioking.com/play/rfm-luxembourg/137599",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop",
+    "rock"
+   ],
+   "languages": [
+    "luxembourgish"
+   ],
+   "state": "Luxembourg",
+   "geo": null,
+   "votes": 448,
+   "clickCount": 1,
+   "countryCode": "LU"
+  },
+  {
+   "id": "8259a0dc-9c0e-4696-8f66-4bad021f0c55",
+   "name": "RTL Gold",
+   "streamUrl": "https://shoutcast.rtl.lu/rtlgold",
+   "homepage": "https://play.rtl.lu/live/rtl-gold",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 140,
+   "clickCount": 1,
+   "countryCode": "LU"
+  },
+  {
+   "id": "af7796b0-dece-4126-a789-e2d1eba574e1",
+   "name": "Luxembourg Global Radio",
+   "streamUrl": "https://radio.globalradio.lu:8000/radio.mp3",
+   "homepage": "https://globalradio.lu/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "easy listening",
+    "electronic",
+    "pop rock"
+   ],
+   "languages": [],
+   "state": "Luxembourg",
+   "geo": {
+    "lat": 49.625,
+    "long": 6.155
+   },
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "LU"
+  },
+  {
+   "id": "14ef7efc-5537-439e-8155-c11cc2ef8154",
+   "name": "Radio Gutt Laun",
+   "streamUrl": "https://streams.radio.co/sa631ff66a/listen",
+   "homepage": "https://www.rgl.lu/index.php",
+   "codec": "MP3",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 53,
+   "clickCount": 0,
+   "countryCode": "LU"
+  },
+  {
+   "id": "cd3c305e-7058-482f-97f0-f3362a60972d",
+   "name": "Radio Puls Luxembourg",
+   "streamUrl": "https://uk1.listen2myradio.com:2199/listen.php?port=8312&type=s2&mount=/stream",
+   "homepage": "https://www.radiopuls.lu/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "folk",
+    "serbian"
+   ],
+   "languages": [
+    "serbian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 47,
+   "clickCount": 0,
+   "countryCode": "LU"
+  },
+  {
+   "id": "0c3bfd01-5eb0-44d8-a8b8-1ef2c1909db4",
+   "name": "FCE-CONTINUO Webradio",
+   "streamUrl": "https://www.radioking.com/play/fce-continuo",
+   "homepage": "https://fce-continuo.websiteradio.co/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "alterclassique",
+    "classical"
+   ],
+   "languages": [
+    "français - lëtzebuergesch"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 0,
+   "countryCode": "LU"
+  },
+  {
+   "id": "219bd225-d271-4592-a727-6db4452e0d0f",
+   "name": "Radio C Luxembourg",
+   "streamUrl": "https://edge01.streamonkey.net/radioc-live",
+   "homepage": "https://radioc.eu/",
+   "codec": "AAC",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 0,
+   "countryCode": "LU"
+  },
+  {
+   "id": "56a300ae-2a25-443b-9363-fe2b96987c79",
+   "name": "Radio RADIJACIJA",
+   "streamUrl": "https://a12.asurahosting.com/listen/radio_radijacija/radio.mp3",
+   "homepage": "https://radio.radijacija.eu/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "LU"
+  }
+ ]
+}

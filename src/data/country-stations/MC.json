@@ -1,0 +1,92 @@
+{
+ "countryCode": "MC",
+ "stations": [
+  {
+   "id": "469a80f5-755e-11e9-af37-52543be04c81",
+   "name": "Radio Monte Carlo Italia",
+   "streamUrl": "https://icy.unitedradio.it/rmcweb005",
+   "homepage": "https://www.radiomontecarlo.net/sezioni/478/rmc-italia",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "italian",
+    "italian oldies",
+    "italian pop"
+   ],
+   "languages": [
+    "italian"
+   ],
+   "state": "Monte Carlo",
+   "geo": null,
+   "votes": 864,
+   "clickCount": 6,
+   "countryCode": "MC"
+  },
+  {
+   "id": "3f68c6ee-6b03-45e9-a3b7-0118518fd2db",
+   "name": "Riviera Radio",
+   "streamUrl": "https://media-ice.musicradio.com/RivieraRadio",
+   "homepage": "https://www.rivieraradio.mc/",
+   "codec": "AAC",
+   "bitrate": 48,
+   "tags": [],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 15,
+   "clickCount": 6,
+   "countryCode": "MC"
+  },
+  {
+   "id": "6bb794f1-cdae-401b-9094-8fd1c91e9137",
+   "name": "Yellow Riviera",
+   "streamUrl": "https://yellowradio.ice.infomaniak.ch/yellow01.mp3",
+   "homepage": "https://yellow.radio/radiochannel/yellow-riviera/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "deep house",
+    "soulfull"
+   ],
+   "languages": [
+    "french"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.733,
+    "long": 7.425
+   },
+   "votes": 22,
+   "clickCount": 5,
+   "countryCode": "MC"
+  },
+  {
+   "id": "26f9775d-ff1c-4ea7-9613-341739edd3a5",
+   "name": "Yellow Party",
+   "streamUrl": "https://yellowradio.ice.infomaniak.ch/yellow02.aac",
+   "homepage": "https://yellow.radio/radiochannel/yellow-party/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "deep",
+    "deep house",
+    "house",
+    "soulfull"
+   ],
+   "languages": [
+    "french"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 43.729,
+    "long": 7.42
+   },
+   "votes": 16,
+   "clickCount": 3,
+   "countryCode": "MC"
+  }
+ ]
+}

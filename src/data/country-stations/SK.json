@@ -1,0 +1,1448 @@
+{
+ "countryCode": "SK",
+ "stations": [
+  {
+   "id": "a39a5e69-81c7-4823-aabd-202472fc644b",
+   "name": "RÁDIO EXPRES",
+   "streamUrl": "https://stream.bauermedia.sk/128.mp3",
+   "homepage": "https://www.expres.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1200,
+   "clickCount": 34,
+   "countryCode": "SK"
+  },
+  {
+   "id": "90ad59d7-68b5-4a49-addd-9498843da6f2",
+   "name": "Radio Slovensko",
+   "streamUrl": "https://icecast.stv.livebox.sk/slovensko_128.mp3",
+   "homepage": "https://slovensko.rtvs.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 48.154,
+    "long": 17.114
+   },
+   "votes": 1772,
+   "clickCount": 26,
+   "countryCode": "SK"
+  },
+  {
+   "id": "5d4051ee-246c-429f-9fa2-651d9f043659",
+   "name": "Europa 2",
+   "streamUrl": "https://stream.bauermedia.sk/europa2.mp3",
+   "homepage": "https://www.europa2.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 523,
+   "clickCount": 21,
+   "countryCode": "SK"
+  },
+  {
+   "id": "81b88161-c3f7-4958-8165-7d408d7689db",
+   "name": "Fun Radio  Chill",
+   "streamUrl": "https://stream.funradio.sk:8000/chill128.mp3",
+   "homepage": "http://www.funradio.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "chill",
+    "chillout",
+    "jazz",
+    "smooth jazz"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 48.154,
+    "long": 17.107
+   },
+   "votes": 125,
+   "clickCount": 12,
+   "countryCode": "SK"
+  },
+  {
+   "id": "dfb09fd4-9844-46ef-8905-906e6b1e62eb",
+   "name": "Rádio Melody",
+   "streamUrl": "https://stream.bauermedia.sk/melody-hi.mp3",
+   "homepage": "https://www.radiomelody.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 107,
+   "clickCount": 10,
+   "countryCode": "SK"
+  },
+  {
+   "id": "6842fffe-1676-47d7-9a2e-9c859b25af26",
+   "name": "Radio Zabava",
+   "streamUrl": "https://stream.zeno.fm/eyac00cx1nhvv",
+   "homepage": "https://zeno.fm/radio/radio-zabavaqd3c00cx1nhvv/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "folk"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 604,
+   "clickCount": 8,
+   "countryCode": "SK"
+  },
+  {
+   "id": "3e108ce9-d0cd-4ea8-9392-1c2a99bb47f8",
+   "name": "BestFM",
+   "streamUrl": "https://stream3.bestfm.sk:8000/160.aac",
+   "homepage": "https://www.bestfm.sk/",
+   "codec": "AAC",
+   "bitrate": 160,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 219,
+   "clickCount": 7,
+   "countryCode": "SK"
+  },
+  {
+   "id": "1c05a63e-76a3-45ad-be21-13b1ec74bf6b",
+   "name": "Radio Melody",
+   "streamUrl": "https://stream.bauermedia.sk/melody-lo.mp3?aw_0_req.gdpr=false&aw_0_1st.playerid=melody_web_mobile",
+   "homepage": "https://www.radiomelody.sk/",
+   "codec": "MP3",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 84,
+   "clickCount": 7,
+   "countryCode": "SK"
+  },
+  {
+   "id": "329577b0-b2ed-4191-bab7-a44dd1d790c0",
+   "name": "Rádio FM",
+   "streamUrl": "https://icecast.stv.livebox.sk/fm_128.mp3",
+   "homepage": "https://fm.rtvs.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 79,
+   "clickCount": 7,
+   "countryCode": "SK"
+  },
+  {
+   "id": "bda90961-e6e1-4964-8516-90a0b72fb83d",
+   "name": "Rádio Sity",
+   "streamUrl": "https://radiosity.online:8000/aac",
+   "homepage": "https://radiosity.sk/",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [
+    "dance"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 816,
+   "clickCount": 6,
+   "countryCode": "SK"
+  },
+  {
+   "id": "9c57e5ad-5d3a-4fea-bdd2-880de93a60fe",
+   "name": "Rádio Rock",
+   "streamUrl": "https://stream.bauermedia.sk/rock-hi.mp3?aw_0_req.gdpr=false",
+   "homepage": "https://radiorock.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 48.143,
+    "long": 17.106
+   },
+   "votes": 1,
+   "clickCount": 6,
+   "countryCode": "SK"
+  },
+  {
+   "id": "f7112601-ad6b-4cbe-a2b3-be99cbe15229",
+   "name": "Fit family Radio",
+   "streamUrl": "https://solid67.streamupsolutions.com/proxy/reqsithw/stream",
+   "homepage": "https://www.fitfamilyradio.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "slovak"
+   ],
+   "state": "Slovenská republika",
+   "geo": {
+    "lat": 48.356,
+    "long": 19.571
+   },
+   "votes": 356,
+   "clickCount": 5,
+   "countryCode": "SK"
+  },
+  {
+   "id": "4bbf64b0-ab2f-4da7-96bb-0529b1f21331",
+   "name": "Radio VIVA",
+   "streamUrl": "https://stream.sepia.sk/viva128.mp3",
+   "homepage": "https://radioviva.zoznam.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 49,
+   "clickCount": 5,
+   "countryCode": "SK"
+  },
+  {
+   "id": "9c9a7d14-7226-4ae7-97dd-e8ac3198d7b3",
+   "name": "Melody - Best Of 80s",
+   "streamUrl": "https://stream.bauermedia.sk/best-of-80s-hi.aac",
+   "homepage": "https://rayo.sk/best-of-80s",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "cz-sk",
+    "retro hits"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 5,
+   "countryCode": "SK"
+  },
+  {
+   "id": "648e9e34-640d-4c9c-acc8-32d72063c44f",
+   "name": "Rádio Relax International",
+   "streamUrl": "https://stream.relaxfm.ee/international",
+   "homepage": "https://www.radiorelax.ua/",
+   "codec": "AAC",
+   "bitrate": 96,
+   "tags": [
+    "relax"
+   ],
+   "languages": [
+    "ucrânia"
+   ],
+   "state": "Kiev",
+   "geo": null,
+   "votes": 315,
+   "clickCount": 4,
+   "countryCode": "SK"
+  },
+  {
+   "id": "f77411a2-8285-4271-8fa8-178a0792a22c",
+   "name": "METALSCENA netRADIO",
+   "streamUrl": "https://listen.radioking.com/radio/263218/stream/308365",
+   "homepage": "https://www.metalscena.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "heavy metal",
+    "underground"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 198,
+   "clickCount": 4,
+   "countryCode": "SK"
+  },
+  {
+   "id": "571b264d-e432-4281-93fb-0efc77dd5fb6",
+   "name": "RÁDIO VLNA Oldies Party",
+   "streamUrl": "https://stream.radiovlna.sk/party-hi.mp3",
+   "homepage": "https://radiovlna.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 83,
+   "clickCount": 4,
+   "countryCode": "SK"
+  },
+  {
+   "id": "2b6f3fe7-29fa-4c9b-9687-ba7b54730df5",
+   "name": "Radio Basavel",
+   "streamUrl": "https://stream.zeno.fm/6gd9c6yn4nhvv",
+   "homepage": "https://zeno.fm/radio/radio-basavel/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "basavel",
+    "bašavel",
+    "ciganske"
+   ],
+   "languages": [
+    "roma",
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 55,
+   "clickCount": 4,
+   "countryCode": "SK"
+  },
+  {
+   "id": "10ee764e-6213-488b-bc2b-5b6d973a5c06",
+   "name": "Hitrádio Slovakia",
+   "streamUrl": "https://hitradioslovakia.stream.laut.fm/hitradioslovakia",
+   "homepage": "https://www.hitradioslovakia.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 54,
+   "clickCount": 4,
+   "countryCode": "SK"
+  },
+  {
+   "id": "fb47dc6d-e323-4fbe-af3e-52980e11a5c9",
+   "name": "SubFM",
+   "streamUrl": "https://stream.subfm.sk/subfm",
+   "homepage": "https://www.subfm.sk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "electronic",
+    "electronica",
+    "hip-hop",
+    "nu-jazz"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 48.59,
+    "long": 17.831
+   },
+   "votes": 32,
+   "clickCount": 4,
+   "countryCode": "SK"
+  },
+  {
+   "id": "4aab763b-38ad-42ba-af29-a377d9b26943",
+   "name": "InfoVojna 2",
+   "streamUrl": "https://stream2.infovojna.com:8000/live",
+   "homepage": "https://www.infovojna.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 31,
+   "clickCount": 4,
+   "countryCode": "SK"
+  },
+  {
+   "id": "869d9a1c-1b98-4454-9026-a2e21be79667",
+   "name": "Melody - Filmové hity",
+   "streamUrl": "https://stream.bauermedia.sk/filmove-hity-hi.aac",
+   "homepage": "https://rayo.sk/filmove-hity",
+   "codec": "AAC+",
+   "bitrate": 95,
+   "tags": [
+    "movie music",
+    "movie soundtracks"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 4,
+   "countryCode": "SK"
+  },
+  {
+   "id": "4e7ad858-9752-4fd3-a79e-940c00d27bbc",
+   "name": "Melody - Československá diskotéka",
+   "streamUrl": "https://stream.bauermedia.sk/ceskoslovenska-diskoteka-hi.aac",
+   "homepage": "https://rayo.sk/ceskoslovenska-diskoteka",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "cz-sk"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 4,
+   "countryCode": "SK"
+  },
+  {
+   "id": "79bfc948-cc01-4b1e-82f1-1eb1ea4556b7",
+   "name": "Rádio Paráda",
+   "streamUrl": "https://extra.mediacp.eu/stream/RadioParada,o.z.",
+   "homepage": "https://www.radioparada.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "various"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 199,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "2237de8b-11bf-4c6f-a857-aa51d994c240",
+   "name": "RÁDIO VLNA 60-70",
+   "streamUrl": "https://stream.radiovlna.sk/gold-hi.mp3",
+   "homepage": "https://radiovlna.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "60s",
+    "70s"
+   ],
+   "languages": [],
+   "state": "Slovensko",
+   "geo": {
+    "lat": 49.128,
+    "long": 20.428
+   },
+   "votes": 113,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "a1382ead-1c26-4ba7-a431-c5e17fb4e577",
+   "name": "Rádio KIKS - Big 90s",
+   "streamUrl": "https://online.radiokiks.sk:8000/kiks_big90s.mp3",
+   "homepage": "https://www.radiokiks.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "90's",
+    "90s"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 95,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "7d334f43-30b8-49e3-9a7a-6db9fdd97eec",
+   "name": "Rádio Folk",
+   "streamUrl": "https://mpc1.mediacp.eu/stream/demo2",
+   "homepage": "https://www.radiofolk.sk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "ľudovky"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 74,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "f69a6077-0486-47b3-928d-3df68e09eb3d",
+   "name": "Rádio Devín",
+   "streamUrl": "https://icecast.stv.livebox.sk/devin_128.mp3",
+   "homepage": "https://devin.rtvs.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classical",
+    "culture",
+    "music"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 33,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "b1b95ad4-306b-4fb8-9ae8-7859634beffe",
+   "name": "897",
+   "streamUrl": "https://c34.radioboss.fm:8106/stream",
+   "homepage": "https://www.897radio.online/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "club",
+    "club dance",
+    "club dance electronic house trance",
+    "dance",
+    "dance classics",
+    "deep house"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 24,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "47751242-203e-49a0-9755-0a2aef69c581",
+   "name": "InfoVojna",
+   "streamUrl": "https://stream3.infovojna.com:8000/live",
+   "homepage": "https://www.infovojna.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 20,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "b141d7a8-81a2-4e96-8b3d-23e7938193fa",
+   "name": "Radio X Metal",
+   "streamUrl": "https://stream.radiox.sk:8443/metal.mp3",
+   "homepage": "https://stream.radiox.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "metal"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "Uniza",
+   "geo": {
+    "lat": 49.206,
+    "long": 18.758
+   },
+   "votes": 5,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "54c65ed6-6d1b-487f-98ae-a83a7272f069",
+   "name": "Rádio Sebastián",
+   "streamUrl": "https://s2.ssl-stream.com/listen/radiosebastian/radio.mp3",
+   "homepage": "https://www.radiosebastian.eu/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "def06385-f1ab-40a9-8cbb-ae61f9b53d08",
+   "name": "Radio X Ľudovky (Uniza)",
+   "streamUrl": "https://stream.radiox.sk:8443/ludovky.mp3",
+   "homepage": "https://www.radiox.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "folk"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "Uniza",
+   "geo": {
+    "lat": 49.207,
+    "long": 18.758
+   },
+   "votes": 2,
+   "clickCount": 3,
+   "countryCode": "SK"
+  },
+  {
+   "id": "0ab0056c-6b80-11ea-b1cf-52543be04c81",
+   "name": "Pátria Rádió",
+   "streamUrl": "https://icecast.stv.livebox.sk/patria_128.mp3",
+   "homepage": "https://patria.rtvs.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "minority",
+    "public radio",
+    "talk"
+   ],
+   "languages": [
+    "hungarian",
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1487,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "3f07f08f-5e26-4794-947e-9565b6b50eeb",
+   "name": "Rádio Rock SV",
+   "streamUrl": "https://s2.myradiostream.com/:4870/listen.mp3",
+   "homepage": "https://www.radiorocksv.eu/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 203,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "2d04650f-78a6-41b5-8e0e-f5b79bc60afe",
+   "name": "Rock Radio",
+   "streamUrl": "https://stream.bauermedia.sk/rock-hi.mp3",
+   "homepage": "https://radiorock.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 161,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "8f423278-840d-40b3-bb3e-6b69f74c8492",
+   "name": "Rádio KIKS - Big 80s",
+   "streamUrl": "https://online.radiokiks.sk:8000/kiks_big80s.mp3",
+   "homepage": "https://www.radiokiks.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 101,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "6ae3a862-44eb-44da-8c21-d87aaa10e582",
+   "name": "Top Rádio",
+   "streamUrl": "https://solid1.streamupsolutions.com/proxy/vhhggmih/stream",
+   "homepage": "https://www.radiotop.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "rock"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 69,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "5efb7095-c97b-4f67-98b9-eaf1239e9011",
+   "name": "radio metropolitan",
+   "streamUrl": "https://mpc2.mediacp.eu:8214/stream",
+   "homepage": "https://www.facebook.com/radiometropolitan/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "nitra"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "n",
+   "geo": null,
+   "votes": 31,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "1592f35d-74f8-4ed1-a2bf-ad2df2f4e50d",
+   "name": "Rádio Regina Západ",
+   "streamUrl": "https://icecast.stv.livebox.sk/regina-ba_128.mp3",
+   "homepage": "https://reginazapad.rtvs.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "culture",
+    "music",
+    "news",
+    "oldies",
+    "regional",
+    "talk"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 22,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "8e94c1a0-d37c-4f3a-aa1a-0911a57fbc30",
+   "name": "Party Radio",
+   "streamUrl": "https://mpc1.mediacp.eu/stream/partyradio",
+   "homepage": "https://www.partyradio.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "party",
+    "party hits"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "fa0d1cc7-d162-41a3-9192-6742ad04a401",
+   "name": "Rádio Pyramída",
+   "streamUrl": "https://icecast.stv.livebox.sk/klasika_128.mp3",
+   "homepage": "https://pyramida.rtvs.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classical",
+    "culture",
+    "drama",
+    "music"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 16,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "8df48ad2-62ab-421d-828e-7a13e0499c77",
+   "name": "Infovojna",
+   "streamUrl": "https://stream1.infovojna.com:8000/live",
+   "homepage": "https://www.infovojna.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "639ac572-c039-4860-b98d-e180e386c0e8",
+   "name": "Radio Suita",
+   "streamUrl": "https://radioserver.online/proxy/radiosuita/radiosuita.mp3",
+   "homepage": "https://suita.sk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "classical music",
+    "jazz",
+    "talk",
+    "world music"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 48.157,
+    "long": 17.114
+   },
+   "votes": 7,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "70e74968-bb73-4555-92fc-49004b0f525d",
+   "name": "Radio X 256",
+   "streamUrl": "https://stream.radiox.sk:8443/radiox_256.mp3",
+   "homepage": "https://www.radiox.sk/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [
+    "slovak"
+   ],
+   "state": "Uniza",
+   "geo": {
+    "lat": 49.207,
+    "long": 18.758
+   },
+   "votes": 3,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "a2157dbb-a1fd-4caa-b60e-2ac1d1b94147",
+   "name": "Rádio LASKARO",
+   "streamUrl": "https://servidor38-1.brlogic.com:7204/live",
+   "homepage": "https://www.radiolaskaro.sk/favicon.ico",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "dance balade romantic pop rock rock'n'roll",
+    "goldies",
+    "rock dance disco romantic love songs ballads oldies folk eurodance trance instrumental czech music"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "Prešov",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "9312ae29-0319-486a-854f-78e57493f2f9",
+   "name": "Radio X64",
+   "streamUrl": "https://stream.radiox.sk:8443/radiox_64.mp3",
+   "homepage": "https://www.radiox.sk/",
+   "codec": "MP3",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [
+    "slovak"
+   ],
+   "state": "Uniza",
+   "geo": {
+    "lat": 49.207,
+    "long": 18.758
+   },
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "429c2099-26e7-416c-aeab-5ba4407d6973",
+   "name": "Europa 2 - Top 40",
+   "streamUrl": "https://stream.bauermedia.sk/top-40-hi.aac",
+   "homepage": "https://rayo.sk/top40",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "852668be-3247-46e7-9e6d-8fb1ec45352c",
+   "name": "Melody - Oldies Party",
+   "streamUrl": "https://stream.bauermedia.sk/oldies-party-hi.aac",
+   "homepage": "https://rayo.sk/oldies-party",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "oldies"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "3b3e684e-252b-4623-86c8-4113935159f8",
+   "name": "Europa 2 - Fitness",
+   "streamUrl": "https://stream.bauermedia.sk/fitness-hi.aac",
+   "homepage": "https://rayo.sk/fitness",
+   "codec": "AAC+",
+   "bitrate": 95,
+   "tags": [
+    "fitness"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "aac35c88-bee2-4aa2-a375-536c0bf81e10",
+   "name": "Melody - Najkrajšie slaďáky",
+   "streamUrl": "https://stream.bauermedia.sk/najkrajsie-sladaky-hi.aac",
+   "homepage": "https://rayo.sk/balady-vsetkych-cias",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "love songs"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 2,
+   "countryCode": "SK"
+  },
+  {
+   "id": "f0b20e25-3fcd-4d5c-95e9-85f051a81fbb",
+   "name": "Rádio BestFM",
+   "streamUrl": "https://stream3.bestfm.sk:8000/128.mp3",
+   "homepage": "https://bestfm.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 197,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "07948109-21d6-4646-ba28-c35467973895",
+   "name": "Rádio KIKS - Rock Music",
+   "streamUrl": "https://online.radiokiks.sk:8000/kiks_rock.mp3",
+   "homepage": "https://www.rockmusic.sk/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "classic rock",
+    "hard rock",
+    "rock"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 119,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "188a79f7-f612-43b9-8216-afc25d9ce2bd",
+   "name": "FRESH Rádio",
+   "streamUrl": "https://icecast2.radionet.sk/freshradio.sk",
+   "homepage": "https://www.freshradio.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 35,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "524c6d90-493a-4692-aa6d-292ab4cc6350",
+   "name": "Rádio KIKS",
+   "streamUrl": "https://online.radiokiks.sk:8000/kiks_hq.mp3",
+   "homepage": "https://www.radiokiks.sk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "pop"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 22,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "d05ad985-7193-4de8-80ca-225052e6b1d6",
+   "name": "Rádio MÁRIA SLOVENSKO",
+   "streamUrl": "https://dreamsiteradiocp5.com/proxy/radiomariaslomp3?mp=/stream.mp3",
+   "homepage": "https://www.radiomaria.sk/",
+   "codec": "MP3",
+   "bitrate": 40,
+   "tags": [],
+   "languages": [],
+   "state": "Slovensko",
+   "geo": {
+    "lat": 48.151,
+    "long": 17.111
+   },
+   "votes": 21,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "440031ae-eeeb-4dd0-beb7-4ca89492d843",
+   "name": "TT Rádio",
+   "streamUrl": "https://solid33.streamupsolutions.com/proxy/mujdmamw/trnavske",
+   "homepage": "https://trnavske.radio/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "c1d05d02-4974-419c-a9cb-030d9739a052",
+   "name": "Rádio RSI",
+   "streamUrl": "https://icecast.stv.livebox.sk/rsi_128.mp3",
+   "homepage": "https://rsi.rtvs.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "culture",
+    "international",
+    "news",
+    "talk"
+   ],
+   "languages": [
+    "english",
+    "french",
+    "german"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "b476dd00-2453-42d2-89bb-ccfb61f28b67",
+   "name": "Fred Film Radio-25 Slovenčina",
+   "streamUrl": "https://s10.webradio-hosting.com/proxy/fredradiosk/stream",
+   "homepage": "https://www.fred.fm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "film"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 10,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "aa6c245b-ce81-40d5-a3d2-7102d4526be6",
+   "name": "Radio KIKS Československo",
+   "streamUrl": "https://online.radiokiks.sk:8000/kiks_czsk.mp3",
+   "homepage": "https://radiokiks.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "45efb51c-b6a3-401e-971f-44e1c4d6005b",
+   "name": "Rádio 7",
+   "streamUrl": "https://play.radio7.sk/128",
+   "homepage": "https://radio7.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "272a355b-954c-4d5f-9e37-00fb2911fd73",
+   "name": "Rádio Expres - Best Of 90s",
+   "streamUrl": "https://stream.bauermedia.sk/best-of-90s-hi.aac",
+   "homepage": "https://rayo.sk/best-of-90",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "90's"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "6845849f-ada1-40f2-9447-0e135e628b9f",
+   "name": "Rádio Expres - Detské hity",
+   "streamUrl": "https://stream.bauermedia.sk/detske-hity-hi.aac",
+   "homepage": "https://rayo.sk/detske-radio",
+   "codec": "AAC+",
+   "bitrate": 95,
+   "tags": [
+    "children",
+    "kids"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "cb2b0430-122d-4e72-9baa-f96ef5e0a2f0",
+   "name": "Europa 2 - Radio Show",
+   "streamUrl": "https://stream.bauermedia.sk/radio-show-hi.aac",
+   "homepage": "https://rayo.sk/radioshow-mix",
+   "codec": "AAC+",
+   "bitrate": 95,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "97d4d739-3d8a-4cae-9f17-5a60fc6f2176",
+   "name": "Europa 2 - Zvuk ulice",
+   "streamUrl": "https://stream.bauermedia.sk/zvuk-ulice-hi.aac",
+   "homepage": "https://rayo.sk/zvuk-ulice",
+   "codec": "AAC+",
+   "bitrate": 95,
+   "tags": [
+    "house",
+    "rap"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "ac27f0e9-29f4-4f47-9f7e-eb4f12dd066c",
+   "name": "Rádio Expres - Lovesongs",
+   "streamUrl": "https://stream.bauermedia.sk/lovesongs-hi.aac",
+   "homepage": "https://rayo.sk/lovesongs",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "love songs",
+    "lovesongs"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "19b0f6a2-c628-45fa-a7fc-cb824c70aaef",
+   "name": "Rádio ROCK - Classic Rock",
+   "streamUrl": "https://stream.bauermedia.sk/classic-rock-hi.aac",
+   "homepage": "https://rayo.sk/classic-rock",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "classic rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "d7be93d3-067b-4056-8759-fdefc607cc17",
+   "name": "Rádio ROCK - Hard Rock",
+   "streamUrl": "https://stream.bauermedia.sk/hard-rock-hi.aac",
+   "homepage": "https://rayo.sk/hard-rock",
+   "codec": "AAC+",
+   "bitrate": 95,
+   "tags": [
+    "hard rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "346bd092-8af8-4e36-8e84-44ad6ff7687f",
+   "name": "Radio Expres",
+   "streamUrl": "https://stream.bauermedia.sk/expres-hi.mp3",
+   "homepage": "https://www.expres.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "SK"
+  },
+  {
+   "id": "d3ea2946-e400-4c8c-9b7e-6eb5664ae9a0",
+   "name": "Rusyn FM",
+   "streamUrl": "https://stream.rusyn.fm/rusyny.mp3",
+   "homepage": "https://www.rusyn.fm/play/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "ethnic programming",
+    "folk"
+   ],
+   "languages": [
+    "carpatho-rusyn"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 48.148,
+    "long": 17.104
+   },
+   "votes": 335,
+   "clickCount": 0,
+   "countryCode": "SK"
+  },
+  {
+   "id": "9085bd94-5e3d-4d15-a223-0588c235e11e",
+   "name": "Rádio Litera",
+   "streamUrl": "https://icecast.stv.livebox.sk/litera_128.mp3",
+   "homepage": "https://litera.rtvs.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "culture",
+    "drama",
+    "talk"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 59,
+   "clickCount": 0,
+   "countryCode": "SK"
+  },
+  {
+   "id": "315e6ac6-d6a4-4d23-8796-8cb2cb28a07c",
+   "name": "Radio Ekspres",
+   "streamUrl": "https://stream.nextmedia.si/proxy/ekspres1?mp=/stream",
+   "homepage": "https://www.radioekspres.si/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 53,
+   "clickCount": 0,
+   "countryCode": "SK"
+  },
+  {
+   "id": "d2427cd9-ec80-4c07-976b-118b777e6679",
+   "name": "Dobré Rádio",
+   "streamUrl": "https://stream.dobreradio.sk/dobreradio.mp3",
+   "homepage": "https://www.dobreradio.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "news",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 28,
+   "clickCount": 0,
+   "countryCode": "SK"
+  },
+  {
+   "id": "00c38432-76ce-4d8c-9e92-121f7a982232",
+   "name": "Regina Východ",
+   "streamUrl": "https://icecast.stv.livebox.sk/regina-ke_128.mp3",
+   "homepage": "https://reginavychod.rtvs.sk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 48.765,
+    "long": 21.657
+   },
+   "votes": 23,
+   "clickCount": 0,
+   "countryCode": "SK"
+  },
+  {
+   "id": "295acdf1-0599-4963-b143-118bdab6bf43",
+   "name": "Rádio Rebeca",
+   "streamUrl": "https://mpc2.mediacp.eu:8200/rebecaweb",
+   "homepage": "https://rebeca.sk/",
+   "codec": "AAC+",
+   "bitrate": 128,
+   "tags": [
+    "cz sk",
+    "pop",
+    "pop rock",
+    "rock"
+   ],
+   "languages": [
+    "slovak"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 21,
+   "clickCount": 0,
+   "countryCode": "SK"
+  },
+  {
+   "id": "06a222f1-be49-45c6-8eed-c6effea6f3a8",
+   "name": "Rádio ROCK - Rockové balady",
+   "streamUrl": "https://stream.bauermedia.sk/rockove-balady-hi.aac",
+   "homepage": "https://rayo.sk/rockove-balady",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "rock ballads"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "SK"
+  },
+  {
+   "id": "052d2e9b-17c7-4029-8718-472a08bf69ff",
+   "name": "Rádio Expres - Millennials",
+   "streamUrl": "https://stream.bauermedia.sk/millennials-hi.aac",
+   "homepage": "https://rayo.sk/millenials",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "SK"
+  },
+  {
+   "id": "5d5f2483-d641-4c03-afa3-271de19a514e",
+   "name": "Rádio ROCK - Grunge 90s",
+   "streamUrl": "https://stream.bauermedia.sk/grunge-90s-hi.aac",
+   "homepage": "https://rayo.sk/grunge-90s",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "80s 90s grunge",
+    "grunge"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "SK"
+  }
+ ]
+}

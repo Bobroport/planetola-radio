@@ -1,0 +1,162 @@
+{
+ "countryCode": "IS",
+ "stations": [
+  {
+   "id": "4123d652-36c9-41fd-b780-238cd3717f43",
+   "name": "Útvarp Saga",
+   "streamUrl": "https://stream.utvarpsaga.is/Hljodver",
+   "homepage": "https://utvarpsaga.is/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "news talk",
+    "talk & speech",
+    "talk radio"
+   ],
+   "languages": [
+    "icelandic"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 64.14,
+    "long": -21.903
+   },
+   "votes": 112,
+   "clickCount": 16,
+   "countryCode": "IS"
+  },
+  {
+   "id": "625512ba-218e-49b5-a676-efc76c5871c7",
+   "name": "Suðurland FM",
+   "streamUrl": "https://ice-11.spilarinn.is/xsudurlandfm",
+   "homepage": "https://www.sudurlandfm.is/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "country",
+    "pop",
+    "rock",
+    "varied"
+   ],
+   "languages": [
+    "icelandic"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 63.948,
+    "long": -21.01
+   },
+   "votes": 31,
+   "clickCount": 8,
+   "countryCode": "IS"
+  },
+  {
+   "id": "86590d5f-5e43-49a7-a774-d9f34d47e49f",
+   "name": "RADIO AKI ASGEIRSSON : Tonlist / Music by Aki Asgeirsson",
+   "streamUrl": "https://kast.aki.is/radio",
+   "homepage": "https://aki.is/radio/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "composer",
+    "contemporary",
+    "experimental",
+    "iceland",
+    "new music"
+   ],
+   "languages": [],
+   "state": "Suðurnesjabær",
+   "geo": {
+    "lat": 64.069,
+    "long": -22.648
+   },
+   "votes": 2,
+   "clickCount": 8,
+   "countryCode": "IS"
+  },
+  {
+   "id": "365a410b-cd82-4410-b351-6f443c3e8c1e",
+   "name": "Flashback 60s",
+   "streamUrl": "https://ice-11.spilarinn.is/60flashback",
+   "homepage": "https://www.spilarinn.is/60's%20FlashBack",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 119,
+   "clickCount": 7,
+   "countryCode": "IS"
+  },
+  {
+   "id": "8d472d16-8ce9-49ed-9b60-df7cd7041566",
+   "name": "K 100",
+   "streamUrl": "https://ice-11.spilarinn.is/kaninnmobile",
+   "homepage": "https://k100.mbl.is/",
+   "codec": "MP3",
+   "bitrate": 170,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 53,
+   "clickCount": 6,
+   "countryCode": "IS"
+  },
+  {
+   "id": "26312cb9-40de-4fa8-bb23-20a742e94d7b",
+   "name": "Seyðisfjörður Community Radio",
+   "streamUrl": "https://seyisfjorur-community-radio.radiocult.fm/stream",
+   "homepage": "https://www.seydisfjordurcommunityradio.net/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "IS"
+  },
+  {
+   "id": "fc157689-436b-4da8-a3d5-18d72bbda568",
+   "name": "Fred Film Radio-26 Íslenska",
+   "streamUrl": "https://s10.webradio-hosting.com/proxy/fredradiois/stream",
+   "homepage": "https://www.fred.fm/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "film"
+   ],
+   "languages": [
+    "icelandic"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 33,
+   "clickCount": 2,
+   "countryCode": "IS"
+  },
+  {
+   "id": "4e570d5e-8501-4b55-9030-085e7ee904dc",
+   "name": "Retro",
+   "streamUrl": "https://ice-11.spilarinn.is/retromobile",
+   "homepage": "https://k100.mbl.is/retro/",
+   "codec": "MP3",
+   "bitrate": 170,
+   "tags": [
+    "80s",
+    "90s",
+    "oldies",
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 2,
+   "countryCode": "IS"
+  }
+ ]
+}

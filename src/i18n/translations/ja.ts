@@ -21,6 +21,12 @@ export const ja: Dictionary = {
   "city.nowPlaying": "再生中",
   "city.notFound": "都市が見つかりません",
   "cities.title": "都市",
+  "cities.countries": "国別の放送局",
+  "cities.countriesHint": "ヨーロッパ、ロシア、アメリカの完全なリスト",
+  "countries.title": "国",
+  "country.allStations": "すべての放送局: {country}",
+  "country.filter": "名前またはタグで絞り込む",
+  "country.notFound": "国が見つかりません",
 
   "region.cis": "ロシアと近隣諸国",
   "region.europe": "ヨーロッパ",
@@ -52,6 +58,7 @@ export const ja: Dictionary = {
   "search.all": "すべての放送局: {count}",
   "search.reset": "リセット",
   "search.empty": "見つかりませんでした",
+  "search.loading": "全カタログを読み込み中…",
 
   "stations.title": "お気に入りの放送局",
   "stations.empty": "お気に入りの放送局はまだありません。放送局の横の星をタップすると、ここに追加されます。",

@@ -1,0 +1,91 @@
+{
+ "countryCode": "AD",
+ "stations": [
+  {
+   "id": "b06e68ea-8a7f-44bd-b66d-7783b4252958",
+   "name": "Flaix FM Andorra",
+   "streamUrl": "https://streaming.giraweb.com/8020/stream",
+   "homepage": "https://flaixfm.cat/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "hits",
+    "pop"
+   ],
+   "languages": [
+    "catalan"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 13,
+   "clickCount": 33,
+   "countryCode": "AD"
+  },
+  {
+   "id": "dab0a369-d2b8-473c-a896-e2e1c80426b4",
+   "name": "Rádio Ondas de Portugal",
+   "streamUrl": "https://ssl.ndvendas.eu:9538/stream.mp3/;",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "fado",
+    "folclore",
+    "pimba",
+    "pop"
+   ],
+   "languages": [
+    "portuguese"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 22,
+   "countryCode": "AD"
+  },
+  {
+   "id": "0a1db9e4-ced2-41b2-8cf0-492261189bad",
+   "name": "Flaixbac Andorra",
+   "streamUrl": "https://streaming.giraweb.com/8010/stream",
+   "homepage": "https://flaixandorra.com/ca/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "dance",
+    "pop",
+    "rock"
+   ],
+   "languages": [
+    "catalan"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 12,
+   "countryCode": "AD"
+  },
+  {
+   "id": "da1e281b-9aa3-41f7-9d3b-cc95f9955008",
+   "name": "PlixSend Andorre",
+   "streamUrl": "https://plixsend.eu/listen/andorre/stream",
+   "homepage": "https://plixsend.com/",
+   "codec": "AAC",
+   "bitrate": 0,
+   "tags": [
+    "french",
+    "hits",
+    "pop",
+    "top 40",
+    "variety"
+   ],
+   "languages": [
+    "french"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 2,
+   "clickCount": 8,
+   "countryCode": "AD"
+  }
+ ]
+}

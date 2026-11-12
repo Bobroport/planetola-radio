@@ -21,6 +21,12 @@ export const zhHans: Dictionary = {
   "city.nowPlaying": "正在播放",
   "city.notFound": "未找到城市",
   "cities.title": "城市",
+  "cities.countries": "按国家/地区浏览电台",
+  "cities.countriesHint": "欧洲、俄罗斯和美国的完整列表",
+  "countries.title": "国家/地区",
+  "country.allStations": "全部电台：{country}",
+  "country.filter": "按名称或标签筛选",
+  "country.notFound": "未找到该国家/地区",
 
   "region.cis": "俄罗斯及周边国家",
   "region.europe": "欧洲",
@@ -52,6 +58,7 @@ export const zhHans: Dictionary = {
   "search.all": "全部电台：{count}",
   "search.reset": "重置",
   "search.empty": "没有找到结果",
+  "search.loading": "正在加载完整目录…",
 
   "stations.title": "收藏的电台",
   "stations.empty": "还没有收藏的电台。点按电台旁边的星标即可添加到这里。",

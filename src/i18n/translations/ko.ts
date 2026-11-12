@@ -21,6 +21,12 @@ export const ko: Dictionary = {
   "city.nowPlaying": "지금 재생 중",
   "city.notFound": "도시를 찾을 수 없습니다",
   "cities.title": "도시",
+  "cities.countries": "국가별 방송국",
+  "cities.countriesHint": "유럽, 러시아, 미국의 전체 목록",
+  "countries.title": "국가",
+  "country.allStations": "전체 방송국: {country}",
+  "country.filter": "이름 또는 태그로 필터",
+  "country.notFound": "국가를 찾을 수 없습니다",
 
   "region.cis": "러시아 및 주변국",
   "region.europe": "유럽",
@@ -52,6 +58,7 @@ export const ko: Dictionary = {
   "search.all": "전체 방송국: {count}",
   "search.reset": "초기화",
   "search.empty": "검색 결과가 없습니다",
+  "search.loading": "전체 카탈로그를 불러오는 중…",
 
   "stations.title": "즐겨찾는 방송국",
   "stations.empty": "아직 즐겨찾는 방송국이 없습니다. 방송국 옆의 별을 탭해 여기에 추가하세요.",

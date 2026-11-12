@@ -21,6 +21,12 @@ export const fr: Dictionary = {
   "city.nowPlaying": "en cours de lecture",
   "city.notFound": "Ville introuvable",
   "cities.title": "Villes",
+  "cities.countries": "Stations par pays",
+  "cities.countriesHint": "Listes complètes pour l'Europe, la Russie et les États-Unis",
+  "countries.title": "Pays",
+  "country.allStations": "Toutes les stations : {country}",
+  "country.filter": "Filtrer par nom ou tag",
+  "country.notFound": "Pays introuvable",
 
   "region.cis": "Russie et pays voisins",
   "region.europe": "Europe",
@@ -52,6 +58,7 @@ export const fr: Dictionary = {
   "search.all": "Toutes les stations : {count}",
   "search.reset": "Réinitialiser",
   "search.empty": "Aucun résultat",
+  "search.loading": "Chargement du catalogue complet…",
 
   "stations.title": "Stations favorites",
   "stations.empty": "Aucune station favorite pour l'instant. Touchez l'étoile à côté d'une station pour l'ajouter ici.",

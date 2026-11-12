@@ -2,6 +2,7 @@ import { router } from "expo-router";
 import { SectionList, StyleSheet, Text, View } from "react-native";
 
 import { CityRow } from "@/components/city-row";
+import { LinkRow } from "@/components/link-row";
 import { CITY_SECTIONS, type City } from "@/data/stations";
 import { regionKey, useI18n } from "@/i18n";
 import { usePlayer } from "@/providers/player-provider";
@@ -19,6 +20,14 @@ export default function CityListScreen() {
       <SectionList
         sections={CITY_SECTIONS}
         keyExtractor={(item) => item.id}
+        ListHeaderComponent={
+          <LinkRow
+            icon="earth-outline"
+            title={t("cities.countries")}
+            subtitle={t("cities.countriesHint")}
+            onPress={() => router.push("/cities/countries")}
+          />
+        }
         renderItem={({ item }) => (
           <CityRow
             city={item}

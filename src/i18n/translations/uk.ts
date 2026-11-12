@@ -21,6 +21,12 @@ export const uk: Dictionary = {
   "city.nowPlaying": "зараз грає",
   "city.notFound": "Місто не знайдено",
   "cities.title": "Міста",
+  "cities.countries": "Станції за країнами",
+  "cities.countriesHint": "Повні списки для Європи, Росії та США",
+  "countries.title": "Країни",
+  "country.allStations": "Усі станції: {country}",
+  "country.filter": "Фільтр за назвою або тегом",
+  "country.notFound": "Країну не знайдено",
 
   "region.cis": "Росія та сусідні країни",
   "region.europe": "Європа",
@@ -52,6 +58,7 @@ export const uk: Dictionary = {
   "search.all": "Усі станції: {count}",
   "search.reset": "Скинути",
   "search.empty": "Нічого не знайдено",
+  "search.loading": "Завантаження повного каталогу…",
 
   "stations.title": "Обрані станції",
   "stations.empty": "Обраних станцій поки немає. Натисніть зірочку поруч зі станцією, щоб додати її сюди.",

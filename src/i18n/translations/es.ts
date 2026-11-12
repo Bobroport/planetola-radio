@@ -21,6 +21,12 @@ export const es: Dictionary = {
   "city.nowPlaying": "sonando ahora",
   "city.notFound": "Ciudad no encontrada",
   "cities.title": "Ciudades",
+  "cities.countries": "Emisoras por país",
+  "cities.countriesHint": "Listas completas de Europa, Rusia y EE. UU.",
+  "countries.title": "Países",
+  "country.allStations": "Todas las emisoras: {country}",
+  "country.filter": "Filtrar por nombre o etiqueta",
+  "country.notFound": "País no encontrado",
 
   "region.cis": "Rusia y países vecinos",
   "region.europe": "Europa",
@@ -52,6 +58,7 @@ export const es: Dictionary = {
   "search.all": "Todas las emisoras: {count}",
   "search.reset": "Restablecer",
   "search.empty": "No se encontró nada",
+  "search.loading": "Cargando el catálogo completo…",
 
   "stations.title": "Emisoras favoritas",
   "stations.empty": "Aún no tienes emisoras favoritas. Toca la estrella junto a una emisora para añadirla aquí.",

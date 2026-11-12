@@ -1,5 +1,5 @@
 import { useLocalSearchParams } from "expo-router";
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import {
   FlatList,
   ScrollView,
@@ -11,6 +11,7 @@ import {
 
 import { Chip } from "@/components/chip";
 import { StationRow } from "@/components/station-row";
+import { isAllCountryStationsLoaded, loadAllCountryStations } from "@/data/countries";
 import { useI18n } from "@/i18n";
 import {
   BITRATE_OPTIONS,
@@ -45,7 +46,20 @@ export default function SearchScreen() {
     codec: isCodec(params.codec) ? params.codec : null,
   }));
 
-  const results = searchStations(filters, language);
+  // Полные страновые списки подключаются к поиску, как только разобраны; до этого ищем по городам.
+  const [catalogReady, setCatalogReady] = useState(isAllCountryStationsLoaded);
+  useEffect(() => {
+    if (catalogReady) return;
+    let cancelled = false;
+    loadAllCountryStations().then(() => {
+      if (!cancelled) setCatalogReady(true);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [catalogReady]);
+
+  const results = searchStations(filters, language, catalogReady);
   const active = hasActiveFilters(filters);
 
   // Выбранные теги/языки, которых нет в топе, показываем первыми, чтобы их можно было снять.
@@ -144,6 +158,7 @@ export default function SearchScreen() {
             <View style={styles.summary}>
               <Text style={styles.summaryText}>
                 {t(active ? "search.found" : "search.all", { count: results.length })}
+                {catalogReady ? "" : ` · ${t("search.loading")}`}
               </Text>
               {active ? (
                 <Chip label={t("search.reset")} onPress={() => setFilters(EMPTY_FILTERS)} />
@@ -155,6 +170,7 @@ export default function SearchScreen() {
           <StationRow
             station={item.station}
             city={item.city}
+            showCountry
             isActive={current?.id === item.station.id}
             onPress={play}
           />

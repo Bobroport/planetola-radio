@@ -1,0 +1,612 @@
+{
+ "countryCode": "ME",
+ "stations": [
+  {
+   "id": "bee98306-1e97-44b9-b581-be4f1688a5c4",
+   "name": "Radio Fatih",
+   "streamUrl": "https://radioservis.me/radio/8070/radiofatih?1702660538716",
+   "homepage": "http://www.radiofatih.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "duhovna muzika"
+   ],
+   "languages": [
+    "montenegrin"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 22,
+   "clickCount": 4,
+   "countryCode": "ME"
+  },
+  {
+   "id": "dc1b97f7-dd13-43ec-acd9-deed337dd6bc",
+   "name": "Play Radio MNE Soft",
+   "streamUrl": "https://stream.playradio.me:8443/soft.mp3",
+   "homepage": "https://www.playradio.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "easy listening",
+    "soft music"
+   ],
+   "languages": [
+    "montenegrin"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 4,
+   "countryCode": "ME"
+  },
+  {
+   "id": "edf8f62c-4d8f-47fa-a220-48ef8f4ab3ee",
+   "name": "Radio S1 Crna Gora",
+   "streamUrl": "https://stream.radios.rs:9008/;",
+   "homepage": "https://www.radios.rs/",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [
+    "zabavna"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 303,
+   "clickCount": 2,
+   "countryCode": "ME"
+  },
+  {
+   "id": "40294b7d-0e2e-4f1f-b3f4-a487f57ad5f5",
+   "name": "Radio Elmag Pop Rock EX YU",
+   "streamUrl": "https://radio.elmag.me/poprock.mp3",
+   "homepage": "https://www.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop-rock"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 246,
+   "clickCount": 2,
+   "countryCode": "ME"
+  },
+  {
+   "id": "c0d23bdb-6b51-4c82-8eb3-c55690f74209",
+   "name": "Radio S3 Crna Gora",
+   "streamUrl": "https://stream.radios.rs:9018/",
+   "homepage": "https://www.radios.rs/",
+   "codec": "AAC+",
+   "bitrate": 32,
+   "tags": [
+    "zabavna"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 172,
+   "clickCount": 2,
+   "countryCode": "ME"
+  },
+  {
+   "id": "6e33bec5-86ac-49ab-917b-7e0f48eb5a8f",
+   "name": "Play Radio Montenegro",
+   "streamUrl": "https://stream.playradio.me:8443/play-me.mp3",
+   "homepage": "https://www.playradio.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop - zabavna - rock"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 109,
+   "clickCount": 2,
+   "countryCode": "ME"
+  },
+  {
+   "id": "4949fc63-01cd-46e1-a17d-a99fdd461c62",
+   "name": "Radio Elmag Folk Gold",
+   "streamUrl": "https://radio.elmag.me/folkgold.mp3",
+   "homepage": "https://www.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "narodna"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 53,
+   "clickCount": 2,
+   "countryCode": "ME"
+  },
+  {
+   "id": "138dca72-29a0-400b-ab96-749b1cafee13",
+   "name": "54HOUSE.FM CLUB",
+   "streamUrl": "https://54house.fm:9013/stream",
+   "homepage": "https://www.54house.fm/en/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 28,
+   "clickCount": 2,
+   "countryCode": "ME"
+  },
+  {
+   "id": "398f407b-3fac-441f-8b8a-96d7ef1f53be",
+   "name": "Radio Andrijevica",
+   "streamUrl": "https://mpc2.mediacp.eu/stream/andrijevica/stream",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 64,
+   "tags": [
+    "folk"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 2,
+   "countryCode": "ME"
+  },
+  {
+   "id": "978cbbe7-c735-4bcb-91e2-426d6d8716fc",
+   "name": "Drugačija Radio Stanica",
+   "streamUrl": "https://eu2.fastcast4u.com/proxy/mic0?mp=/stream",
+   "homepage": "http://drugacija.me/",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [
+    "zabavna"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 15,
+   "clickCount": 2,
+   "countryCode": "ME"
+  },
+  {
+   "id": "39f31145-58b1-4a8c-8a4a-2188592a832f",
+   "name": "Bruškin",
+   "streamUrl": "https://player.radiobruskin.me/proxy/radiobruskin/stream",
+   "homepage": "https://radiobruskin.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "hits",
+    "pop",
+    "rock"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 139,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "2baf5673-911f-4d34-840c-a3872991523d",
+   "name": "Radio S2 Crna Gora",
+   "streamUrl": "https://stream.radios.rs:9010/;",
+   "homepage": "https://www.radios.rs/",
+   "codec": "AAC+",
+   "bitrate": 36,
+   "tags": [
+    "pop - zabavna"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 109,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "98b21b7f-ae52-4aa7-a6a6-3d4289d67201",
+   "name": "Radio Elmag Nostalgija",
+   "streamUrl": "https://radio.elmag.me/nostalgija.mp3",
+   "homepage": "https://www.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop - 80s - 90s"
+   ],
+   "languages": [
+    "montenegrin"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 105,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "f0123b62-827f-4803-95ba-ef500b2fabf6",
+   "name": "Radio Elmag Izvorne i Starogradske",
+   "streamUrl": "https://radio.elmag.me/izvorne.mp3",
+   "homepage": "https://www.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "narodna - izvorna - starogradska"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 75,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "163dd663-c098-4bc9-9034-db22757d08f8",
+   "name": "Radio Elmag Caffe",
+   "streamUrl": "https://radio.elmag.me/cafe.mp3",
+   "homepage": "https://www.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "zabavna - pop - rock"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 52,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "a4d017e5-ed82-4b1a-87c5-b0d4f24134c8",
+   "name": "Radio Saraj",
+   "streamUrl": "https://eu4.fastcast4u.com/proxy/stilradiomk?mp=/s",
+   "homepage": "http://radiogora.org/saraj/",
+   "codec": "AAC+",
+   "bitrate": 320,
+   "tags": [
+    "pop - folk - ex-yu"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 37,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "0854612f-a344-46a8-98d0-e42abb4a5900",
+   "name": "El Radio Podgorica",
+   "streamUrl": "https://radio.elmag.me/el.mp3",
+   "homepage": "https://www.elradio.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 42.44,
+    "long": 19.259
+   },
+   "votes": 15,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "3a3406fe-ea7f-4cb0-a83b-cdf3b7e29c37",
+   "name": "Radio D plus",
+   "streamUrl": "https://radiodplus.radioca.st/xstream",
+   "homepage": "https://radioddplus.com/",
+   "codec": "MP3",
+   "bitrate": 140,
+   "tags": [
+    "narodna",
+    "zabavna"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 8,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "376586fd-2f19-4d28-9c5e-b6bd4d26ccf9",
+   "name": "Play Radio MNE Party",
+   "streamUrl": "https://stream.playradio.me:8443/party.mp3",
+   "homepage": "https://www.playradio.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "pop",
+    "rock"
+   ],
+   "languages": [
+    "montenegrin"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "23d4cabe-0b84-49c5-a4f9-b88066421dd3",
+   "name": "Play Radio MNE Balkan",
+   "streamUrl": "https://stream.playradio.me:8443/balkan.mp3",
+   "homepage": "https://www.playradio.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "balkan",
+    "hip-hop"
+   ],
+   "languages": [
+    "montenegrin"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "8353198e-3ace-41c2-8e72-474a1d3d5f56",
+   "name": "Arena Radio",
+   "streamUrl": "https://radio.elmag.me/arena.mp3",
+   "homepage": "https://radio.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "6b0040af-4b6f-4fdc-b50b-aa017e7f926d",
+   "name": "Play Radio MNE Urban",
+   "streamUrl": "https://stream.playradio.me:8443/urban.mp3",
+   "homepage": "https://www.playradio.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dance",
+    "urban"
+   ],
+   "languages": [
+    "montenegrin"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "2acebeae-2fce-43cf-8134-1fe13e81a8bd",
+   "name": "PLAY radio MNE Rock",
+   "streamUrl": "https://stream.playradio.me:8443/rock.mp3",
+   "homepage": "https://www.playradio.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classic rock",
+    "rock"
+   ],
+   "languages": [
+    "montenegrin"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "ME"
+  },
+  {
+   "id": "22cc8c4c-5921-46ae-886e-8f32d26da28b",
+   "name": "Radio Berane",
+   "streamUrl": "https://stream.iradio.pro/proxy/radioberane?mp=/stream;",
+   "homepage": "https://stream.iradio.pro/proxy/radioberane?mp=/stream;",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "lokalni"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 212,
+   "clickCount": 0,
+   "countryCode": "ME"
+  },
+  {
+   "id": "049f1a33-78e6-45dc-a94d-ae5fae629408",
+   "name": "Radio Porto Montenegro",
+   "streamUrl": "https://malta1491.startdedicated.de:8443/main",
+   "homepage": "https://radio-portomontenegro.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "dance",
+    "electro",
+    "house"
+   ],
+   "languages": [
+    "english",
+    "montenegrin"
+   ],
+   "state": "Tivat",
+   "geo": null,
+   "votes": 132,
+   "clickCount": 0,
+   "countryCode": "ME"
+  },
+  {
+   "id": "fcd4e492-9fb9-48b2-8d3e-53db20122718",
+   "name": "Radio Budva",
+   "streamUrl": "https://c8.radioboss.fm:18199/stream",
+   "homepage": "https://www.rtvbudva.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop - zabavna - vesti"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 56,
+   "clickCount": 0,
+   "countryCode": "ME"
+  },
+  {
+   "id": "0d1ae8b3-e8c5-4ec7-a8b3-7ea70bd87025",
+   "name": "Radio Kotor",
+   "streamUrl": "https://stream.iradio.pro/proxy/radiokotor?mp=/stream",
+   "homepage": "https://radiokotor.info/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "zabavna"
+   ],
+   "languages": [
+    "montenegrin"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 54,
+   "clickCount": 0,
+   "countryCode": "ME"
+  },
+  {
+   "id": "ff10addd-d236-4d0c-b943-52440086fef4",
+   "name": "Radio Elmag Party",
+   "streamUrl": "https://radio.elmag.me/party.mp3",
+   "homepage": "https://www.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "house - electro - club music - techno"
+   ],
+   "languages": [
+    "montenegrin"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 33,
+   "clickCount": 0,
+   "countryCode": "ME"
+  },
+  {
+   "id": "119dc8a3-f360-47e8-8949-7d5991a79d28",
+   "name": "Radio Elmag Love",
+   "streamUrl": "https://radio.elmag.me/love.mp3",
+   "homepage": "https://www.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "zabavna - lagana"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 30,
+   "clickCount": 0,
+   "countryCode": "ME"
+  },
+  {
+   "id": "cfe52db3-7529-49e8-b0eb-4bfc93599ae8",
+   "name": "Radio Elmag Evergreen",
+   "streamUrl": "https://radio.elmag.me/evergreen.mp3",
+   "homepage": "https://www.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "evergreen"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 26,
+   "clickCount": 0,
+   "countryCode": "ME"
+  },
+  {
+   "id": "fa325ba3-f7f7-49c6-b1cd-e65a010546d2",
+   "name": "Radio Elmag Kids",
+   "streamUrl": "https://radio.elmag.me/kids.mp3",
+   "homepage": "https://www.elmag.me/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "muzika za decu"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 0,
+   "countryCode": "ME"
+  },
+  {
+   "id": "84270636-7745-4648-87e7-2bd2a8ecebd2",
+   "name": "Radio Krš Podgorica",
+   "streamUrl": "https://stream.radiokrs.me:8443/lq.mp3",
+   "homepage": "https://radiokrs.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "alternative"
+   ],
+   "languages": [
+    "montenegro"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "ME"
+  }
+ ]
+}

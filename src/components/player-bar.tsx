@@ -38,8 +38,9 @@ export function PlayerBar() {
       : nowPlaying.title
     : null;
   const saved = nowPlaying ? isSaved(nowPlaying, current) : false;
+  // У станций из полных страновых списков города нет: трек сохраняется со страной.
   const city = getCityOfStation(current.id);
-  const canSave = nowPlaying !== null && city !== undefined;
+  const canSave = nowPlaying !== null;
 
   return (
     <View style={styles.bar}>
@@ -68,7 +69,7 @@ export function PlayerBar() {
       </View>
       <Pressable
         onPress={() => {
-          if (nowPlaying && city) toggle(nowPlaying, current, city);
+          if (nowPlaying) toggle(nowPlaying, current, city);
         }}
         disabled={!canSave}
         hitSlop={8}

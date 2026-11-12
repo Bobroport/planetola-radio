@@ -21,6 +21,12 @@ export const id: Dictionary = {
   "city.nowPlaying": "sedang diputar",
   "city.notFound": "Kota tidak ditemukan",
   "cities.title": "Kota",
+  "cities.countries": "Stasiun menurut negara",
+  "cities.countriesHint": "Daftar lengkap untuk Eropa, Rusia, dan AS",
+  "countries.title": "Negara",
+  "country.allStations": "Semua stasiun: {country}",
+  "country.filter": "Saring menurut nama atau tag",
+  "country.notFound": "Negara tidak ditemukan",
 
   "region.cis": "Rusia dan negara tetangga",
   "region.europe": "Eropa",
@@ -52,6 +58,7 @@ export const id: Dictionary = {
   "search.all": "Semua stasiun: {count}",
   "search.reset": "Atur ulang",
   "search.empty": "Tidak ada hasil",
+  "search.loading": "Memuat katalog lengkap…",
 
   "stations.title": "Stasiun favorit",
   "stations.empty": "Belum ada stasiun favorit. Ketuk bintang di samping stasiun untuk menambahkannya di sini.",

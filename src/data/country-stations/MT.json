@@ -1,0 +1,136 @@
+{
+ "countryCode": "MT",
+ "stations": [
+  {
+   "id": "5ae47396-1ba4-4b1d-92c7-bdc62d6f8879",
+   "name": "Bay Easy 100.2",
+   "streamUrl": "https://stream.v3.network/proxy/easy/stream.mp3",
+   "homepage": "https://bayeasy.mt/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 193,
+   "clickCount": 9,
+   "countryCode": "MT"
+  },
+  {
+   "id": "bc95a0d2-666d-400d-9d9b-bba9f50277b3",
+   "name": "Calypso Radio",
+   "streamUrl": "https://s4.radio.co/sf3aa4c25a/listen",
+   "homepage": "https://www.calypsomalta.com/",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "music",
+    "talk"
+   ],
+   "languages": [
+    "maltese"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1431,
+   "clickCount": 8,
+   "countryCode": "MT"
+  },
+  {
+   "id": "d509b24b-d833-4617-b278-88eba4ee8287",
+   "name": "89.7 Bay",
+   "streamUrl": "https://stream.v3.network/proxy/897bay/stream.mp3",
+   "homepage": "https://bay.com.mt/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 6,
+   "countryCode": "MT"
+  },
+  {
+   "id": "38f192a9-5cf9-419b-be7d-4d36c7409cc5",
+   "name": "Magic",
+   "streamUrl": "https://s46.myradiostream.com:6076/stream",
+   "homepage": "https://magic.mt/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 4,
+   "countryCode": "MT"
+  },
+  {
+   "id": "c1346103-8b8f-4960-bea9-5f86708a8ae8",
+   "name": "MALTIN BISS",
+   "streamUrl": "https://s4.voscast.com:8837/default",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "country"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 234,
+   "clickCount": 3,
+   "countryCode": "MT"
+  },
+  {
+   "id": "26df1ec1-d11b-4703-a4d2-07519b431b66",
+   "name": "Bay 89.7",
+   "streamUrl": "https://stream.v3.network/proxy/897bay/stream.mp3?_=1",
+   "homepage": "https://www.bay.com.mt/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 175,
+   "clickCount": 3,
+   "countryCode": "MT"
+  },
+  {
+   "id": "b93e26d9-306c-4522-b420-cc4d537fc196",
+   "name": "Campus 103.7",
+   "streamUrl": "https://campusfm.radioca.st/campusfm_live",
+   "homepage": "https://www.um.edu.mt/services/campus1037/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 75,
+   "clickCount": 2,
+   "countryCode": "MT"
+  },
+  {
+   "id": "a437f3cf-fab7-40dd-818c-02cc6535b5ea",
+   "name": "Radju Marija",
+   "streamUrl": "https://dreamsiteradiocp2.com/proxy/rmmalta2?mp=/stream",
+   "homepage": "https://radjumarija.org/l",
+   "codec": "AAC+",
+   "bitrate": 32,
+   "tags": [
+    "religious"
+   ],
+   "languages": [
+    "maltese"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 2,
+   "countryCode": "MT"
+  }
+ ]
+}

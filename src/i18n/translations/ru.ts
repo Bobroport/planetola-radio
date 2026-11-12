@@ -21,6 +21,12 @@ export const ru: Dictionary = {
   "city.nowPlaying": "сейчас играет",
   "city.notFound": "Город не найден",
   "cities.title": "Города",
+  "cities.countries": "Станции по странам",
+  "cities.countriesHint": "Полные списки для Европы, России и США",
+  "countries.title": "Страны",
+  "country.allStations": "Все станции: {country}",
+  "country.filter": "Фильтр по названию или тегу",
+  "country.notFound": "Страна не найдена",
 
   "region.cis": "Россия и ближнее зарубежье",
   "region.europe": "Европа",
@@ -52,6 +58,7 @@ export const ru: Dictionary = {
   "search.all": "Все станции: {count}",
   "search.reset": "Сбросить",
   "search.empty": "Ничего не найдено",
+  "search.loading": "Загрузка полного каталога…",
 
   "stations.title": "Избранные станции",
   "stations.empty": "Избранных станций пока нет. Нажмите звёздочку рядом со станцией, чтобы добавить её сюда.",

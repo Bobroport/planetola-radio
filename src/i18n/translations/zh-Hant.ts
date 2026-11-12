@@ -21,6 +21,12 @@ export const zhHant: Dictionary = {
   "city.nowPlaying": "正在播放",
   "city.notFound": "找不到城市",
   "cities.title": "城市",
+  "cities.countries": "依國家/地區瀏覽電台",
+  "cities.countriesHint": "歐洲、俄羅斯與美國的完整列表",
+  "countries.title": "國家/地區",
+  "country.allStations": "全部電台：{country}",
+  "country.filter": "依名稱或標籤篩選",
+  "country.notFound": "找不到該國家/地區",
 
   "region.cis": "俄羅斯及鄰近國家",
   "region.europe": "歐洲",
@@ -52,6 +58,7 @@ export const zhHant: Dictionary = {
   "search.all": "所有電台：{count}",
   "search.reset": "重設",
   "search.empty": "找不到結果",
+  "search.loading": "正在載入完整目錄…",
 
   "stations.title": "收藏的電台",
   "stations.empty": "還沒有收藏的電台。點一下電台旁邊的星號即可加入這裡。",

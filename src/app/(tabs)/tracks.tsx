@@ -3,7 +3,7 @@ import * as Clipboard from "expo-clipboard";
 import { useEffect, useState } from "react";
 import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 
-import { cityName, getCity, getStation } from "@/data/stations";
+import { cityName, countryName, getCity } from "@/data/stations";
 import { useI18n } from "@/i18n";
 import { formatDateTime } from "@/lib/format";
 import {
@@ -26,10 +26,15 @@ function TrackRow({
   onRemove: (id: string) => void;
 }) {
   const { language, t } = useI18n();
-  const canPlay = getStation(item.stationId) !== undefined;
-  // Название города берём из данных на текущем языке; сохранённое — запасной вариант.
+  const { resolveStation } = useFavorites();
+  const canPlay = resolveStation(item.stationId) !== undefined || item.station !== undefined;
+  // Название места берём из данных на текущем языке; сохранённое — запасной вариант.
   const city = getCity(item.cityId);
-  const place = city ? cityName(city, language) : item.cityName;
+  const place = city
+    ? cityName(city, language)
+    : item.station
+      ? countryName(item.station.countryCode, language)
+      : item.cityName;
 
   // После копирования на полторы секунды показываем «Скопировано» вместо даты.
   const [copied, setCopied] = useState(false);
@@ -97,12 +102,12 @@ function TrackRow({
 /** Понравившиеся треки: то, что пользователь отметил сердцем в плеере. */
 export default function LikedTracksScreen() {
   const { t } = useI18n();
-  const { favorites, remove } = useFavorites();
+  const { favorites, remove, resolveStation } = useFavorites();
   const { current, play } = usePlayer();
 
   const playTrackStation = (item: FavoriteTrack) => {
-    const found = getStation(item.stationId);
-    if (found) play(found.station);
+    const station = resolveStation(item.stationId)?.station ?? item.station;
+    if (station) play(station);
   };
 
   return (

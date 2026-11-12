@@ -50,7 +50,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "generate-stations": "node scripts/generate-stations.mjs && node scripts/generate-country-names.mjs"
+    "generate-stations": "node scripts/generate-stations.mjs && node scripts/generate-country-names.mjs",
+    "generate-countries": "node scripts/generate-countries.mjs"
   },
   "private": true,
   "overrides": {

@@ -1,0 +1,1914 @@
+{
+ "countryCode": "NO",
+ "stations": [
+  {
+   "id": "17be0284-0ab4-453f-9e98-f674df46a919",
+   "name": "NRK P3",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p3_mp3_h",
+   "homepage": "https://www.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.913,
+    "long": 10.74
+   },
+   "votes": 168,
+   "clickCount": 49,
+   "countryCode": "NO"
+  },
+  {
+   "id": "8ea65019-e270-4737-868c-b4fc754cb4f1",
+   "name": "P4 Norge (AAC HQ)",
+   "streamUrl": "https://p4.p4groupaudio.com/P04_AH",
+   "homepage": "https://www.p4.no/",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "p4",
+    "hits",
+    "music",
+    "pop",
+    "news"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 672,
+   "clickCount": 39,
+   "countryCode": "NO"
+  },
+  {
+   "id": "534cdc5e-70a3-469c-a0c8-1da1643432d4",
+   "name": "NRK Nyheter",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/nyheter_aac_h",
+   "homepage": "https://radio.nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 159,
+   "tags": [
+    "news"
+   ],
+   "languages": [
+    "norwegian",
+    "sami"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 63.453,
+    "long": 10.384
+   },
+   "votes": 157,
+   "clickCount": 27,
+   "countryCode": "NO"
+  },
+  {
+   "id": "5f7bd883-abc7-11e9-88f4-52543be04c81",
+   "name": "P4 Norge (MP3 128k)",
+   "streamUrl": "https://p4.p4groupaudio.com/P04_MM",
+   "homepage": "https://www.p4.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "p4",
+    "hits",
+    "music",
+    "pop",
+    "news"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 304,
+   "clickCount": 20,
+   "countryCode": "NO"
+  },
+  {
+   "id": "ebc6ab9f-57be-4ee8-9209-327ee71c7a86",
+   "name": "Nrk P1 Stor-Oslo",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_mp3_h",
+   "homepage": "https://lyd.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "OSLO",
+   "geo": {
+    "lat": 59.907,
+    "long": 10.811
+   },
+   "votes": 170,
+   "clickCount": 17,
+   "countryCode": "NO"
+  },
+  {
+   "id": "cb065d86-e365-4c6a-9c36-99746a6e705d",
+   "name": "NRK P2 aac_h",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p2_aac_h",
+   "homepage": "https://radio.nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 158,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 63.452,
+    "long": 10.385
+   },
+   "votes": 166,
+   "clickCount": 16,
+   "countryCode": "NO"
+  },
+  {
+   "id": "45e331f5-cebc-11e9-8502-52543be04c81",
+   "name": "NRJ Norge",
+   "streamUrl": "https://live-bauerno.sharp-stream.com/kiss_no_mp3",
+   "homepage": "https://radioplay.no/nrj/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop",
+    "hits",
+    "top 40"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Oslo",
+   "geo": null,
+   "votes": 356,
+   "clickCount": 14,
+   "countryCode": "NO"
+  },
+  {
+   "id": "d915596f-84e2-499f-9844-ed7e60c03a93",
+   "name": "P7 Klem (AAC HQ)",
+   "streamUrl": "https://p7.p4groupaudio.com/P07_AH",
+   "homepage": "https://www.p7klem.no/",
+   "codec": "AAC",
+   "bitrate": 191,
+   "tags": [
+    "p4",
+    "80s",
+    "90s",
+    "pop",
+    "christmas"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 336,
+   "clickCount": 13,
+   "countryCode": "NO"
+  },
+  {
+   "id": "02dc8fb4-b5cd-425d-ae6a-2053e210e7af",
+   "name": "NRK MP3",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/mp3_mp3_h",
+   "homepage": "https://lyd.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "norsk"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 60.083,
+    "long": 11.118
+   },
+   "votes": 152,
+   "clickCount": 13,
+   "countryCode": "NO"
+  },
+  {
+   "id": "1222ca51-9aa1-11e9-a787-52543be04c81",
+   "name": "P6 Rock (MP3 128k)",
+   "streamUrl": "https://p6.p4groupaudio.com/P06_MM",
+   "homepage": "https://p6.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "p4",
+    "rock",
+    "classic rock"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 512,
+   "clickCount": 12,
+   "countryCode": "NO"
+  },
+  {
+   "id": "bb38c058-7757-48e7-a73e-ccdc4fad7d2e",
+   "name": "Radio Rock (NO)",
+   "streamUrl": "https://live-bauerno.sharp-stream.com/radiorock_no_mp3",
+   "homepage": "https://radioplay.no/radio-rock/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classic rock",
+    "pop rock",
+    "rock",
+    "hard rock",
+    "heavy metal"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Oslo",
+   "geo": null,
+   "votes": 425,
+   "clickCount": 12,
+   "countryCode": "NO"
+  },
+  {
+   "id": "7b68e53c-f30e-4fbc-902e-cfdcd98ad9f5",
+   "name": "NRK P3 Musikk",
+   "streamUrl": "https://lyd.nrk.no/icecast/mp3/high/bkaen3z6bl/p3musikk?1768728185",
+   "homepage": "https://radio.nrk.no/direkte/p3",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "alternative"
+   ],
+   "languages": [
+    "norsk"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 28,
+   "clickCount": 10,
+   "countryCode": "NO"
+  },
+  {
+   "id": "38fbe434-aa0d-4f31-a16d-002191c78193",
+   "name": "NRK Klassisk Radio",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/klassisk_mp3_h",
+   "homepage": "https://radio.nrk.no/direkte/klassisk",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "classical"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 59,
+   "clickCount": 9,
+   "countryCode": "NO"
+  },
+  {
+   "id": "66a56e8f-8050-4025-9dc7-23d42b869234",
+   "name": "P10 Country (AAC HQ)",
+   "streamUrl": "https://p10.p4groupaudio.com/P10_AH",
+   "homepage": "https://www.lydenavnorge.no/p10",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "p4",
+    "country"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 454,
+   "clickCount": 8,
+   "countryCode": "NO"
+  },
+  {
+   "id": "f8c657d3-5221-4e32-96d6-15db1cd1a662",
+   "name": "P5 Nonstop Hits (AAC HQ)",
+   "streamUrl": "https://p5n.p4groupaudio.com/P05AAH",
+   "homepage": "https://www.lydenavnorge.no/p5-nonstop-hits",
+   "codec": "AAC",
+   "bitrate": 191,
+   "tags": [
+    "hits",
+    "p4",
+    "pop"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 1139,
+   "clickCount": 7,
+   "countryCode": "NO"
+  },
+  {
+   "id": "497cedaf-bd4f-11e9-acb2-52543be04c81",
+   "name": "P5 Hits (MP3 128k)",
+   "streamUrl": "https://p5.p4groupaudio.com/P05_MM",
+   "homepage": "https://www.p5.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "hits",
+    "p4",
+    "pop"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 204,
+   "clickCount": 7,
+   "countryCode": "NO"
+  },
+  {
+   "id": "bb0d5b00-430e-4dfd-9b0d-ae53bde922e1",
+   "name": "NRK Trøndelag",
+   "streamUrl": "https://lyd.nrk.no/icecast/mp3/high/s0w7hwn47m/p1_dk5",
+   "homepage": "https://lyd.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Trøndelag",
+   "geo": null,
+   "votes": 43,
+   "clickCount": 7,
+   "countryCode": "NO"
+  },
+  {
+   "id": "f7050f2a-4ce4-4754-80e1-1fefc3957503",
+   "name": "NRK P1 Rogaland",
+   "streamUrl": "https://lyd.nrk.no/icecast/aac/high/s0w7hwn47m/p1_dk9",
+   "homepage": "https://nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 159,
+   "tags": [],
+   "languages": [],
+   "state": "Rogaland",
+   "geo": {
+    "lat": 58.931,
+    "long": 5.696
+   },
+   "votes": 26,
+   "clickCount": 7,
+   "countryCode": "NO"
+  },
+  {
+   "id": "25ffaefe-2781-4598-a4fd-120ba7b38eec",
+   "name": "Radio Norge",
+   "streamUrl": "https://live-bauerno.sharp-stream.com/radionorge_no_mp3",
+   "homepage": "https://www.radionorge.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.91,
+    "long": 10.731
+   },
+   "votes": 19,
+   "clickCount": 7,
+   "countryCode": "NO"
+  },
+  {
+   "id": "eca68275-d53f-4b89-9dc2-0e16e89250e6",
+   "name": "P24-7 JuleRadioen",
+   "streamUrl": "https://live-bauerno.sharp-stream.com/station17_no_mp3",
+   "homepage": "https://www.radio-norge.org/julerradioen",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "jul"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 97,
+   "clickCount": 6,
+   "countryCode": "NO"
+  },
+  {
+   "id": "49aedf08-6425-4491-a96c-f598e29aaf00",
+   "name": "CLIAMP Lofi Hip Hop Radio",
+   "streamUrl": "https://radio.cliamp.stream/lofi/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "lofi",
+    "lofi hip hop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 6,
+   "countryCode": "NO"
+  },
+  {
+   "id": "c459a5be-6fea-4c07-b538-e07330521129",
+   "name": "NRK P1 Nordland",
+   "streamUrl": "https://lyd.nrk.no/icecast/aac/high/s0w7hwn47m/p1_dk4",
+   "homepage": "https://www.nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 159,
+   "tags": [
+    "local news",
+    "national"
+   ],
+   "languages": [
+    "norsk"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 51,
+   "clickCount": 5,
+   "countryCode": "NO"
+  },
+  {
+   "id": "d974196b-362d-4473-ad0a-a88c3193f4a2",
+   "name": "P4 – Lyden av Norge",
+   "streamUrl": "https://p4.p4groupaudio.com/P04_MH",
+   "homepage": "https://www.lydenavnorge.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.84,
+    "long": 10.745
+   },
+   "votes": 17,
+   "clickCount": 5,
+   "countryCode": "NO"
+  },
+  {
+   "id": "8ca9edad-3d6f-4179-963a-54a44cb28e94",
+   "name": "Ptro",
+   "streamUrl": "https://stream.zeno.fm/z8cp1nqwhnruv",
+   "homepage": "https://ptro.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.391,
+    "long": 8.291
+   },
+   "votes": 1,
+   "clickCount": 5,
+   "countryCode": "NO"
+  },
+  {
+   "id": "4a5c183a-cebb-11e9-8502-52543be04c81",
+   "name": "P24-7 Mix",
+   "streamUrl": "https://live-bauerno.sharp-stream.com/p247mix_no_mp3",
+   "homepage": "http://p247mix.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 372,
+   "clickCount": 4,
+   "countryCode": "NO"
+  },
+  {
+   "id": "7c300ed2-8791-11e9-aa30-52543be04c81",
+   "name": "P9 Retro (MP3 128k)",
+   "streamUrl": "https://p9.p4groupaudio.com/P09_MH",
+   "homepage": "https://www.p9retro.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "p4",
+    "60s",
+    "70s",
+    "80s",
+    "retro"
+   ],
+   "languages": [
+    "norsk",
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 362,
+   "clickCount": 4,
+   "countryCode": "NO"
+  },
+  {
+   "id": "c74d8f47-c3f0-42f8-93e1-310db007d3d8",
+   "name": "NRK Nyhter (MP3 - HI)",
+   "streamUrl": "https://lyd.nrk.no/icecast/mp3/high/s0w7hwn47m/nyheter",
+   "homepage": "https://radio.nrk.no/direkte/alltid_nyheter",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.79,
+    "long": 10.854
+   },
+   "votes": 65,
+   "clickCount": 4,
+   "countryCode": "NO"
+  },
+  {
+   "id": "971daac0-f150-4528-8be1-94f46e9a9b51",
+   "name": "RADIO Trøndelag",
+   "streamUrl": "https://nettradio.radiotrondelag.no:8443/radio_trondelag",
+   "homepage": "https://www.radiotrondelag.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "entertainment",
+    "local music",
+    "local news",
+    "local radio",
+    "news",
+    "pop music"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 63.428,
+    "long": 10.426
+   },
+   "votes": 46,
+   "clickCount": 4,
+   "countryCode": "NO"
+  },
+  {
+   "id": "5cab468c-b930-49e7-9517-6aa0ee4813d3",
+   "name": "NRK P1 Buskerud (AAC High)",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_dk13_aac_h",
+   "homepage": "https://lyd.nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 159,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.905,
+    "long": 10.747
+   },
+   "votes": 23,
+   "clickCount": 4,
+   "countryCode": "NO"
+  },
+  {
+   "id": "b6a89a4f-7624-4497-8d36-76f747dd0fa4",
+   "name": "Radio Rock Norway AAC",
+   "streamUrl": "https://live-bauerno.sharp-stream.com/radiorock_no_aac",
+   "homepage": "https://radioplay.no/radio-rock",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [
+    "hard rock",
+    "metal",
+    "rock"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 4,
+   "countryCode": "NO"
+  },
+  {
+   "id": "82d80867-15d6-44e8-b40b-3e6f7baa31b5",
+   "name": "NRK P1 Finnmark",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_dk2_mp3_h",
+   "homepage": "https://www.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Finnmark",
+   "geo": {
+    "lat": 69.774,
+    "long": 26.868
+   },
+   "votes": 4,
+   "clickCount": 4,
+   "countryCode": "NO"
+  },
+  {
+   "id": "b6f295e4-f7fd-4d25-9fa3-aaa07787d168",
+   "name": "Ordentlig Radio",
+   "streamUrl": "https://stream.oradio.no/oradio_hq",
+   "homepage": "https://oradio.no/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "norsk musikk på alle språk",
+    "norwegian music only"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 4,
+   "countryCode": "NO"
+  },
+  {
+   "id": "76e7b809-cebd-11e9-8502-52543be04c81",
+   "name": "P8 Pop (MP3 128k)",
+   "streamUrl": "https://p8.p4groupaudio.com/P08_MM",
+   "homepage": "https://www.p8pop.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "p4",
+    "80s",
+    "90s",
+    "classic hits",
+    "oldies"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 458,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "b914effd-cebb-11e9-8502-52543be04c81",
+   "name": "P11 Dance (MP3 128k)",
+   "streamUrl": "https://p11.p4groupaudio.com/P11_MM",
+   "homepage": "https://www.p11dance.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "p4",
+    "dance"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 148,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "28fdf384-acd0-4dd6-bef4-56dc1f345227",
+   "name": "P11 Dance (MP3 192k)",
+   "streamUrl": "https://p11.p4groupaudio.com/P11_MH",
+   "homepage": "https://www.p11dance.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "p4",
+    "dance"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 71,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "2bc3472b-f9e9-4013-94d3-4d737f5b0e8e",
+   "name": "P7 Kristen Pop",
+   "streamUrl": "https://radio.p7.no/listen/p7_kristen_pop/kristen_pop",
+   "homepage": "https://www.p7.no/p7-kristen-pop",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "contemporary christian music"
+   ],
+   "languages": [
+    "english",
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 49,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "f6719b19-c0d6-4b18-8d22-ca72dc40ecb6",
+   "name": "NRK P1 Sogn og Fjordane (Høy kvalitet MP3)",
+   "streamUrl": "https://lyd.nrk.no/icecast/mp3/high/s0w7hwn47m/p1_dk7",
+   "homepage": "https://radio.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "norsk",
+    "norwegian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 61.452,
+    "long": 5.853
+   },
+   "votes": 32,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "dd8632d5-abb1-411a-8e86-8e2ab6c4c223",
+   "name": "Radio Bardufoss",
+   "streamUrl": "https://stream.bardufoss.no/radiobardufoss192",
+   "homepage": "https://bardufoss.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 69.055,
+    "long": 18.535
+   },
+   "votes": 19,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "ec48cec2-5093-4300-9a71-0d593e6eb950",
+   "name": "Radio Ålesund",
+   "streamUrl": "https://audio.radioaalesund.no/aalesund_mq",
+   "homepage": "https://radioaalesund.no/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Møre og Romsdal",
+   "geo": {
+    "lat": 62.473,
+    "long": 6.155
+   },
+   "votes": 12,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "f58fd940-4c0f-46bc-a512-bdba20e8327c",
+   "name": "NRK Folkemusikk",
+   "streamUrl": "https://lyd.nrk.no/icecast/aac/high/s0w7hwn47m/folkemusikk",
+   "homepage": "https://lyd.nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 158,
+   "tags": [],
+   "languages": [
+    "norsk",
+    "norwegian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.901,
+    "long": 10.722
+   },
+   "votes": 9,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "6400750e-3cf9-41b9-8c00-fb8a166940a7",
+   "name": "CLIAMP NCS Dubstep",
+   "streamUrl": "https://radio.cliamp.stream/ncs-dubstep/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dubstep",
+    "ncs",
+    "ncs radio",
+    "no copyright sounds"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "6cef8379-152c-4575-8344-0699a0456194",
+   "name": "NRK P1 Innlandet",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_dk14_mp3_h",
+   "homepage": "https://lyd.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "nrk"
+   ],
+   "languages": [
+    "norsk",
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 3,
+   "countryCode": "NO"
+  },
+  {
+   "id": "13201083-cebd-11e9-8502-52543be04c81",
+   "name": "P12 Hitmix (MP3 128k)",
+   "streamUrl": "https://nrj.p4groupaudio.com/NRJ_MM",
+   "homepage": "https://www.p12hitmix.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "hits",
+    "p4",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 665,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "ce27f2dc-7da9-4048-b0d0-013a115552f2",
+   "name": "P12 Hitmix (AAC HQ)",
+   "streamUrl": "https://nrj.p4groupaudio.com/NRJ_AH",
+   "homepage": "https://www.p12hitmix.no/",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "p4",
+    "hits",
+    "pop",
+    "top 40"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 270,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "6f4fe23b-25c3-4401-a01e-15bce5da1352",
+   "name": "Klem FM",
+   "streamUrl": "https://p7.p4groupaudio.com/P07_MM",
+   "homepage": "https://www.p7klem.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 72,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "aea07db5-73c4-4e29-a903-3c239b29a169",
+   "name": "Radio Latin-Amerika",
+   "streamUrl": "https://stream.radiolatinamerika.no/latam_hq",
+   "homepage": "https://radiolatinamerika.no/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "chile",
+    "latin",
+    "latin pop",
+    "latinoamérica",
+    "musica latina",
+    "musica latinoamericana"
+   ],
+   "languages": [
+    "spanish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.92,
+    "long": 10.751
+   },
+   "votes": 34,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "6a719dc0-ec46-4fd8-ad30-992682705bcb",
+   "name": "Nrk p1 Hordaland",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_dk8_mp3_h",
+   "homepage": "https://.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 29,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "c76014a8-a0ac-4b82-8f44-0ba2288019c0",
+   "name": "P7",
+   "streamUrl": "https://radio.p7.no/listen/p7_kristen_riksradio/kristen_riksradio",
+   "homepage": "https://p7.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 25,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "569f9c60-d6b0-435f-aeb5-2e85c8479e94",
+   "name": "NRK P1 Sogn og Fjordane (Høy kvalitet AAC)",
+   "streamUrl": "https://lyd.nrk.no/icecast/aac/high/s0w7hwn47m/p1_dk7",
+   "homepage": "https://radio.nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 159,
+   "tags": [],
+   "languages": [
+    "norsk",
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 23,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "5a673cf3-a64a-4685-a721-e335d5370779",
+   "name": "1FM Molde",
+   "streamUrl": "https://s2.radio.co/s914ffa700/listen?rp_source=1&=&&___cb=962597539110953",
+   "homepage": "https://www.1fmmolde.com/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "8ecc85cf-de72-4c33-aae6-8005cdfceabd",
+   "name": "NRK P1 Østfold",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_dk15_mp3_h",
+   "homepage": "https://radio.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.314,
+    "long": 10.898
+   },
+   "votes": 12,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "fa9ad9b8-3476-4f71-a2b9-c2702044d472",
+   "name": "CLIAMP NCS Drum & Bass",
+   "streamUrl": "https://radio.cliamp.stream/ncs-dnb/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "dnb",
+    "drum & bass",
+    "drum and bass",
+    "ncs",
+    "ncs radio",
+    "no copyright sounds"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "9de12658-4887-48f9-8dc1-60a9eaa4df7d",
+   "name": "CLIAMP NCS Phonk",
+   "streamUrl": "https://radio.cliamp.stream/ncs-phonk/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ncs",
+    "ncs radio",
+    "no copyright sounds",
+    "phonk"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "1e78ecab-037f-40e4-bd0b-b762cb6fde51",
+   "name": "Tune Tribe Radio",
+   "streamUrl": "https://tunetriberadio.com:8556/listen/tune_tribe_radio/radio.mp3",
+   "homepage": "https://www.tunetriberadio.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "24/7",
+    "ai radio",
+    "ambient",
+    "chill",
+    "chillout",
+    "deep house"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "Oslo",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "c4d193eb-47f6-4607-b69c-2c38c8ba5b0b",
+   "name": "Jæren Misjonsradio",
+   "streamUrl": "https://stream.theradiohub.com/JMRadio/hq",
+   "homepage": "https://www.jmradio.no/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "Rogaland",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "0631292b-fe66-47dc-bf0d-ebe8efb87e9d",
+   "name": "NRK P1 Vestfold",
+   "streamUrl": "https://lyd.nrk.no/icecast/aac/high/s0w7hwn47m/p1_dk12",
+   "homepage": "https://lyd.nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 159,
+   "tags": [
+    "local radio",
+    "news",
+    "norwegian",
+    "nrk",
+    "pop",
+    "public broadcasting"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 59.14,
+    "long": 9.654
+   },
+   "votes": 0,
+   "clickCount": 2,
+   "countryCode": "NO"
+  },
+  {
+   "id": "a1e0f382-13c0-4946-b749-c8d6fb052678",
+   "name": "P11 Dance (AAC HQ)",
+   "streamUrl": "https://p11.p4groupaudio.com/P11_AH",
+   "homepage": "https://www.p11dance.no/",
+   "codec": "AAC",
+   "bitrate": 192,
+   "tags": [
+    "p4",
+    "dance"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 61.121,
+    "long": 10.462
+   },
+   "votes": 195,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "32e9fdb0-a3a5-41fb-87eb-f48a0cfd3d84",
+   "name": "Radiø Bø",
+   "streamUrl": "https://nettradio.radiobo.com/radiobo-high",
+   "homepage": "https://radiobo.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "lofoten",
+    "lokalradio",
+    "nordland",
+    "vesterålen"
+   ],
+   "languages": [
+    "norsk",
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 117,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "7297dc77-3fc6-47c7-be9b-d9271765db90",
+   "name": "P24-7 Kos",
+   "streamUrl": "https://live-bauerno.sharp-stream.com/p247kos_no_hq?direct=true",
+   "homepage": "https://radioplay.no/p24-7kos/",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [
+    "pop music"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 71,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "67d1e01a-714e-44c5-8889-8cbd62dd3faa",
+   "name": "Radio 3,16 - hele Norges kristne radiokanal",
+   "streamUrl": "https://streaming.radio.co:80/se326fb378/listen",
+   "homepage": "https://www.radio316.no/",
+   "codec": "AAC",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 58.146,
+    "long": 7.984
+   },
+   "votes": 50,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "fb89990d-1ca2-41f3-a4e1-4d4022ba967b",
+   "name": "Radio Sotra",
+   "streamUrl": "https://streaming.radiosotra.no:8443/radiosotra",
+   "homepage": "https://radiosotra.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Hordaland",
+   "geo": null,
+   "votes": 36,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "64eb20e1-17b4-46b7-9276-a587c1cb7594",
+   "name": "Radio102",
+   "streamUrl": "https://stream.radio102.no/radio102_hq",
+   "homepage": "https://radio102.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "local",
+    "local music",
+    "local news",
+    "local radio"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Rogaland",
+   "geo": {
+    "lat": 59.389,
+    "long": 5.304
+   },
+   "votes": 32,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "603e9db3-89e6-4b4c-adfe-a52f216c412b",
+   "name": "NRK P1 Troms (Høy kvalitet AAC)",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_dk3_aac_h",
+   "homepage": "https://lyd.nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 159,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 28,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "7508f652-57d1-4b63-bd2b-84f4bdfbc632",
+   "name": "Hamar Radioen",
+   "streamUrl": "https://lyd.radioene.no/hamar.mp3",
+   "homepage": "http://radioene.no/radioplayer/hamar/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "news",
+    "pop",
+    "rock"
+   ],
+   "languages": [],
+   "state": "Innlandet",
+   "geo": {
+    "lat": 60.795,
+    "long": 11.082
+   },
+   "votes": 24,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "a8685634-05da-4a19-88aa-4ae3f8611a31",
+   "name": "Trysilradioen",
+   "streamUrl": "https://lyd.radioene.no/trysil.mp3",
+   "homepage": "https://radioene.no/trysilradioen",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 22,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "8f0acc25-024b-41d4-b472-5636ed798d68",
+   "name": "Guovdageainnu Lagasradio",
+   "streamUrl": "https://streaming.radio.co/s5b773f8d3/listen",
+   "homepage": "https://glr.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Finnmark",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "2925b7a2-c425-4d87-b256-6d7f5caf5198",
+   "name": "NRK P1 Møre og Romsdal",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/p1_dk6_mp3_l",
+   "homepage": "http://www.nrk.no/",
+   "codec": "MP3",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "6de3c1a3-3cb4-4246-9f80-ecc227b237b3",
+   "name": "Sørlandsradioen",
+   "streamUrl": "https://nettradio.sorlandsradioen.no/sorlandsradioen_hq",
+   "homepage": "https://sorlandsradioen.no/",
+   "codec": "MP3",
+   "bitrate": 160,
+   "tags": [],
+   "languages": [
+    "norsk",
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 16,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "19711d30-f2e0-4eaa-9197-6e977616b926",
+   "name": "Radio Kos",
+   "streamUrl": "https://lyd.radiokos.no/kos_lq",
+   "homepage": "https://www.facebook.com/radiokos",
+   "codec": "AAC",
+   "bitrate": 48,
+   "tags": [],
+   "languages": [],
+   "state": "Rogaland",
+   "geo": null,
+   "votes": 15,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "31b93aef-1b32-4a6f-b91a-dea7d92e691b",
+   "name": "radiOrakel FM 99.3",
+   "streamUrl": "https://stream.radiorakel.no/fm993.mp3",
+   "homepage": "https://radiorakel.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "35d235f8-4843-4f60-8d87-5629c8356aa9",
+   "name": "Radio Haugaland 96",
+   "streamUrl": "https://stream.theradiohub.com/?server=radioip.no&port=443&type=mp3&mount=rh.mp3",
+   "homepage": "https://radioh.no/",
+   "codec": "MP3",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 14,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "9db8f4b3-4053-4a44-b0e9-fd96cc45c13a",
+   "name": "The Beat",
+   "streamUrl": "https://live-nors.sharp-stream.com/nors17.mp3",
+   "homepage": "https://dinlyd.no/thebeat/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 59.913,
+    "long": 10.749
+   },
+   "votes": 13,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "eb123950-4088-47b2-a886-df0df64d6282",
+   "name": "NRK P1+ (mp3)",
+   "streamUrl": "https://lyd.nrk.no/nrk_radio_p1pluss_mp3_h?_hdr=0",
+   "homepage": "https://radio.nrk.no/direkte/p1pluss",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "e8aa4980-fcef-44fb-9a55-ebabe9e1acab",
+   "name": "CLIAMP Synthwave Nights",
+   "streamUrl": "https://radio.cliamp.stream/synthwave/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "night",
+    "synthwave"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "c84b3d3a-1ba1-4fc7-bfa1-c8d0ba0b4652",
+   "name": "Nærkanalen",
+   "streamUrl": "https://stream.radiomeloy.no:8003/radiomeloy",
+   "homepage": "https://narkanalen.no/",
+   "codec": "MP3",
+   "bitrate": 160,
+   "tags": [],
+   "languages": [],
+   "state": "Nordland",
+   "geo": {
+    "lat": 66.865,
+    "long": 13.722
+   },
+   "votes": 8,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "a10bab2a-99e8-4d71-b9b1-a4e039970331",
+   "name": "NF Radio",
+   "streamUrl": "https://player.nfradio.fr/listen/nf_radio/radio.mp3",
+   "homepage": "https://nfradio.fr/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "actualités",
+    "expatrié",
+    "francophone",
+    "french",
+    "news",
+    "norvège"
+   ],
+   "languages": [
+    "french"
+   ],
+   "state": "Oslo",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "d228d5ee-3867-492f-a9ca-2adbe7815da3",
+   "name": "NRK Sápmi",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/sapmi_mp3_h",
+   "homepage": "https://radio.nrk.no/direkte/sapmi",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "84554245-69c3-4e7d-a1ef-681b7bb79120",
+   "name": "Scansat Radio (Scandinavian Satellite Radio)",
+   "streamUrl": "https://stream.rcast.net/67165",
+   "homepage": "https://www.scansat.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "norsk",
+    "norwegian"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 58.95,
+    "long": 5.696
+   },
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "2336ae38-ec05-439c-86a4-f3670629ae94",
+   "name": "Radio AI Norge",
+   "streamUrl": "https://a13.asurahosting.com/listen/radio_ai/radio.mp3",
+   "homepage": "https://radioai.mobirisesite.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 6,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "5d92aca2-795c-403f-b2ea-977ca67e5e82",
+   "name": "CLIAMP NCS Trap",
+   "streamUrl": "https://radio.cliamp.stream/ncs-trap/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ncs",
+    "ncs radio",
+    "no copyright sounds",
+    "trap"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "c09a7201-ab73-4630-881c-75a56c037b9d",
+   "name": "Norsk Pop",
+   "streamUrl": "https://live-bauerno.sharp-stream.com/norskpop_no_mp3",
+   "homepage": "",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "norges beste musikk"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "77071b7c-e76e-4de7-a520-ac625c4b55ce",
+   "name": "Harrys Radio",
+   "streamUrl": "https://mpc1.mediacp.eu:8208/stream",
+   "homepage": "https://radio.aasterud.com/",
+   "codec": "AAC+",
+   "bitrate": 32,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "048d56d8-872a-472a-9319-7a3af009dbb6",
+   "name": "Radio Rox",
+   "streamUrl": "https://live-nors.sharp-stream.com/nors13.mp3",
+   "homepage": "https://dinlyd.no/radiorox/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "8a408b49-2484-445b-9057-e72acff4da68",
+   "name": "CLIAMP EDM Pulse",
+   "streamUrl": "https://radio.cliamp.stream/edm/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "edm",
+    "electronic dance music"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "fa24afc5-0b4b-438b-8458-7b29a7c45b4f",
+   "name": "CLIAMP NCS Radio",
+   "streamUrl": "https://radio.cliamp.stream/ncs/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ncs",
+    "ncs radio",
+    "no copyright sounds"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "942b8fe3-cb0f-4628-a3f6-dc500cd3498c",
+   "name": "CLIAMP NCS Chill",
+   "streamUrl": "https://radio.cliamp.stream/ncs-chill/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "chill",
+    "chillout",
+    "ncs",
+    "ncs radio",
+    "no copyright sounds"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "e58d5d69-f956-4623-b59d-ade5f7ba561a",
+   "name": "Radio Tropoli",
+   "streamUrl": "https://radio.roganett.com/listen/radio_tropoli/radio.mp3",
+   "homepage": "https://tropoli.roganett.com/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 58.925,
+    "long": 5.812
+   },
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "d0b7b1c0-5a61-4747-8029-dae6f7691ede",
+   "name": "CLIAMP NCS Pop",
+   "streamUrl": "https://radio.cliamp.stream/ncs-pop/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ncs",
+    "ncs radio",
+    "no copyright sounds",
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 3,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "4b56dea4-4852-4f38-9ed1-7ed52b060191",
+   "name": "NRK Radio_Super",
+   "streamUrl": "https://lyd.nrk.no/icecast/mp3/high/s0w7hwn47m/radio_super",
+   "homepage": "https://radio.nrk.no/direkte/radio_super",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "cfee3afd-3368-468c-bce3-6ec59558764c",
+   "name": "Ptro",
+   "streamUrl": "https://s2.radio.co/sd7f2a360c/listen",
+   "homepage": "https://ptro.no/",
+   "codec": "AAC",
+   "bitrate": 96,
+   "tags": [
+    "religious"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 1,
+   "countryCode": "NO"
+  },
+  {
+   "id": "f7339150-0cda-4505-a25f-8b6ceecd2674",
+   "name": "NRK Sport",
+   "streamUrl": "https://cdn0-47115-liveicecast0.dna.contentdelivery.net/sport_aac_h",
+   "homepage": "https://radio.nrk.no/",
+   "codec": "AAC+",
+   "bitrate": 159,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 19,
+   "clickCount": 0,
+   "countryCode": "NO"
+  },
+  {
+   "id": "8a940eb8-c7dd-47a6-a823-ca928c360c50",
+   "name": "Radio 3 Bodø",
+   "streamUrl": "https://stream.radio3.no/Radio3Bodo48?rp_source=1&=&&___cb=322377588283394",
+   "homepage": "https://radio3bodo.no/",
+   "codec": "AAC",
+   "bitrate": 48,
+   "tags": [
+    "football commentary",
+    "local news",
+    "music"
+   ],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "Nordland",
+   "geo": {
+    "lat": 67.283,
+    "long": 14.378
+   },
+   "votes": 18,
+   "clickCount": 0,
+   "countryCode": "NO"
+  },
+  {
+   "id": "77257628-c51f-43ca-94b4-52f4ac0296db",
+   "name": "Radio Tromsø Hits",
+   "streamUrl": "https://stream.rthits.no/rthits192",
+   "homepage": "https://radiotromso.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Tromsø",
+   "geo": null,
+   "votes": 18,
+   "clickCount": 0,
+   "countryCode": "NO"
+  },
+  {
+   "id": "57bf39a0-2e30-4535-8c36-5254fc3bf22d",
+   "name": "Radio Tønsberg",
+   "streamUrl": "https://audio.jaerradiogruppen.no/tonsberg_hq",
+   "homepage": "https://radiotonsberg.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "norwegian"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 7,
+   "clickCount": 0,
+   "countryCode": "NO"
+  },
+  {
+   "id": "f0e3c2f6-04d7-4490-98bb-c1c140b15805",
+   "name": "CLIAMP NCS House",
+   "streamUrl": "https://radio.cliamp.stream/ncs-house/stream",
+   "homepage": "https://www.cliamp.stream/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "house",
+    "ncs",
+    "ncs radio",
+    "no copyright sounds"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 0,
+   "countryCode": "NO"
+  },
+  {
+   "id": "f2b303dc-0b27-43d2-a52f-4f1d3d15f713",
+   "name": "Radio DSF - Finnmark",
+   "streamUrl": "https://lyd.radiodsf.no/dsf_hq",
+   "homepage": "https://www.radiodsf.no/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "gospel music",
+    "religious"
+   ],
+   "languages": [
+    "norwegian",
+    "sami"
+   ],
+   "state": "Finnmark",
+   "geo": {
+    "lat": 69.471,
+    "long": 25.512
+   },
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "NO"
+  },
+  {
+   "id": "6f288b9b-0380-404c-b9e0-d6c06cc07a1f",
+   "name": "Radio Vest",
+   "streamUrl": "https://stream.radiovest.no/radiovest",
+   "homepage": "https://radiovest.no/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "pop music"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 58.695,
+    "long": 5.768
+   },
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "NO"
+  }
+ ]
+}

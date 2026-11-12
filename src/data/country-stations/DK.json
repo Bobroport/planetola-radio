@@ -1,0 +1,1523 @@
+{
+ "countryCode": "DK",
+ "stations": [
+  {
+   "id": "0d939aa0-cce8-4841-92fe-1a03d36da0d3",
+   "name": "Classic Rock Danmark",
+   "streamUrl": "https://netradio.classicfm.dk/classicrock",
+   "homepage": "https://classicrock.dk/station/dk",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "classic rock",
+    "hard rock",
+    "progressive rock",
+    "punk rock",
+    "retro",
+    "rock fra dit liv!"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 288,
+   "clickCount": 10,
+   "countryCode": "DK"
+  },
+  {
+   "id": "552a021a-95cf-4dfe-bf0d-83e2dbe34fd3",
+   "name": "Globus Guld Jul",
+   "streamUrl": "https://stream.probroadcast.dk/guldjul",
+   "homepage": "https://globusguld.dk/globus-guld-jul/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "christmas",
+    "holiday"
+   ],
+   "languages": [
+    "danish",
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 74,
+   "clickCount": 9,
+   "countryCode": "DK"
+  },
+  {
+   "id": "d5080e47-531e-4871-a4c2-bd98ba726311",
+   "name": "POP FM 80er",
+   "streamUrl": "https://live-bauerdk.sharp-stream.com//popfm80.mp3",
+   "homepage": "https://radioplay.dk/pop-fm-80er",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "1980s",
+    "80's",
+    "80er",
+    "80s"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "Copenhagen",
+   "geo": {
+    "lat": 55.694,
+    "long": 12.564
+   },
+   "votes": 65,
+   "clickCount": 8,
+   "countryCode": "DK"
+  },
+  {
+   "id": "b67044c5-7e2a-4ed7-b370-2164c2c890f9",
+   "name": "80's Hits",
+   "streamUrl": "https://live-bauerdk.sharp-stream.com/DK_HQ_RP04.aac",
+   "homepage": "https://radiostationer.dk/187-80-s-hits.html",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 56.34,
+    "long": 9.415
+   },
+   "votes": 97,
+   "clickCount": 7,
+   "countryCode": "DK"
+  },
+  {
+   "id": "104098d5-7b92-457d-8851-6ef6000aeb7b",
+   "name": "Skala FM",
+   "streamUrl": "https://netradio.skala.fm/ska8d",
+   "homepage": "https://skala.fm/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 40,
+   "clickCount": 7,
+   "countryCode": "DK"
+  },
+  {
+   "id": "9929aca5-2a39-4915-87b4-c62d55761d4d",
+   "name": "NOVA - Horsens 103.6 FM",
+   "streamUrl": "https://live-bauerdk.sharp-stream.com/nova_dk_mp3",
+   "homepage": "https://radioplay.dk/nova",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 13,
+   "clickCount": 6,
+   "countryCode": "DK"
+  },
+  {
+   "id": "b4d7f87f-89c8-4d1b-af0b-fc2fcafd8d66",
+   "name": "myROCK",
+   "streamUrl": "https://live-bauerdk.sharp-stream.com/myrock_dk_mp3",
+   "homepage": "https://radioplay.dk/myrock/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 266,
+   "clickCount": 5,
+   "countryCode": "DK"
+  },
+  {
+   "id": "f8125a54-33ed-469d-a10e-a2829e947b5b",
+   "name": "go!FM",
+   "streamUrl": "https://radioserver.dk/gofm",
+   "homepage": "https://www.gofm.dk/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "pop rock"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 56.17,
+    "long": 10.195
+   },
+   "votes": 72,
+   "clickCount": 5,
+   "countryCode": "DK"
+  },
+  {
+   "id": "cbf46457-152d-4d64-bec5-266e5796c91a",
+   "name": "Radio Soft - Københavns NR - Bispebjerg LR - Bella Chr",
+   "streamUrl": "https://live-bauerdk.sharp-stream.com/radiosoft_dk_tunein_mp3",
+   "homepage": "https://www.knr.dk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "København",
+   "geo": {
+    "lat": 55.709,
+    "long": 12.533
+   },
+   "votes": 39,
+   "clickCount": 5,
+   "countryCode": "DK"
+  },
+  {
+   "id": "14c0f0ff-3aa6-4e6d-a764-0fad7c365f3c",
+   "name": "Danmarks Radio P3",
+   "streamUrl": "https://live-icy.dr.dk/A/A27L.mp3",
+   "homepage": "https://www.dr.dk/lyd/oversigt",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classical music",
+    "intelligent",
+    "modern rock"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 55.691,
+    "long": 12.561
+   },
+   "votes": 18,
+   "clickCount": 5,
+   "countryCode": "DK"
+  },
+  {
+   "id": "a401551f-88a3-400c-9f02-2bfb592a1ae0",
+   "name": "Radio Viborg",
+   "streamUrl": "https://webradio.radioviborg.dk/viborg",
+   "homepage": "https://radioviborg.dk/#",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "local news",
+    "pop music"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "Viborg",
+   "geo": {
+    "lat": 56.45,
+    "long": 9.407
+   },
+   "votes": 83,
+   "clickCount": 4,
+   "countryCode": "DK"
+  },
+  {
+   "id": "7feafe93-aa70-4661-80e3-f3d3f370ec3d",
+   "name": "Classic FM (Fyn)",
+   "streamUrl": "https://netradio.classicfm.dk/cla12a",
+   "homepage": "https://classicfm.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Fyn",
+   "geo": {
+    "lat": 55.328,
+    "long": 10.344
+   },
+   "votes": 35,
+   "clickCount": 4,
+   "countryCode": "DK"
+  },
+  {
+   "id": "3dbfe861-a8f0-4366-89bf-275e87cb1b7a",
+   "name": "Danmarks Radio p2",
+   "streamUrl": "https://live-icy.dr.dk/A/A04L.mp3",
+   "homepage": "https://www.dr.dk/lyd/p2",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 55.777,
+    "long": 12.239
+   },
+   "votes": 10,
+   "clickCount": 4,
+   "countryCode": "DK"
+  },
+  {
+   "id": "d1aff0af-3e9e-4ad2-a9d6-cfed3ffd6a66",
+   "name": "Tango Copenhagen Radio",
+   "streamUrl": "https://tangocopenhagen.stream.laut.fm/tangocopenhagen?t302=2021-01-15_18-47-40&uuid=64db9a91-4a6e-4bc8-ba24-26a2fa7f24d0",
+   "homepage": "https://tangocopenhagen.radio/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 829,
+   "clickCount": 3,
+   "countryCode": "DK"
+  },
+  {
+   "id": "5ef52e34-5c0d-41b8-b2ff-24bb3df52065",
+   "name": "Radio Solo",
+   "streamUrl": "https://radioserver.dk/solo",
+   "homepage": "https://radiosolo.dk/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 60,
+   "clickCount": 3,
+   "countryCode": "DK"
+  },
+  {
+   "id": "d4667343-aec5-40b7-b292-e18a6cc0e92b",
+   "name": "Radio VLR",
+   "streamUrl": "https://netradio.vlr.dk/vlr8d",
+   "homepage": "https://vlr.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 47,
+   "clickCount": 3,
+   "countryCode": "DK"
+  },
+  {
+   "id": "39334888-fb45-432f-8066-173b05d1af01",
+   "name": "Radio Alfa Aarhus",
+   "streamUrl": "https://radioserver.dk/alfaaarhus",
+   "homepage": "https://www.radioalfa.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 56.147,
+    "long": 10.208
+   },
+   "votes": 28,
+   "clickCount": 3,
+   "countryCode": "DK"
+  },
+  {
+   "id": "d1bd8767-9780-42ed-b832-c9efecac205c",
+   "name": "DR P5 Bornholm",
+   "streamUrl": "https://live-icy.dr.dk/A/A30H.mp3",
+   "homepage": "https://www.dr.dk/lyd/programmer",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "København",
+   "geo": {
+    "lat": 55.072,
+    "long": 14.875
+   },
+   "votes": 7,
+   "clickCount": 3,
+   "countryCode": "DK"
+  },
+  {
+   "id": "d407c4b5-2131-464f-bcc4-c0dad44813d8",
+   "name": "Country 108",
+   "streamUrl": "https://icepool.silvacast.com/COUNTRY108.mp3",
+   "homepage": "https://www.country108.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "country"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 52.466,
+    "long": 13.387
+   },
+   "votes": 4,
+   "clickCount": 3,
+   "countryCode": "DK"
+  },
+  {
+   "id": "d22c0906-9ce1-435d-b4a8-05e68a16d7df",
+   "name": "DR P4  Midt & Vest",
+   "streamUrl": "https://live-icy.dr.dk/A/A09L.mp3",
+   "homepage": "https://www.dr.dk/lyd/p4vest",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "adult contemporary"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 56.358,
+    "long": 8.617
+   },
+   "votes": 0,
+   "clickCount": 3,
+   "countryCode": "DK"
+  },
+  {
+   "id": "d181c551-b869-4cf8-b50c-682c34dc0272",
+   "name": "Julekanalen (Classic FM Jul)",
+   "streamUrl": "https://netradio.julekanalen.dk/julekanalen",
+   "homepage": "https://julekanalen.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "christmas",
+    "classic fm",
+    "jul",
+    "julemusik"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "Danmark",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 3,
+   "countryCode": "DK"
+  },
+  {
+   "id": "220f0cf1-029f-459f-bdee-890995f037b2",
+   "name": "WMR - World Music Radio",
+   "streamUrl": "https://stream.probroadcast.dk/wmr",
+   "homepage": "https://www.wmr.dk/#",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [
+    "world music"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 181,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "ea949437-acea-40e1-ab43-045fb7aed40b",
+   "name": "Always ELVIS Radio",
+   "streamUrl": "https://radioserver.dk/alwayselvisradio",
+   "homepage": "https://www.memphismansion.com/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "1950s",
+    "elvis presley",
+    "oldies",
+    "oldies 50's/60's"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 56.46,
+    "long": 9.992
+   },
+   "votes": 157,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "6a9abc1c-66f2-11ea-be63-52543be04c81",
+   "name": "Danmarks Radio P6",
+   "streamUrl": "https://live-icy.dr.dk/A/A29H.mp3",
+   "homepage": "https://www.dr.dk/radio/oversigt",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "danish",
+    "music",
+    "talk"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 142,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "c3f54477-78f5-4796-bcfc-6b464295103e",
+   "name": "Radio Denmark FM",
+   "streamUrl": "https://live-bauerdk.sharp-stream.com/radio100_dk_mp3",
+   "homepage": "https://radioplay.dk/radio-100",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "classic hits",
+    "hits",
+    "oldies",
+    "pop"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 79,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "143f751d-32b2-456d-9219-d2e24a3d48fb",
+   "name": "Radio VLR - Classic Christmas",
+   "streamUrl": "https://netradio.vlr.dk/popup2",
+   "homepage": "https://vlr.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 26,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "331c897a-a89b-4c49-9750-121b3a789802",
+   "name": "DR P5 Midt/Vest",
+   "streamUrl": "https://live-icy.dr.dk/A/A17H.mp3",
+   "homepage": "https://www.dr.dk/lyd/programmer",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "København",
+   "geo": {
+    "lat": 55.63,
+    "long": 12.577
+   },
+   "votes": 18,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "8a3c3b8c-58ab-4556-83d7-446b9a787b68",
+   "name": "Limfjord Mix",
+   "streamUrl": "https://media.limfjordnetradio.dk/limfjord128",
+   "homepage": "https://limfjordnetradio.dk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 56.641,
+    "long": 9.29
+   },
+   "votes": 18,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "9d096256-6a1c-4844-a5f6-9a6455fa960a",
+   "name": "DR P5 Fyn",
+   "streamUrl": "https://live-icy.dr.dk/A/A02H.mp3",
+   "homepage": "https://www.dr.dk/lyd/programmer",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "København",
+   "geo": {
+    "lat": 55.63,
+    "long": 12.575
+   },
+   "votes": 11,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "adca3071-8636-4114-a18e-2d458054ed58",
+   "name": "Historyradio.org low bandwidth",
+   "streamUrl": "https://cast1.asurahosting.com/proxy/historyr/stream.mp3",
+   "homepage": "https://historyradio.free.nf/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "culture",
+    "educational",
+    "history",
+    "literature",
+    "old time radio",
+    "talk"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "North Jutland",
+   "geo": {
+    "lat": 57.04,
+    "long": 9.934
+   },
+   "votes": 7,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "8dbeb94e-3497-4798-a8a7-9623902cd007",
+   "name": "Radio Sydhavsoerne Lolland",
+   "streamUrl": "https://radio1.jfmtech.dk/sydhavlolland",
+   "homepage": "https://netradio.dk/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 5,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "a14c1c19-6722-495a-b57e-5c825277d19a",
+   "name": "Charlie Classical",
+   "streamUrl": "https://ec6.yesstreaming.net:4365/stream",
+   "homepage": "https://charlie.nu/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "classical"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 55.624,
+    "long": 8.482
+   },
+   "votes": 4,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "9cb2aa9d-b96d-497e-8389-85664ebbf867",
+   "name": "Radio ABC",
+   "streamUrl": "https://radioserver.dk/abc",
+   "homepage": "https://radioabc.dk/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "2940d3e6-770a-4073-9168-c814dcdc3f42",
+   "name": "Charlie Tourist (Sydvest)",
+   "streamUrl": "https://ec6.yesstreaming.net:4385/stream",
+   "homepage": "https://charlie.nu/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [
+    "sprechen",
+    "tale",
+    "talk"
+   ],
+   "languages": [
+    "danish",
+    "english",
+    "german"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 55.619,
+    "long": 8.483
+   },
+   "votes": 1,
+   "clickCount": 2,
+   "countryCode": "DK"
+  },
+  {
+   "id": "3afb7b74-5946-44d5-98c5-f70808d4526d",
+   "name": "Radio Viva - Kolding",
+   "streamUrl": "https://stream.probroadcast.dk/radioviva",
+   "homepage": "https://radioviva.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 87,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "f03cd652-2231-4120-b255-bc80f0745fd9",
+   "name": "Dansktop Kanalen",
+   "streamUrl": "https://netradio.classicfm.dk/dansktop",
+   "homepage": "https://dansktopkanalen.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 58,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "829efdf5-5f8e-4257-8d85-7ecfa46d0633",
+   "name": "København Jazz Radio",
+   "streamUrl": "https://asima.out.airtime.pro:8000/radiojazzcopenhagen_a",
+   "homepage": "https://bricksite.com/main/de",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "København",
+   "geo": null,
+   "votes": 48,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "37e84ac0-5336-4ce8-badb-6fdc7ed8923e",
+   "name": "Tango Copenhagen",
+   "streamUrl": "https://tangocopenhagen.stream.laut.fm/tangocopenhagen",
+   "homepage": "https://tangocopenhagen.radio/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 44,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "cb5c98a0-9a51-45fc-b6a7-21b60f4225f3",
+   "name": "Retro Millennium",
+   "streamUrl": "https://tx-2.retro-radio.dk/TX-2",
+   "homepage": "https://retro-radio.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Nivå",
+   "geo": null,
+   "votes": 44,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "4578e504-5cb0-47c5-bcd0-1baa78719a01",
+   "name": "Radio M",
+   "streamUrl": "https://radioserver.dk/radiom",
+   "homepage": "https://radiom.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Herning",
+   "geo": {
+    "lat": 56.133,
+    "long": 8.96
+   },
+   "votes": 44,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "87069ec6-7cfc-446d-b1be-e56c8b8d2287",
+   "name": "DLF aktuelle Presseschau",
+   "streamUrl": "https://ondemand-mp3.dradio.de/file/dradio/presseschau/presseschau.mp3",
+   "homepage": "https://www.deutschlandfunk.de/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "internationale presseschau",
+    "lokale presseschau",
+    "nachrichten"
+   ],
+   "languages": [
+    "german"
+   ],
+   "state": "Deutschland und NRW",
+   "geo": {
+    "lat": 50.893,
+    "long": 6.968
+   },
+   "votes": 39,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "effb3b79-8c7f-41c9-83d4-b7bdc393b937",
+   "name": "Nova 100 Dansk",
+   "streamUrl": "https://live-bauerdk.sharp-stream.com/DK_HQ_RP11.aac",
+   "homepage": "https://radioplay.dk/nova-100-dansk/",
+   "codec": "AAC+",
+   "bitrate": 96,
+   "tags": [],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 39,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "6491342a-6d10-45da-87fd-edca5464367f",
+   "name": "Radio Humleborg",
+   "streamUrl": "https://stream2.rcast.net/64145",
+   "homepage": "https://humleborg.dk/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [
+    "big band",
+    "crooners",
+    "jazz",
+    "pop",
+    "rock",
+    "swing"
+   ],
+   "languages": [],
+   "state": "Fredensborg",
+   "geo": {
+    "lat": 55.978,
+    "long": 12.411
+   },
+   "votes": 29,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "c8eb07de-d4e7-48b2-a997-5768a875df48",
+   "name": "Radio IIII",
+   "streamUrl": "https://netradio.radio4.dk/radio4",
+   "homepage": "https://radio4.dk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "news",
+    "political talk",
+    "talk & speech",
+    "talk radio"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 56.15,
+    "long": 10.203
+   },
+   "votes": 24,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "fae582e4-d87a-4cc6-aa8c-b1129bb51804",
+   "name": "Radio Fasanen Frederiksberg",
+   "streamUrl": "https://c14.radioboss.fm:18228/stream",
+   "homepage": "https://www.radiokultur.dk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Frederiksberg",
+   "geo": null,
+   "votes": 20,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "6c6a6e97-3311-4ed5-b867-76ce6ebb70d3",
+   "name": "Esbjerg Classic FM",
+   "streamUrl": "https://webradio.classicfm.dk/classicvejle",
+   "homepage": "https://classicfm.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Esbjerg",
+   "geo": {
+    "lat": 55.463,
+    "long": 8.462
+   },
+   "votes": 19,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "b69d7997-fec2-419b-b33d-d01f7ebba8b8",
+   "name": "DR P5 Østjylland",
+   "streamUrl": "https://live-icy.dr.dk/A/A24H.mp3",
+   "homepage": "https://www.dr.dk/lyd/programmer",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "København",
+   "geo": {
+    "lat": 55.629,
+    "long": 12.576
+   },
+   "votes": 17,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "847172ba-fa7d-476c-8ad1-3a62044e8a56",
+   "name": "DR P5 Esbjerg",
+   "streamUrl": "https://live-icy.dr.dk/A/A26H.mp3",
+   "homepage": "https://www.dr.dk/lyd/programmer",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "København",
+   "geo": {
+    "lat": 55.63,
+    "long": 12.575
+   },
+   "votes": 17,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "cd6cac01-31ef-4ea0-ade2-9189d68ed443",
+   "name": "Radio Panini",
+   "streamUrl": "https://radi-panini.radiocult.fm/stream",
+   "homepage": "https://www.radiopanini.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "club",
+    "community radio",
+    "music",
+    "variety"
+   ],
+   "languages": [
+    "english"
+   ],
+   "state": "Copenhagen",
+   "geo": {
+    "lat": 55.669,
+    "long": 12.56
+   },
+   "votes": 16,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "21b4d1bd-3119-4215-b8f7-87dc38fbf783",
+   "name": "Radio Alfa Midtjylland",
+   "streamUrl": "https://radioserver.dk/alfamidt",
+   "homepage": "https://www.radioalfa.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 56.136,
+    "long": 8.969
+   },
+   "votes": 14,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "4b8833e9-a4d2-4458-9b7d-826bec0980be",
+   "name": "M-Jazz Radio",
+   "streamUrl": "https://fra-pioneer01.dedicateware.com:1465/stream",
+   "homepage": "https://mjazzradio.com/",
+   "codec": "MP3",
+   "bitrate": 320,
+   "tags": [],
+   "languages": [],
+   "state": "Aarhus, Jutland",
+   "geo": {
+    "lat": 56.15,
+    "long": 10.205
+   },
+   "votes": 12,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "f35d7138-3266-4865-981f-99762ca33b63",
+   "name": "Radio Diablo (AAC)",
+   "streamUrl": "https://radio1.jfmtech.dk/diablo.aac",
+   "homepage": "https://radiodiablo.dk/",
+   "codec": "AAC+",
+   "bitrate": 64,
+   "tags": [
+    "news",
+    "pop"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 55.064,
+    "long": 10.589
+   },
+   "votes": 12,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "5854189c-c4a2-4f10-861a-b095e7e4bcf9",
+   "name": "Radio Helsingør FM",
+   "streamUrl": "https://stream.radiohelsingor.dk/rh",
+   "homepage": "https://fmscan.org/net.php?sid=27452&pxf=Radio+Helsing%F8r+FM&m=s&r=f&itu=0",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "Helsingør",
+   "geo": {
+    "lat": 56.03,
+    "long": 12.589
+   },
+   "votes": 12,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "4bd28ee6-d3d3-40cb-84d6-f82cbe257329",
+   "name": "Radio Alfa Silkeborg",
+   "streamUrl": "https://radioserver.dk/alfasilk",
+   "homepage": "https://www.radioalfa.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 56.164,
+    "long": 9.54
+   },
+   "votes": 11,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "bd2c8477-0702-4efe-aa9b-207880a1d68f",
+   "name": "UMLANDO Radio",
+   "streamUrl": "https://a2.asurahosting.com:6520/radio.mp3",
+   "homepage": "http://www.umlando.dk/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "6c8287a6-64a8-4144-a960-c14d88ea832c",
+   "name": "r8Dio",
+   "streamUrl": "https://s3.radio.co/s7cd1ffe2f/listen",
+   "homepage": "https://r8dio.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 4,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "1742050b-b9d5-4335-b6b3-2d6a48801295",
+   "name": "Mix FM",
+   "streamUrl": "https://hello.citrus3.com:2020/stream/mixfm",
+   "homepage": "https://mixfm.dk/",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 55.844,
+    "long": 12.192
+   },
+   "votes": 2,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "f72a343b-f5b7-4efc-888a-734872a180af",
+   "name": "NyhedsTjek.dk",
+   "streamUrl": "https://a12.asurahosting.com/listen/nyhedstjek.dk/radio.mp3",
+   "homepage": "https://nyhedstjek.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 55.627,
+    "long": 12.552
+   },
+   "votes": 1,
+   "clickCount": 1,
+   "countryCode": "DK"
+  },
+  {
+   "id": "15d1a95a-abcc-478a-a87f-7cf5d2b242ae",
+   "name": "Radio Globus",
+   "streamUrl": "https://stream.probroadcast.dk/radioglobus",
+   "homepage": "https://www.radioglobus.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [
+    "dan"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 42,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "7017408d-aae6-4565-a615-5654c1dc32cb",
+   "name": "Mix FM Gribskov, Retro Nord",
+   "streamUrl": "https://netradio.mixfm.dk/stream",
+   "homepage": "https://www.flrnord.dk/",
+   "codec": "MP3",
+   "bitrate": 160,
+   "tags": [],
+   "languages": [],
+   "state": "Helsinge",
+   "geo": null,
+   "votes": 27,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "992df62a-154d-4434-9da9-9b5e17e8664d",
+   "name": "Limfjord Slager",
+   "streamUrl": "https://media.limfjordnetradio.dk/plusslageraac",
+   "homepage": "http://limfjordslager.dk/index.html",
+   "codec": "AAC",
+   "bitrate": 64,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 25,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "be78f00b-0f84-4b22-abeb-feb6206f1839",
+   "name": "Radio Alfa Skive",
+   "streamUrl": "https://radioserver.dk/alfaskive",
+   "homepage": "https://www.radioalfa.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 56.56,
+    "long": 9.032
+   },
+   "votes": 18,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "3ae1555a-cc61-478d-a092-2b73af5b431b",
+   "name": "Radio Playback",
+   "streamUrl": "https://stream02.radioplayback.dk/stream",
+   "homepage": "http://www.radioplayback.dk/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 15,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "60791543-e494-4bcd-af3e-f2f198881b98",
+   "name": "Radio Alfa Viborg",
+   "streamUrl": "https://radioserver.dk/alfaviborg",
+   "homepage": "https://radioserver.dk/alfaviborg",
+   "codec": "MP3",
+   "bitrate": 256,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 56.445,
+    "long": 9.402
+   },
+   "votes": 12,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "737884fb-a729-4ce7-ab24-c22245618e95",
+   "name": "Radio Alfa",
+   "streamUrl": "https://radioserver.dk/alfa",
+   "homepage": "https://www.radioalfa.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "f39c3428-372e-4c3d-b506-7d59b3fda596",
+   "name": "X FM K",
+   "streamUrl": "https://uniradio.out.airtime.pro/uniradio_a",
+   "homepage": "https://uniradioen.dk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "København",
+   "geo": {
+    "lat": 55.674,
+    "long": 12.574
+   },
+   "votes": 12,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "5182c037-4ae5-49ce-b40d-fee200ad199f",
+   "name": "GLR - Gentofte Lokal Radio",
+   "streamUrl": "https://live-bauerdk.sharp-stream.com/thevoice_dk_mp3",
+   "homepage": "https://fmscan.org/net.php?sid=16320&pxf=GLR+-+Gentofte+Lokal+Radio&m=s&r=f&itu=0",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [],
+   "languages": [],
+   "state": "Gentofte",
+   "geo": null,
+   "votes": 12,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "d8167c19-b09e-476a-a593-ceb7841b9d6a",
+   "name": "2town Radio",
+   "streamUrl": "https://streaming.radio.co/sd9d980ff0/listen",
+   "homepage": "https://www.2town.dk/tag/radio/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "d20c9c7c-3787-4e67-abf6-7486b57c78a9",
+   "name": "SkagaFM",
+   "streamUrl": "https://stream.probroadcast.dk/skagafm",
+   "homepage": "https://skagafm.dk/radio/",
+   "codec": "MP3",
+   "bitrate": 160,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "1d8e56d5-b3d7-478a-a439-d1678b3d7edf",
+   "name": "Globus Guld Country",
+   "streamUrl": "https://stream.probroadcast.dk/guldcountrymp3",
+   "homepage": "https://globusguld.dk/",
+   "codec": "MP3",
+   "bitrate": 160,
+   "tags": [
+    "country"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "b6f5187a-e78a-4337-a023-bb589ee55f0b",
+   "name": "Radio Alfa - Gold",
+   "streamUrl": "https://radioserver.dk/alfaevent",
+   "homepage": "https://alfa.side-walk.dk/webplayer/radio-alfa/8",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 11,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "a3a17cb3-d4ac-4cc2-ba45-3a219d891371",
+   "name": "Boybands Forever",
+   "streamUrl": "https://live-bauerdk.sharp-stream.com/RP10_premium_96.aac",
+   "homepage": "https://radioplay.dk/",
+   "codec": "AAC+",
+   "bitrate": 95,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "a03b2ae7-f8a6-410a-b78c-bc94c6ca3b1c",
+   "name": "Radio Øst FM",
+   "streamUrl": "https://stream.probroadcast.dk/oestfmmp3",
+   "homepage": "http://oestfm.dk/",
+   "codec": "MP3",
+   "bitrate": 160,
+   "tags": [],
+   "languages": [],
+   "state": "",
+   "geo": null,
+   "votes": 9,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "642d66e8-38ea-4950-861e-d711f891ea47",
+   "name": "PartyRadio.pro",
+   "streamUrl": "https://stream.partyradio.pro/listen/partyradio/stream",
+   "homepage": "https://partyradio.pro/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "va"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 55.403,
+    "long": 11.355
+   },
+   "votes": 2,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "3a9dcc21-c638-488e-ba54-9c72febbfef7",
+   "name": "Kalaallit Nunaata Radioa",
+   "streamUrl": "https://knr.gl/radiolivestream",
+   "homepage": "https://knr.gl/kl",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "greenlandic broadcasting corporation",
+    "information",
+    "music",
+    "news",
+    "talk"
+   ],
+   "languages": [
+    "kalaallisut"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "344a1b0b-b751-42b8-af4d-cd8e76e35c1a",
+   "name": "Radio HSR",
+   "streamUrl": "https://a6.asurahosting.com:7680/radio.mp3",
+   "homepage": "https://radiohsr.dk/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "local news",
+    "news",
+    "pop"
+   ],
+   "languages": [],
+   "state": "",
+   "geo": {
+    "lat": 55.55,
+    "long": 11.787
+   },
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "b1f473f9-a522-49e2-a6cd-4a85ef5c4b6f",
+   "name": "Plantland Radio",
+   "streamUrl": "https://radio.plantlandradio.com/listen/plantland_radio/radio.mp3",
+   "homepage": "https://www.plantlandradio.com/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "ambient",
+    "bio-sonification",
+    "experimental",
+    "plantmusic",
+    "ralaxing"
+   ],
+   "languages": [],
+   "state": "Copenhagen",
+   "geo": null,
+   "votes": 1,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "bfe11797-46ca-47a0-a278-6b20bfc117b0",
+   "name": "Radio Victoria Esbjerg",
+   "streamUrl": "https://stream.probroadcast.dk/victoria",
+   "homepage": "https://radiovictoria.dk/",
+   "codec": "MP3",
+   "bitrate": 160,
+   "tags": [
+    "80's",
+    "90's",
+    "charts",
+    "pop",
+    "rock"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "",
+   "geo": {
+    "lat": 55.47,
+    "long": 8.457
+   },
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "81bf3e45-f353-4bc0-9dab-0432d7a9d9e9",
+   "name": "Radio 7 Ravensburg",
+   "streamUrl": "https://streams.radio7.de/rv/mp3-192/web/",
+   "homepage": "https://radio7.de/",
+   "codec": "MP3",
+   "bitrate": 0,
+   "tags": [
+    "alles"
+   ],
+   "languages": [],
+   "state": "Baden-Wuerttemberg",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "e93c991e-e930-4531-8ade-a624b3452e5f",
+   "name": "Classic FM Østjylland",
+   "streamUrl": "https://netradio.classicfm.dk/cla8a",
+   "homepage": "https://classicfm.dk/",
+   "codec": "MP3",
+   "bitrate": 192,
+   "tags": [
+    "80s",
+    "90s",
+    "classic hits",
+    "pop"
+   ],
+   "languages": [
+    "danish"
+   ],
+   "state": "Østjylland",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "DK"
+  },
+  {
+   "id": "1be72f7b-abc4-4a5b-a250-ccf1eda23d28",
+   "name": "Magic Lumora Radio",
+   "streamUrl": "https://streaming.radio.co/sea3f7bae2/listen",
+   "homepage": "https://magiclumora.com/",
+   "codec": "MP3",
+   "bitrate": 128,
+   "tags": [
+    "ai music",
+    "ambient",
+    "denmark",
+    "electronic",
+    "internet radio"
+   ],
+   "languages": [
+    "danish",
+    "english"
+   ],
+   "state": "",
+   "geo": null,
+   "votes": 0,
+   "clickCount": 0,
+   "countryCode": "DK"
+  }
+ ]
+}

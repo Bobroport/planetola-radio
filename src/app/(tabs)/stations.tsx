@@ -1,7 +1,6 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 
 import { StationRow } from "@/components/station-row";
-import { getStation } from "@/data/stations";
 import { useI18n } from "@/i18n";
 import { useFavorites } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
@@ -9,11 +8,11 @@ import { usePlayer } from "@/providers/player-provider";
 /** Избранные станции: то, что пользователь отметил звёздочкой. */
 export default function FavoriteStationsScreen() {
   const { t } = useI18n();
-  const { stationIds } = useFavorites();
+  const { stationIds, resolveStation } = useFavorites();
   const { current, play } = usePlayer();
 
   const stations = stationIds
-    .map((id) => getStation(id))
+    .map((id) => resolveStation(id))
     .filter((found) => found !== undefined);
 
   return (
@@ -25,6 +24,7 @@ export default function FavoriteStationsScreen() {
           <StationRow
             station={item.station}
             city={item.city}
+            showCountry
             isActive={current?.id === item.station.id}
             onPress={play}
           />
