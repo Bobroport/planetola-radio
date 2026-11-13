@@ -42,6 +42,11 @@ Station data comes from the open community directory Radio Browser. Stations bro
 ## Keywords (≤100 chars, comma-separated)
 radio,internet radio,world radio,live radio,fm,stations,globe,music,news,online radio,streaming
 
+## What's New (version 1.2)
+• Tap the player bar to expand it: a bigger track title, the station's bitrate and codec
+• Sleep timer: stop playback in 15, 30, 45 or 60 minutes, with a countdown in the player
+• Fixed garbled track titles on some US stations
+
 ## What's New (version 1.1)
 • 130 new cities on the globe, from Thessaloniki and Stuttgart to Pensacola, and almost twice as many stations in cities overall
 • Expanded station lists in many countries around the world
