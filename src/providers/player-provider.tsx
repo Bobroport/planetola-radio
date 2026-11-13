@@ -22,8 +22,9 @@ import { useI18n } from "@/i18n";
 import { fetchNowPlaying, type NowPlaying } from "@/lib/icy";
 import { registerClick } from "@/lib/radio-browser";
 
-/** Как часто перечитывать название трека из потока. */
+/** Как часто перечитывать название трека из потока: на экране и в фоне (экран блокировки, CarPlay). */
 const NOW_PLAYING_INTERVAL_MS = 15_000;
+const NOW_PLAYING_BACKGROUND_INTERVAL_MS = 30_000;
 const NOW_PLAYING_TIMEOUT_MS = 10_000;
 /** Обложка для экрана блокировки и CarPlay: иконка приложения с нашего сайта. */
 const ARTWORK_URL = "https://bobroport.github.io/planetola-radio/icon.png";
@@ -128,13 +129,15 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     player.updateLockScreenMetadata(lockScreenMetadata(current, nowPlaying, language));
   }, [player, current, nowPlaying, language]);
 
-  // Опрос ICY-метаданных текущей станции. В фоне не опрашиваем: название трека там не видно,
-  // а лишняя сеть и процессор в фоне на iOS заканчиваются завершением приложения.
+  // Опрос ICY-метаданных текущей станции. В фоне тоже: название трека показывают экран
+  // блокировки и CarPlay, но реже, чтобы не жечь батарею. Каждое соединение обрывается
+  // через abort (см. src/lib/icy.ts), поэтому ресурсы в фоне не копятся.
   useEffect(() => {
-    if (!current || !appActive) {
+    if (!current) {
       return;
     }
     const streamUrl = current.streamUrl;
+    const intervalMs = appActive ? NOW_PLAYING_INTERVAL_MS : NOW_PLAYING_BACKGROUND_INTERVAL_MS;
     let cancelled = false;
     let controller: AbortController | null = null;
     let timer: ReturnType<typeof setTimeout> | null = null;
@@ -164,7 +167,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       } finally {
         clearTimeout(timeout);
         if (!cancelled) {
-          timer = setTimeout(poll, NOW_PLAYING_INTERVAL_MS);
+          timer = setTimeout(poll, intervalMs);
         }
       }
     };
