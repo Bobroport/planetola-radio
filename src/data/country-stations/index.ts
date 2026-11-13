@@ -17,7 +17,7 @@ export const COUNTRY_CATALOG: { countryCode: string; count: number }[] = [
   { countryCode: "CH", count: 232 },
   { countryCode: "CY", count: 35 },
   { countryCode: "CZ", count: 119 },
-  { countryCode: "DE", count: 3029 },
+  { countryCode: "DE", count: 2986 },
   { countryCode: "DK", count: 81 },
   { countryCode: "EE", count: 78 },
   { countryCode: "ES", count: 836 },

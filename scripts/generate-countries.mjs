@@ -8,7 +8,14 @@ import { mkdir, readdir, readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { dedupeByUrl, fetchJson, isPlayable, pickServer, toStation } from "./station-utils.mjs";
+import {
+  dedupeByUrl,
+  fetchJson,
+  isExcludedName,
+  isPlayable,
+  pickServer,
+  toStation,
+} from "./station-utils.mjs";
 
 /** Вся Европа (не только ЕС) плюс Россия и США. Коды ISO 3166-1, как в Radio Browser. */
 export const COUNTRY_CODES = [
@@ -94,6 +101,8 @@ async function main() {
       stations = await fetchCountry(server, code);
       await writeFile(cachePath, JSON.stringify(stations), "utf8");
     }
+    // Кэш мог быть собран до расширения чёрного списка названий.
+    stations = stations.filter((s) => !isExcludedName(s.name));
     if (stations.length === 0) {
       console.log(code + "  нет станций, пропуск");
       continue;

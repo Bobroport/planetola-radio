@@ -8,8 +8,11 @@ const MAX_ATTEMPTS = 5;
 const RETRY_DELAY_MS = 3000;
 const ALLOWED_CODECS = ["MP3", "AAC"];
 
-/** Станции с таким названием не берём: их потоки, как правило, не открываются. */
-const EXCLUDED_NAME = /^0R\b/i;
+/**
+ * Станции с такими названиями не берём: их потоки, как правило, не открываются.
+ * «0R…» и всё со словом «charts» — одна семья немецких «DJ charts» с простынями ключевых слов.
+ */
+const EXCLUDED_NAME = /^0R\b|charts/i;
 
 export const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
