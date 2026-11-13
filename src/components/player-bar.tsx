@@ -1,6 +1,13 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { useEffect, useState } from "react";
-import { LayoutAnimation, Pressable, StyleSheet, Text, View } from "react-native";
+import { useEffect, useMemo, useState } from "react";
+import {
+  LayoutAnimation,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+import { Gesture, GestureDetector } from "react-native-gesture-handler";
 
 import { Beaver } from "@/components/beaver";
 import { getCityOfStation, type Station } from "@/data/stations";
@@ -31,6 +38,9 @@ function useCountdown(endsAt: number | null): string | null {
   const minutes = Math.floor(seconds / 60);
   return `${minutes}:${String(seconds % 60).padStart(2, "0")}`;
 }
+
+/** Сколько нужно провести пальцем по вертикали, чтобы панель свернулась или раскрылась. */
+const SWIPE_DISTANCE = 40;
 
 /** Битрейт и кодек станции: «128 kbps · MP3». */
 function technicalInfo(station: Station): string {
@@ -64,6 +74,30 @@ export function PlayerBar() {
   const [pickingTimer, setPickingTimer] = useState(false);
   const countdown = useCountdown(sleepTimerEndsAt);
 
+  const setExpandedAnimated = (value: boolean) => {
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    setExpanded(value);
+    setPickingTimer(false);
+  };
+
+  // Смахивание вниз сворачивает панель, вверх — раскрывает. Жест активируется только после
+  // заметного вертикального движения, поэтому нажатия на кнопки внутри доходят до них.
+  const swipe = useMemo(
+    () =>
+      Gesture.Pan()
+        .runOnJS(true)
+        .activeOffsetY([-15, 15])
+        .failOffsetX([-20, 20])
+        .onEnd((event) => {
+          if (event.translationY > SWIPE_DISTANCE && expanded) {
+            setExpandedAnimated(false);
+          } else if (event.translationY < -SWIPE_DISTANCE && !expanded) {
+            setExpandedAnimated(true);
+          }
+        }),
+    [expanded],
+  );
+
   if (!current) {
     return null;
   }
@@ -89,11 +123,7 @@ export function PlayerBar() {
   const canSave = nowPlaying !== null;
   const info = technicalInfo(current);
 
-  const toggleExpanded = () => {
-    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-    setExpanded((value) => !value);
-    setPickingTimer(false);
-  };
+  const toggleExpanded = () => setExpandedAnimated(!expanded);
 
   const chooseTimer = (minutes: number | null) => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
@@ -107,11 +137,18 @@ export function PlayerBar() {
         <Pressable
           onPress={previous}
           hitSlop={6}
-          style={({ pressed }) => [styles.iconButton, pressed && styles.pressed]}
+          style={({ pressed }) => [
+            styles.iconButton,
+            pressed && styles.pressed,
+          ]}
           accessibilityRole="button"
           accessibilityLabel={t("player.previous")}
         >
-          <Ionicons name="play-skip-back" size={expanded ? 26 : 22} color="#fff" />
+          <Ionicons
+            name="play-skip-back"
+            size={expanded ? 26 : 22}
+            color="#fff"
+          />
         </Pressable>
       ) : null}
       <Pressable
@@ -121,17 +158,28 @@ export function PlayerBar() {
         accessibilityRole="button"
         accessibilityLabel={paused ? t("player.play") : t("player.pause")}
       >
-        <Ionicons name={paused ? "play" : "pause"} size={expanded ? 34 : 28} color="#fff" />
+        <Ionicons
+          name={paused ? "play" : "pause"}
+          size={expanded ? 34 : 28}
+          color="#fff"
+        />
       </Pressable>
       {hasQueue ? (
         <Pressable
           onPress={next}
           hitSlop={6}
-          style={({ pressed }) => [styles.iconButton, pressed && styles.pressed]}
+          style={({ pressed }) => [
+            styles.iconButton,
+            pressed && styles.pressed,
+          ]}
           accessibilityRole="button"
           accessibilityLabel={t("player.next")}
         >
-          <Ionicons name="play-skip-forward" size={expanded ? 26 : 22} color="#fff" />
+          <Ionicons
+            name="play-skip-forward"
+            size={expanded ? 26 : 22}
+            color="#fff"
+          />
         </Pressable>
       ) : null}
       <Pressable
@@ -146,7 +194,9 @@ export function PlayerBar() {
           pressed && styles.pressed,
         ]}
         accessibilityRole="button"
-        accessibilityLabel={saved ? t("player.unsaveTrack") : t("player.saveTrack")}
+        accessibilityLabel={
+          saved ? t("player.unsaveTrack") : t("player.saveTrack")
+        }
         accessibilityState={{ selected: saved }}
       >
         <Ionicons
@@ -169,140 +219,172 @@ export function PlayerBar() {
 
   if (!expanded) {
     return (
-      <View style={styles.bar}>
-        <Pressable
-          onPress={toggleExpanded}
-          style={styles.summary}
-          accessibilityRole="button"
-          accessibilityLabel={t("player.expand")}
-        >
-          <View style={styles.beaver}>
-            <Beaver size={64} player={player} dancing={isPlaying} />
-          </View>
-          <View style={styles.info}>
-            <Text style={styles.name} numberOfLines={1}>
-              {current.name}
-            </Text>
-            {trackText ? (
-              <Text style={styles.track} numberOfLines={1}>
-                {trackText}
-              </Text>
-            ) : (
-              <Text style={styles.trackHint} numberOfLines={1}>
-                {nowPlayingChecked ? t("player.noTrackInfo") : t("player.findingTrack")}
-              </Text>
-            )}
-            <View style={styles.statusRow}>
-              <Ionicons name="chevron-up" size={12} color="#8e8e93" />
-              <Text
-                style={[styles.status, error ? styles.statusError : null]}
-                numberOfLines={1}
-              >
-                {statusText}
-              </Text>
-              {countdown ? (
-                <>
-                  <Ionicons name="moon" size={11} color="#b5b5b8" />
-                  <Text style={styles.status}>{countdown}</Text>
-                </>
-              ) : null}
+      <GestureDetector gesture={swipe}>
+        <View style={styles.bar}>
+          <Pressable
+            onPress={toggleExpanded}
+            style={[styles.summary, styles.summaryCompact]}
+            accessibilityRole="button"
+            accessibilityLabel={t("player.expand")}
+          >
+            <View style={styles.beaver}>
+              <Beaver size={64} player={player} dancing={isPlaying} />
             </View>
-          </View>
-        </Pressable>
-        {controls}
-      </View>
+            <View style={styles.info}>
+              <Text style={styles.name} numberOfLines={1}>
+                {current.name}
+              </Text>
+              {trackText ? (
+                <Text style={styles.track} numberOfLines={1}>
+                  {trackText}
+                </Text>
+              ) : (
+                <Text style={styles.trackHint} numberOfLines={1}>
+                  {nowPlayingChecked
+                    ? t("player.noTrackInfo")
+                    : t("player.findingTrack")}
+                </Text>
+              )}
+              <View style={styles.statusRow}>
+                <Ionicons name="chevron-up" size={12} color="#8e8e93" />
+                <Text
+                  style={[styles.status, error ? styles.statusError : null]}
+                  numberOfLines={1}
+                >
+                  {statusText}
+                </Text>
+                {countdown ? (
+                  <>
+                    <Ionicons name="moon" size={11} color="#b5b5b8" />
+                    <Text style={styles.status}>{countdown}</Text>
+                  </>
+                ) : null}
+              </View>
+            </View>
+          </Pressable>
+          {controls}
+        </View>
+      </GestureDetector>
     );
   }
 
   return (
-    <View style={[styles.bar, styles.barExpanded]}>
-      <Pressable
-        onPress={toggleExpanded}
-        style={styles.summary}
-        accessibilityRole="button"
-        accessibilityLabel={t("player.collapse")}
-      >
-        <View style={styles.beaver}>
-          <Beaver size={96} player={player} dancing={isPlaying} />
-        </View>
-        <View style={styles.info}>
-          <Text style={[styles.name, styles.nameExpanded]} numberOfLines={2}>
-            {current.name}
-          </Text>
-          {trackText ? (
-            <Text style={[styles.track, styles.trackExpanded]} numberOfLines={4}>
-              {trackText}
-            </Text>
-          ) : (
-            <Text style={styles.trackHint} numberOfLines={2}>
-              {nowPlayingChecked ? t("player.noTrackInfo") : t("player.findingTrack")}
-            </Text>
-          )}
-          {info ? (
-            <Text style={styles.technical} numberOfLines={1}>
-              {info}
-            </Text>
-          ) : null}
-          <View style={styles.statusRow}>
-            <Ionicons name="chevron-down" size={12} color="#8e8e93" />
-            <Text
-              style={[styles.status, error ? styles.statusError : null]}
-              numberOfLines={2}
-            >
-              {statusText}
-            </Text>
+    <GestureDetector gesture={swipe}>
+      <View style={[styles.bar, styles.barExpanded]}>
+        <Pressable
+          onPress={toggleExpanded}
+          style={styles.summary}
+          accessibilityRole="button"
+          accessibilityLabel={t("player.collapse")}
+        >
+          <View style={styles.beaver}>
+            <Beaver size={96} player={player} dancing={isPlaying} />
           </View>
-        </View>
-      </Pressable>
-      <View style={styles.controls}>{controls}</View>
-      {pickingTimer ? (
-        <View style={styles.timerRow}>
-          <Ionicons name="moon" size={18} color="#b5b5b8" />
-          {SLEEP_TIMER_MINUTES.map((minutes) => (
-            <Pressable
-              key={minutes}
-              onPress={() => chooseTimer(minutes)}
-              style={({ pressed }) => [styles.chip, pressed && styles.pressed]}
-              accessibilityRole="button"
-            >
-              <Text style={styles.chipLabel}>{t("player.minutes", { count: minutes })}</Text>
-            </Pressable>
-          ))}
-          <Pressable
-            onPress={() => chooseTimer(null)}
-            style={({ pressed }) => [styles.chip, styles.chipOff, pressed && styles.pressed]}
-            accessibilityRole="button"
-          >
-            <Text style={styles.chipLabel}>{t("player.sleepTimerOff")}</Text>
-          </Pressable>
-        </View>
-      ) : (
-        <View style={styles.timerRow}>
-          <Pressable
-            onPress={() => setPickingTimer(true)}
-            style={({ pressed }) => [styles.timerButton, pressed && styles.pressed]}
-            accessibilityRole="button"
-            accessibilityLabel={t("player.sleepTimer")}
-          >
-            <Ionicons name={countdown ? "moon" : "moon-outline"} size={18} color="#fff" />
-            <Text style={styles.timerLabel} numberOfLines={1}>
-              {countdown ? t("player.sleepIn", { time: countdown }) : t("player.sleepTimer")}
+          <View style={styles.info}>
+            <Text style={[styles.name, styles.nameExpanded]} numberOfLines={2}>
+              {current.name}
             </Text>
-          </Pressable>
-          {countdown ? (
+            {trackText ? (
+              <Text
+                style={[styles.track, styles.trackExpanded]}
+                numberOfLines={4}
+              >
+                {trackText}
+              </Text>
+            ) : (
+              <Text style={styles.trackHint} numberOfLines={2}>
+                {nowPlayingChecked
+                  ? t("player.noTrackInfo")
+                  : t("player.findingTrack")}
+              </Text>
+            )}
+            {info ? (
+              <Text style={styles.technical} numberOfLines={1}>
+                {info}
+              </Text>
+            ) : null}
+            <View style={styles.statusRow}>
+              <Ionicons name="chevron-down" size={12} color="#8e8e93" />
+              <Text
+                style={[styles.status, error ? styles.statusError : null]}
+                numberOfLines={2}
+              >
+                {statusText}
+              </Text>
+            </View>
+          </View>
+        </Pressable>
+        <View style={styles.controls}>{controls}</View>
+        {pickingTimer ? (
+          <View style={styles.timerRow}>
+            <Ionicons name="moon" size={18} color="#b5b5b8" />
+            {SLEEP_TIMER_MINUTES.map((minutes) => (
+              <Pressable
+                key={minutes}
+                onPress={() => chooseTimer(minutes)}
+                style={({ pressed }) => [
+                  styles.chip,
+                  pressed && styles.pressed,
+                ]}
+                accessibilityRole="button"
+              >
+                <Text style={styles.chipLabel}>
+                  {t("player.minutes", { count: minutes })}
+                </Text>
+              </Pressable>
+            ))}
             <Pressable
               onPress={() => chooseTimer(null)}
-              hitSlop={6}
-              style={({ pressed }) => [styles.iconButton, pressed && styles.pressed]}
+              style={({ pressed }) => [
+                styles.chip,
+                styles.chipOff,
+                pressed && styles.pressed,
+              ]}
               accessibilityRole="button"
-              accessibilityLabel={t("player.sleepTimerOff")}
             >
-              <Ionicons name="close-circle" size={22} color="#b5b5b8" />
+              <Text style={styles.chipLabel}>{t("player.sleepTimerOff")}</Text>
             </Pressable>
-          ) : null}
-        </View>
-      )}
-    </View>
+          </View>
+        ) : (
+          <View style={styles.timerRow}>
+            <Pressable
+              onPress={() => setPickingTimer(true)}
+              style={({ pressed }) => [
+                styles.timerButton,
+                pressed && styles.pressed,
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel={t("player.sleepTimer")}
+            >
+              <Ionicons
+                name={countdown ? "moon" : "moon-outline"}
+                size={18}
+                color="#fff"
+              />
+              <Text style={styles.timerLabel} numberOfLines={1}>
+                {countdown
+                  ? t("player.sleepIn", { time: countdown })
+                  : t("player.sleepTimer")}
+              </Text>
+            </Pressable>
+            {countdown ? (
+              <Pressable
+                onPress={() => chooseTimer(null)}
+                hitSlop={6}
+                style={({ pressed }) => [
+                  styles.iconButton,
+                  pressed && styles.pressed,
+                ]}
+                accessibilityRole="button"
+                accessibilityLabel={t("player.sleepTimerOff")}
+              >
+                <Ionicons name="close-circle" size={22} color="#b5b5b8" />
+              </Pressable>
+            ) : null}
+          </View>
+        )}
+      </View>
+    </GestureDetector>
   );
 }
 
@@ -322,9 +404,13 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   summary: {
-    flex: 1,
     flexDirection: "row",
     alignItems: "center",
+  },
+  // В строке блок растягивается на свободное место; в раскрытой колонке flex: 1 нельзя —
+  // без фиксированной высоты родителя он схлопнулся бы в ноль.
+  summaryCompact: {
+    flex: 1,
   },
   beaver: {
     marginRight: 6,
