@@ -50,6 +50,12 @@ export const uk: Dictionary = {
   "player.paused": "На паузі",
   "player.next": "Наступна станція",
   "player.previous": "Попередня станція",
+  "player.expand": "Докладніше",
+  "player.collapse": "Згорнути",
+  "player.sleepTimer": "Таймер сну",
+  "player.minutes": "{count} хв",
+  "player.sleepIn": "Вимкнеться через {time}",
+  "player.sleepTimerOff": "Вимк.",
 
   "station.add": "Додати до обраних станцій",
   "station.remove": "Прибрати з обраних станцій",

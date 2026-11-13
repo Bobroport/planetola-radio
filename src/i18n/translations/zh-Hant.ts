@@ -50,6 +50,12 @@ export const zhHant: Dictionary = {
   "player.paused": "已暫停",
   "player.next": "下一個電台",
   "player.previous": "上一個電台",
+  "player.expand": "顯示詳情",
+  "player.collapse": "收起詳情",
+  "player.sleepTimer": "睡眠定時",
+  "player.minutes": "{count} 分鐘",
+  "player.sleepIn": "{time} 後停止",
+  "player.sleepTimerOff": "關閉",
 
   "station.add": "加入收藏的電台",
   "station.remove": "從收藏的電台中移除",

@@ -50,6 +50,12 @@ export const ru: Dictionary = {
   "player.paused": "На паузе",
   "player.next": "Следующая станция",
   "player.previous": "Предыдущая станция",
+  "player.expand": "Подробнее",
+  "player.collapse": "Свернуть",
+  "player.sleepTimer": "Таймер сна",
+  "player.minutes": "{count} мин",
+  "player.sleepIn": "Выключится через {time}",
+  "player.sleepTimerOff": "Выкл.",
 
   "station.add": "Добавить в избранные станции",
   "station.remove": "Убрать из избранных станций",

@@ -47,6 +47,37 @@ function xmlTag(xml: string, names: string[]): string | null {
   return null;
 }
 
+/** Значение атрибута key="value" в строке формата iHeart. */
+function attribute(text: string, name: string): string | null {
+  const match = new RegExp(`(?:^|\\s)${name}="([^"]*)"`).exec(text);
+  const value = match?.[1].trim();
+  return value ? decodeEntities(value) : null;
+}
+
+/**
+ * Станции iHeartMedia (KIIS, KISS-FM и др.) шлют строку вида
+ * `Bruno Mars - text="Risk It All" song_spot="M" MediaBaseId="3206087" …`:
+ * исполнитель до « - », название в атрибуте text, остальные атрибуты служебные.
+ * Иногда исполнитель лежит в атрибуте artist, а в рекламных вставках
+ * (song_spot не "M") text содержит название ролика.
+ */
+const IHEART_TITLE = /(?:^|\s)text="/;
+
+function parseIHeartTitle(text: string): NowPlaying | null {
+  const attributesStart = text.search(/(?:^|\s)[A-Za-z_]+="/);
+  const prefix = text.slice(0, attributesStart).replace(/\s*-\s*$/, "").trim();
+  const title = attribute(text, "text");
+  const artist = attribute(text, "artist") ?? (prefix || null);
+  if (!title || isPlaceholder(title)) return null;
+  const cleanTitle = cleanText(title);
+  const cleanArtist = artist && !isPlaceholder(artist) ? cleanText(artist) : null;
+  return {
+    raw: cleanArtist ? `${cleanArtist} - ${cleanTitle}` : cleanTitle,
+    artist: cleanArtist,
+    title: cleanTitle,
+  };
+}
+
 function cleanText(text: string): string {
   return text.replace(/\s+/g, " ").trim();
 }
@@ -59,7 +90,8 @@ function isPlaceholder(text: string): boolean {
 
 /**
  * Разбирает значение StreamTitle. Поддерживает "Artist - Title",
- * "Now Playing: Artist - Title" и XML-документы (например, Bauer Media:
+ * "Now Playing: Artist - Title", строки iHeart с атрибутами (`Artist - text="Title" …`)
+ * и XML-документы (например, Bauer Media:
  * <RadioInfo><Table><DB_LEAD_ARTIST_NAME>…</DB_LEAD_ARTIST_NAME>…).
  * Возвращает null, если названия нет.
  */
@@ -79,6 +111,8 @@ export function parseStreamTitle(streamTitle: string): NowPlaying | null {
       title: cleanTitle,
     };
   }
+
+  if (IHEART_TITLE.test(trimmed)) return parseIHeartTitle(trimmed);
 
   const raw = cleanText(
     decodeEntities(trimmed).replace(/^now playing:\s*/i, ""),

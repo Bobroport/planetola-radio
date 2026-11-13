@@ -50,6 +50,12 @@ export const id: Dictionary = {
   "player.paused": "Dijeda",
   "player.next": "Stasiun berikutnya",
   "player.previous": "Stasiun sebelumnya",
+  "player.expand": "Tampilkan detail",
+  "player.collapse": "Sembunyikan detail",
+  "player.sleepTimer": "Timer tidur",
+  "player.minutes": "{count} mnt",
+  "player.sleepIn": "Berhenti dalam {time}",
+  "player.sleepTimerOff": "Mati",
 
   "station.add": "Tambahkan ke stasiun favorit",
   "station.remove": "Hapus dari stasiun favorit",

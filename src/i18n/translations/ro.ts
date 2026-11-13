@@ -50,6 +50,12 @@ export const ro: Dictionary = {
   "player.paused": "În pauză",
   "player.next": "Postul următor",
   "player.previous": "Postul anterior",
+  "player.expand": "Afișează detalii",
+  "player.collapse": "Ascunde detalii",
+  "player.sleepTimer": "Temporizator de oprire",
+  "player.minutes": "{count} min",
+  "player.sleepIn": "Se oprește în {time}",
+  "player.sleepTimerOff": "Oprit",
 
   "station.add": "Adaugă la posturile favorite",
   "station.remove": "Elimină din posturile favorite",

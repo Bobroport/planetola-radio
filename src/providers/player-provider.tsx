@@ -29,6 +29,9 @@ const NOW_PLAYING_TIMEOUT_MS = 10_000;
 /** Обложка для экрана блокировки и CarPlay: иконка приложения с нашего сайта. */
 const ARTWORK_URL = "https://bobroport.github.io/planetola-radio/icon.png";
 
+/** Варианты таймера сна, минуты. */
+export const SLEEP_TIMER_MINUTES = [15, 30, 45, 60] as const;
+
 /** Чего хочет пользователь. Нужно, чтобы отличить прерывание системой от паузы по его воле. */
 type Intent = "playing" | "paused" | "stopped";
 
@@ -51,6 +54,10 @@ type PlayerContextValue = {
   /** Есть куда переключаться кнопками «вперёд/назад». */
   hasQueue: boolean;
   stop: () => void;
+  /** Момент (Date.now()), когда таймер сна остановит плеер; null — таймер выключен. */
+  sleepTimerEndsAt: number | null;
+  /** Завести таймер сна на столько минут или выключить его (null). */
+  setSleepTimer: (minutes: number | null) => void;
 };
 
 const PlayerContext = createContext<PlayerContextValue | null>(null);
@@ -85,6 +92,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const [queue, setQueue] = useState<Station[]>([]);
   const [nowPlaying, setNowPlaying] = useState<NowPlaying | null>(null);
   const [nowPlayingChecked, setNowPlayingChecked] = useState(false);
+  const [sleepTimerEndsAt, setSleepTimerEndsAt] = useState<number | null>(null);
   const appActive = useAppActive();
   const intentRef = useRef<Intent>("stopped");
   const wasPlayingRef = useRef(false);
@@ -281,7 +289,22 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     setQueue([]);
     setNowPlaying(null);
     setNowPlayingChecked(false);
+    setSleepTimerEndsAt(null);
   }, [player]);
+
+  const setSleepTimer = useCallback((minutes: number | null) => {
+    setSleepTimerEndsAt(minutes === null ? null : Date.now() + minutes * 60_000);
+  }, []);
+
+  // Таймер сна. Срок хранится как момент времени, а не как оставшиеся секунды: если в фоне
+  // JS-таймер опоздал, при возврате в приложение эффект перезапустится (appActive в
+  // зависимостях) и остановит плеер сразу.
+  useEffect(() => {
+    if (sleepTimerEndsAt === null) return;
+    const delay = Math.max(0, sleepTimerEndsAt - Date.now());
+    const timer = setTimeout(stop, delay);
+    return () => clearTimeout(timer);
+  }, [sleepTimerEndsAt, stop, appActive]);
 
   const value = useMemo<PlayerContextValue>(
     () => ({
@@ -299,6 +322,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       previous,
       hasQueue: queue.length > 1,
       stop,
+      sleepTimerEndsAt,
+      setSleepTimer,
     }),
     [
       player,
@@ -316,6 +341,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       previous,
       queue.length,
       stop,
+      sleepTimerEndsAt,
+      setSleepTimer,
     ],
   );
 

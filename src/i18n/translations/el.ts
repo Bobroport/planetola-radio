@@ -50,6 +50,12 @@ export const el: Dictionary = {
   "player.paused": "Σε παύση",
   "player.next": "Επόμενος σταθμός",
   "player.previous": "Προηγούμενος σταθμός",
+  "player.expand": "Εμφάνιση λεπτομερειών",
+  "player.collapse": "Απόκρυψη λεπτομερειών",
+  "player.sleepTimer": "Χρονοδιακόπτης ύπνου",
+  "player.minutes": "{count} λεπ.",
+  "player.sleepIn": "Σταματά σε {time}",
+  "player.sleepTimerOff": "Ανενεργός",
 
   "station.add": "Προσθήκη στους αγαπημένους σταθμούς",
   "station.remove": "Αφαίρεση από τους αγαπημένους σταθμούς",

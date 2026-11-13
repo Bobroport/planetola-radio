@@ -50,6 +50,12 @@ export const hi: Dictionary = {
   "player.paused": "रुका हुआ",
   "player.next": "अगला स्टेशन",
   "player.previous": "पिछला स्टेशन",
+  "player.expand": "विवरण दिखाएँ",
+  "player.collapse": "विवरण छिपाएँ",
+  "player.sleepTimer": "स्लीप टाइमर",
+  "player.minutes": "{count} मिनट",
+  "player.sleepIn": "{time} में रुकेगा",
+  "player.sleepTimerOff": "बंद",
 
   "station.add": "पसंदीदा स्टेशनों में जोड़ें",
   "station.remove": "पसंदीदा स्टेशनों से हटाएँ",

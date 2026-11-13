@@ -50,6 +50,12 @@ export const zhHans: Dictionary = {
   "player.paused": "已暂停",
   "player.next": "下一个电台",
   "player.previous": "上一个电台",
+  "player.expand": "显示详情",
+  "player.collapse": "收起详情",
+  "player.sleepTimer": "睡眠定时",
+  "player.minutes": "{count} 分钟",
+  "player.sleepIn": "{time} 后停止",
+  "player.sleepTimerOff": "关闭",
 
   "station.add": "添加到收藏的电台",
   "station.remove": "从收藏的电台中移除",

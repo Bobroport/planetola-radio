@@ -50,6 +50,12 @@ export const ko: Dictionary = {
   "player.paused": "일시정지됨",
   "player.next": "다음 방송국",
   "player.previous": "이전 방송국",
+  "player.expand": "자세히 보기",
+  "player.collapse": "접기",
+  "player.sleepTimer": "취침 타이머",
+  "player.minutes": "{count}분",
+  "player.sleepIn": "{time} 후 정지",
+  "player.sleepTimerOff": "끄기",
 
   "station.add": "즐겨찾는 방송국에 추가",
   "station.remove": "즐겨찾는 방송국에서 삭제",

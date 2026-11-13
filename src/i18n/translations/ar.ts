@@ -50,6 +50,12 @@ export const ar: Dictionary = {
   "player.paused": "متوقف مؤقتًا",
   "player.next": "المحطة التالية",
   "player.previous": "المحطة السابقة",
+  "player.expand": "عرض التفاصيل",
+  "player.collapse": "إخفاء التفاصيل",
+  "player.sleepTimer": "مؤقت النوم",
+  "player.minutes": "{count} د",
+  "player.sleepIn": "يتوقف بعد {time}",
+  "player.sleepTimerOff": "إيقاف",
 
   "station.add": "إضافة إلى المحطات المفضلة",
   "station.remove": "إزالة من المحطات المفضلة",

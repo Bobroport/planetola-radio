@@ -51,6 +51,12 @@ export const pt: Dictionary = {
   "player.paused": "Em pausa",
   "player.next": "Estação seguinte",
   "player.previous": "Estação anterior",
+  "player.expand": "Mostrar detalhes",
+  "player.collapse": "Ocultar detalhes",
+  "player.sleepTimer": "Temporizador de suspensão",
+  "player.minutes": "{count} min",
+  "player.sleepIn": "Para em {time}",
+  "player.sleepTimerOff": "Desligado",
 
   "station.add": "Adicionar às estações favoritas",
   "station.remove": "Remover das estações favoritas",

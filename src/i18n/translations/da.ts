@@ -50,6 +50,12 @@ export const da: Dictionary = {
   "player.paused": "På pause",
   "player.next": "Næste station",
   "player.previous": "Forrige station",
+  "player.expand": "Vis detaljer",
+  "player.collapse": "Skjul detaljer",
+  "player.sleepTimer": "Sleep-timer",
+  "player.minutes": "{count} min",
+  "player.sleepIn": "Stopper om {time}",
+  "player.sleepTimerOff": "Fra",
 
   "station.add": "Føj til favoritstationer",
   "station.remove": "Fjern fra favoritstationer",

@@ -50,6 +50,12 @@ export const he: Dictionary = {
   "player.paused": "מושהה",
   "player.next": "התחנה הבאה",
   "player.previous": "התחנה הקודמת",
+  "player.expand": "הצגת פרטים",
+  "player.collapse": "הסתרת פרטים",
+  "player.sleepTimer": "טיימר שינה",
+  "player.minutes": "{count} דק׳",
+  "player.sleepIn": "ייעצר בעוד {time}",
+  "player.sleepTimerOff": "כבוי",
 
   "station.add": "הוספה לתחנות המועדפות",
   "station.remove": "הסרה מהתחנות המועדפות",

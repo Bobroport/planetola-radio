@@ -50,6 +50,12 @@ export const tr: Dictionary = {
   "player.paused": "Duraklatıldı",
   "player.next": "Sonraki istasyon",
   "player.previous": "Önceki istasyon",
+  "player.expand": "Ayrıntıları göster",
+  "player.collapse": "Ayrıntıları gizle",
+  "player.sleepTimer": "Uyku zamanlayıcısı",
+  "player.minutes": "{count} dk",
+  "player.sleepIn": "{time} sonra durur",
+  "player.sleepTimerOff": "Kapalı",
 
   "station.add": "Favori istasyonlara ekle",
   "station.remove": "Favori istasyonlardan kaldır",

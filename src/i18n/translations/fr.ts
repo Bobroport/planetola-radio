@@ -50,6 +50,12 @@ export const fr: Dictionary = {
   "player.paused": "En pause",
   "player.next": "Station suivante",
   "player.previous": "Station précédente",
+  "player.expand": "Afficher les détails",
+  "player.collapse": "Masquer les détails",
+  "player.sleepTimer": "Minuteur de veille",
+  "player.minutes": "{count} min",
+  "player.sleepIn": "Arrêt dans {time}",
+  "player.sleepTimerOff": "Désactivé",
 
   "station.add": "Ajouter aux stations favorites",
   "station.remove": "Retirer des stations favorites",

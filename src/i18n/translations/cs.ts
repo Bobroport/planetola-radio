@@ -50,6 +50,12 @@ export const cs: Dictionary = {
   "player.paused": "Pozastaveno",
   "player.next": "Další stanice",
   "player.previous": "Předchozí stanice",
+  "player.expand": "Zobrazit podrobnosti",
+  "player.collapse": "Skrýt podrobnosti",
+  "player.sleepTimer": "Časovač vypnutí",
+  "player.minutes": "{count} min",
+  "player.sleepIn": "Zastaví se za {time}",
+  "player.sleepTimerOff": "Vypnuto",
 
   "station.add": "Přidat mezi oblíbené stanice",
   "station.remove": "Odebrat z oblíbených stanic",

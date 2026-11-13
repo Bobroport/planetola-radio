@@ -50,6 +50,12 @@ export const nl: Dictionary = {
   "player.paused": "Gepauzeerd",
   "player.next": "Volgende zender",
   "player.previous": "Vorige zender",
+  "player.expand": "Details tonen",
+  "player.collapse": "Details verbergen",
+  "player.sleepTimer": "Slaaptimer",
+  "player.minutes": "{count} min",
+  "player.sleepIn": "Stopt over {time}",
+  "player.sleepTimerOff": "Uit",
 
   "station.add": "Toevoegen aan favoriete zenders",
   "station.remove": "Verwijderen uit favoriete zenders",

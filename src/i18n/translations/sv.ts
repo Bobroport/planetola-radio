@@ -50,6 +50,12 @@ export const sv: Dictionary = {
   "player.paused": "Pausad",
   "player.next": "Nästa station",
   "player.previous": "Föregående station",
+  "player.expand": "Visa detaljer",
+  "player.collapse": "Dölj detaljer",
+  "player.sleepTimer": "Insomningstimer",
+  "player.minutes": "{count} min",
+  "player.sleepIn": "Stoppar om {time}",
+  "player.sleepTimerOff": "Av",
 
   "station.add": "Lägg till i favoritstationer",
   "station.remove": "Ta bort från favoritstationer",

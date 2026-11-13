@@ -49,6 +49,12 @@ export const en = {
   "player.paused": "Paused",
   "player.next": "Next station",
   "player.previous": "Previous station",
+  "player.expand": "Show details",
+  "player.collapse": "Hide details",
+  "player.sleepTimer": "Sleep timer",
+  "player.minutes": "{count} min",
+  "player.sleepIn": "Stops in {time}",
+  "player.sleepTimerOff": "Off",
 
   "station.add": "Add to favorite stations",
   "station.remove": "Remove from favorite stations",

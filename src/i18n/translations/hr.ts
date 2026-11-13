@@ -50,6 +50,12 @@ export const hr: Dictionary = {
   "player.paused": "Pauzirano",
   "player.next": "Sljedeća postaja",
   "player.previous": "Prethodna postaja",
+  "player.expand": "Prikaži pojedinosti",
+  "player.collapse": "Sakrij pojedinosti",
+  "player.sleepTimer": "Mjerač vremena za spavanje",
+  "player.minutes": "{count} min",
+  "player.sleepIn": "Zaustavlja se za {time}",
+  "player.sleepTimerOff": "Isključeno",
 
   "station.add": "Dodaj u omiljene postaje",
   "station.remove": "Ukloni iz omiljenih postaja",

@@ -50,6 +50,12 @@ export const ja: Dictionary = {
   "player.paused": "一時停止中",
   "player.next": "次の放送局",
   "player.previous": "前の放送局",
+  "player.expand": "詳細を表示",
+  "player.collapse": "詳細を隠す",
+  "player.sleepTimer": "スリープタイマー",
+  "player.minutes": "{count}分",
+  "player.sleepIn": "{time}後に停止",
+  "player.sleepTimerOff": "オフ",
 
   "station.add": "お気に入りの放送局に追加",
   "station.remove": "お気に入りの放送局から削除",
