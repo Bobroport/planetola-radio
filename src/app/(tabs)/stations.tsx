@@ -2,6 +2,7 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 
 import { StationRow } from "@/components/station-row";
 import { useI18n } from "@/i18n";
+import { flyToStation } from "@/lib/globe-navigation";
 import { useFavorites } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
 
@@ -26,7 +27,10 @@ export default function FavoriteStationsScreen() {
             city={item.city}
             showCountry
             isActive={current?.id === item.station.id}
-            onPress={(station) => play(station, stations.map((s) => s.station))}
+            onPress={(station) => {
+              play(station, stations.map((s) => s.station));
+              flyToStation(station);
+            }}
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}

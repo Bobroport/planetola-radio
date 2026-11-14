@@ -4,6 +4,7 @@ import type { ComponentProps } from "react";
 import { Pressable, StyleSheet, Text, View, type ColorValue } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
+import { GlobeButton } from "@/components/globe-button";
 import { PlayerBar } from "@/components/player-bar";
 import { useI18n } from "@/i18n";
 
@@ -90,7 +91,13 @@ export default function TabsLayout() {
   return (
     <Tabs
       tabBar={(props) => <TabBar {...props} />}
-      screenOptions={{ headerTitleAlign: "center" }}
+      screenOptions={{
+        headerTitleAlign: "center",
+        headerRight: () => <GlobeButton />,
+        // Заголовок вкладок рисует React Navigation без бокового отступа, в отличие от
+        // нативного стека городов и профиля: выравниваем кнопку с ними.
+        headerRightContainerStyle: { paddingRight: 12 },
+      }}
     >
       <Tabs.Screen
         name="cities"

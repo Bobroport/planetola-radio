@@ -23,6 +23,8 @@ export type Settings = {
   language: string;
   startPage: StartPage;
   startCityId: string | null;
+  /** Вступление (перелёт к Амстердаму с автозапуском станции) уже показано. */
+  introSeen: boolean;
 };
 
 type SettingsContextValue = Settings & {
@@ -32,6 +34,7 @@ type SettingsContextValue = Settings & {
   setLanguage: (language: string) => void;
   setStartPage: (startPage: StartPage) => void;
   setStartCityId: (cityId: string | null) => void;
+  setIntroSeen: (seen: boolean) => void;
 };
 
 const STORAGE_KEY = "settings.v1";
@@ -41,6 +44,7 @@ const DEFAULTS: Settings = {
   language: DEFAULT_LANGUAGE,
   startPage: "cities",
   startCityId: null,
+  introSeen: false,
 };
 
 const SettingsContext = createContext<SettingsContextValue | null>(null);
@@ -67,6 +71,9 @@ async function load(): Promise<Settings> {
         : DEFAULTS.startPage,
       startCityId:
         typeof parsed.startCityId === "string" ? parsed.startCityId : null,
+      // Пока признак не записан, вступление не показывалось: после обновления
+      // его один раз увидят и те, у кого настройки уже были.
+      introSeen: parsed.introSeen === true,
     };
   } catch (e) {
     console.warn("Не удалось прочитать настройки", e);
@@ -121,10 +128,22 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     (startCityId: string | null) => update({ startCityId }),
     [update],
   );
+  const setIntroSeen = useCallback(
+    (introSeen: boolean) => update({ introSeen }),
+    [update],
+  );
 
   const value = useMemo<SettingsContextValue>(
-    () => ({ ...settings, ready, setName, setLanguage, setStartPage, setStartCityId }),
-    [settings, ready, setName, setLanguage, setStartPage, setStartCityId],
+    () => ({
+      ...settings,
+      ready,
+      setName,
+      setLanguage,
+      setStartPage,
+      setStartCityId,
+      setIntroSeen,
+    }),
+    [settings, ready, setName, setLanguage, setStartPage, setStartCityId, setIntroSeen],
   );
 
   return (

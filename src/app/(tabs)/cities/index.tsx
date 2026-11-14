@@ -1,12 +1,14 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Link, router, Stack } from "expo-router";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
-import { EarthGL } from "@/components/earth-gl";
+import { cityView, EarthGL, type Flight } from "@/components/earth-gl";
 import { CITIES, cityName, countryName, getCity, type City } from "@/data/stations";
 import { useI18n } from "@/i18n";
 import { flagEmoji } from "@/lib/format";
+import { useFlightRequest } from "@/lib/globe-flight";
+import { useFavorites } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
 import { useSettings } from "@/providers/settings-provider";
 
@@ -15,14 +17,26 @@ let startPageApplied = false;
 
 const TOTAL_STATIONS = CITIES.reduce((n, c) => n + c.stations.length, 0);
 
+/** Вступление при первом запуске: шар показывает обе Америки, летит к Амстердаму и включает станцию. */
+const INTRO_START = { rotation: { lambda: 90, phi: -20 }, zoom: 1 };
+const INTRO_CITY_ID = "amsterdam";
+const INTRO_STATION_ID = "c84d20ef-1b8b-4f8e-a809-e4297f570eb9"; // Radio Boven IJ
+const INTRO_ZOOM = 6;
+const INTRO_DURATION_MS = 5000;
+/** Перелёт к городу играющей станции по кнопке глобуса в заголовке. */
+const FLY_DURATION_MS = 2500;
+
 function openCity(city: City) {
   router.push({ pathname: "/cities/[id]", params: { id: city.id } });
 }
 
 export default function GlobeScreen() {
   const { language, t } = useI18n();
-  const { current } = usePlayer();
-  const { ready, startPage, startCityId } = useSettings();
+  const { current, play } = usePlayer();
+  const { ready, startPage, startCityId, introSeen, setIntroSeen } = useSettings();
+  const { isStationSaved, toggleStation } = useFavorites();
+  // Кнопка глобуса и выбор станции просят подлететь к её городу.
+  const flightRequest = useFlightRequest();
   const [focused, setFocused] = useState<City | null>(null);
   // Размер известен только после первого onLayout; до этого шар не монтируем,
   // иначе GL-контекст создаётся дважды.
@@ -31,6 +45,8 @@ export default function GlobeScreen() {
   useEffect(() => {
     if (!ready || startPageApplied) return;
     startPageApplied = true;
+    // В запуск со вступлением стартовую страницу не открываем: перелёт должен быть на виду.
+    if (!introSeen) return;
     const startCity = startPage === "city" ? getCity(startCityId ?? undefined) : undefined;
     if (startCity) {
       openCity(startCity);
@@ -39,13 +55,46 @@ export default function GlobeScreen() {
     } else if (startPage === "playlist") {
       router.navigate("/stations");
     }
-  }, [ready, startPage, startCityId]);
+  }, [ready, introSeen, startPage, startCityId]);
 
   const onSelectCity = useCallback((city: City) => openCity(city), []);
+
+  const introCity = getCity(INTRO_CITY_ID);
+  const showIntro = ready && !introSeen && introCity !== undefined;
+  const flyToCity = getCity(flightRequest?.cityId);
+  const flight = useMemo<Flight | null>(() => {
+    if (showIntro && introCity) {
+      return { to: cityView(introCity, INTRO_ZOOM), durationMs: INTRO_DURATION_MS };
+    }
+    if (flyToCity) {
+      return {
+        to: cityView(flyToCity, INTRO_ZOOM),
+        durationMs: FLY_DURATION_MS,
+        key: String(flightRequest?.at),
+      };
+    }
+    return null;
+  }, [showIntro, introCity, flyToCity, flightRequest?.at]);
+  const onFlightDone = useCallback(
+    (completed: boolean) => {
+      // Автозапуск станции относится только к вступлению.
+      if (!showIntro) return;
+      setIntroSeen(true);
+      // Перелёт прервал жест: пользователь взял управление, станцию не навязываем.
+      if (!completed || !introCity) return;
+      const station =
+        introCity.stations.find((s) => s.id === INTRO_STATION_ID) ?? introCity.stations[0];
+      if (station) play(station, introCity.stations);
+    },
+    [showIntro, introCity, play, setIntroSeen],
+  );
   const playingCity =
     current !== null
       ? CITIES.find((c) => c.stations.some((s) => s.id === current.id))
       : undefined;
+  /** Играющая станция, если она из города в фокусе: для неё в карточке звезда избранного. */
+  const focusedStation = current && playingCity && playingCity.id === focused?.id ? current : null;
+  const focusedSaved = focusedStation ? isStationSaved(focusedStation.id) : false;
 
   return (
     <View style={styles.container}>
@@ -74,10 +123,14 @@ export default function GlobeScreen() {
           }
         }}
       >
-        {size ? (
+        {/* Шар монтируем после чтения настроек: стартовое положение задаётся один раз. */}
+        {size && ready ? (
           <EarthGL
             width={size.width}
             height={size.height}
+            initialView={showIntro ? INTRO_START : undefined}
+            flight={flight}
+            onFlightDone={onFlightDone}
             onFocusChange={setFocused}
             onSelectCity={onSelectCity}
           />
@@ -100,6 +153,22 @@ export default function GlobeScreen() {
                 {playingCity?.id === focused.id ? ` · ${t("city.nowPlaying")}` : ""}
               </Text>
             </View>
+            {focusedStation ? (
+              <Pressable
+                onPress={() => toggleStation(focusedStation)}
+                hitSlop={10}
+                style={({ pressed }) => [styles.star, pressed && styles.pressed]}
+                accessibilityRole="button"
+                accessibilityLabel={focusedSaved ? t("station.remove") : t("station.add")}
+                accessibilityState={{ selected: focusedSaved }}
+              >
+                <Ionicons
+                  name={focusedSaved ? "star" : "star-outline"}
+                  size={26}
+                  color={focusedSaved ? "#f5a524" : "#9cc0ff"}
+                />
+              </Pressable>
+            ) : null}
             <Ionicons name="chevron-forward" size={22} color="#9cc0ff" />
           </Pressable>
         ) : (
@@ -146,6 +215,9 @@ const styles = StyleSheet.create({
   },
   pressed: {
     opacity: 0.7,
+  },
+  star: {
+    padding: 4,
   },
   cardFlag: {
     fontSize: 28,

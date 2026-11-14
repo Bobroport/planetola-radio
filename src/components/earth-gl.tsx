@@ -14,9 +14,23 @@ import {
   supportsWebGL2,
 } from "@/lib/three-renderer";
 
+/** Перелёт камеры: из текущего положения в `to` за `durationMs`. */
+export type Flight = {
+  to: GlobeView;
+  durationMs: number;
+  /** Отличает повторный запрос того же перелёта: новый объект с новым ключом летит заново. */
+  key?: string;
+};
+
 type Props = {
   width: number;
   height: number;
+  /** Положение шара при появлении на экране; по умолчанию Европа и Ближний Восток. */
+  initialView?: GlobeView;
+  /** Перелёт начинается, как только текстура загружена. Объект должен быть стабильным. */
+  flight?: Flight | null;
+  /** Перелёт закончился: `completed` false, если его прервал жест или уход приложения в фон. */
+  onFlightDone?: (completed: boolean) => void;
   /** Город, оказавшийся ближе всех к центру шара (null, если далеко). */
   onFocusChange: (city: City | null) => void;
   /** Нажатие на точку города. */
@@ -90,6 +104,50 @@ const SURFACE_DISTANCE_AT_ZOOM_1 = 2.35;
 /** В радианах: ближе этого к центру город считается «в фокусе». */
 const FOCUS_RADIUS = 0.14;
 const INITIAL_VIEW: GlobeView = { rotation: { lambda: -30, phi: -40 }, zoom: 1 };
+
+/** Положение шара, при котором город стоит в центре экрана. */
+export function cityView(city: City, zoom: number): GlobeView {
+  return { rotation: { lambda: -city.long, phi: -city.lat }, zoom };
+}
+
+function easeInOut(t: number): number {
+  return t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2;
+}
+
+/** Доля отрезка [start, end] прогресса t, с плавным разгоном и торможением. */
+function phase(t: number, start: number, end: number): number {
+  return easeInOut(Math.max(0, Math.min(1, (t - start) / (end - start))));
+}
+
+/** Дальше этого угла между началом и концом перелёта шар сначала отдаляется до минимума. */
+const ZOOM_OUT_ANGLE = (25 * Math.PI) / 180;
+
+function logLerp(a: number, b: number, t: number): number {
+  return Math.exp(Math.log(a) + (Math.log(b) - Math.log(a)) * t);
+}
+
+/**
+ * Промежуточное положение перелёта: сначала шар в основном вращается, потом приближается.
+ * Долгота идёт по короткой дуге, масштаб меняется в логарифме, чтобы приближение было равномерным.
+ * Если лететь далеко из приближенного вида, шар по пути отдаляется, иначе поверхность мелькает.
+ */
+function interpolateView(from: GlobeView, to: GlobeView, t: number): GlobeView {
+  const r = phase(t, 0, 0.7);
+  const angle = viewCenterDirection(from).angleTo(viewCenterDirection(to));
+  const midZoom = angle > ZOOM_OUT_ANGLE ? MIN_ZOOM : Math.min(from.zoom, to.zoom);
+  const zoomOut = logLerp(from.zoom, midZoom, phase(t, 0, 0.4));
+  const zoom = logLerp(zoomOut, to.zoom, phase(t, 0.35, 1));
+  let dLambda = (to.rotation.lambda - from.rotation.lambda) % 360;
+  if (dLambda > 180) dLambda -= 360;
+  if (dLambda < -180) dLambda += 360;
+  return {
+    rotation: {
+      lambda: from.rotation.lambda + dLambda * r,
+      phi: from.rotation.phi + (to.rotation.phi - from.rotation.phi) * r,
+    },
+    zoom,
+  };
+}
 const RAD = Math.PI / 180;
 /** Радиус шара в условных единицах сцены; радиус изображения в пикселях вычисляется от него. */
 const EARTH_RADIUS = 1;
@@ -174,9 +232,20 @@ const ATMOSPHERE_FRAGMENT = `
   }
 `;
 
-export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
+export function EarthGL({
+  width,
+  height,
+  initialView = INITIAL_VIEW,
+  flight = null,
+  onFlightDone,
+  onFocusChange,
+  onSelectCity,
+}: Props) {
   const sceneRef = useRef<Scene | null>(null);
-  const viewRef = useRef<GlobeView>(INITIAL_VIEW);
+  const viewRef = useRef<GlobeView>(initialView);
+  /** Идущий перелёт; жест пользователя его прерывает. */
+  const flightRef = useRef<{ cancel: () => void } | null>(null);
+  const onFlightDoneRef = useRef(onFlightDone);
   const focusedIdRef = useRef<string | null>(null);
   const [ready, setReady] = useState(false);
   // Ошибку храним ключом перевода, а не готовой строкой: язык можно сменить на лету.
@@ -248,14 +317,67 @@ export function EarthGL({ width, height, onFocusChange, onSelectCity }: Props) {
     [width, height, onSelectCity],
   );
 
-  const gesture = useGlobeGestures({
-    initial: INITIAL_VIEW,
+  const onInteract = useCallback(() => {
+    flightRef.current?.cancel();
+  }, []);
+
+  const { gesture, setView } = useGlobeGestures({
+    initial: initialView,
     baseRadius: Math.min(width, height) * 0.46,
     minZoom: MIN_ZOOM,
     maxZoom: MAX_ZOOM,
     onChange,
     onTap,
+    onInteract,
   });
+
+  useEffect(() => {
+    onFlightDoneRef.current = onFlightDone;
+  }, [onFlightDone]);
+
+  // Перелёт камеры: цикл requestAnimationFrame ограничен длительностью перелёта
+  // и обрывается, как только приложение уходит в фон (см. requestFrame).
+  useEffect(() => {
+    if (!ready || !flight) return;
+    const from = viewRef.current;
+    const startedAt = Date.now();
+    let frame: number | null = null;
+    let finished = false;
+    const stop = () => {
+      if (frame !== null) cancelAnimationFrame(frame);
+      frame = null;
+      flightRef.current = null;
+    };
+    const finish = (completed: boolean) => {
+      if (finished) return;
+      finished = true;
+      stop();
+      onFlightDoneRef.current?.(completed);
+    };
+    const step = () => {
+      frame = null;
+      const scene = sceneRef.current;
+      if (finished) return;
+      if (!scene || !scene.active) {
+        setView(flight.to);
+        finish(false);
+        return;
+      }
+      const t = Math.min(1, (Date.now() - startedAt) / flight.durationMs);
+      setView(interpolateView(from, flight.to, t));
+      if (t < 1) {
+        frame = requestAnimationFrame(step);
+      } else {
+        finish(true);
+      }
+    };
+    flightRef.current = { cancel: () => finish(false) };
+    frame = requestAnimationFrame(step);
+    return () => {
+      finished = true;
+      stop();
+    };
+  }, [ready, flight, setView]);
 
   const onContextCreate = useCallback(
     (gl: ExpoWebGLRenderingContext) => {

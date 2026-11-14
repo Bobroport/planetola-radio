@@ -15,6 +15,8 @@ type Options = {
   onChange: (view: GlobeView) => void;
   /** Короткое нажатие: экранные координаты и положение шара в этот момент. */
   onTap: (x: number, y: number, view: GlobeView) => void;
+  /** Пользователь начал вращать или масштабировать шар. */
+  onInteract?: () => void;
 };
 
 const DEG = 180 / Math.PI;
@@ -35,6 +37,7 @@ export function useGlobeGestures({
   maxZoom,
   onChange,
   onTap,
+  onInteract,
 }: Options) {
   const view = useRef<GlobeView>(initial);
   const gestureStart = useRef<GlobeView>(initial);
@@ -55,12 +58,22 @@ export function useGlobeGestures({
     [],
   );
 
-  return useMemo(() => {
+  /** Ставит шар в заданное положение программно (анимация перелёта). */
+  const setView = useCallback(
+    (next: GlobeView) => {
+      view.current = next;
+      onChange(next);
+    },
+    [onChange],
+  );
+
+  const gesture = useMemo(() => {
     const pan = Gesture.Pan()
       .runOnJS(true)
       .minDistance(2)
       .onBegin(() => {
         gestureStart.current = view.current;
+        onInteract?.();
       })
       .onUpdate((e) => {
         // Пиксели в градусы: чем крупнее масштаб, тем медленнее вращение.
@@ -80,6 +93,7 @@ export function useGlobeGestures({
       .runOnJS(true)
       .onBegin(() => {
         gestureStart.current = view.current;
+        onInteract?.();
       })
       .onUpdate((e) => {
         view.current = {
@@ -97,5 +111,7 @@ export function useGlobeGestures({
       });
 
     return Gesture.Race(tap, Gesture.Simultaneous(pan, pinch));
-  }, [baseRadius, maxZoom, minZoom, onTap, scheduleChange]);
+  }, [baseRadius, maxZoom, minZoom, onInteract, onTap, scheduleChange]);
+
+  return { gesture, setView };
 }

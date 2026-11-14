@@ -24,6 +24,7 @@ import {
   TOP_TAGS,
   type SearchFilters,
 } from "@/lib/search";
+import { flyToStation } from "@/lib/globe-navigation";
 import { usePlayer } from "@/providers/player-provider";
 
 type Params = { tag?: string; language?: string; codec?: string };
@@ -172,7 +173,10 @@ export default function SearchScreen() {
             city={item.city}
             showCountry
             isActive={current?.id === item.station.id}
-            onPress={(station) => play(station, results.map((r) => r.station))}
+            onPress={(station) => {
+              play(station, results.map((r) => r.station));
+              flyToStation(station);
+            }}
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
