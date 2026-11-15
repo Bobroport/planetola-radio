@@ -31,6 +31,8 @@ export type FavoriteTrack = {
 export type ResolvedStation = { station: Station; city?: City };
 
 type FavoritesContextValue = {
+  /** Сохранённое прочитано из хранилища. */
+  ready: boolean;
   /** Сохранённые треки, новые сверху. */
   favorites: FavoriteTrack[];
   isSaved: (track: NowPlaying, station: Station) => boolean;
@@ -85,6 +87,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
   const [favorites, setFavorites] = useState<FavoriteTrack[]>([]);
   const [stationIds, setStationIds] = useState<string[]>([]);
   const [snapshots, setSnapshots] = useState<Record<string, Station>>({});
+  const [ready, setReady] = useState(false);
 
   // Читаем сохранённое после монтирования, чтобы не ходить в SQLite во время рендера.
   useEffect(() => {
@@ -104,6 +107,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
       if (Object.keys(saved).length > 0) {
         setSnapshots((prev) => (Object.keys(prev).length === 0 ? saved : prev));
       }
+      setReady(true);
     });
     return () => {
       cancelled = true;
@@ -206,6 +210,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<FavoritesContextValue>(
     () => ({
+      ready,
       favorites,
       isSaved,
       toggle,
@@ -215,7 +220,17 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
       toggleStation,
       resolveStation,
     }),
-    [favorites, isSaved, toggle, remove, stationIds, isStationSaved, toggleStation, resolveStation],
+    [
+      ready,
+      favorites,
+      isSaved,
+      toggle,
+      remove,
+      stationIds,
+      isStationSaved,
+      toggleStation,
+      resolveStation,
+    ],
   );
 
   return (

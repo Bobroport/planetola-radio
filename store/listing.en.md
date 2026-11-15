@@ -47,7 +47,7 @@ radio,internet radio,world radio,live radio,fm,stations,globe,music,news,online 
 • Sleep timer: stop playback in 15, 30, 45 or 60 minutes, with a countdown in the player
 • Globe button in the top corner of every screen: one tap flies you to the city of the station you're listening to
 • New places on the globe: Greenland, Alaska, Canada's North, Mali, Sudan, Uzbekistan and Kyrgyzstan
-• First launch starts with a flight across the Atlantic to Amsterdam, and the radio comes on by itself
+• Every launch opens with a flight across the Atlantic to one of your favorite stations, which starts playing on arrival; with no favorites yet, the globe lands on Amsterdam, Paris, Lisbon or London
 • Fixed garbled track titles on some US stations
 
 ## What's New (version 1.1)

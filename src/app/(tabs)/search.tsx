@@ -24,7 +24,7 @@ import {
   TOP_TAGS,
   type SearchFilters,
 } from "@/lib/search";
-import { flyToStation } from "@/lib/globe-navigation";
+import { flyToStationAndPlay } from "@/lib/globe-navigation";
 import { usePlayer } from "@/providers/player-provider";
 
 type Params = { tag?: string; language?: string; codec?: string };
@@ -174,8 +174,8 @@ export default function SearchScreen() {
             showCountry
             isActive={current?.id === item.station.id}
             onPress={(station) => {
-              play(station, results.map((r) => r.station));
-              flyToStation(station);
+              const list = results.map((r) => r.station);
+              flyToStationAndPlay(station, () => play(station, list));
             }}
           />
         )}

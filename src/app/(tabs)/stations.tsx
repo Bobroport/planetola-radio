@@ -2,7 +2,7 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 
 import { StationRow } from "@/components/station-row";
 import { useI18n } from "@/i18n";
-import { flyToStation } from "@/lib/globe-navigation";
+import { flyToStationAndPlay } from "@/lib/globe-navigation";
 import { useFavorites } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
 
@@ -28,8 +28,8 @@ export default function FavoriteStationsScreen() {
             showCountry
             isActive={current?.id === item.station.id}
             onPress={(station) => {
-              play(station, stations.map((s) => s.station));
-              flyToStation(station);
+              const list = stations.map((s) => s.station);
+              flyToStationAndPlay(station, () => play(station, list));
             }}
           />
         )}

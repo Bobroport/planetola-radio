@@ -4,7 +4,15 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { cityView, EarthGL, type Flight } from "@/components/earth-gl";
-import { CITIES, cityName, countryName, getCity, type City } from "@/data/stations";
+import {
+  CITIES,
+  cityName,
+  countryName,
+  getCity,
+  getStation,
+  type City,
+  type Station,
+} from "@/data/stations";
 import { useI18n } from "@/i18n";
 import { flagEmoji } from "@/lib/format";
 import { useFlightRequest } from "@/lib/globe-flight";
@@ -14,13 +22,22 @@ import { useSettings } from "@/providers/settings-provider";
 
 /** Стартовую страницу открываем один раз за запуск приложения. */
 let startPageApplied = false;
+/** Вступительный перелёт тоже один раз за запуск: после него глобус слушается кнопок и жестов. */
+let introPlayed = false;
+/** Цель вступления выбирается случайно, поэтому запоминается на весь запуск. */
+let introTargetCache: IntroTarget | null = null;
 
 const TOTAL_STATIONS = CITIES.reduce((n, c) => n + c.stations.length, 0);
 
-/** Вступление при первом запуске: шар показывает обе Америки, летит к Амстердаму и включает станцию. */
+/**
+ * Вступление при запуске: шар показывает обе Америки и летит к цели. При самом первом запуске
+ * это Амстердам с включением Radio Boven IJ, дальше — случайная избранная станция (она тоже
+ * включается), а без избранного — случайный европейский город без станции.
+ */
 const INTRO_START = { rotation: { lambda: 90, phi: -20 }, zoom: 1 };
-const INTRO_CITY_ID = "amsterdam";
-const INTRO_STATION_ID = "c84d20ef-1b8b-4f8e-a809-e4297f570eb9"; // Radio Boven IJ
+const FIRST_INTRO_CITY_ID = "amsterdam";
+const FIRST_INTRO_STATION_ID = "c84d20ef-1b8b-4f8e-a809-e4297f570eb9"; // Radio Boven IJ
+const INTRO_CITY_IDS = ["amsterdam", "paris", "lisbon", "london"];
 const INTRO_ZOOM = 6;
 const INTRO_DURATION_MS = 5000;
 /** Перелёт к городу играющей станции по кнопке глобуса в заголовке. */
@@ -30,14 +47,41 @@ function openCity(city: City) {
   router.push({ pathname: "/cities/[id]", params: { id: city.id } });
 }
 
+type IntroTarget = { city: City; station: Station | null };
+
+function pickRandom<T>(items: T[]): T | undefined {
+  return items[Math.floor(Math.random() * items.length)];
+}
+
+/** Куда лететь при запуске; null, если в данных нет ни одного подходящего города. */
+function pickIntroTarget(firstLaunch: boolean, favoriteStationIds: string[]): IntroTarget | null {
+  if (firstLaunch) {
+    const city = getCity(FIRST_INTRO_CITY_ID);
+    if (!city) return null;
+    const station =
+      city.stations.find((s) => s.id === FIRST_INTRO_STATION_ID) ?? city.stations[0] ?? null;
+    return { city, station };
+  }
+  // Избранные станции из страновых списков города на глобусе не имеют, их пропускаем.
+  const favorites = favoriteStationIds.flatMap((id) => {
+    const found = getStation(id);
+    return found ? [found] : [];
+  });
+  const favorite = pickRandom(favorites);
+  if (favorite) return favorite;
+  const city = pickRandom(INTRO_CITY_IDS.flatMap((id) => getCity(id) ?? []));
+  return city ? { city, station: null } : null;
+}
+
 export default function GlobeScreen() {
   const { language, t } = useI18n();
   const { current, play } = usePlayer();
   const { ready, startPage, startCityId, introSeen, setIntroSeen } = useSettings();
-  const { isStationSaved, toggleStation } = useFavorites();
+  const { ready: favoritesReady, stationIds, isStationSaved, toggleStation } = useFavorites();
   // Кнопка глобуса и выбор станции просят подлететь к её городу.
   const flightRequest = useFlightRequest();
   const [focused, setFocused] = useState<City | null>(null);
+  const [introDone, setIntroDone] = useState(introPlayed);
   // Размер известен только после первого onLayout; до этого шар не монтируем,
   // иначе GL-контекст создаётся дважды.
   const [size, setSize] = useState<{ width: number; height: number } | null>(null);
@@ -59,12 +103,22 @@ export default function GlobeScreen() {
 
   const onSelectCity = useCallback((city: City) => openCity(city), []);
 
-  const introCity = getCity(INTRO_CITY_ID);
-  const showIntro = ready && !introSeen && introCity !== undefined;
+  // Цель выбирается один раз за запуск, когда прочитаны и настройки, и избранное.
+  const introTarget = useMemo(() => {
+    if (!ready || !favoritesReady) return null;
+    introTargetCache ??= pickIntroTarget(!introSeen, stationIds);
+    return introTargetCache;
+  }, [ready, favoritesReady, introSeen, stationIds]);
+  // Перелёт показываем при каждом запуске, который начинается с глобуса; при самом первом
+  // запуске — всегда, потому что стартовую страницу тогда не открываем (см. эффект выше).
+  const startsOnGlobe =
+    startPage === "cities" ||
+    (startPage === "city" && getCity(startCityId ?? undefined) === undefined);
+  const showIntro = !introDone && introTarget !== null && (!introSeen || startsOnGlobe);
   const flyToCity = getCity(flightRequest?.cityId);
   const flight = useMemo<Flight | null>(() => {
-    if (showIntro && introCity) {
-      return { to: cityView(introCity, INTRO_ZOOM), durationMs: INTRO_DURATION_MS };
+    if (showIntro && introTarget) {
+      return { to: cityView(introTarget.city, INTRO_ZOOM), durationMs: INTRO_DURATION_MS };
     }
     if (flyToCity) {
       return {
@@ -74,19 +128,19 @@ export default function GlobeScreen() {
       };
     }
     return null;
-  }, [showIntro, introCity, flyToCity, flightRequest?.at]);
+  }, [showIntro, introTarget, flyToCity, flightRequest?.at]);
   const onFlightDone = useCallback(
     (completed: boolean) => {
-      // Автозапуск станции относится только к вступлению.
-      if (!showIntro) return;
-      setIntroSeen(true);
+      // Перелёты по кнопке глобуса и из списков станций вступления не касаются.
+      if (!showIntro || !introTarget) return;
+      introPlayed = true;
+      setIntroDone(true);
+      if (!introSeen) setIntroSeen(true);
       // Перелёт прервал жест: пользователь взял управление, станцию не навязываем.
-      if (!completed || !introCity) return;
-      const station =
-        introCity.stations.find((s) => s.id === INTRO_STATION_ID) ?? introCity.stations[0];
-      if (station) play(station, introCity.stations);
+      if (!completed || !introTarget.station) return;
+      play(introTarget.station, introTarget.city.stations);
     },
-    [showIntro, introCity, play, setIntroSeen],
+    [showIntro, introSeen, introTarget, play, setIntroSeen],
   );
   const playingCity =
     current !== null
@@ -123,8 +177,8 @@ export default function GlobeScreen() {
           }
         }}
       >
-        {/* Шар монтируем после чтения настроек: стартовое положение задаётся один раз. */}
-        {size && ready ? (
+        {/* Шар монтируем после чтения настроек и избранного: стартовое положение задаётся один раз. */}
+        {size && ready && favoritesReady ? (
           <EarthGL
             width={size.width}
             height={size.height}
