@@ -9,6 +9,7 @@ import { Platform } from "react-native";
 import { useSharedValue, type SharedValue } from "react-native-reanimated";
 
 import { useAppActive } from "@/hooks/use-app-active";
+import { timed } from "@/lib/audio-timing";
 
 export type DanceEnergy = {
   /** Громкость 0..1 (сглаженный RMS). */
@@ -99,7 +100,7 @@ export function useDanceEnergy(player: AudioPlayer | null, enabled: boolean): Da
       return;
     }
     let lastAnalysed = 0;
-    player.setAudioSamplingEnabled(true);
+    timed("sampling on", () => player.setAudioSamplingEnabled(true));
     const subscription = player.addListener("audioSampleUpdate", (sample) => {
       const now = Date.now();
       if (now - lastAnalysed < MIN_ANALYSE_INTERVAL_MS) return;
@@ -112,7 +113,11 @@ export function useDanceEnergy(player: AudioPlayer | null, enabled: boolean): Da
     });
     return () => {
       subscription.remove();
-      player.setAudioSamplingEnabled(false);
+      try {
+        timed("sampling off", () => player.setAudioSamplingEnabled(false));
+      } catch {
+        // Плеер уже освобождён (станцию сменили): анализ звука снят вместе с ним.
+      }
       hasSamples.value = false;
     };
   }, [player, enabled, appActive, permitted, level, bright, hasSamples]);

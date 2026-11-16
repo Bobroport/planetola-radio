@@ -1,9 +1,9 @@
 import {
+  createAudioPlayer,
   setAudioModeAsync,
-  useAudioPlayer,
-  useAudioPlayerStatus,
   type AudioMetadata,
   type AudioPlayer,
+  type AudioStatus,
 } from "expo-audio";
 import {
   createContext,
@@ -19,6 +19,8 @@ import {
 import { cityName, countryName, getCityOfStation, type Station } from "@/data/stations";
 import { useAppActive } from "@/hooks/use-app-active";
 import { useI18n } from "@/i18n";
+import { timed } from "@/lib/audio-timing";
+import { flightBusyMs } from "@/lib/globe-flight";
 import { fetchNowPlaying, type NowPlaying } from "@/lib/icy";
 import { registerClick } from "@/lib/radio-browser";
 
@@ -32,6 +34,49 @@ const ARTWORK_URL = "https://bobroport.github.io/planetola-radio/icon.png";
 /** Варианты таймера сна, минуты. */
 export const SLEEP_TIMER_MINUTES = [15, 30, 45, 60] as const;
 
+/** Через сколько освобождать заменённый плеер, если глобус не занят перелётом. */
+const RETIRE_DELAY_MS = 300;
+
+type PlayerStatus = Pick<AudioStatus, "playing" | "isBuffering" | "isLoaded" | "error">;
+
+/** Состояние плеера, от которого ещё не пришло ни одного события: поток подключается. */
+const IDLE_STATUS: PlayerStatus = {
+  playing: false,
+  isBuffering: false,
+  isLoaded: false,
+  error: null,
+};
+
+/**
+ * Снимает заменённый плеер с эфира. Глушим, а не ставим на паузу: `pause()` из JS через
+ * 100 мс выключает аудиосессию, если ничего не играет, а новый плеер в этот момент ещё
+ * буферизуется, и в фоне iOS усыпила бы приложение. Освобождение разбирает живой поток
+ * синхронно в потоке JS (до нескольких секунд), поэтому ждёт конца перелёта глобуса.
+ */
+function retirePlayer(player: AudioPlayer): void {
+  try {
+    timed("mute old player", () => {
+      player.muted = true;
+    });
+  } catch {
+    // Плеер уже освобождён (Fast Refresh в разработке): глушить нечего.
+    return;
+  }
+  const release = () => {
+    const busy = flightBusyMs();
+    if (busy > 0) {
+      setTimeout(release, busy);
+      return;
+    }
+    try {
+      timed("release old player", () => player.release());
+    } catch (e) {
+      console.warn("Не удалось освободить плеер", e);
+    }
+  };
+  setTimeout(release, RETIRE_DELAY_MS);
+}
+
 /** Чего хочет пользователь. Нужно, чтобы отличить прерывание системой от паузы по его воле. */
 type Intent = "playing" | "paused" | "stopped";
 
@@ -44,8 +89,13 @@ type PlayerContextValue = {
   isPlaying: boolean;
   isBuffering: boolean;
   error: string | null;
-  /** Включить станцию. `queue` — список, из которого её выбрали: по нему ходят «вперёд/назад». */
-  play: (station: Station, queue?: Station[]) => void;
+  /**
+   * Включить станцию. `queue` — список, из которого её выбрали: по нему ходят «вперёд/назад».
+   * С `delayMs` станция сразу становится текущей, прежняя замолкает, а поток подключается
+   * через указанное время: смена живого потока на секунды занимает поток JS, и перелёт
+   * глобуса, начатый одновременно с ней, замирает.
+   */
+  play: (station: Station, queue?: Station[], options?: { delayMs?: number }) => void;
   pause: () => void;
   /** Продолжить после паузы: живой поток подключается заново. */
   resume: () => void;
@@ -85,8 +135,17 @@ function lockScreenMetadata(
 }
 
 export function PlayerProvider({ children }: { children: ReactNode }) {
-  const player = useAudioPlayer(null);
-  const status = useAudioPlayerStatus(player);
+  // На каждое подключение потока создаётся новый плеер (см. startStream): `replace` на
+  // играющем живом потоке на секунды занимает поток JS, а свежий плеер подключается сразу.
+  // При размонтировании плеер не освобождаем: провайдер живёт всё время работы приложения,
+  // а Fast Refresh перезапускает эффекты и освободил бы плеер, который ещё в состоянии.
+  const [player, setPlayer] = useState<AudioPlayer>(() => createAudioPlayer(null));
+  const playerRef = useRef(player);
+  const statusSubscriptionRef = useRef<{ remove: () => void } | null>(null);
+  const [statusEvent, setStatusEvent] = useState<AudioStatus | null>(null);
+  // События прежнего плеера к новому не относятся: до первого своего события он «подключается».
+  const status: PlayerStatus =
+    statusEvent && statusEvent.id === player.id ? statusEvent : IDLE_STATUS;
   const { language } = useI18n();
   const [current, setCurrent] = useState<Station | null>(null);
   const [queue, setQueue] = useState<Station[]>([]);
@@ -98,10 +157,31 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   const wasPlayingRef = useRef(false);
   const interruptedRef = useRef(false);
   const nowPlayingRef = useRef<NowPlaying | null>(null);
+  /** Отложенное подключение потока (см. `play` с `delayMs`): таймер и досрочный запуск. */
+  const pendingRef = useRef<{ timer: ReturnType<typeof setTimeout>; fire: () => void } | null>(
+    null,
+  );
+  /** Станция выбрана, но её поток ещё не подключали: панель показывает загрузку. */
+  const [connecting, setConnecting] = useState(false);
 
   useEffect(() => {
     nowPlayingRef.current = nowPlaying;
   }, [nowPlaying]);
+
+  const cancelPending = useCallback(() => {
+    if (pendingRef.current) {
+      clearTimeout(pendingRef.current.timer);
+      pendingRef.current = null;
+    }
+    setConnecting(false);
+  }, []);
+
+  useEffect(
+    () => () => {
+      if (pendingRef.current) clearTimeout(pendingRef.current.timer);
+    },
+    [],
+  );
 
   useEffect(() => {
     setAudioModeAsync({
@@ -113,22 +193,45 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
-  /** Подключает поток станции (заново) и выводит её на экран блокировки. */
+  const onStatus = useCallback((next: AudioStatus) => {
+    // Плеер шлёт состояние дважды в секунду; перерисовка нужна только при смене этих полей.
+    setStatusEvent((prev) =>
+      prev &&
+      prev.id === next.id &&
+      prev.playing === next.playing &&
+      prev.isBuffering === next.isBuffering &&
+      prev.isLoaded === next.isLoaded &&
+      prev.error === next.error
+        ? prev
+        : next,
+    );
+  }, []);
+
+  /** Подключает поток станции (заново) в новом плеере и выводит её на экран блокировки. */
   const startStream = useCallback(
     (station: Station) => {
       wasPlayingRef.current = false;
       interruptedRef.current = false;
-      player.replace(station.streamUrl);
-      player.play();
+      const previous = playerRef.current;
+      const next = timed("create player", () => createAudioPlayer(station.streamUrl));
+      // Подписка сразу при создании, а не в эффекте: ранняя ошибка потока не потеряется.
+      statusSubscriptionRef.current?.remove();
+      statusSubscriptionRef.current = next.addListener("playbackStatusUpdate", onStatus);
+      timed("play", () => next.play());
       // showNextPrevious понимает только наш патч expo-audio (patches/): в Expo Go опция
       // игнорируется, кнопки «следующий/предыдущий» есть лишь в сборках EAS.
-      player.setActiveForLockScreen(
-        true,
-        lockScreenMetadata(station, nowPlayingRef.current, language),
-        { isLiveStream: true, showNextPrevious: true },
+      timed("lock screen", () =>
+        next.setActiveForLockScreen(
+          true,
+          lockScreenMetadata(station, nowPlayingRef.current, language),
+          { isLiveStream: true, showNextPrevious: true },
+        ),
       );
+      playerRef.current = next;
+      setPlayer(next);
+      retirePlayer(previous);
     },
-    [player, language],
+    [language, onStatus],
   );
 
   // Название трека на экране блокировки обновляется вместе с ICY-метаданными.
@@ -193,7 +296,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   // а при возобновлении лишь вызывает play() на старом соединении, которое у живого потока
   // к тому времени мертво. Поэтому любой выход из такой паузы переподключает поток.
   useEffect(() => {
-    if (!current || intentRef.current !== "playing") return;
+    // Пока поток новой станции отложен, тишина — наша пауза, а не прерывание.
+    if (!current || intentRef.current !== "playing" || pendingRef.current) return;
     const active = status.playing || status.isBuffering;
     if (status.playing) {
       wasPlayingRef.current = true;
@@ -211,20 +315,42 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, [current, status.playing, status.isBuffering, startStream]);
 
   const start = useCallback(
-    (station: Station) => {
+    (station: Station, delayMs = 0) => {
+      cancelPending();
       intentRef.current = "playing";
       setCurrent(station);
       setNowPlaying(null);
       setNowPlayingChecked(false);
       nowPlayingRef.current = null;
-      startStream(station);
+      if (delayMs > 0) {
+        wasPlayingRef.current = false;
+        interruptedRef.current = false;
+        // Глушим, а не ставим на паузу: см. retirePlayer.
+        playerRef.current.muted = true;
+        setConnecting(true);
+        const fire = () => {
+          if (pendingRef.current) clearTimeout(pendingRef.current.timer);
+          pendingRef.current = null;
+          setConnecting(false);
+          startStream(station);
+        };
+        pendingRef.current = { timer: setTimeout(fire, delayMs), fire };
+      } else {
+        startStream(station);
+      }
       registerClick(station.id);
     },
-    [startStream],
+    [cancelPending, startStream],
   );
 
+  // Приложение ушло в фон, пока поток отложен: подключаем сразу. Таймер в фоне может
+  // не сработать, а с молчащим плеером iOS приложение быстро приостановит.
+  useEffect(() => {
+    if (!appActive) pendingRef.current?.fire();
+  }, [appActive]);
+
   const play = useCallback(
-    (station: Station, list?: Station[]) => {
+    (station: Station, list?: Station[], options?: { delayMs?: number }) => {
       if (list) {
         setQueue(list);
       } else if (current?.id !== station.id) {
@@ -237,21 +363,23 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       if (alreadyOn) {
         return;
       }
-      start(station);
+      start(station, options?.delayMs ?? 0);
     },
     [current, status.playing, status.isBuffering, start],
   );
 
   const pause = useCallback(() => {
+    cancelPending();
     intentRef.current = "paused";
     player.pause();
-  }, [player]);
+  }, [cancelPending, player]);
 
   const resume = useCallback(() => {
     if (!current) return;
+    cancelPending();
     intentRef.current = "playing";
     startStream(current);
-  }, [current, startStream]);
+  }, [cancelPending, current, startStream]);
 
   const step = useCallback(
     (delta: 1 | -1) => {
@@ -280,6 +408,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
   }, [player, next, previous]);
 
   const stop = useCallback(() => {
+    cancelPending();
     intentRef.current = "stopped";
     wasPlayingRef.current = false;
     interruptedRef.current = false;
@@ -290,7 +419,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
     setNowPlaying(null);
     setNowPlayingChecked(false);
     setSleepTimerEndsAt(null);
-  }, [player]);
+  }, [cancelPending, player]);
 
   const setSleepTimer = useCallback((minutes: number | null) => {
     setSleepTimerEndsAt(minutes === null ? null : Date.now() + minutes * 60_000);
@@ -312,8 +441,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       current,
       nowPlaying,
       nowPlayingChecked,
-      isPlaying: status.playing && !status.isBuffering,
-      isBuffering: status.isBuffering || !status.isLoaded,
+      isPlaying: !connecting && status.playing && !status.isBuffering,
+      isBuffering: connecting || status.isBuffering || !status.isLoaded,
       error: status.error,
       play,
       pause,
@@ -330,6 +459,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       current,
       nowPlaying,
       nowPlayingChecked,
+      connecting,
       status.playing,
       status.isBuffering,
       status.isLoaded,

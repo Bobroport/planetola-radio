@@ -1,7 +1,7 @@
 # App Store listing — English (primary language)
 
 ## Name (≤30)
-Planetola Radio FM
+Planetola World Radio
 
 ## Subtitle (≤30)
 World radio on a 3D globe
@@ -10,7 +10,7 @@ World radio on a 3D globe
 Spin the globe, land on a city and listen to what's on air there right now. Thousands of live stations from 300+ cities, no account needed.
 
 ## Description (≤4000)
-Planetola Radio FM turns the whole planet into one radio dial. Spin a 3D globe, bring a city to the center and start listening to its live stations in a tap.
+Planetola World Radio turns the whole planet into one radio dial. Spin a 3D globe, bring a city to the center and start listening to its live stations in a tap.
 
 LISTEN AROUND THE WORLD
 • 6,600+ internet radio stations from 338 cities and capitals around the world
@@ -41,6 +41,10 @@ Station data comes from the open community directory Radio Browser. Stations bro
 
 ## Keywords (≤100 chars, comma-separated)
 radio,internet radio,world radio,live radio,fm,stations,globe,music,news,online radio,streaming
+
+## What's New (version 1.3)
+• New name: Planetola World Radio. Same app, same stations, same favorites
+• Pick a station in Search or Favorites and the globe flies to its city while the music is already loading; stations without a city land on their country's capital
 
 ## What's New (version 1.2)
 • Tap the player bar to expand it: a bigger track title, the station's bitrate and codec. Swipe down to collapse it

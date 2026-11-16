@@ -105,9 +105,9 @@ const SURFACE_DISTANCE_AT_ZOOM_1 = 2.35;
 const FOCUS_RADIUS = 0.14;
 const INITIAL_VIEW: GlobeView = { rotation: { lambda: -30, phi: -40 }, zoom: 1 };
 
-/** Положение шара, при котором город стоит в центре экрана. */
-export function cityView(city: City, zoom: number): GlobeView {
-  return { rotation: { lambda: -city.long, phi: -city.lat }, zoom };
+/** Положение шара, при котором точка (город или столица страны) стоит в центре экрана. */
+export function cityView(point: { lat: number; long: number }, zoom: number): GlobeView {
+  return { rotation: { lambda: -point.long, phi: -point.lat }, zoom };
 }
 
 function easeInOut(t: number): number {
@@ -341,6 +341,7 @@ export function EarthGL({
     if (!ready || !flight) return;
     const from = viewRef.current;
     const startedAt = Date.now();
+    let lastFrameAt = startedAt;
     let frame: number | null = null;
     let finished = false;
     const stop = () => {
@@ -363,7 +364,13 @@ export function EarthGL({
         finish(false);
         return;
       }
-      const t = Math.min(1, (Date.now() - startedAt) / flight.durationMs);
+      const now = Date.now();
+      if (__DEV__ && now - lastFrameAt > 150) {
+        // Поток JS был занят: по соседним строкам [audio-timing] видно чем.
+        console.log(`[audio-timing] flight frame late by ${now - lastFrameAt} ms`);
+      }
+      lastFrameAt = now;
+      const t = Math.min(1, (now - startedAt) / flight.durationMs);
       setView(interpolateView(from, flight.to, t));
       if (t < 1) {
         frame = requestAnimationFrame(step);

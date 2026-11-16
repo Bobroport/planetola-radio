@@ -175,7 +175,7 @@ export default function SearchScreen() {
             isActive={current?.id === item.station.id}
             onPress={(station) => {
               const list = results.map((r) => r.station);
-              flyToStationAndPlay(station, () => play(station, list));
+              flyToStationAndPlay(station, (delayMs) => play(station, list, { delayMs }));
             }}
           />
         )}

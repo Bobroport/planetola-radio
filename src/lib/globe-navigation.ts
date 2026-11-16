@@ -1,34 +1,55 @@
 import { router } from "expo-router";
 
-import { getCityOfStation, type City, type Station } from "@/data/stations";
-import { requestFlight } from "@/lib/globe-flight";
+import { getCountryPoint } from "@/data/capitals";
+import { getCityOfStation, type Station } from "@/data/stations";
+import {
+  FLIGHT_DURATION_MS,
+  getGlobeFocus,
+  requestFlight,
+  type GlobePoint,
+} from "@/lib/globe-flight";
 
 /**
- * Пауза между началом перелёта и подключением потока. Запуск потока занимает поток JS
- * на заметное время (активация аудиосессии, создание плеера), и начатый до него перелёт
- * первые кадры просто не рисует; за это время глобус успевает появиться и сдвинуться.
+ * Запасной режим: подключать поток только после приземления. Нужен был, пока станции
+ * переключались через `replace` одного плеера и перелёт замирал на 1–3 секунды. Теперь
+ * каждая станция получает новый плеер (см. player-provider), и поток подключается сразу,
+ * параллельно перелёту. Включить обратно, если замер `[audio-timing]` покажет, что и
+ * создание плеера занимает поток JS; когда подтвердится обратное, режим можно удалить.
  */
-const PLAY_AFTER_FLIGHT_START_MS = 400;
+const CONNECT_AFTER_LANDING = false;
+/** Запас после перелёта: последний кадр и карточка города успевают отрисоваться. */
+const AFTER_FLIGHT_MARGIN_MS = 200;
 
 /**
- * Открывает глобус и, если указан город, подлетает к нему. `navigate` без параметров
+ * Где станция на глобусе: её город, а для станций без города (страновые списки) —
+ * столица страны. undefined, если о стране ничего не известно.
+ */
+export function getStationPoint(station: Station): GlobePoint | undefined {
+  return getCityOfStation(station.id) ?? getCountryPoint(station.countryCode);
+}
+
+/**
+ * Открывает глобус и, если указана точка, подлетает к ней. `navigate` без параметров
  * возвращает к уже открытому экрану глобуса, а не кладёт его поверх.
  */
-export function openGlobe(city?: City): void {
-  if (city) requestFlight(city.id);
+export function openGlobe(point?: GlobePoint): void {
+  if (point) requestFlight(point);
   router.navigate("/cities");
 }
 
 /**
- * Перелёт к городу станции, а затем `start` (подключение потока). Станции без города
- * (страновые списки) глобус не открывают, и `start` вызывается сразу.
+ * Перелёт к станции (её городу или столице страны) и её включение. `start` получает
+ * задержку подключения потока (`play` с `delayMs`): обычно 0, поток подключается
+ * параллельно перелёту. В запасном режиме (`CONNECT_AFTER_LANDING`) задержка равна
+ * длительности перелёта, кроме случая, когда город станции уже в центре шара.
  */
-export function flyToStationAndPlay(station: Station, start: () => void): void {
-  const city = getCityOfStation(station.id);
-  if (!city) {
-    start();
+export function flyToStationAndPlay(station: Station, start: (delayMs: number) => void): void {
+  const point = getStationPoint(station);
+  if (!point) {
+    start(0);
     return;
   }
-  openGlobe(city);
-  setTimeout(start, PLAY_AFTER_FLIGHT_START_MS);
+  const wait = CONNECT_AFTER_LANDING && getGlobeFocus() !== getCityOfStation(station.id)?.id;
+  openGlobe(point);
+  start(wait ? FLIGHT_DURATION_MS + AFTER_FLIGHT_MARGIN_MS : 0);
 }

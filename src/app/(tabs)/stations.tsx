@@ -29,7 +29,7 @@ export default function FavoriteStationsScreen() {
             isActive={current?.id === item.station.id}
             onPress={(station) => {
               const list = stations.map((s) => s.station);
-              flyToStationAndPlay(station, () => play(station, list));
+              flyToStationAndPlay(station, (delayMs) => play(station, list, { delayMs }));
             }}
           />
         )}
