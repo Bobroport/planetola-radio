@@ -3,6 +3,7 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 import { StationRow } from "@/components/station-row";
 import { useI18n } from "@/i18n";
 import { flyToStationAndPlay } from "@/lib/globe-navigation";
+import { layout } from "@/lib/layout";
 import { useFavorites } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
 
@@ -34,7 +35,7 @@ export default function FavoriteStationsScreen() {
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
-        contentContainerStyle={styles.list}
+        contentContainerStyle={[styles.list, layout.content]}
         ListEmptyComponent={<Text style={styles.empty}>{t("stations.empty")}</Text>}
       />
     </View>

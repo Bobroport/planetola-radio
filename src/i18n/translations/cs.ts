@@ -22,7 +22,7 @@ export const cs: Dictionary = {
   "city.notFound": "Město nenalezeno",
   "cities.title": "Města",
   "cities.countries": "Stanice podle země",
-  "cities.countriesHint": "Úplné seznamy pro Evropu, Rusko a USA",
+  "cities.countriesHint": "Úplné seznamy pro Evropu, Rusko, USA, Čínu, Indii a další",
   "countries.title": "Země",
   "country.allStations": "Všechny stanice: {country}",
   "country.filter": "Filtrovat podle názvu nebo štítku",
@@ -97,4 +97,7 @@ export const cs: Dictionary = {
   "profile.whichCity": "Které město otevřít",
   "profile.cityPlaceholder": "Začněte psát název města",
   "profile.dataSource": "Data stanic: Radio Browser, aktualizováno {date}",
+  "profile.character": "Postava",
+  "profile.character.beaver": "Bobr",
+  "profile.character.platypus": "Ptakopysk",
 };

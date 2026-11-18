@@ -22,7 +22,7 @@ export const ar: Dictionary = {
   "city.notFound": "لم يتم العثور على المدينة",
   "cities.title": "المدن",
   "cities.countries": "المحطات حسب البلد",
-  "cities.countriesHint": "قوائم كاملة لأوروبا وروسيا والولايات المتحدة",
+  "cities.countriesHint": "قوائم كاملة لأوروبا وروسيا والولايات المتحدة والصين والهند وغيرها",
   "countries.title": "البلدان",
   "country.allStations": "كل المحطات: {country}",
   "country.filter": "تصفية حسب الاسم أو الوسم",
@@ -97,4 +97,7 @@ export const ar: Dictionary = {
   "profile.whichCity": "أي مدينة تُفتح",
   "profile.cityPlaceholder": "ابدأ بكتابة اسم مدينة",
   "profile.dataSource": "بيانات المحطات: Radio Browser، آخر تحديث {date}",
+  "profile.character": "الشخصية",
+  "profile.character.beaver": "قندس",
+  "profile.character.platypus": "خلد الماء",
 };

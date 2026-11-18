@@ -6,6 +6,7 @@ import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 import { cityName, countryName, getCity } from "@/data/stations";
 import { useI18n } from "@/i18n";
 import { formatDateTime } from "@/lib/format";
+import { layout } from "@/lib/layout";
 import {
   useFavorites,
   type FavoriteTrack,
@@ -124,7 +125,7 @@ export default function LikedTracksScreen() {
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
-        contentContainerStyle={styles.list}
+        contentContainerStyle={[styles.list, layout.content]}
         ListEmptyComponent={<Text style={styles.empty}>{t("tracks.empty")}</Text>}
       />
     </View>

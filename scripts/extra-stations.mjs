@@ -5,6 +5,46 @@
 
 export const EXTRA_STATIONS = [
   {
+    cityId: "karaganda",
+    uuid: "59996d89-7bf3-4c1f-80b3-a141ac769fa3", // ЖАНА FM — головная станция zhanafm.kz, Караганда
+    allowHttp: false,
+  },
+  {
+    cityId: "karaganda",
+    uuid: "41a64f88-c639-4f5b-8dec-0543f94ceb1a", // Pioner FM — zhanafm.kz, Караганда
+    allowHttp: false,
+  },
+  {
+    cityId: "almaty",
+    uuid: "addc5dcf-a1b4-49bf-a60c-d191945b7ed6", // Lux FM Kazakhstan — Алматы
+    allowHttp: false,
+  },
+  {
+    cityId: "almaty",
+    uuid: "75437893-9527-4de8-902e-c04f08af2dfc", // Love Radio Kazakhstan — Алматы
+    allowHttp: false,
+  },
+  {
+    cityId: "astana",
+    uuid: "3aa2641c-45aa-4ee8-b1e2-1b397fac47e5", // Qazaq radiosy — Казахское радио, госвещатель, Астана
+    allowHttp: false,
+  },
+  {
+    cityId: "astana",
+    uuid: "21745b17-764e-471a-ae34-5f92c88e7e34", // Shalqar — казахская музыка, Qazaq Radio
+    allowHttp: false,
+  },
+  {
+    cityId: "astana",
+    uuid: "dbcb9ca8-5c14-4fd4-977a-04bfe3c6ba4c", // Радио Classic — классическая музыка, Qazaq Radio
+    allowHttp: false,
+  },
+  {
+    cityId: "astana",
+    uuid: "193a1672-2f14-43c1-8290-7ceb3a6e132b", // Radio Nostalgie (Kazakhstan)
+    allowHttp: false,
+  },
+  {
     cityId: "amsterdam",
     uuid: "c84d20ef-1b8b-4f8e-a809-e4297f570eb9", // Radio Boven IJ — локальное радио Амстердам-Норд
     streamUrl: "https://server-67.stream-server.nl:8774/rbij.mp3",

@@ -7,6 +7,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { GlobeButton } from "@/components/globe-button";
 import { PlayerBar } from "@/components/player-bar";
 import { useI18n } from "@/i18n";
+import { layout } from "@/lib/layout";
 
 type IconName = ComponentProps<typeof Ionicons>["name"];
 type TabBarProps = Parameters<
@@ -26,60 +27,67 @@ function icon(active: IconName, inactive: IconName) {
     size: number;
     focused: boolean;
   }) {
+    // Навигатор отдаёт цвет как ColorValue (в RN 0.88 он допускает null), иконка ждёт строку.
     return (
-      <Ionicons name={focused ? active : inactive} size={size} color={color} />
+      <Ionicons
+        name={focused ? active : inactive}
+        size={size}
+        color={typeof color === "string" ? color : undefined}
+      />
     );
   };
 }
 
 /** Своя панель вкладок: плеер сидит прямо над кнопками и виден на любом экране. */
-function TabBar({ state, descriptors, navigation }: TabBarProps) {
+function TabBar({ state, descriptors, emitter, navigateToTab }: TabBarProps) {
   const insets = useSafeAreaInsets();
 
   return (
     <View>
       <PlayerBar />
       <View style={[styles.bar, { paddingBottom: Math.max(insets.bottom, 8) }]}>
-        {state.routes.map((route, index) => {
-          const { options } = descriptors[route.key];
-          const focused = state.index === index;
-          const color = focused ? ACTIVE : INACTIVE;
-          const label =
-            typeof options.title === "string" ? options.title : route.name;
+        <View style={[styles.tabs, layout.content]}>
+          {state.routes.map((route, index) => {
+            const { options } = descriptors[route.key];
+            const focused = state.index === index;
+            const color = focused ? ACTIVE : INACTIVE;
+            const label =
+              typeof options.title === "string" ? options.title : route.name;
 
-          const onPress = () => {
-            const event = navigation.emit({
-              type: "tabPress",
-              target: route.key,
-              canPreventDefault: true,
-            });
-            if (!focused && !event.defaultPrevented) {
-              navigation.navigate(route.name, route.params);
-            }
-          };
+            const onPress = () => {
+              const event = emitter.emit({
+                type: "tabPress",
+                target: route.key,
+                canPreventDefault: true,
+              });
+              if (!focused && !event.defaultPrevented) {
+                navigateToTab(route.key);
+              }
+            };
 
-          return (
-            <Pressable
-              key={route.key}
-              onPress={onPress}
-              style={({ pressed }) => [styles.tab, pressed && styles.pressed]}
-              accessibilityRole="tab"
-              accessibilityState={{ selected: focused }}
-              accessibilityLabel={label}
-            >
-              {options.tabBarIcon?.({ focused, color, size: 24 })}
-              {/* В части языков подписи длиннее: уменьшаем шрифт, а не обрезаем слово. */}
-              <Text
-                style={[styles.label, { color }]}
-                numberOfLines={1}
-                adjustsFontSizeToFit
-                minimumFontScale={0.75}
+            return (
+              <Pressable
+                key={route.key}
+                onPress={onPress}
+                style={({ pressed }) => [styles.tab, pressed && styles.pressed]}
+                accessibilityRole="tab"
+                accessibilityState={{ selected: focused }}
+                accessibilityLabel={label}
               >
-                {label}
-              </Text>
-            </Pressable>
-          );
-        })}
+                {options.tabBarIcon?.({ focused, color, size: 24 })}
+                {/* В части языков подписи длиннее: уменьшаем шрифт, а не обрезаем слово. */}
+                <Text
+                  style={[styles.label, { color }]}
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.75}
+                >
+                  {label}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
       </View>
     </View>
   );
@@ -142,11 +150,13 @@ export default function TabsLayout() {
 
 const styles = StyleSheet.create({
   bar: {
-    flexDirection: "row",
     paddingTop: 6,
     backgroundColor: "#fff",
     borderTopWidth: StyleSheet.hairlineWidth,
     borderTopColor: "#ccc",
+  },
+  tabs: {
+    flexDirection: "row",
   },
   tab: {
     flex: 1,

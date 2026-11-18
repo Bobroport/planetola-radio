@@ -11,18 +11,24 @@ import { fileURLToPath } from "node:url";
 import {
   dedupeByUrl,
   fetchJson,
+  isExcludedCountry,
   isExcludedName,
   isPlayable,
   pickServer,
   toStation,
 } from "./station-utils.mjs";
 
-/** Вся Европа (не только ЕС) плюс Россия и США. Коды ISO 3166-1, как в Radio Browser. */
+/**
+ * Вся Европа (не только ЕС) плюс Россия, Казахстан, Индия, Китай, Новая Зеландия и США.
+ * Коды ISO 3166-1, как в Radio Browser.
+ * Украины (UA) нет намеренно, см. EXCLUDED_COUNTRIES в station-utils.mjs.
+ */
 export const COUNTRY_CODES = [
   "AD", "AL", "AT", "BA", "BE", "BG", "BY", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR",
   "GB", "GR", "HR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MD", "ME", "MK", "MT",
-  "NL", "NO", "PL", "PT", "RO", "RS", "SE", "SI", "SK", "SM", "UA", "VA", "XK",
-  "RU",
+  "NL", "NO", "PL", "PT", "RO", "RS", "SE", "SI", "SK", "SM", "VA", "XK",
+  "RU", "KZ",
+  "IN", "CN", "NZ",
   "US",
 ];
 
@@ -87,6 +93,7 @@ async function main() {
   const entries = [];
   let totalBytes = 0;
   for (const code of COUNTRY_CODES) {
+    if (isExcludedCountry(code)) continue;
     const cachePath = path.join(cacheDir, code + ".json");
     let stations = null;
     if (!fresh) {
@@ -102,7 +109,7 @@ async function main() {
       await writeFile(cachePath, JSON.stringify(stations), "utf8");
     }
     // Кэш мог быть собран до расширения чёрного списка названий.
-    stations = stations.filter((s) => !isExcludedName(s.name));
+    stations = stations.filter((s) => !isExcludedName(s.name) && !isExcludedCountry(s.countryCode));
     if (stations.length === 0) {
       console.log(code + "  нет станций, пропуск");
       continue;

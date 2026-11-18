@@ -14,6 +14,16 @@ const ALLOWED_CODECS = ["MP3", "AAC"];
  */
 const EXCLUDED_NAME = /^0R\b|charts/i;
 
+/**
+ * Страны, станции которых в приложение не берём вовсе (ни в города, ни в страновые списки).
+ * Фильтр применяется и к кэшу, перекачивать ничего не нужно.
+ */
+export const EXCLUDED_COUNTRIES = new Set(["UA"]);
+
+export function isExcludedCountry(countryCode) {
+  return EXCLUDED_COUNTRIES.has(String(countryCode || "").toUpperCase());
+}
+
 export const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export async function pickServer() {
@@ -60,6 +70,7 @@ export function isExcludedName(name) {
 export function isPlayable(s, { allowHttp = false } = {}) {
   if (s.lastcheckok !== 1 || s.hls === 1) return false;
   if (isExcludedName(s.name)) return false;
+  if (isExcludedCountry(s.countrycode)) return false;
   const url = s.url_resolved || s.url;
   if (!url) return false;
   if (!url.startsWith("https://") && !(allowHttp && url.startsWith("http://"))) return false;

@@ -31,10 +31,15 @@ export function getStationPoint(station: Station): GlobePoint | undefined {
 /**
  * Открывает глобус и, если указана точка, подлетает к ней. `navigate` без параметров
  * возвращает к уже открытому экрану глобуса, а не кладёт его поверх.
+ *
+ * Перелёт запрашивается на следующем кадре: переключение вкладки и смена станции
+ * перерисовывают списки, плеер и сам экран глобуса (~200 мс на iPad), и запущенная до
+ * этого анимация первым же кадром опаздывала на это время. React завершает отрисовку
+ * до колбэков requestAnimationFrame, так что к старту перелёта поток JS уже свободен.
  */
 export function openGlobe(point?: GlobePoint): void {
-  if (point) requestFlight(point);
   router.navigate("/cities");
+  if (point) requestAnimationFrame(() => requestFlight(point));
 }
 
 /**
@@ -50,6 +55,7 @@ export function flyToStationAndPlay(station: Station, start: (delayMs: number) =
     return;
   }
   const wait = CONNECT_AFTER_LANDING && getGlobeFocus() !== getCityOfStation(station.id)?.id;
-  openGlobe(point);
+  // Сначала станция, потом экран: обе перерисовки попадают в один проход React до перелёта.
   start(wait ? FLIGHT_DURATION_MS + AFTER_FLIGHT_MARGIN_MS : 0);
+  openGlobe(point);
 }

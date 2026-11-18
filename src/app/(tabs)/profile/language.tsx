@@ -3,6 +3,7 @@ import { router } from "expo-router";
 import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 
 import { LANGUAGES, type LanguageInfo } from "@/i18n";
+import { layout } from "@/lib/layout";
 import { useSettings } from "@/providers/settings-provider";
 
 const ACCENT = "#34a853";
@@ -42,7 +43,7 @@ export default function LanguageScreen() {
           );
         }}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
-        contentContainerStyle={styles.list}
+        contentContainerStyle={[styles.list, layout.content]}
       />
     </View>
   );

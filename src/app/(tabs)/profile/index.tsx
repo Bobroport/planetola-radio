@@ -1,6 +1,6 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { router } from "expo-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import {
   Pressable,
   ScrollView,
@@ -10,14 +10,25 @@ import {
   View,
 } from "react-native";
 
-import { Beaver } from "@/components/beaver";
+import { Character } from "@/components/character";
 import { CITIES, cityName, countryName, GENERATED_AT } from "@/data/stations";
 import { getLanguage, useI18n, type TranslationKey } from "@/i18n";
 import { flagEmoji, formatDateTime } from "@/lib/format";
+import { layout } from "@/lib/layout";
 import { useFavorites } from "@/providers/favorites-provider";
-import { useSettings, type StartPage } from "@/providers/settings-provider";
+import {
+  CHARACTERS,
+  useSettings,
+  type Character as CharacterId,
+  type StartPage,
+} from "@/providers/settings-provider";
 
 const MAX_CITY_OPTIONS = 8;
+
+const CHARACTER_LABELS: Record<CharacterId, TranslationKey> = {
+  beaver: "profile.character.beaver",
+  platypus: "profile.character.platypus",
+};
 
 const START_OPTIONS: { value: StartPage; label: TranslationKey; hint: TranslationKey }[] = [
   { value: "cities", label: "profile.start.globe", hint: "profile.start.globeHint" },
@@ -31,11 +42,14 @@ function OptionRow({
   hint,
   selected,
   onPress,
+  preview,
 }: {
   label: string;
   hint?: string;
   selected: boolean;
   onPress: () => void;
+  /** Картинка между переключателем и подписью (персонаж). */
+  preview?: ReactNode;
 }) {
   return (
     <Pressable
@@ -49,6 +63,7 @@ function OptionRow({
         size={22}
         color={selected ? "#1d6fd8" : "#b0b0b4"}
       />
+      {preview}
       <View style={styles.optionText}>
         <Text style={styles.optionLabel}>{label}</Text>
         {hint ? <Text style={styles.optionHint}>{hint}</Text> : null}
@@ -86,11 +101,11 @@ export default function ProfileScreen() {
   return (
     <ScrollView
       style={styles.container}
-      contentContainerStyle={styles.content}
+      contentContainerStyle={[styles.content, layout.content]}
       keyboardShouldPersistTaps="handled"
     >
       <View style={styles.hero}>
-        <Beaver size={96} dancing={false} />
+        <Character size={96} dancing={false} />
         <View style={styles.heroText}>
           <Text style={styles.greeting}>{greeting}</Text>
           <Text style={styles.stats}>
@@ -121,6 +136,21 @@ export default function ProfileScreen() {
         <Text style={styles.linkLabel}>{currentLanguage.native}</Text>
         <Ionicons name="chevron-forward" size={20} color="#c4c4c6" />
       </Pressable>
+
+      <Text style={styles.sectionTitle}>{t("profile.character")}</Text>
+      <View style={styles.card}>
+        {CHARACTERS.map((character, index) => (
+          <View key={character}>
+            {index > 0 ? <View style={styles.separator} /> : null}
+            <OptionRow
+              label={t(CHARACTER_LABELS[character])}
+              preview={<Character character={character} size={56} dancing={false} />}
+              selected={settings.character === character}
+              onPress={() => settings.setCharacter(character)}
+            />
+          </View>
+        ))}
+      </View>
 
       <Text style={styles.sectionTitle}>{t("profile.startPage")}</Text>
       <View style={styles.card}>

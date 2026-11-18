@@ -1,5 +1,6 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { Link, router, Stack } from "expo-router";
+import { Link, router, Stack, useIsFocused } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
@@ -23,6 +24,7 @@ import {
   type GlobePoint,
 } from "@/lib/globe-flight";
 import { getStationPoint } from "@/lib/globe-navigation";
+import { layout } from "@/lib/layout";
 import { useFavorites, type ResolvedStation } from "@/providers/favorites-provider";
 import { usePlayer } from "@/providers/player-provider";
 import { useSettings } from "@/providers/settings-provider";
@@ -124,6 +126,7 @@ export default function GlobeScreen() {
   // с экрана блокировки, наушников или CarPlay. При возврате шар перелетает от места, где
   // стоял, к станции, которая играет сейчас; промежуточные переключения не важны.
   const appActive = useAppActive();
+  const isFocused = useIsFocused();
   const currentRef = useRef(current);
   const stationOnLeaveRef = useRef<string | null>(null);
   useEffect(() => {
@@ -195,6 +198,9 @@ export default function GlobeScreen() {
 
   return (
     <View style={styles.container}>
+      {/* Приложение заперто в светлой теме (userInterfaceStyle в app.json), строка состояния
+          по умолчанию тёмная; у глобуса тёмный заголовок, поэтому пока он в фокусе, просим светлую. */}
+      {isFocused ? <StatusBar style="light" /> : null}
       <Stack.Screen
         options={{
           title: t("globe.title"),
@@ -238,7 +244,7 @@ export default function GlobeScreen() {
         {focused ? (
           <Pressable
             onPress={() => openCity(focused)}
-            style={({ pressed }) => [styles.cardRow, pressed && styles.pressed]}
+            style={({ pressed }) => [styles.cardRow, layout.content, pressed && styles.pressed]}
             accessibilityRole="button"
           >
             <Text style={styles.cardFlag}>{flagEmoji(focused.countryCode)}</Text>
@@ -269,7 +275,7 @@ export default function GlobeScreen() {
             <Ionicons name="chevron-forward" size={22} color="#9cc0ff" />
           </Pressable>
         ) : (
-          <View style={styles.cardRow}>
+          <View style={[styles.cardRow, layout.content]}>
             <Ionicons name="earth" size={22} color="#9cc0ff" />
             <View style={styles.cardText}>
               <Text style={styles.cardTitle}>{t("globe.spin")}</Text>

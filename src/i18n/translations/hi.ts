@@ -22,7 +22,7 @@ export const hi: Dictionary = {
   "city.notFound": "शहर नहीं मिला",
   "cities.title": "शहर",
   "cities.countries": "देश के अनुसार स्टेशन",
-  "cities.countriesHint": "यूरोप, रूस और अमेरिका की पूरी सूचियाँ",
+  "cities.countriesHint": "यूरोप, रूस, अमेरिका, चीन, भारत और अन्य की पूरी सूचियाँ",
   "countries.title": "देश",
   "country.allStations": "सभी स्टेशन: {country}",
   "country.filter": "नाम या टैग से फ़िल्टर करें",
@@ -97,4 +97,7 @@ export const hi: Dictionary = {
   "profile.whichCity": "कौन-सा शहर खोलना है",
   "profile.cityPlaceholder": "शहर का नाम लिखना शुरू करें",
   "profile.dataSource": "स्टेशन डेटा: Radio Browser, अपडेट {date}",
+  "profile.character": "किरदार",
+  "profile.character.beaver": "ऊदबिलाव",
+  "profile.character.platypus": "प्लैटिपस",
 };

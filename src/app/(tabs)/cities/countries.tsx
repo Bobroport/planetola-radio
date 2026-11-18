@@ -6,6 +6,7 @@ import { COUNTRY_CATALOG } from "@/data/countries";
 import { countryName } from "@/data/stations";
 import { useI18n } from "@/i18n";
 import { flagEmoji } from "@/lib/format";
+import { layout } from "@/lib/layout";
 import { usePlayer } from "@/providers/player-provider";
 
 type CountryItem = { countryCode: string; count: number; name: string };
@@ -57,7 +58,7 @@ export default function CountriesScreen() {
           );
         }}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
-        contentContainerStyle={styles.list}
+        contentContainerStyle={[styles.list, layout.content]}
       />
     </View>
   );

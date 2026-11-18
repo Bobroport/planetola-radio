@@ -1,5 +1,5 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { Pressable, StyleSheet, type ColorValue } from "react-native";
+import { Pressable, StyleSheet } from "react-native";
 
 import { useI18n } from "@/i18n";
 import { getStationPoint, openGlobe } from "@/lib/globe-navigation";
@@ -9,7 +9,7 @@ import { usePlayer } from "@/providers/player-provider";
  * Кнопка в правом углу заголовка: открывает глобус и подлетает к городу играющей станции,
  * а если у станции нет города — к столице её страны.
  */
-export function GlobeButton({ color = "#1d6fd8" }: { color?: ColorValue }) {
+export function GlobeButton({ color = "#1d6fd8" }: { color?: string }) {
   const { t } = useI18n();
   const { current } = usePlayer();
 

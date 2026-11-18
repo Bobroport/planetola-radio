@@ -21,7 +21,7 @@ export const en = {
   "city.notFound": "City not found",
   "cities.title": "Cities",
   "cities.countries": "Stations by country",
-  "cities.countriesHint": "Full lists for Europe, Russia and the USA",
+  "cities.countriesHint": "Full lists for Europe, Russia, the USA, China, India and more",
   "countries.title": "Countries",
   "country.allStations": "All stations in {country}",
   "country.filter": "Filter by name or tag",
@@ -96,6 +96,9 @@ export const en = {
   "profile.whichCity": "Which city to open",
   "profile.cityPlaceholder": "Start typing a city name",
   "profile.dataSource": "Station data: Radio Browser, updated {date}",
+  "profile.character": "Character",
+  "profile.character.beaver": "Beaver",
+  "profile.character.platypus": "Platypus",
 };
 
 export type TranslationKey = keyof typeof en;

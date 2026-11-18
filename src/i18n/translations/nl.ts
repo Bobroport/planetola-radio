@@ -22,7 +22,7 @@ export const nl: Dictionary = {
   "city.notFound": "Stad niet gevonden",
   "cities.title": "Steden",
   "cities.countries": "Zenders per land",
-  "cities.countriesHint": "Volledige lijsten voor Europa, Rusland en de VS",
+  "cities.countriesHint": "Volledige lijsten voor Europa, Rusland, de VS, China, India en meer",
   "countries.title": "Landen",
   "country.allStations": "Alle zenders: {country}",
   "country.filter": "Filteren op naam of tag",
@@ -97,4 +97,7 @@ export const nl: Dictionary = {
   "profile.whichCity": "Welke stad openen",
   "profile.cityPlaceholder": "Begin met het typen van een stadsnaam",
   "profile.dataSource": "Zendergegevens: Radio Browser, bijgewerkt op {date}",
+  "profile.character": "Personage",
+  "profile.character.beaver": "Bever",
+  "profile.character.platypus": "Vogelbekdier",
 };

@@ -218,13 +218,13 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
       statusSubscriptionRef.current?.remove();
       statusSubscriptionRef.current = next.addListener("playbackStatusUpdate", onStatus);
       timed("play", () => next.play());
-      // showNextPrevious понимает только наш патч expo-audio (patches/): в Expo Go опция
-      // игнорируется, кнопки «следующий/предыдущий» есть лишь в сборках EAS.
+      // Кнопки «следующий/предыдущий» у одиночного плеера включает наш патч expo-audio
+      // (patches/): в Expo Go они не появляются, в сборках EAS шлют событие remoteCommand.
       timed("lock screen", () =>
         next.setActiveForLockScreen(
           true,
           lockScreenMetadata(station, nowPlayingRef.current, language),
-          { isLiveStream: true, showNextPrevious: true },
+          { isLiveStream: true, showNextTrack: true, showPreviousTrack: true },
         ),
       );
       playerRef.current = next;
@@ -269,7 +269,8 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
         }
       } catch (e) {
         // Станция не отдаёт метаданные или сеть недоступна — оставляем прошлое значение.
-        if (__DEV__) {
+        // Отмена через abort (сменили станцию) — штатный выход, в лог не пишем.
+        if (__DEV__ && !controller?.signal.aborted) {
           console.log("ICY metadata failed", streamUrl, e);
         }
         if (!cancelled) {

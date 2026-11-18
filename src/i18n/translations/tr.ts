@@ -22,7 +22,7 @@ export const tr: Dictionary = {
   "city.notFound": "Şehir bulunamadı",
   "cities.title": "Şehirler",
   "cities.countries": "Ülkeye göre istasyonlar",
-  "cities.countriesHint": "Avrupa, Rusya ve ABD için tam listeler",
+  "cities.countriesHint": "Avrupa, Rusya, ABD, Çin, Hindistan ve daha fazlası için tam listeler",
   "countries.title": "Ülkeler",
   "country.allStations": "Tüm istasyonlar: {country}",
   "country.filter": "Ada veya etikete göre filtrele",
@@ -97,4 +97,7 @@ export const tr: Dictionary = {
   "profile.whichCity": "Hangi şehir açılsın",
   "profile.cityPlaceholder": "Şehir adını yazmaya başlayın",
   "profile.dataSource": "İstasyon verileri: Radio Browser, güncelleme {date}",
+  "profile.character": "Karakter",
+  "profile.character.beaver": "Kunduz",
+  "profile.character.platypus": "Ornitorenk",
 };

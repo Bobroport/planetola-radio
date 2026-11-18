@@ -22,7 +22,7 @@ export const he: Dictionary = {
   "city.notFound": "העיר לא נמצאה",
   "cities.title": "ערים",
   "cities.countries": "תחנות לפי מדינה",
-  "cities.countriesHint": "רשימות מלאות לאירופה, רוסיה וארה״ב",
+  "cities.countriesHint": "רשימות מלאות לאירופה, רוסיה, ארה״ב, סין, הודו ועוד",
   "countries.title": "מדינות",
   "country.allStations": "כל התחנות: {country}",
   "country.filter": "סינון לפי שם או תגית",
@@ -97,4 +97,7 @@ export const he: Dictionary = {
   "profile.whichCity": "איזו עיר לפתוח",
   "profile.cityPlaceholder": "התחילו להקליד שם של עיר",
   "profile.dataSource": "נתוני התחנות: Radio Browser, עודכנו ב-{date}",
+  "profile.character": "דמות",
+  "profile.character.beaver": "בונה",
+  "profile.character.platypus": "ברווזן",
 };

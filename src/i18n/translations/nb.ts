@@ -22,7 +22,7 @@ export const nb: Dictionary = {
   "city.notFound": "Fant ikke byen",
   "cities.title": "Byer",
   "cities.countries": "Stasjoner etter land",
-  "cities.countriesHint": "Fullstendige lister for Europa, Russland og USA",
+  "cities.countriesHint": "Fullstendige lister for Europa, Russland, USA, Kina, India med flere",
   "countries.title": "Land",
   "country.allStations": "Alle stasjoner: {country}",
   "country.filter": "Filtrer etter navn eller emneknagg",
@@ -97,4 +97,7 @@ export const nb: Dictionary = {
   "profile.whichCity": "Hvilken by skal åpnes",
   "profile.cityPlaceholder": "Begynn å skrive et bynavn",
   "profile.dataSource": "Stasjonsdata: Radio Browser, oppdatert {date}",
+  "profile.character": "Figur",
+  "profile.character.beaver": "Bever",
+  "profile.character.platypus": "Nebbdyr",
 };

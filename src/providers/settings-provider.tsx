@@ -17,6 +17,11 @@ import { DEFAULT_LANGUAGE, isLanguage } from "@/i18n/languages";
  */
 export type StartPage = "cities" | "list" | "city" | "playlist";
 
+/** Персонаж с магнитофоном в плеере и профиле. */
+export type Character = "beaver" | "platypus";
+
+export const CHARACTERS: Character[] = ["beaver", "platypus"];
+
 export type Settings = {
   name: string;
   /** Код языка интерфейса из `src/i18n/languages.json`. */
@@ -25,6 +30,7 @@ export type Settings = {
   startCityId: string | null;
   /** Вступление (перелёт к Амстердаму с автозапуском станции) уже показано. */
   introSeen: boolean;
+  character: Character;
 };
 
 type SettingsContextValue = Settings & {
@@ -35,6 +41,7 @@ type SettingsContextValue = Settings & {
   setStartPage: (startPage: StartPage) => void;
   setStartCityId: (cityId: string | null) => void;
   setIntroSeen: (seen: boolean) => void;
+  setCharacter: (character: Character) => void;
 };
 
 const STORAGE_KEY = "settings.v1";
@@ -45,6 +52,7 @@ const DEFAULTS: Settings = {
   startPage: "cities",
   startCityId: null,
   introSeen: false,
+  character: "beaver",
 };
 
 const SettingsContext = createContext<SettingsContextValue | null>(null);
@@ -56,6 +64,10 @@ function isStartPage(value: unknown): value is StartPage {
     value === "city" ||
     value === "playlist"
   );
+}
+
+function isCharacter(value: unknown): value is Character {
+  return CHARACTERS.some((c) => c === value);
 }
 
 async function load(): Promise<Settings> {
@@ -74,6 +86,7 @@ async function load(): Promise<Settings> {
       // Пока признак не записан, вступление не показывалось: после обновления
       // его один раз увидят и те, у кого настройки уже были.
       introSeen: parsed.introSeen === true,
+      character: isCharacter(parsed.character) ? parsed.character : DEFAULTS.character,
     };
   } catch (e) {
     console.warn("Не удалось прочитать настройки", e);
@@ -132,6 +145,10 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     (introSeen: boolean) => update({ introSeen }),
     [update],
   );
+  const setCharacter = useCallback(
+    (character: Character) => update({ character }),
+    [update],
+  );
 
   const value = useMemo<SettingsContextValue>(
     () => ({
@@ -142,8 +159,9 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
       setStartPage,
       setStartCityId,
       setIntroSeen,
+      setCharacter,
     }),
-    [settings, ready, setName, setLanguage, setStartPage, setStartCityId, setIntroSeen],
+    [settings, ready, setName, setLanguage, setStartPage, setStartCityId, setIntroSeen, setCharacter],
   );
 
   return (

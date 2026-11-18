@@ -22,7 +22,7 @@ export const uk: Dictionary = {
   "city.notFound": "Місто не знайдено",
   "cities.title": "Міста",
   "cities.countries": "Станції за країнами",
-  "cities.countriesHint": "Повні списки для Європи, Росії та США",
+  "cities.countriesHint": "Повні списки для Європи, Росії, США, Китаю, Індії та інших",
   "countries.title": "Країни",
   "country.allStations": "Усі станції: {country}",
   "country.filter": "Фільтр за назвою або тегом",
@@ -97,4 +97,7 @@ export const uk: Dictionary = {
   "profile.whichCity": "Яке місто відкривати",
   "profile.cityPlaceholder": "Почніть вводити назву міста",
   "profile.dataSource": "База станцій: Radio Browser, оновлено {date}",
+  "profile.character": "Персонаж",
+  "profile.character.beaver": "Бобер",
+  "profile.character.platypus": "Качкодзьоб",
 };

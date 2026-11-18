@@ -22,7 +22,7 @@ export const ro: Dictionary = {
   "city.notFound": "Orașul nu a fost găsit",
   "cities.title": "Orașe",
   "cities.countries": "Posturi după țară",
-  "cities.countriesHint": "Liste complete pentru Europa, Rusia și SUA",
+  "cities.countriesHint": "Liste complete pentru Europa, Rusia, SUA, China, India și altele",
   "countries.title": "Țări",
   "country.allStations": "Toate posturile: {country}",
   "country.filter": "Filtrează după nume sau etichetă",
@@ -97,4 +97,7 @@ export const ro: Dictionary = {
   "profile.whichCity": "Ce oraș să se deschidă",
   "profile.cityPlaceholder": "Începe să scrii numele unui oraș",
   "profile.dataSource": "Date despre posturi: Radio Browser, actualizate la {date}",
+  "profile.character": "Personaj",
+  "profile.character.beaver": "Castor",
+  "profile.character.platypus": "Ornitorinc",
 };

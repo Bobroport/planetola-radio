@@ -24,6 +24,7 @@ import { loadCityNames, loadGeoNamesCities } from "./geonames.mjs";
 import {
   dedupeByUrl,
   fetchJson,
+  isExcludedCountry,
   isExcludedName,
   isPlayable,
   pickServer,
@@ -56,6 +57,8 @@ async function fetchCity(server, city) {
   };
 
   add(await search(server, { geo_lat: city.lat, geo_long: city.long, geo_distance: GEO_RADIUS_M }));
+  // Островные страны с одним городом на глобусе: все станции страны идут в него.
+  if (city.wholeCountry) add(await search(server, { countrycode: city.countryCode }));
   for (const term of city.search) {
     add(await search(server, { state: term, countrycode: city.countryCode }));
     add(await search(server, { name: term, countrycode: city.countryCode }));
@@ -84,6 +87,10 @@ const REGION_KEYS = {
  * и поправки к английским названиям GeoNames для городов, заведённых автоматически.
  */
 const ENGLISH_NAME_OVERRIDES = {
+  "hamilton-nz": "Hamilton",
+  noumea: "Nouméa",
+  nukualofa: "Nukuʻalofa",
+  hagatna: "Hagåtña",
   patra: "Patras",
   xanthi: "Xanthi",
   pyrgos: "Pyrgos",
@@ -163,7 +170,8 @@ async function main() {
       stations = await fetchCity(server, city);
       await writeFile(cachePath, JSON.stringify(stations), "utf8");
     }
-    // Кэш мог быть собран до появления countryCode и фильтра названий: приводим к текущему формату.
+    // Кэш мог быть собран до появления countryCode и фильтров: приводим к текущему формату.
+    if (isExcludedCountry(city.countryCode)) continue;
     stations = stations
       .filter((s) => !isExcludedName(s.name))
       .map((s) => ({ ...s, countryCode: city.countryCode }));
@@ -199,7 +207,7 @@ async function main() {
 }
 
 /** Часть света для города, заведённого автоматически: как у городов той же страны. */
-const REGION_BY_COUNTRY = { US: "northAmerica", RU: "cis", UA: "cis", BY: "cis", MD: "cis" };
+const REGION_BY_COUNTRY = { US: "northAmerica", RU: "cis", BY: "cis", MD: "cis" };
 
 function regionOf(countryCode) {
   const sample = CITIES.find((c) => c.countryCode === countryCode);

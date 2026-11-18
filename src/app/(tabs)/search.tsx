@@ -13,6 +13,7 @@ import { Chip } from "@/components/chip";
 import { StationRow } from "@/components/station-row";
 import { isAllCountryStationsLoaded, loadAllCountryStations } from "@/data/countries";
 import { useI18n } from "@/i18n";
+import { layout } from "@/lib/layout";
 import {
   BITRATE_OPTIONS,
   CODEC_OPTIONS,
@@ -81,6 +82,7 @@ export default function SearchScreen() {
         data={results}
         keyExtractor={({ station }) => station.id}
         keyboardShouldPersistTaps="handled"
+        contentContainerStyle={layout.content}
         ListHeaderComponent={
           <View style={styles.header}>
             <TextInput

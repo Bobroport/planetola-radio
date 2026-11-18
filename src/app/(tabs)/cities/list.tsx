@@ -5,6 +5,7 @@ import { CityRow } from "@/components/city-row";
 import { LinkRow } from "@/components/link-row";
 import { CITY_SECTIONS, type City } from "@/data/stations";
 import { regionKey, useI18n } from "@/i18n";
+import { layout } from "@/lib/layout";
 import { usePlayer } from "@/providers/player-provider";
 
 export default function CityListScreen() {
@@ -42,7 +43,7 @@ export default function CityListScreen() {
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
         stickySectionHeadersEnabled
-        contentContainerStyle={styles.list}
+        contentContainerStyle={[styles.list, layout.content]}
       />
     </View>
   );

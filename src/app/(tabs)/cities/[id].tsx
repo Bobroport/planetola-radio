@@ -7,6 +7,7 @@ import { countryCatalogCount, hasCountryCatalog } from "@/data/countries";
 import { cityName, countryName, getCity } from "@/data/stations";
 import { useI18n } from "@/i18n";
 import { flagEmoji } from "@/lib/format";
+import { layout } from "@/lib/layout";
 import { usePlayer } from "@/providers/player-provider";
 
 export default function CityScreen() {
@@ -47,7 +48,7 @@ export default function CityScreen() {
                 })
               }
             />
-          ) : null
+          ) : undefined
         }
         renderItem={({ item }) => (
           <StationRow
@@ -57,7 +58,7 @@ export default function CityScreen() {
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
-        contentContainerStyle={styles.list}
+        contentContainerStyle={[styles.list, layout.content]}
       />
     </View>
   );

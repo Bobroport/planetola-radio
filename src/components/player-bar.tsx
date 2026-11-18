@@ -9,10 +9,11 @@ import {
 } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 
-import { Beaver } from "@/components/beaver";
+import { Character } from "@/components/character";
 import { getCityOfStation, type Station } from "@/data/stations";
 import { useAppActive } from "@/hooks/use-app-active";
 import { useI18n } from "@/i18n";
+import { layout } from "@/lib/layout";
 import { useFavorites } from "@/providers/favorites-provider";
 import { SLEEP_TIMER_MINUTES, usePlayer } from "@/providers/player-provider";
 
@@ -220,49 +221,51 @@ export function PlayerBar() {
   if (!expanded) {
     return (
       <GestureDetector gesture={swipe}>
-        <View style={styles.bar}>
-          <Pressable
-            onPress={toggleExpanded}
-            style={[styles.summary, styles.summaryCompact]}
-            accessibilityRole="button"
-            accessibilityLabel={t("player.expand")}
-          >
-            <View style={styles.beaver}>
-              <Beaver size={64} player={player} dancing={isPlaying} />
-            </View>
-            <View style={styles.info}>
-              <Text style={styles.name} numberOfLines={1}>
-                {current.name}
-              </Text>
-              {trackText ? (
-                <Text style={styles.track} numberOfLines={1}>
-                  {trackText}
-                </Text>
-              ) : (
-                <Text style={styles.trackHint} numberOfLines={1}>
-                  {nowPlayingChecked
-                    ? t("player.noTrackInfo")
-                    : t("player.findingTrack")}
-                </Text>
-              )}
-              <View style={styles.statusRow}>
-                <Ionicons name="chevron-up" size={12} color="#8e8e93" />
-                <Text
-                  style={[styles.status, error ? styles.statusError : null]}
-                  numberOfLines={1}
-                >
-                  {statusText}
-                </Text>
-                {countdown ? (
-                  <>
-                    <Ionicons name="moon" size={11} color="#b5b5b8" />
-                    <Text style={styles.status}>{countdown}</Text>
-                  </>
-                ) : null}
+        <View style={styles.shell}>
+          <View style={[styles.bar, layout.content]}>
+            <Pressable
+              onPress={toggleExpanded}
+              style={[styles.summary, styles.summaryCompact]}
+              accessibilityRole="button"
+              accessibilityLabel={t("player.expand")}
+            >
+              <View style={styles.character}>
+                <Character size={64} player={player} dancing={isPlaying} />
               </View>
-            </View>
-          </Pressable>
-          {controls}
+              <View style={styles.info}>
+                <Text style={styles.name} numberOfLines={1}>
+                  {current.name}
+                </Text>
+                {trackText ? (
+                  <Text style={styles.track} numberOfLines={1}>
+                    {trackText}
+                  </Text>
+                ) : (
+                  <Text style={styles.trackHint} numberOfLines={1}>
+                    {nowPlayingChecked
+                      ? t("player.noTrackInfo")
+                      : t("player.findingTrack")}
+                  </Text>
+                )}
+                <View style={styles.statusRow}>
+                  <Ionicons name="chevron-up" size={12} color="#8e8e93" />
+                  <Text
+                    style={[styles.status, error ? styles.statusError : null]}
+                    numberOfLines={1}
+                  >
+                    {statusText}
+                  </Text>
+                  {countdown ? (
+                    <>
+                      <Ionicons name="moon" size={11} color="#b5b5b8" />
+                      <Text style={styles.status}>{countdown}</Text>
+                    </>
+                  ) : null}
+                </View>
+              </View>
+            </Pressable>
+            {controls}
+          </View>
         </View>
       </GestureDetector>
     );
@@ -270,131 +273,141 @@ export function PlayerBar() {
 
   return (
     <GestureDetector gesture={swipe}>
-      <View style={[styles.bar, styles.barExpanded]}>
-        <Pressable
-          onPress={toggleExpanded}
-          style={styles.summary}
-          accessibilityRole="button"
-          accessibilityLabel={t("player.collapse")}
-        >
-          <View style={styles.beaver}>
-            <Beaver size={96} player={player} dancing={isPlaying} />
-          </View>
-          <View style={styles.info}>
-            <Text style={[styles.name, styles.nameExpanded]} numberOfLines={2}>
-              {current.name}
-            </Text>
-            {trackText ? (
+      <View style={styles.shell}>
+        <View style={[styles.bar, styles.barExpanded, layout.content]}>
+          <Pressable
+            onPress={toggleExpanded}
+            style={styles.summary}
+            accessibilityRole="button"
+            accessibilityLabel={t("player.collapse")}
+          >
+            <View style={styles.character}>
+              <Character size={96} player={player} dancing={isPlaying} />
+            </View>
+            <View style={styles.info}>
               <Text
-                style={[styles.track, styles.trackExpanded]}
-                numberOfLines={4}
-              >
-                {trackText}
-              </Text>
-            ) : (
-              <Text style={styles.trackHint} numberOfLines={2}>
-                {nowPlayingChecked
-                  ? t("player.noTrackInfo")
-                  : t("player.findingTrack")}
-              </Text>
-            )}
-            {info ? (
-              <Text style={styles.technical} numberOfLines={1}>
-                {info}
-              </Text>
-            ) : null}
-            <View style={styles.statusRow}>
-              <Ionicons name="chevron-down" size={12} color="#8e8e93" />
-              <Text
-                style={[styles.status, error ? styles.statusError : null]}
+                style={[styles.name, styles.nameExpanded]}
                 numberOfLines={2}
               >
-                {statusText}
+                {current.name}
               </Text>
+              {trackText ? (
+                <Text
+                  style={[styles.track, styles.trackExpanded]}
+                  numberOfLines={4}
+                >
+                  {trackText}
+                </Text>
+              ) : (
+                <Text style={styles.trackHint} numberOfLines={2}>
+                  {nowPlayingChecked
+                    ? t("player.noTrackInfo")
+                    : t("player.findingTrack")}
+                </Text>
+              )}
+              {info ? (
+                <Text style={styles.technical} numberOfLines={1}>
+                  {info}
+                </Text>
+              ) : null}
+              <View style={styles.statusRow}>
+                <Ionicons name="chevron-down" size={12} color="#8e8e93" />
+                <Text
+                  style={[styles.status, error ? styles.statusError : null]}
+                  numberOfLines={2}
+                >
+                  {statusText}
+                </Text>
+              </View>
             </View>
-          </View>
-        </Pressable>
-        <View style={styles.controls}>{controls}</View>
-        {pickingTimer ? (
-          <View style={styles.timerRow}>
-            <Ionicons name="moon" size={18} color="#b5b5b8" />
-            {SLEEP_TIMER_MINUTES.map((minutes) => (
+          </Pressable>
+          <View style={styles.controls}>{controls}</View>
+          {pickingTimer ? (
+            <View style={styles.timerRow}>
+              <Ionicons name="moon" size={18} color="#b5b5b8" />
+              {SLEEP_TIMER_MINUTES.map((minutes) => (
+                <Pressable
+                  key={minutes}
+                  onPress={() => chooseTimer(minutes)}
+                  style={({ pressed }) => [
+                    styles.chip,
+                    pressed && styles.pressed,
+                  ]}
+                  accessibilityRole="button"
+                >
+                  <Text style={styles.chipLabel}>
+                    {t("player.minutes", { count: minutes })}
+                  </Text>
+                </Pressable>
+              ))}
               <Pressable
-                key={minutes}
-                onPress={() => chooseTimer(minutes)}
+                onPress={() => chooseTimer(null)}
                 style={({ pressed }) => [
                   styles.chip,
+                  styles.chipOff,
                   pressed && styles.pressed,
                 ]}
                 accessibilityRole="button"
               >
                 <Text style={styles.chipLabel}>
-                  {t("player.minutes", { count: minutes })}
+                  {t("player.sleepTimerOff")}
                 </Text>
               </Pressable>
-            ))}
-            <Pressable
-              onPress={() => chooseTimer(null)}
-              style={({ pressed }) => [
-                styles.chip,
-                styles.chipOff,
-                pressed && styles.pressed,
-              ]}
-              accessibilityRole="button"
-            >
-              <Text style={styles.chipLabel}>{t("player.sleepTimerOff")}</Text>
-            </Pressable>
-          </View>
-        ) : (
-          <View style={styles.timerRow}>
-            <Pressable
-              onPress={() => setPickingTimer(true)}
-              style={({ pressed }) => [
-                styles.timerButton,
-                pressed && styles.pressed,
-              ]}
-              accessibilityRole="button"
-              accessibilityLabel={t("player.sleepTimer")}
-            >
-              <Ionicons
-                name={countdown ? "moon" : "moon-outline"}
-                size={18}
-                color="#fff"
-              />
-              <Text style={styles.timerLabel} numberOfLines={1}>
-                {countdown
-                  ? t("player.sleepIn", { time: countdown })
-                  : t("player.sleepTimer")}
-              </Text>
-            </Pressable>
-            {countdown ? (
+            </View>
+          ) : (
+            <View style={styles.timerRow}>
               <Pressable
-                onPress={() => chooseTimer(null)}
-                hitSlop={6}
+                onPress={() => setPickingTimer(true)}
                 style={({ pressed }) => [
-                  styles.iconButton,
+                  styles.timerButton,
                   pressed && styles.pressed,
                 ]}
                 accessibilityRole="button"
-                accessibilityLabel={t("player.sleepTimerOff")}
+                accessibilityLabel={t("player.sleepTimer")}
               >
-                <Ionicons name="close-circle" size={22} color="#b5b5b8" />
+                <Ionicons
+                  name={countdown ? "moon" : "moon-outline"}
+                  size={18}
+                  color="#fff"
+                />
+                <Text style={styles.timerLabel} numberOfLines={1}>
+                  {countdown
+                    ? t("player.sleepIn", { time: countdown })
+                    : t("player.sleepTimer")}
+                </Text>
               </Pressable>
-            ) : null}
-          </View>
-        )}
+              {countdown ? (
+                <Pressable
+                  onPress={() => chooseTimer(null)}
+                  hitSlop={6}
+                  style={({ pressed }) => [
+                    styles.iconButton,
+                    pressed && styles.pressed,
+                  ]}
+                  accessibilityRole="button"
+                  accessibilityLabel={t("player.sleepTimerOff")}
+                >
+                  <Ionicons name="close-circle" size={22} color="#b5b5b8" />
+                </Pressable>
+              ) : null}
+            </View>
+          )}
+        </View>
       </View>
     </GestureDetector>
   );
 }
 
 const styles = StyleSheet.create({
+  /** Подложка во всю ширину экрана; само содержимое — в колонке `layout.content`. */
+  shell: {
+    backgroundColor: "#1d1d1f",
+  },
   bar: {
     flexDirection: "row",
     alignItems: "center",
     paddingHorizontal: 10,
     paddingVertical: 8,
-    backgroundColor: "#1d1d1f",
   },
   barExpanded: {
     flexDirection: "column",
@@ -412,7 +425,7 @@ const styles = StyleSheet.create({
   summaryCompact: {
     flex: 1,
   },
-  beaver: {
+  character: {
     marginRight: 6,
   },
   info: {

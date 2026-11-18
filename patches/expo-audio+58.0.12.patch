@@ -1,0 +1,75 @@
+diff --git a/node_modules/expo-audio/build/AudioModule.types.d.ts b/node_modules/expo-audio/build/AudioModule.types.d.ts
+index 0d63c9b..9e17e52 100644
+--- a/node_modules/expo-audio/build/AudioModule.types.d.ts
++++ b/node_modules/expo-audio/build/AudioModule.types.d.ts
+@@ -222,6 +222,15 @@ export type AudioEvents = {
+     playbackStatusUpdate(status: AudioStatus): void;
+     /** Fired when audio sampling is enabled and new sample data is available. */
+     audioSampleUpdate(data: AudioSample): void;
++    /**
++     * Fired when the user presses next/previous track on the lock screen, in CarPlay, on a headset
++     * or steering wheel. Only when `showNextTrack`/`showPreviousTrack` were passed to
++     * `setActiveForLockScreen`; a single player never switches tracks itself.
++     * @platform ios
++     */
++    remoteCommand(event: {
++        command: 'next' | 'previous';
++    }): void;
+ };
+ export declare class AudioRecorder extends SharedObject<RecordingEvents> {
+     /**
+diff --git a/node_modules/expo-audio/ios/AudioPlayer.swift b/node_modules/expo-audio/ios/AudioPlayer.swift
+index 0f68a52..0bd82c5 100644
+--- a/node_modules/expo-audio/ios/AudioPlayer.swift
++++ b/node_modules/expo-audio/ios/AudioPlayer.swift
+@@ -3,6 +3,7 @@ import Combine
+ 
+ private enum AudioConstants {
+   static let playbackStatus = "playbackStatusUpdate"
++  static let remoteCommand = "remoteCommand"
+   static let audioSample = "audioSampleUpdate"
+ }
+ 
+@@ -546,4 +547,24 @@ public class AudioPlayer: SharedRef<AVPlayer>, Playable, LockScreenPlayable {
+     audioProcessor?.invalidate()
+     audioProcessor = nil
+   }
++
++  // Next/previous track (lock screen, CarPlay, headset and steering wheel buttons) for a single
++  // player: nothing is switched natively, the player emits a "remoteCommand" event and JS decides
++  // what to play. The buttons appear only when showNextTrack/showPreviousTrack are passed to
++  // setActiveForLockScreen.
++  var supportsNextTrack: Bool {
++    true
++  }
++
++  var supportsPreviousTrack: Bool {
++    true
++  }
++
++  func nextTrack() {
++    emit(event: AudioConstants.remoteCommand, payload: ["command": "next"])
++  }
++
++  func previousTrack() {
++    emit(event: AudioConstants.remoteCommand, payload: ["command": "previous"])
++  }
+ }
+diff --git a/node_modules/expo-audio/src/AudioModule.types.ts b/node_modules/expo-audio/src/AudioModule.types.ts
+index 3194a8e..e565211 100644
+--- a/node_modules/expo-audio/src/AudioModule.types.ts
++++ b/node_modules/expo-audio/src/AudioModule.types.ts
+@@ -281,6 +281,13 @@ export type AudioEvents = {
+   playbackStatusUpdate(status: AudioStatus): void;
+   /** Fired when audio sampling is enabled and new sample data is available. */
+   audioSampleUpdate(data: AudioSample): void;
++  /**
++   * Fired when the user presses next/previous track on the lock screen, in CarPlay, on a headset
++   * or steering wheel. Only when `showNextTrack`/`showPreviousTrack` were passed to
++   * `setActiveForLockScreen`; a single player never switches tracks itself.
++   * @platform ios
++   */
++  remoteCommand(event: { command: 'next' | 'previous' }): void;
+ };
+ 
+ export declare class AudioRecorder extends SharedObject<RecordingEvents> {

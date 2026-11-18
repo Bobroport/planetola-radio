@@ -7,6 +7,7 @@ import { getCountryStations, hasCountryCatalog } from "@/data/countries";
 import { countryName, type Station } from "@/data/stations";
 import { useI18n } from "@/i18n";
 import { flagEmoji } from "@/lib/format";
+import { layout } from "@/lib/layout";
 import { usePlayer } from "@/providers/player-provider";
 
 /** Все станции страны из полного списка, с фильтром по названию, региону и тегам. */
@@ -97,7 +98,7 @@ export default function CountryScreen() {
             <Text style={styles.emptyText}>{t("search.empty")}</Text>
           )
         }
-        contentContainerStyle={styles.list}
+        contentContainerStyle={[styles.list, layout.content]}
       />
     </View>
   );

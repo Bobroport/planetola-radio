@@ -22,7 +22,7 @@ export const hr: Dictionary = {
   "city.notFound": "Grad nije pronađen",
   "cities.title": "Gradovi",
   "cities.countries": "Postaje po državama",
-  "cities.countriesHint": "Potpuni popisi za Europu, Rusiju i SAD",
+  "cities.countriesHint": "Potpuni popisi za Europu, Rusiju, SAD, Kinu, Indiju i druge",
   "countries.title": "Države",
   "country.allStations": "Sve postaje: {country}",
   "country.filter": "Filtriraj po nazivu ili oznaci",
@@ -97,4 +97,7 @@ export const hr: Dictionary = {
   "profile.whichCity": "Koji grad otvoriti",
   "profile.cityPlaceholder": "Počni upisivati naziv grada",
   "profile.dataSource": "Podaci o postajama: Radio Browser, ažurirano {date}",
+  "profile.character": "Lik",
+  "profile.character.beaver": "Dabar",
+  "profile.character.platypus": "Čudnovati kljunaš",
 };

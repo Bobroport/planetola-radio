@@ -22,7 +22,7 @@ export const de: Dictionary = {
   "city.notFound": "Stadt nicht gefunden",
   "cities.title": "Städte",
   "cities.countries": "Sender nach Land",
-  "cities.countriesHint": "Vollständige Listen für Europa, Russland und die USA",
+  "cities.countriesHint": "Vollständige Listen für Europa, Russland, die USA, China, Indien und mehr",
   "countries.title": "Länder",
   "country.allStations": "Alle Sender: {country}",
   "country.filter": "Nach Name oder Tag filtern",
@@ -97,4 +97,7 @@ export const de: Dictionary = {
   "profile.whichCity": "Welche Stadt öffnen",
   "profile.cityPlaceholder": "Stadtnamen eingeben",
   "profile.dataSource": "Senderdaten: Radio Browser, aktualisiert am {date}",
+  "profile.character": "Figur",
+  "profile.character.beaver": "Biber",
+  "profile.character.platypus": "Schnabeltier",
 };

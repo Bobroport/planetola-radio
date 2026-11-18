@@ -22,7 +22,7 @@ export const sv: Dictionary = {
   "city.notFound": "Staden hittades inte",
   "cities.title": "Städer",
   "cities.countries": "Stationer per land",
-  "cities.countriesHint": "Kompletta listor för Europa, Ryssland och USA",
+  "cities.countriesHint": "Kompletta listor för Europa, Ryssland, USA, Kina, Indien med flera",
   "countries.title": "Länder",
   "country.allStations": "Alla stationer: {country}",
   "country.filter": "Filtrera efter namn eller tagg",
@@ -97,4 +97,7 @@ export const sv: Dictionary = {
   "profile.whichCity": "Vilken stad som ska öppnas",
   "profile.cityPlaceholder": "Börja skriva ett stadsnamn",
   "profile.dataSource": "Stationsdata: Radio Browser, uppdaterad {date}",
+  "profile.character": "Figur",
+  "profile.character.beaver": "Bäver",
+  "profile.character.platypus": "Näbbdjur",
 };

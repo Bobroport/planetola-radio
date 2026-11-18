@@ -22,7 +22,7 @@ export const el: Dictionary = {
   "city.notFound": "Η πόλη δεν βρέθηκε",
   "cities.title": "Πόλεις",
   "cities.countries": "Σταθμοί ανά χώρα",
-  "cities.countriesHint": "Πλήρεις λίστες για Ευρώπη, Ρωσία και ΗΠΑ",
+  "cities.countriesHint": "Πλήρεις λίστες για Ευρώπη, Ρωσία, ΗΠΑ, Κίνα, Ινδία και άλλες",
   "countries.title": "Χώρες",
   "country.allStations": "Όλοι οι σταθμοί: {country}",
   "country.filter": "Φιλτράρισμα κατά όνομα ή ετικέτα",
@@ -97,4 +97,7 @@ export const el: Dictionary = {
   "profile.whichCity": "Ποια πόλη να ανοίγει",
   "profile.cityPlaceholder": "Αρχίστε να πληκτρολογείτε το όνομα μιας πόλης",
   "profile.dataSource": "Δεδομένα σταθμών: Radio Browser, ενημέρωση {date}",
+  "profile.character": "Χαρακτήρας",
+  "profile.character.beaver": "Κάστορας",
+  "profile.character.platypus": "Πλατύποδας",
 };

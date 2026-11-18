@@ -10,6 +10,8 @@ export default function ProfileLayout() {
     <Stack
       screenOptions={{
         headerTitleAlign: "center",
+        // expo-router 58 на iOS 26 делает заголовок прозрачным, и списки уезжают под него.
+        headerTransparent: false,
         headerBackButtonDisplayMode: "minimal",
         headerRight: () => <GlobeButton />,
       }}

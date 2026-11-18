@@ -22,7 +22,7 @@ export const ja: Dictionary = {
   "city.notFound": "都市が見つかりません",
   "cities.title": "都市",
   "cities.countries": "国別の放送局",
-  "cities.countriesHint": "ヨーロッパ、ロシア、アメリカの完全なリスト",
+  "cities.countriesHint": "ヨーロッパ、ロシア、アメリカ、中国、インドなどの完全なリスト",
   "countries.title": "国",
   "country.allStations": "すべての放送局: {country}",
   "country.filter": "名前またはタグで絞り込む",
@@ -97,4 +97,7 @@ export const ja: Dictionary = {
   "profile.whichCity": "開く都市",
   "profile.cityPlaceholder": "都市名を入力してください",
   "profile.dataSource": "放送局データ: Radio Browser、{date} 更新",
+  "profile.character": "キャラクター",
+  "profile.character.beaver": "ビーバー",
+  "profile.character.platypus": "カモノハシ",
 };

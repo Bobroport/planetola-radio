@@ -22,7 +22,7 @@ export const id: Dictionary = {
   "city.notFound": "Kota tidak ditemukan",
   "cities.title": "Kota",
   "cities.countries": "Stasiun menurut negara",
-  "cities.countriesHint": "Daftar lengkap untuk Eropa, Rusia, dan AS",
+  "cities.countriesHint": "Daftar lengkap untuk Eropa, Rusia, AS, Tiongkok, India, dan lainnya",
   "countries.title": "Negara",
   "country.allStations": "Semua stasiun: {country}",
   "country.filter": "Saring menurut nama atau tag",
@@ -97,4 +97,7 @@ export const id: Dictionary = {
   "profile.whichCity": "Kota mana yang dibuka",
   "profile.cityPlaceholder": "Mulai ketik nama kota",
   "profile.dataSource": "Data stasiun: Radio Browser, diperbarui {date}",
+  "profile.character": "Karakter",
+  "profile.character.beaver": "Berang-berang",
+  "profile.character.platypus": "Platipus",
 };

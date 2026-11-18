@@ -22,7 +22,7 @@ export const zhHant: Dictionary = {
   "city.notFound": "找不到城市",
   "cities.title": "城市",
   "cities.countries": "依國家/地區瀏覽電台",
-  "cities.countriesHint": "歐洲、俄羅斯與美國的完整列表",
+  "cities.countriesHint": "歐洲、俄羅斯、美國、中國、印度等的完整列表",
   "countries.title": "國家/地區",
   "country.allStations": "全部電台：{country}",
   "country.filter": "依名稱或標籤篩選",
@@ -97,4 +97,7 @@ export const zhHant: Dictionary = {
   "profile.whichCity": "要開啟哪個城市",
   "profile.cityPlaceholder": "開始輸入城市名稱",
   "profile.dataSource": "電台資料：Radio Browser，更新於 {date}",
+  "profile.character": "角色",
+  "profile.character.beaver": "海狸",
+  "profile.character.platypus": "鴨嘴獸",
 };

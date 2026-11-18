@@ -22,7 +22,7 @@ export const ko: Dictionary = {
   "city.notFound": "도시를 찾을 수 없습니다",
   "cities.title": "도시",
   "cities.countries": "국가별 방송국",
-  "cities.countriesHint": "유럽, 러시아, 미국의 전체 목록",
+  "cities.countriesHint": "유럽, 러시아, 미국, 중국, 인도 등의 전체 목록",
   "countries.title": "국가",
   "country.allStations": "전체 방송국: {country}",
   "country.filter": "이름 또는 태그로 필터",
@@ -97,4 +97,7 @@ export const ko: Dictionary = {
   "profile.whichCity": "어느 도시를 열까요",
   "profile.cityPlaceholder": "도시 이름을 입력하세요",
   "profile.dataSource": "방송국 데이터: Radio Browser, {date} 업데이트",
+  "profile.character": "캐릭터",
+  "profile.character.beaver": "비버",
+  "profile.character.platypus": "오리너구리",
 };
