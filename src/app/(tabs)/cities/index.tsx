@@ -15,6 +15,7 @@ import {
 } from "@/data/stations";
 import { useAppActive } from "@/hooks/use-app-active";
 import { useI18n } from "@/i18n";
+import { IS_EXPO_GO } from "@/lib/expo-go";
 import { flagEmoji } from "@/lib/format";
 import {
   FLIGHT_DURATION_MS,
@@ -199,11 +200,15 @@ export default function GlobeScreen() {
   return (
     <View style={styles.container}>
       {/* Приложение заперто в светлой теме (userInterfaceStyle в app.json), строка состояния
-          по умолчанию тёмная; у глобуса тёмный заголовок, поэтому пока он в фокусе, просим светлую. */}
-      {isFocused ? <StatusBar style="light" /> : null}
+          по умолчанию тёмная; у глобуса тёмный заголовок, поэтому ему нужна светлая. В сборке
+          стиль задаёт опция statusBarStyle нативного стека (см. CLAUDE.md про
+          UIViewControllerBasedStatusBarAppearance); в Expo Go этот ключ выключен, опция там
+          даёт ошибку, и работает только компонент StatusBar, пока экран в фокусе. */}
+      {IS_EXPO_GO && isFocused ? <StatusBar style="light" /> : null}
       <Stack.Screen
         options={{
           title: t("globe.title"),
+          statusBarStyle: IS_EXPO_GO ? undefined : "light",
           headerStyle: { backgroundColor: "#0b1020" },
           headerTintColor: "#fff",
           headerRight: () => (
